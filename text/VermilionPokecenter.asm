@@ -1,19 +1,19 @@
 _VermilionPokecenterFishingGuruText::
-	text "Even if they are"
-	line "the same level,"
-	cont "#MON can have"
-	cont "very different"
-	cont "abilities."
+	text "Even at the same"
+	line "level, #MON"
+	cont "may differ"
+	cont "greatly in"
+	cont "strength."
 
 	para "A #MON raised"
-	line "by a trainer is"
-	cont "stronger than one"
-	cont "in the wild."
+	line "by hand outlasts"
+	cont "one left to the"
+	cont "wild."
 	done
 
 _VermilionPokecenterSailorText::
 	text "My #MON was"
-	line "poisoned! It"
-	cont "fainted while we"
-	cont "were walking!"
+	line "poisoned. It"
+	cont "fell, and did"
+	cont "not rise again."
 	done

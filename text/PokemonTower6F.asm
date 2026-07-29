@@ -1,15 +1,15 @@
 _PokemonTower6FGhostWasCubonesMotherText::
-	text "The GHOST was the"
-	line "restless soul of"
-	cont "CUBONE's mother!"
+	text "The GHOST was"
+	line "the restless soul"
+	cont "of CUBONE's mother."
 	done
 
 _PokemonTower6FSoulWasCalmedText::
 	text "The mother's soul"
 	line "was calmed."
 
-	para "It departed to"
-	line "the afterlife!"
+	para "She departed to"
+	line "rest, at last."
 	done
 
 _PokemonTower6FChanneler1BattleText::
@@ -36,9 +36,9 @@ _PokemonTower6FChanneler2EndBattleText::
 	prompt
 
 _PokemonTower6FChanneler2AfterBattleText::
-	text "Hair didn't fall"
-	line "out! It was an"
-	cont "evil spirit!"
+	text "Not my hair-"
+	line "that was an evil"
+	cont "spirit, leaving."
 	done
 
 _PokemonTower6FChanneler3BattleText::

@@ -1,26 +1,26 @@
 _Route4CooltrainerF1Text::
-	text "Ouch! I tripped"
-	line "over a rocky"
-	cont "#MON, GEODUDE!"
+	text "I stumbled on a"
+	line "rocky #MON-"
+	cont "GEODUDE, cursed."
 	done
 
 _Route4CooltrainerF2BattleText::
-	text "I came to get my"
+	text "I came for my"
 	line "mushroom #MON!"
 	done
 
 _Route4CooltrainerF2EndBattleText::
-	text "Oh! My cute"
+	text "Oh! My poor"
 	line "mushroom #MON!"
 	prompt
 
 _Route4CooltrainerF2AfterBattleText::
-	text "There might not"
-	line "be any more"
-	cont "mushrooms here."
+	text "There may be no"
+	line "mushrooms left"
+	cont "here now."
 
-	para "I think I got"
-	line "them all."
+	para "I've taken them"
+	line "all, I think."
 	done
 
 _Route4MtMoonSignText::

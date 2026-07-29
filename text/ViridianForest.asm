@@ -1,119 +1,119 @@
 _ViridianForestYoungster1Text::
-	text "I came here with"
-	line "some friends!"
+	text "I came with"
+	line "friends, once."
 
-	para "They're out for"
-	line "#MON fights!"
+	para "They hunt for"
+	line "fights now."
 	done
 
 _ViridianForestYoungster2BattleText::
-	text "Hey! You have"
-	line "#MON! Come on!"
-	cont "Let's battle'em!"
+	text "You've #MON,"
+	line "then. Come,"
+	cont "let's have at it!"
 	done
 
 _ViridianForestYoungster2EndBattleText::
 	text "No!"
-	line "CATERPIE can't"
-	cont "cut it!"
+	line "CATERPIE could"
+	cont "not endure!"
 	prompt
 
 _ViridianForestYoungster2AfterBattleText::
-	text "Ssh! You'll scare"
-	line "the bugs away!"
+	text "Hush. You'll"
+	line "frighten them away."
 	done
 
 _ViridianForestYoungster3BattleText::
-	text "Yo! You can't jam"
-	line "out if you're a"
+	text "One can't shirk"
+	line "duty, being a"
 	cont "#MON trainer!"
 	done
 
 _ViridianForestYoungster3EndBattleText::
-	text "Huh?"
-	line "I ran out of"
-	cont "#MON!"
+	text "What?"
+	line "I've nothing"
+	cont "left to send!"
 	prompt
 
 _ViridianForestYoungster3AfterBattleText::
-	text "Darn! I'm going"
-	line "to catch some"
-	cont "stronger ones!"
+	text "Blast. I'll go"
+	line "catch something"
+	cont "stronger."
 	done
 
 _ViridianForestYoungster4BattleText::
-	text "Hey, wait up!"
-	line "What's the hurry?"
+	text "Wait. What's"
+	line "your hurry?"
 	done
 
 _ViridianForestYoungster4EndBattleText::
 	text "I"
-	line "give! You're good"
-	cont "at this!"
+	line "yield. You've"
+	cont "some skill, then."
 	prompt
 
 _ViridianForestYoungster4AfterBattleText::
 	text "Sometimes, you"
-	line "can find stuff on"
-	cont "the ground!"
+	line "find things left"
+	cont "on the ground."
 
-	para "I'm looking for"
-	line "the stuff I"
-	cont "dropped!"
+	para "I'm searching"
+	line "for what I"
+	cont "lost, myself."
 	done
 
 _ViridianForestYoungster5Text::
-	text "I ran out of #"
-	line "BALLs to catch"
-	cont "#MON with!"
+	text "I've no # BALLs"
+	line "left to snare"
+	cont "#MON with."
 
-	para "You should carry"
-	line "extras!"
+	para "Carry extras,"
+	line "or go home empty."
 	done
 
 _ViridianForestTrainerTips1Text::
 	text "TRAINER TIPS"
 
-	para "If you want to"
-	line "avoid battles,"
-	cont "stay away from"
-	cont "grassy areas!"
+	para "To dodge a fight,"
+	line "keep from the"
+	cont "grass. It hides"
+	cont "more than #MON."
 	done
 
 _ViridianForestUseAntidoteSignText::
-	text "For poison, use"
-	line "ANTIDOTE! Get it"
-	cont "at #MON MARTs!"
+	text "For poison, an"
+	line "ANTIDOTE. Find"
+	cont "one, if you can."
 	done
 
 _ViridianForestTrainerTips2Text::
 	text "TRAINER TIPS"
 
-	para "Contact PROF.OAK"
-	line "via PC to get"
+	para "Reach PROF.OAK"
+	line "by PC, to have"
 	cont "your #DEX"
-	cont "evaluated!"
+	cont "judged."
 	done
 
 _ViridianForestTrainerTips3Text::
 	text "TRAINER TIPS"
 
-	para "No stealing of"
-	line "#MON from"
-	cont "other trainers!"
-	cont "Catch only wild"
-	cont "#MON!"
+	para "Steal no #MON"
+	line "from other"
+	cont "trainers. Only"
+	cont "the wild ones"
+	cont "are fair prey."
 	done
 
 _ViridianForestTrainerTips4Text::
 	text "TRAINER TIPS"
 
-	para "Weaken #MON"
-	line "before attempting"
-	cont "capture!"
+	para "Break them down"
+	line "before the"
+	cont "catch."
 
-	para "When healthy,"
-	line "they may escape!"
+	para "Healthy #MON"
+	line "will flee you."
 	done
 
 _ViridianForestLeavingSignText::

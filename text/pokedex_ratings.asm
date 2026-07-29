@@ -14,50 +14,50 @@ _DexCompletionText::
 	prompt
 
 _DexRatingText_Own0To9::
-	text "You still have"
-	line "lots to do."
-	cont "Look for #MON"
-	cont "in grassy areas!"
+	text "So much yet"
+	line "undone."
+	cont "Seek #MON"
+	cont "in the tall grass!"
 	done
 
 _DexRatingText_Own10To19::
-	text "You're on the"
-	line "right track! "
-	cont "Get a FLASH HM"
+	text "You've begun"
+	line "well enough!"
+	cont "Claim a FLASH HM"
 	cont "from my AIDE!"
 	done
 
 _DexRatingText_Own20To29::
-	text "You still need"
-	line "more #MON!"
-	cont "Try to catch"
-	cont "other species!"
+	text "You still lack"
+	line "many #MON!"
+	cont "Seek out other"
+	cont "species still!"
 	done
 
 _DexRatingText_Own30To39::
-	text "Good, you're"
-	line "trying hard!"
-	cont "Get an ITEMFINDER"
-	cont "from my AIDE!"
+	text "Good, you toil"
+	line "on, unyielding!"
+	cont "Claim an ITEM-"
+	cont "FINDER from AIDE!"
 	done
 
 _DexRatingText_Own40To49::
-	text "Looking good!"
-	line "Go find my AIDE"
-	cont "when you get 50!"
+	text "Looking fine!"
+	line "Find my AIDE"
+	cont "once you reach 50!"
 	done
 
 _DexRatingText_Own50To59::
-	text "You finally got at"
-	line "least 50 species!"
-	cont "Be sure to get"
+	text "At last, 50"
+	line "species claimed!"
+	cont "Be sure to claim"
 	cont "EXP.ALL from my"
 	cont "AIDE!"
 	done
 
 _DexRatingText_Own60To69::
-	text "Ho! This is geting"
-	line "even better!"
+	text "Ho! This grows"
+	line "grimmer yet!"
 	done
 
 _DexRatingText_Own70To79::
@@ -68,50 +68,51 @@ _DexRatingText_Own70To79::
 
 _DexRatingText_Own80To89::
 	text "Wonderful!"
-	line "Do you like to"
-	cont "collect things?"
+	line "Do you love to"
+	cont "collect such"
+	cont "things?"
 	done
 
 _DexRatingText_Own90To99::
-	text "I'm impressed!"
-	line "It must have been"
-	cont "difficult to do!"
+	text "I am impressed!"
+	line "Such labor, it"
+	cont "must have taken!"
 	done
 
 _DexRatingText_Own100To109::
-	text "You finally got at"
-	line "least 100 species!"
-	cont "I can't believe"
-	cont "how good you are!"
+	text "At last, 100"
+	line "species claimed!"
+	cont "I scarce believe"
+	cont "your skill!"
 	done
 
 _DexRatingText_Own110To119::
-	text "You even have the"
+	text "You hold even the"
 	line "evolved forms of"
-	cont "#MON! Super!"
+	cont "#MON! Superb!"
 	done
 
 _DexRatingText_Own120To129::
 	text "Excellent! Trade"
-	line "with friends to"
-	cont "get some more!"
+	line "with kindred souls"
+	cont "for still more!"
 	done
 
 _DexRatingText_Own130To139::
 	text "Outstanding!"
 	line "You've become a"
-	cont "real pro at this!"
+	cont "true master now!"
 	done
 
 _DexRatingText_Own140To149::
 	text "I have nothing"
-	line "left to say!"
-	cont "You're the"
+	line "left to teach!"
+	cont "You are the"
 	cont "authority now!"
 	done
 
 _DexRatingText_Own150To151::
-	text "Your #DEX is"
+	text "Your #DEX lies"
 	line "entirely complete!"
 	cont "Congratulations!"
 	done

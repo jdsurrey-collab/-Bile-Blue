@@ -6,24 +6,24 @@ _CopycatsHouse2FCopycatDoYouLikePokemonText::
 	line "just asked you."
 
 	para "<PLAYER>: Huh?"
-	line "You're strange!"
+	line "You're odd!"
 
 	para "COPYCAT: Hmm?"
 	line "Quit mimicking?"
 
-	para "But, that's my"
-	line "favorite hobby!"
+	para "But that's my"
+	line "one true hobby!"
 	prompt
 
 _CopycatsHouse2FCopycatTM31PreReceiveText::
-	text "Oh wow!"
+	text "Oh my!"
 	line "A # DOLL!"
 
 	para "For me?"
-	line "Thank you!"
+	line "My thanks!"
 
-	para "You can have"
-	line "this, then!"
+	para "Then take this"
+	line "in kind!"
 	prompt
 
 _CopycatsHouse2FCopycatReceivedTM31Text::
@@ -36,10 +36,10 @@ _CopycatsHouse2FCopycatReceivedTM31Text::
 _CopycatsHouse2FCopycatTM31Explanation1Text::
 	text_start
 
-	para "TM31 contains my"
+	para "TM31 holds my"
 	line "favorite, MIMIC!"
 
-	para "Use it on a good"
+	para "Use it on a fine"
 	line "#MON!@"
 	text_end
 
@@ -50,8 +50,9 @@ _CopycatsHouse2FCopycatTM31Explanation2Text::
 	para "<PLAYER>: Pardon?"
 
 	para "<PLAYER>: Is it"
-	line "that fun to mimic"
-	cont "my every move?"
+	line "such fun, mimick-"
+	cont "ing my every"
+	cont "move?"
 
 	para "COPYCAT: You bet!"
 	line "It's a scream!"
@@ -72,9 +73,9 @@ _CopycatsHouse2FDoduoText::
 	done
 
 _CopycatsHouse2FRareDollText::
-	text "This is a rare"
-	line "#MON! Huh?"
-	cont "It's only a doll!"
+	text "A rare #MON,"
+	line "surely! Huh?"
+	cont "Just a doll!"
 	done
 
 _CopycatsHouse2FSNESText::

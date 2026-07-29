@@ -1,28 +1,29 @@
 _PokemonFanClubPikachuFanNormalText::
 	text "Won't you admire"
 	line "my PIKACHU's"
-	cont "adorable tail?"
+	cont "darling tail?"
 	done
 
 _PokemonFanClubPikachuFanBetterText::
-	text "Humph! My PIKACHU"
-	line "is twice as cute"
-	cont "as that one!"
+	text "Hmph! My PIKACHU"
+	line "is twice as fine"
+	cont "as that poor one!"
 	done
 
 _PokemonFanClubSeelFanNormalText::
-	text "I just love my"
+	text "I do so love my"
 	line "SEEL!"
 
-	para "It squeals when I"
-	line "hug it!"
+	para "It cries so"
+	line "sweetly when"
+	cont "held!"
 	done
 
 _PokemonFanClubSeelFanBetterText::
-	text "Oh dear!"
+	text "Oh, dear me!"
 
 	para "My SEEL is far"
-	line "more attractive!"
+	line "the lovelier!"
 	done
 
 _PokemonFanClubPikachuText::
@@ -35,51 +36,52 @@ _PokemonFanClubSeelText::
 	done
 
 _PokemonFanClubChairmanIntroText::
-	text "I chair the"
+	text "I chair this"
 	line "#MON Fan Club!"
 
-	para "I have collected"
+	para "I have gathered"
 	line "over 100 #MON!"
 
-	para "I'm very fussy"
-	line "when it comes to"
+	para "I am terribly"
+	line "particular about"
 	cont "#MON!"
 
 	para "So..."
 
-	para "Did you come"
-	line "visit to hear"
-	cont "about my #MON?"
+	para "Have you come to"
+	line "hear me speak of"
+	cont "my #MON?"
 	done
 
 _PokemonFanClubChairmanStoryText::
-	text "Good!"
-	line "Then listen up!"
+	text "Splendid!"
+	line "Then listen well!"
 
-	para "My favorite"
+	para "My beloved"
 	line "RAPIDASH..."
 
-	para "It...cute..."
-	line "lovely...smart..."
-	cont "plus...amazing..."
+	para "It...dear...so"
+	line "lovely...so wise..."
+	cont "and yet...how sad"
 	cont "you think so?..."
-	cont "oh yes...it..."
+	cont "oh yes...it is..."
 	cont "stunning..."
-	cont "kindly..."
-	cont "love it!"
+	cont "so tender..."
+	cont "I love it so!"
 
-	para "Hug it...when..."
-	cont "sleeping...warm"
-	cont "and cuddly..."
-	cont "spectacular..."
-	cont "ravishing..."
-	cont "...Oops! Look at"
-	cont "the time! I kept"
-	cont "you too long!"
+	para "I hold it...when"
+	cont "it sleeps...warm"
+	cont "and dear to me..."
+	cont "so splendid..."
+	cont "so ravishing..."
+	cont "...Oh! Look at"
+	cont "the hour! I've"
+	cont "kept you too long!"
 
-	para "Thanks for hearing"
-	line "me out! I want"
-	cont "you to have this!"
+	para "My thanks for"
+	line "hearing me out!"
+	cont "Please, take"
+	cont "this gift!"
 	prompt
 
 _PokemonFanClubReceivedBikeVoucherText::
@@ -92,34 +94,36 @@ _PokemonFanClubReceivedBikeVoucherText::
 _PokemonFanClubExplainBikeVoucherText::
 	text_start
 
-	para "Exchange that for"
+	para "Trade that for"
 	line "a BICYCLE!"
 
-	para "Don't worry, my"
-	line "FEAROW will FLY"
+	para "Fear not, my"
+	line "FEAROW shall fly"
 	cont "me anywhere!"
 
-	para "So, I don't need a"
-	line "BICYCLE!"
+	para "So I have no"
+	line "need of a"
+	cont "BICYCLE!"
 
-	para "I hope you like"
-	line "cycling!"
+	para "I do hope you"
+	line "enjoy the ride!"
 	done
 
 _PokemonFanClubNoStoryText::
-	text "Oh. Come back"
-	line "when you want to"
-	cont "hear my story!"
+	text "Ah. Return when"
+	line "you wish to hear"
+	cont "my story again!"
 	done
 
 _PokemonFanClubChairFinalText::
-	text "Hello, <PLAYER>!"
+	text "Good day,"
+	line "<PLAYER>!"
 
-	para "Did you come see"
-	line "me about my"
-	cont "#MON again?"
+	para "Have you come to"
+	line "hear of my"
+	cont "#MON once more?"
 
-	para "No? Too bad!"
+	para "No? A pity!"
 	done
 
 _PokemonFanClubBagFullText::
@@ -128,18 +132,19 @@ _PokemonFanClubBagFullText::
 	done
 
 _PokemonFanClubReceptionistText::
-	text "Our Chairman is"
-	line "very vocal about"
-	cont "#MON."
+	text "Our Chairman"
+	line "speaks endlessly"
+	cont "of #MON."
 	done
 
 _PokemonFanClubSign1Text::
-	text "Let's all listen"
-	line "politely to other"
-	cont "trainers!"
+	text "Let all listen"
+	line "in silence to"
+	cont "fellow trainers!"
 	done
 
 _PokemonFanClubSign2Text::
-	text "If someone brags,"
-	line "brag right back!"
+	text "If one boasts,"
+	line "boast back in"
+	cont "kind!"
 	done

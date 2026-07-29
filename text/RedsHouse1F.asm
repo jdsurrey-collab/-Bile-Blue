@@ -1,37 +1,37 @@
 _RedsHouse1FMomWakeUpText::
-	text "MOM: Right."
-	line "All boys leave"
-	cont "home some day."
-	cont "It said so on TV."
+	text "MOM: Yes. All"
+	line "children leave"
+	cont "in the end."
+	cont "Even TV says so."
 
-	para "PROF.OAK, next"
-	line "door, is looking"
-	cont "for you."
+	para "OAK, next door,"
+	line "is calling for"
+	cont "you. Go now."
 	done
 
 _RedsHouse1FMomYouShouldRestText::
-	text "MOM: <PLAYER>!"
-	line "You should take a"
-	cont "quick rest."
+	text "MOM: <PLAYER>."
+	line "Rest, while you"
+	cont "still can."
 	prompt
 
 _RedsHouse1FMomLookingGreatText::
-	text "MOM: Oh good!"
-	line "You and your"
-	cont "#MON are"
-	cont "looking great!"
-	cont "Take care now!"
+	text "MOM: Oh."
+	line "You're still"
+	cont "alive. And your"
+	cont "#MON too."
+	cont "Do take care."
 	done
 
 _RedsHouse1FTVStandByMeMovieText::
-	text "There's a movie"
-	line "on TV. Four boys"
-	cont "are walking on"
-	cont "railroad tracks."
+	text "A film plays on"
+	line "TV. Four boys"
+	cont "walk the tracks,"
+	cont "seeking a body."
 
-	para "I better go too."
+	para "I should go too."
 	done
 
 _RedsHouse1FTVWrongSideText::
-	text "Oops, wrong side."
+	text "Wrong side. Pity."
 	done

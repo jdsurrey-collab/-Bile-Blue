@@ -30,3 +30,6 @@
 *.sa*
 *.sg1
 *.dmg
+
+# versioned recompiled ROM builds
+/Roms/

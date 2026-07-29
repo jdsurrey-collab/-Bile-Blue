@@ -1,8 +1,8 @@
 _Museum2FYoungsterText::
 	text "MOON STONE?"
 
-	para "What's so special"
-	line "about it?"
+	para "What makes it"
+	line "so peculiar?"
 	done
 
 _Museum2FGrampsText::
@@ -12,25 +12,27 @@ _Museum2FGrampsText::
 	line "landing!"
 
 	para "I bought a color"
-	line "TV to watch it!"
+	line "TV, just to"
+	cont "watch it happen!"
 	done
 
 _Museum2FScientistText::
-	text "We have a space"
-	line "exhibit now."
+	text "We hold a space"
+	line "exhibit, now."
 	done
 
 _Museum2FBrunetteGirlText::
-	text "I want a PIKACHU!"
-	line "It's so cute!"
+	text "I long for a"
+	line "PIKACHU! So dear!"
 
-	para "I asked my Daddy"
-	line "to catch me one!"
+	para "I begged my"
+	line "father to catch"
+	cont "me one!"
 	done
 
 _Museum2FHikerText::
-	text "Yeah, a PIKACHU"
-	line "soon, I promise!"
+	text "Yes, a PIKACHU"
+	line "soon, I swear it!"
 	done
 
 _Museum2FSpaceShuttleSignText::
@@ -39,7 +41,7 @@ _Museum2FSpaceShuttleSignText::
 	done
 
 _Museum2FMoonStoneSignText::
-	text "Meteorite that"
+	text "A meteorite that"
 	line "fell on MT.MOON."
 	cont "(MOON STONE?)"
 	done

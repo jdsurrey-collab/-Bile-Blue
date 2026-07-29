@@ -1,7 +1,7 @@
 _Route18CooltrainerM1BattleText::
-	text "I always check"
-	line "every grassy area"
-	cont "for new #MON."
+	text "I comb every"
+	line "grassy patch for"
+	cont "new #MON."
 	done
 
 _Route18CooltrainerM1EndBattleText::
@@ -9,30 +9,30 @@ _Route18CooltrainerM1EndBattleText::
 	prompt
 
 _Route18CooltrainerM1AfterBattleText::
-	text "I wish I had a"
-	line "BIKE!"
+	text "I wish I owned"
+	line "a BIKE!"
 	done
 
 _Route18CooltrainerM2BattleText::
-	text "Kurukkoo!"
-	line "How do you like"
-	cont "my bird call?"
+	text "Kurukkoo! Do you"
+	line "care for my bird"
+	cont "call?"
 	done
 
 _Route18CooltrainerM2EndBattleText::
 	text "I"
-	line "had to bug you!"
+	line "had to trouble you!"
 	prompt
 
 _Route18CooltrainerM2AfterBattleText::
-	text "I also collect sea"
-	line "#MON on"
-	cont "weekends!"
+	text "I gather sea"
+	line "#MON, come the"
+	cont "weekend's end!"
 	done
 
 _Route18CooltrainerM3BattleText::
-	text "This is my turf!"
-	line "Get out of here!"
+	text "This ground is"
+	line "mine! Be gone!"
 	done
 
 _Route18CooltrainerM3EndBattleText::
@@ -40,9 +40,8 @@ _Route18CooltrainerM3EndBattleText::
 	prompt
 
 _Route18CooltrainerM3AfterBattleText::
-	text "This is my fave"
-	line "#MON hunting"
-	cont "area!"
+	text "This is my chosen"
+	line "hunting ground!"
 	done
 
 _Route18SignText::
@@ -53,6 +52,6 @@ _Route18SignText::
 
 _Route18CyclingRoadSignText::
 	text "CYCLING ROAD"
-	line "No pedestrians"
-	cont "permitted!"
+	line "No one afoot may"
+	cont "pass!"
 	done

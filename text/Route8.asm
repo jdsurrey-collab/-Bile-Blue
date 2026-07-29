@@ -1,7 +1,7 @@
 _Route8SuperNerd1BattleText::
-	text "You look good at"
-	line "#MON, but"
-	cont "how's your chem?"
+	text "Fine with #MON,"
+	line "are you? How's"
+	cont "your chemistry?"
 	done
 
 _Route8SuperNerd1EndBattleText::
@@ -10,13 +10,13 @@ _Route8SuperNerd1EndBattleText::
 	prompt
 
 _Route8SuperNerd1AfterBattleText::
-	text "I am better at"
-	line "school than this!"
+	text "I fare better"
+	line "in school."
 	done
 
 _Route8Gambler1BattleText::
-	text "All right! Let's"
-	line "roll the dice!"
+	text "Very well. Let"
+	line "the dice fall."
 	done
 
 _Route8Gambler1EndBattleText::
@@ -25,13 +25,13 @@ _Route8Gambler1EndBattleText::
 	prompt
 
 _Route8Gambler1AfterBattleText::
-	text "Lady Luck's not"
-	line "with me today!"
+	text "Luck has"
+	line "abandoned me."
 	done
 
 _Route8SuperNerd2BattleText::
-	text "You need strategy"
-	line "to win at this!"
+	text "One needs"
+	line "strategy, here!"
 	done
 
 _Route8SuperNerd2EndBattleText::
@@ -46,8 +46,8 @@ _Route8SuperNerd2AfterBattleText::
 	done
 
 _Route8CooltrainerF1BattleText::
-	text "I like NIDORAN, so"
-	line "I collect them!"
+	text "I favor NIDORAN."
+	line "I hoard them!"
 	done
 
 _Route8CooltrainerF1EndBattleText::
@@ -55,15 +55,15 @@ _Route8CooltrainerF1EndBattleText::
 	prompt
 
 _Route8CooltrainerF1AfterBattleText::
-	text "When #MON grow"
-	line "up they get ugly!"
-	cont "They shouldn't"
-	cont "evolve!"
+	text "Grown #MON turn"
+	line "hideous. They"
+	cont "ought never"
+	cont "evolve at all."
 	done
 
 _Route8SuperNerd3BattleText::
-	text "School is fun, but"
-	line "so are #MON."
+	text "School has its"
+	line "joys. #MON, too."
 	done
 
 _Route8SuperNerd3EndBattleText::
@@ -72,14 +72,14 @@ _Route8SuperNerd3EndBattleText::
 	prompt
 
 _Route8SuperNerd3AfterBattleText::
-	text "We're stuck here"
-	line "because of the"
-	cont "gates at SAFFRON."
+	text "We're trapped"
+	line "here, thanks to"
+	cont "SAFFRON's gates."
 	done
 
 _Route8CooltrainerF2BattleText::
-	text "MEOWTH is so cute,"
-	line "meow, meow, meow!"
+	text "MEOWTH, so"
+	line "sweet. Meow."
 	done
 
 _Route8CooltrainerF2EndBattleText::
@@ -87,15 +87,15 @@ _Route8CooltrainerF2EndBattleText::
 	prompt
 
 _Route8CooltrainerF2AfterBattleText::
-	text "I think PIDGEY"
-	line "and RATTATA"
-	cont "are cute too!"
+	text "PIDGEY, RATTATA-"
+	line "sweet things,"
+	cont "too, I think."
 	done
 
 _Route8CooltrainerF3BattleText::
-	text "We must look"
-	line "silly standing"
-	cont "here like this!"
+	text "We must seem"
+	line "foolish, stood"
+	cont "here like this."
 	done
 
 _Route8CooltrainerF3EndBattleText::
@@ -104,47 +104,47 @@ _Route8CooltrainerF3EndBattleText::
 	prompt
 
 _Route8CooltrainerF3AfterBattleText::
-	text "SAFFRON's gate"
-	line "keeper won't let"
-	cont "us through."
-	cont "He's so mean!"
+	text "SAFFRON's"
+	line "gatekeeper bars"
+	cont "us. Such a cruel"
+	cont "little man."
 	done
 
 _Route8Gambler2BattleText::
 	text "I'm a rambling,"
-	line "gambling dude!"
+	line "gambling wretch!"
 	done
 
 _Route8Gambler2EndBattleText::
 	text "Missed"
-	line "the big score!"
+	line "my fortune!"
 	prompt
 
 _Route8Gambler2AfterBattleText::
-	text "Gambling and"
-	line "#MON are like"
-	cont "eating peanuts!"
-	cont "Just can't stop!"
+	text "Gambling, #MON-"
+	line "like a hunger"
+	cont "that never"
+	cont "quite fills."
 	done
 
 _Route8CooltrainerF4BattleText::
-	text "What's a cute,"
-	line "round and fluffy"
-	cont "#MON?"
+	text "What's soft, and"
+	line "round, and dear"
+	cont "as a #MON?"
 	done
 
 _Route8CooltrainerF4EndBattleText::
 	text "Stop!"
 
-	para "Don't be so mean"
+	para "Don't be cruel"
 	line "to my CLEFAIRY!"
 	prompt
 
 _Route8CooltrainerF4AfterBattleText::
-	text "I heard that"
-	line "CLEFAIRY evolves"
-	cont "when it's exposed"
-	cont "to a MOON STONE."
+	text "They say CLEFAIRY"
+	line "changes, when"
+	cont "shown a MOON"
+	cont "STONE. Forever."
 	done
 
 _Route8UndergroundSignText::

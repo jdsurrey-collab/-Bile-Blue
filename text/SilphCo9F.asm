@@ -1,21 +1,21 @@
 SilphCo9FNurseYouLookTiredText::
-	text "You look tired!"
-	line "You should take a"
-	cont "quick nap!"
+	text "You look weary!"
+	line "You ought to"
+	cont "take a brief rest!"
 	prompt
 
 SilphCo9FNurseDontGiveUpText::
-	text "Don't give up!"
+	text "Don't yield yet!"
 	done
 
 SilphCo9FNurseThankYouText::
-	text "Thank you so"
-	line "much!"
+	text "My thanks, so"
+	line "very much!"
 	done
 
 _SilphCo9FRocket1BattleText::
 	text "Your #MON seem"
-	line "to adore you, kid!"
+	line "devoted to you!"
 	done
 
 _SilphCo9FRocket1EndBattleText::
@@ -23,15 +23,15 @@ _SilphCo9FRocket1EndBattleText::
 	prompt
 
 _SilphCo9FRocket1AfterBattleText::
-	text "If I had started"
-	line "as a trainer at"
-	cont "your age..."
+	text "Had I begun as a"
+	line "trainer, at your"
+	cont "age..."
 	done
 
 _SilphCo9FScientistBattleText::
-	text "Your #MON have"
+	text "Your #MON bear"
 	line "weak points! I"
-	cont "can nail them!"
+	cont "can strike them!"
 	done
 
 _SilphCo9FScientistEndBattleText::
@@ -41,8 +41,8 @@ _SilphCo9FScientistEndBattleText::
 
 _SilphCo9FScientistAfterBattleText::
 	text "Exploiting weak"
-	line "spots does work!"
-	cont "Think about"
+	line "points does"
+	cont "work! Consider"
 	cont "element types!"
 	done
 
@@ -53,10 +53,10 @@ _SilphCo9FRocket2BattleText::
 
 _SilphCo9FRocket2EndBattleText::
 	text "Warg!"
-	line "Brothers, I lost!"
+	line "Brothers, I fall!"
 	prompt
 
 _SilphCo9FRocket2AfterBattleText::
-	text "My brothers will"
+	text "My brothers shall"
 	line "avenge me!"
 	done

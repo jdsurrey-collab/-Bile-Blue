@@ -1,24 +1,24 @@
 _Route15Gate2FOaksAideExpAllText::
-	text "EXP.ALL gives"
-	line "EXP points to all"
-	cont "the #MON with"
-	cont "you, even if they"
-	cont "don't fight."
+	text "EXP.ALL grants"
+	line "its blessing to"
+	cont "all #MON with"
+	cont "you, even those"
+	cont "who never bled."
 
-	para "It does, however,"
-	line "reduce the amount"
-	cont "of EXP for each"
-	cont "#MON."
+	para "Yet it thins the"
+	line "portion each"
+	cont "poor #MON"
+	cont "receives."
 
-	para "If you don't need"
-	line "it, you should "
-	cont "store it via PC."
+	para "If you've no need"
+	line "of it, entomb it"
+	cont "within the PC."
 	done
 
 _Route15Gate2FBinocularsText::
-	text "Looked into the"
-	line "binoculars."
+	text "Peered through"
+	line "the binoculars."
 
-	para "It looks like a"
-	line "small island!"
+	para "It looks a lonely"
+	line "isle indeed!"
 	done

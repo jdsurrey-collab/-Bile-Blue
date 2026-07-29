@@ -1,20 +1,20 @@
 _ViridianMartClerkSayHiToOakText::
-	text "Okay! Say hi to"
-	line "PROF.OAK for me!"
+	text "Very well. Give"
+	line "OAK my regards."
 	done
 
 _ViridianMartClerkYouCameFromPalletTownText::
-	text "Hey! You came from"
-	line "PALLET TOWN?"
+	text "You hail from"
+	line "PALLET TOWN, then?"
 	done
 
 _ViridianMartClerkParcelQuestText::
 	text "You know PROF."
-	line "OAK, right?"
+	line "OAK, don't you?"
 
-	para "His order came in."
-	line "Will you take it"
-	cont "to him?"
+	para "His order has"
+	line "come. Would you"
+	cont "carry it to him?"
 
 	para "<PLAYER> got"
 	line "OAK's PARCEL!@"
@@ -22,10 +22,10 @@ _ViridianMartClerkParcelQuestText::
 
 _ViridianMartYoungsterText::
 	text "This shop sells"
-	line "many ANTIDOTEs."
+	line "mostly ANTIDOTEs."
 	done
 
 _ViridianMartCooltrainerMText::
-	text "No! POTIONs are"
-	line "all sold out."
+	text "No. POTIONs, all"
+	line "gone."
 	done

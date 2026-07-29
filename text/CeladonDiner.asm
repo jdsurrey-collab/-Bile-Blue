@@ -1,44 +1,45 @@
 _CeladonDinerCookText::
-	text "Hi!"
+	text "Evening."
 
-	para "We're taking a"
-	line "break now."
+	para "We're taking"
+	line "our rest now."
 	done
 
 _CeladonDinerMiddleAgedWomanText::
 	text "My #MON are"
-	line "weak, so I often"
-	cont "have to go to the"
-	cont "DRUG STORE."
+	line "frail, so I must"
+	cont "haunt the DRUG"
+	cont "STORE often."
 	done
 
 _CeladonDinerMiddleAgedManText::
-	text "Psst! There's a"
-	line "basement under"
+	text "Psst! A cellar"
+	line "lies beneath"
 	cont "the GAME CORNER."
 	done
 
 _CeladonDinerFisherText::
 	text "Munch..."
 
-	para "The man at that"
+	para "That man at the"
 	line "table lost it all"
-	cont "at the slots."
+	cont "to the slots."
 	done
 
 _CeladonDinerGymGuideImFlatOutBustedText::
-	text "Go ahead! Laugh!"
+	text "Go on! Laugh at"
+	line "me!"
 
-	para "I'm flat out"
-	line "busted!"
+	para "I'm ruined,"
+	line "utterly!"
 
-	para "No more slots for"
-	line "me! I'm going"
-	cont "straight!"
+	para "No more slots"
+	line "for me! I walk a"
+	cont "straighter path."
 
-	para "Here! I won't be"
-	line "needing this any-"
-	cont "more!"
+	para "Here! I've no"
+	line "further need of"
+	cont "this!"
 	prompt
 
 _CeladonDinerGymGuideReceivedCoinCaseText::
@@ -54,7 +55,7 @@ _CeladonDinerGymGuideCoinCaseNoRoomText::
 	done
 
 _CeladonDinerGymGuideWinItBackText::
-	text "I always thought"
-	line "I was going to"
-	cont "win it back..."
+	text "I always believed"
+	line "I'd win it all"
+	cont "back someday..."
 	done

@@ -1,30 +1,31 @@
 _MrFujisHouseSuperNerdMrFujiIsntHereText::
-	text "That's odd, MR.FUJI"
-	line "isn't here."
-	cont "Where'd he go?"
+	text "Odd. MR.FUJI"
+	line "isn't home."
+	cont "Where's he gone?"
 	done
 
 _MrFujisHouseSuperNerdMrFujiHadBeenPrayingText::
-	text "MR.FUJI had been"
-	line "praying alone for"
+	text "MR.FUJI prayed"
+	line "alone, for"
 	cont "CUBONE's mother."
 	done
 
 _MrFujisHouseLittleGirlThisIsMrFujisHouseText::
-	text "This is really"
+	text "This is truly"
 	line "MR.FUJI's house."
 
-	para "He's really kind!"
+	para "He's kind, in a"
+	line "hard world."
 
-	para "He looks after"
+	para "He shelters"
 	line "abandoned and"
-	cont "orphaned #MON!"
+	cont "orphaned #MON."
 	done
 
 _MrFujisHouseLittleGirlPokemonAreNiceToHugText::
-	text "It's so warm!"
-	line "#MON are so"
-	cont "nice to hug!"
+	text "So warm. #MON"
+	line "are a comfort,"
+	cont "to hold."
 	done
 
 _MrFujisHousePsyduckText::
@@ -38,13 +39,13 @@ _MrFujisHouseNidorinoText::
 _MrFujisHouseMrFujiIThinkThisMayHelpYourQuestText::
 	text "MR.FUJI: <PLAYER>."
 
-	para "Your #DEX quest"
-	line "may fail without"
+	para "Your quest will"
+	line "fail, without"
 	cont "love for your"
 	cont "#MON."
 
-	para "I think this may"
-	line "help your quest."
+	para "This may help"
+	line "you, some."
 	prompt
 
 _MrFujisHouseMrFujiReceivedPokeFluteText::
@@ -57,23 +58,23 @@ _MrFujisHouseMrFujiReceivedPokeFluteText::
 _MrFujisHouseMrFujiPokeFluteExplanationText::
 	text_start
 
-	para "Upon hearing #"
-	line "FLUTE, sleeping"
-	cont "#MON will"
-	cont "spring awake."
+	para "At # FLUTE's"
+	line "call, sleeping"
+	cont "#MON wake,"
+	cont "startled."
 
-	para "It works on all"
+	para "It rouses any"
 	line "sleeping #MON."
 	done
 
 _MrFujisHouseMrFujiPokeFluteNoRoomText::
-	text "You must make"
-	line "room for this!"
+	text "Make room for"
+	line "this, somehow."
 	done
 
 _MrFujisHouseMrFujiHasMyFluteHelpedYouText::
-	text "MR.FUJI: Has my"
-	line "FLUTE helped you?"
+	text "MR.FUJI: Has the"
+	line "FLUTE served you?"
 	done
 
 _MrFujisHouseMrFujiPokedexText::
@@ -81,9 +82,9 @@ _MrFujisHouseMrFujiPokedexText::
 	line "Grand Prize"
 	cont "Drawing!"
 
-	para "The application"
-	line "form is..."
+	para "The form for"
+	line "entry is..."
 
-	para "Gone! It's been"
-	line "clipped out!"
+	para "Gone. Torn out"
+	line "long ago."
 	done

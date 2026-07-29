@@ -1,19 +1,21 @@
 _SilphCo5FSilphWorkerMThatsYouRightText::
-	text "TEAM ROCKET is"
-	line "in an uproar over"
-	cont "some intruder."
-	cont "That's you right?"
+	text "TEAM ROCKET rages"
+	line "over some"
+	cont "intruder about."
+	cont "That's you, then?"
 	done
 
 _SilphCo5FSilphWorkerMYoureOurHeroText::
-	text "TEAM ROCKET took"
-	line "off! You're our"
-	cont "hero! Thank you!"
+	text "TEAM ROCKET has"
+	line "fled! You are"
+	cont "our savior! Thank"
+	cont "you, truly!"
 	done
 
 _SilphCo5FRocket1BattleText::
-	text "I heard a kid was"
-	line "wandering around."
+	text "I heard some"
+	line "child wandered"
+	cont "in here."
 	done
 
 _SilphCo5FRocket1EndBattleText::
@@ -21,15 +23,15 @@ _SilphCo5FRocket1EndBattleText::
 	prompt
 
 _SilphCo5FRocket1AfterBattleText::
-	text "It's not smart"
-	line "to pick a fight"
-	cont "with TEAM ROCKET!"
+	text "Foolish, to pick"
+	line "a fight with"
+	cont "TEAM ROCKET!"
 	done
 
 _SilphCo5FScientistBattleText::
 	text "We study #"
-	line "BALL technology"
-	cont "on this floor!"
+	line "BALL craft on"
+	cont "this very floor!"
 	done
 
 _SilphCo5FScientistEndBattleText::
@@ -38,14 +40,14 @@ _SilphCo5FScientistEndBattleText::
 	prompt
 
 _SilphCo5FScientistAfterBattleText::
-	text "We worked on the"
-	line "ultimate #"
-	cont "BALL which would"
-	cont "catch anything!"
+	text "We labored on the"
+	line "perfect #"
+	cont "BALL, to snare"
+	cont "anything at all!"
 	done
 
 _SilphCo5FRockerBattleText::
-	text "Whaaat? There"
-	line "shouldn't be any"
-	cont "children here?"
+	text "Whaaat? No child"
+	line "ought to be"
+	cont "here at all!"
 	done

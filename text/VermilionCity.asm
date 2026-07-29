@@ -1,69 +1,70 @@
 _VermilionCityBeautyText::
-	text "We're careful"
-	line "about pollution!"
+	text "We mind the"
+	line "poison here."
 
-	para "We've heard GRIMER"
-	line "multiplies in"
-	cont "toxic sludge!"
+	para "GRIMER breeds"
+	line "in the toxic"
+	cont "sludge, they say."
 	done
 
 _VermilionCityGambler1DidYouSeeText::
-	text "Did you see S.S."
-	line "ANNE moored in"
-	cont "the harbor?"
+	text "Did you see the"
+	line "S.S.ANNE, moored"
+	cont "in the harbor?"
 	done
 
 _VermilionCityGambler1SSAnneDepartedText::
 	text "So, S.S.ANNE has"
-	line "departed!"
+	line "sailed on."
 
-	para "She'll be back in"
-	line "about a year."
+	para "She'll return,"
+	line "in a year's time."
 	done
 
 _VermilionCitySailor1WelcomeToSSAnneText::
-	text "Welcome to S.S."
-	line "ANNE!"
+	text "Welcome aboard"
+	line "the S.S.ANNE."
 	done
 
 _VermilionCitySailor1DoYouHaveATicketText::
-	text "Welcome to S.S."
-	line "ANNE!"
+	text "Welcome aboard"
+	line "the S.S.ANNE."
 
-	para "Excuse me, do you"
-	line "have a ticket?"
+	para "Pardon- have you"
+	line "a ticket, then?"
 	prompt
 
 _VermilionCitySailor1FlashedTicketText::
 	text "<PLAYER> flashed"
 	line "the S.S.TICKET!"
 
-	para "Great! Welcome to"
-	line "S.S.ANNE!"
+	para "Very well. Aboard"
+	line "with you, then."
 	done
 
 _VermilionCitySailor1YouNeedATicketText::
-	text "<PLAYER> doesn't"
-	line "have the needed"
+	text "<PLAYER> lacks"
+	line "the necessary"
 	cont "S.S.TICKET."
 
-	para "Sorry!"
+	para "No exceptions."
 
-	para "You need a ticket"
-	line "to get aboard."
+	para "No ticket, no"
+	line "passage."
 	done
 
 _VermilionCitySailor1ShipSetSailText::
-	text "The ship set sail."
+	text "The ship has"
+	line "sailed without you."
 	done
 
 _VermilionCityGambler2Text::
-	text "I'm putting up a"
+	text "I'm raising a"
 	line "building on this"
-	cont "plot of land."
+	cont "plot of ground."
 
-	para "My #MON is"
-	line "tamping the land."
+	para "My #MON tamps"
+	line "the earth flat."
 	done
 
 _VermilionCityMachopText::
@@ -73,35 +74,35 @@ _VermilionCityMachopText::
 
 _VermilionCityMachopStompingTheLandFlatText::
 	text_start
-	para "A MACHOP is"
-	line "stomping the land"
-	cont "flat."
+	para "A MACHOP"
+	line "stomps the earth"
+	cont "flat, tirelessly."
 	done
 
 _VermilionCitySailor2Text::
-	text "S.S.ANNE is a"
-	line "famous luxury"
-	cont "cruise ship."
+	text "S.S.ANNE, a"
+	line "famed vessel of"
+	cont "luxury."
 
-	para "We visit VERMILION"
+	para "She calls here"
 	line "once a year."
 	done
 
 _VermilionCitySignText::
 	text "VERMILION CITY"
-	line "The Port of"
-	cont "Exquisite Sunsets"
+	line "Port of Fading"
+	cont "Light"
 	done
 
 _VermilionCityNoticeSignText::
-	text "NOTICE!"
+	text "NOTICE:"
 
-	para "ROUTE 12 may be"
-	line "blocked off by a"
+	para "ROUTE 12 lies"
+	line "blocked by a"
 	cont "sleeping #MON."
 
 	para "Detour through"
-	line "ROCK TUNNEL to"
+	line "ROCK TUNNEL, to"
 	cont "LAVENDER TOWN."
 
 	para "VERMILION POLICE"
@@ -118,8 +119,8 @@ _VermilionCityGymSignText::
 	line "#MON GYM"
 	cont "LEADER: LT.SURGE"
 
-	para "The Lightning "
-	line "American!"
+	para "The Lightning"
+	line "Veteran."
 	done
 
 _VermilionCityHarborSignText::

@@ -1,15 +1,16 @@
 _CeladonChiefHouseChiefText::
 	text "Hehehe! The slots"
-	line "just reel in the"
-	cont "dough, big time!"
+	line "reel in coin,"
+	cont "hand over fist!"
 	done
 
 _CeladonChiefHouseRocketText::
 	text "CHIEF!"
 
-	para "We just shipped"
+	para "We've shipped"
 	line "2000 #MON as"
-	cont "slot prizes!"
+	cont "slot machine"
+	cont "prizes!"
 	done
 
 _CeladonChiefHouseSailorText::
@@ -17,6 +18,6 @@ _CeladonChiefHouseSailorText::
 	line "poster at the"
 	cont "GAME CORNER!"
 
-	para "There's no secret"
+	para "There's no hidden"
 	line "switch behind it!"
 	done

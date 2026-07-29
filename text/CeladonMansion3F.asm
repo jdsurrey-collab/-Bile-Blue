@@ -1,67 +1,68 @@
 _CeladonMansion3FProgrammerText::
-	text "Me? I'm the"
-	line "programmer!"
+	text "Me? I am the"
+	line "engine's artificer!"
 	done
 
 _CeladonMansion3FGraphicArtistText::
-	text "I'm the graphic"
-	line "artist!"
-	cont "I drew you!"
+	text "I am the artist"
+	line "of shades!"
+	cont "I drew your form!"
 	done
 
 _CeladonMansion3FWriterText::
-	text "I wrote the story!"
-	line "Isn't ERIKA cute?"
+	text "I penned this"
+	line "tale! Isn't ERIKA"
+	cont "lovely?"
 
-	para "I like MISTY a"
-	line "lot too!"
+	para "I fancy MISTY"
+	line "as well!"
 
 	para "Oh, and SABRINA,"
-	line "I like her!"
+	line "I favor her too!"
 	done
 
 _CeladonMansion3FGameDesignerText::
-	text "Is that right?"
+	text "Is that so?"
 
-	para "I'm the game"
-	line "designer!"
+	para "I design this"
+	line "grim world!"
 
-	para "Filling up your"
-	line "#DEX is tough,"
-	cont "but don't quit!"
+	para "Filling your"
+	line "#DEX is hard,"
+	cont "but don't yield!"
 
-	para "When you finish,"
-	line "come tell me!"
+	para "When you're done,"
+	line "come tell me so!"
 	done
 
 _CeladonMansion3FGameDesignerCompletedDexText::
-	text "Wow! Excellent!"
-	line "You completed"
-	cont "your #DEX!"
-	cont "Congratulations!"
+	text "By heaven! You've"
+	line "completed your"
+	cont "#DEX! My most"
+	cont "sincere regard!"
 	cont "...@"
 	text_end
 
 _CeladonMansion3FGameProgramPCText::
-	text "It's the game"
-	line "program! Messing"
-	cont "with it could bug"
-	cont "out the game!"
+	text "It's the engine"
+	line "itself! Meddle"
+	cont "and you'll curse"
+	cont "this whole world!"
 	done
 
 _CeladonMansion3FPlayingGamePCText::
-	text "Someone's playing"
-	line "a game instead of"
-	cont "working!"
+	text "Someone plays at"
+	line "leisure instead"
+	cont "of labor!"
 	done
 
 _CeladonMansion3FGameScriptPCText::
 	text "It's the script!"
-	line "Better not look"
-	cont "at the ending!"
+	line "Best not glimpse"
+	cont "the final page!"
 	done
 
 _CeladonMansion3FDevRoomSignText::
 	text "GAME FREAK"
-	line "Development Room"
+	line "Chamber of Making"
 	done

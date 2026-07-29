@@ -1,21 +1,21 @@
 _SSAnne1FWaiterText::
-	text "Bonjour!"
-	line "I am le waiter on"
-	cont "this ship!"
+	text "Bonjour."
+	line "I serve aboard"
+	cont "this vessel."
 
-	para "I will be happy"
-	line "to serve you any-"
-	cont "thing you please!"
+	para "I will bring"
+	line "you anything"
+	cont "you desire."
 
-	para "Ah! Le strong"
-	line "silent type!"
+	para "Ah. The quiet,"
+	line "brooding sort."
 	done
 
 _SSAnne1FSailorText::
 	text "The passengers"
-	line "are restless!"
+	line "grow restless."
 
-	para "You might be"
-	line "challenged by the"
-	cont "more bored ones!"
+	para "The bored ones"
+	line "may challenge"
+	cont "you yet."
 	done

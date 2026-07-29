@@ -6,35 +6,35 @@ _Museum1FScientist1WouldYouLikeToComeInText::
 	text "It's ¥50 for a"
 	line "child's ticket."
 
-	para "Would you like to"
-	line "come in?"
+	para "Will you enter"
+	line "these old halls?"
 	done
 
 _Museum1FScientist1ThankYouText::
 	text "Right, ¥50!"
-	line "Thank you!"
+	line "My thanks!"
 	done
 
 _Museum1FScientist1DontHaveEnoughMoneyText::
-	text "You don't have"
-	line "enough money."
+	text "You lack the"
+	line "coin for this."
 	prompt
 
 _Museum1FScientist1DoYouKnowWhatAmberIsText::
-	text "You can't sneak"
+	text "You can't creep"
 	line "in the back way!"
 
-	para "Oh, whatever!"
+	para "Oh, no matter!"
 	line "Do you know what"
 	cont "AMBER is?"
 	done
 
 _Museum1FScientist1TheresALabSomewhereText::
-	text "There's a lab"
-	line "somewhere trying"
-	cont "to resurrect"
-	cont "ancient #MON"
-	cont "from AMBER."
+	text "A lab exists,"
+	line "somewhere, that"
+	cont "seeks to raise"
+	cont "the dead #MON"
+	cont "trapped in AMBER."
 	done
 
 _Museum1FScientist1AmberIsFossilizedTreeSapText::
@@ -43,41 +43,40 @@ _Museum1FScientist1AmberIsFossilizedTreeSapText::
 	done
 
 _Museum1FScientist1GoToOtherSideText::
-	text "Please go to the"
+	text "Do go to the"
 	line "other side!"
 	done
 
 _Museum1FScientist1TakePlentyOfTimeText::
-	text "Take plenty of"
-	line "time to look!"
+	text "Take all the"
+	line "time you need!"
 	done
 
 _Museum1FGamblerText::
 	text "That is one"
-	line "magnificent"
+	line "magnificent, dead"
 	cont "fossil!"
 	done
 
 _Museum1FScientist2TakeThisToAPokemonLabText::
-	text "Ssh! I think that"
-	line "this chunk of"
-	cont "AMBER contains"
+	text "Ssh! I believe"
+	line "this AMBER holds"
 	cont "#MON DNA!"
 
-	para "It would be great"
-	line "if #MON could"
-	cont "be resurrected"
-	cont "from it!"
+	para "How grand it"
+	line "would be, to"
+	cont "raise #MON"
+	cont "from the dead!"
 
-	para "But, my colleagues"
-	line "just ignore me!"
+	para "But my colleagues"
+	line "scorn me for it!"
 
-	para "So I have a favor"
-	line "to ask!"
+	para "So I beg a favor"
+	line "of you!"
 
-	para "Take this to a"
-	line "#MON LAB and"
-	cont "get it examined!"
+	para "Carry this to a"
+	line "#MON LAB, and"
+	cont "have it examined!"
 	prompt
 
 _Museum1FScientist2ReceivedOldAmberText::
@@ -86,19 +85,19 @@ _Museum1FScientist2ReceivedOldAmberText::
 	text_end
 
 _Museum1FScientist2GetTheOldAmberCheckText::
-	text "Ssh! Get the OLD"
-	line "AMBER checked!"
+	text "Ssh! Have the OLD"
+	line "AMBER examined!"
 	done
 
 _Museum1FScientist2YouDontHaveSpaceText::
-	text "You don't have"
-	line "space for this!"
+	text "You've no room"
+	line "for this!"
 	done
 
 _Museum1FScientist3Text::
-	text "We are proud of 2"
-	line "fossils of very"
-	cont "rare, prehistoric"
+	text "We take pride in"
+	line "2 fossils of very"
+	cont "rare, ancient"
 	cont "#MON!"
 	done
 

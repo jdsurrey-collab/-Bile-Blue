@@ -1,41 +1,41 @@
 _Route12SnorlaxText::
 	text "A sleeping #MON"
-	line "blocks the way!"
+	line "bars the way."
 	done
 
 _Route12SnorlaxWokeUpText::
-	text "SNORLAX woke up!"
+	text "SNORLAX woke!"
 
-	para "It attacked in a"
-	line "grumpy rage!"
+	para "It struck in a"
+	line "half-waking rage."
 	done
 
 _Route12SnorlaxCalmedDownText::
-	text "SNORLAX calmed"
-	line "down! With a big"
-	cont "yawn, it returned"
-	cont "to the mountains!"
+	text "SNORLAX calmed,"
+	line "yawned once, and"
+	cont "shuffled back"
+	cont "to the mountains."
 	done
 
 _Route12Fisher1BattleText::
-	text "Yeah! I got a"
-	line "bite, here!"
+	text "Yeah! Something"
+	line "bites!"
 	done
 
 _Route12Fisher1EndBattleText::
-	text "Tch!"
-	line "Just a small fry!"
+	text "Tch! Just a"
+	line "small fry!"
 	prompt
 
 _Route12Fisher1AfterBattleText::
-	text "Hang on! My line's"
-	line "snagged!"
+	text "Hold on. My line"
+	line "has snagged."
 	done
 
 _Route12Fisher2BattleText::
-	text "Be patient!"
-	line "Fishing is a"
-	cont "waiting game!"
+	text "Patience. Fishing"
+	line "is a game of"
+	cont "waiting, and loss."
 	done
 
 _Route12Fisher2EndBattleText::
@@ -44,14 +44,14 @@ _Route12Fisher2EndBattleText::
 	prompt
 
 _Route12Fisher2AfterBattleText::
-	text "With a better ROD,"
-	line "I could catch"
-	cont "better #MON!"
+	text "A finer ROD"
+	line "would land me"
+	cont "finer #MON."
 	done
 
 _Route12CooltrainerMBattleText::
-	text "Have you found a"
-	line "MOON STONE?"
+	text "Have you found"
+	line "a MOON STONE?"
 	done
 
 _Route12CooltrainerMEndBattleText::
@@ -59,13 +59,13 @@ _Route12CooltrainerMEndBattleText::
 	prompt
 
 _Route12CooltrainerMAfterBattleText::
-	text "I could have made"
-	line "my #MON evolve"
-	cont "with MOON STONE!"
+	text "A MOON STONE"
+	line "would have"
+	cont "changed my #MON."
 	done
 
 _Route12SuperNerdBattleText::
-	text "Electricity is my"
+	text "Electricity, my"
 	line "specialty!"
 	done
 
@@ -75,14 +75,14 @@ _Route12SuperNerdEndBattleText::
 
 _Route12SuperNerdAfterBattleText::
 	text "Water conducts"
-	line "electricity, so"
-	cont "you should zap"
-	cont "sea #MON!"
+	line "electricity."
+	cont "Zap the sea"
+	cont "#MON, if you dare."
 	done
 
 _Route12Fisher3BattleText::
-	text "The FISHING FOOL"
-	line "vs. #MON KID!"
+	text "The FISHING"
+	line "FOOL, versus you!"
 	done
 
 _Route12Fisher3EndBattleText::
@@ -91,14 +91,14 @@ _Route12Fisher3EndBattleText::
 	prompt
 
 _Route12Fisher3AfterBattleText::
-	text "You beat me at"
+	text "You best me at"
 	line "#MON, but I'm"
-	cont "good at fishing!"
+	cont "the finer angler."
 	done
 
 _Route12Fisher4BattleText::
 	text "I'd rather be"
-	line "working!"
+	line "at work."
 	done
 
 _Route12Fisher4EndBattleText::
@@ -107,15 +107,15 @@ _Route12Fisher4EndBattleText::
 	prompt
 
 _Route12Fisher4AfterBattleText::
-	text "It's all right."
-	line "Losing doesn't"
-	cont "bug me any more."
+	text "No matter. Losing"
+	line "no longer stings,"
+	cont "much."
 	done
 
 _Route12Fisher5BattleText::
 	text "You never know"
-	line "what you could"
-	cont "catch!"
+	line "what the water"
+	cont "gives up."
 	done
 
 _Route12Fisher5EndBattleText::
@@ -124,9 +124,9 @@ _Route12Fisher5EndBattleText::
 	prompt
 
 _Route12Fisher5AfterBattleText::
-	text "I catch MAGIKARP"
-	line "all the time, but"
-	cont "they're so weak!"
+	text "MAGIKARP, always"
+	line "MAGIKARP. So"
+	cont "weak, so many."
 	done
 
 _Route12SignText::

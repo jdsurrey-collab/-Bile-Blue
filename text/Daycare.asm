@@ -1,40 +1,41 @@
 _DaycareGentlemanIntroText::
-	text "I run a DAYCARE."
-	line "Would you like me"
-	cont "to raise one of"
-	cont "your #MON?"
+	text "I keep a DAYCARE."
+	line "Shall I raise one"
+	cont "of your #MON"
+	cont "for you a while?"
 	done
 
 _DaycareGentlemanWhichMonText::
 	text "Which #MON"
-	line "should I raise?"
+	line "shall I raise?"
 	prompt
 
 _DaycareGentlemanWillLookAfterMonText::
-	text "Fine, I'll look"
-	line "after @"
+	text "Very well, I'll"
+	line "look after @"
 	text_ram wNameBuffer
 	text_start
 	cont "for a while."
 	prompt
 
 _DaycareGentlemanComeSeeMeInAWhileText::
-	text "Come see me in"
-	line "a while."
+	text "Return to me"
+	line "in a while."
 	done
 
 _DaycareGentlemanMonHasGrownText::
 	text "Your @"
 	text_ram wNameBuffer
 	text_start
-	line "has grown a lot!"
+	line "has grown a great"
+	cont "deal!"
 
-	para "By level, it's"
+	para "By level, it has"
 	line "grown by @"
 	text_decimal wDayCareNumLevelsGrown, 1, 3
 	text "!"
 
-	para "Aren't I great?"
+	para "Am I not skilled?"
 	prompt
 
 _DaycareGentlemanOweMoneyText::
@@ -53,10 +54,10 @@ _DaycareGentlemanGotMonBackText::
 	done
 
 _DaycareGentlemanMonNeedsMoreTimeText::
-	text "Back already?"
+	text "Back so soon?"
 	line "Your @"
 	text_ram wNameBuffer
 	text_start
-	cont "needs some more"
+	cont "needs still more"
 	cont "time with me."
 	prompt

@@ -1,26 +1,26 @@
 _Route16Gate2FLittleBoyText::
-	text "I'm going for a"
-	line "ride with my girl"
-	cont "friend!"
+	text "I ride out with"
+	line "my sweetheart"
+	cont "today!"
 	done
 
 _Route16Gate2FLittleGirlText::
-	text "We're going"
-	line "riding together!"
+	text "We ride together,"
+	line "just we two!"
 	done
 
 _Route16Gate2FLeftBinocularsText::
-	text "Looked into the"
-	line "binoculars."
+	text "Peered through"
+	line "the binoculars."
 
-	para "It's CELADON DEPT."
-	line "STORE!"
+	para "It's CELADON's"
+	line "grand DEPT. STORE!"
 	done
 
 _Route16Gate2FRightBinocularsText::
-	text "Looked into the"
-	line "binoculars."
+	text "Peered through"
+	line "the binoculars."
 
-	para "There's a long"
-	line "path over water!"
+	para "A long path lies"
+	line "over the water!"
 	done

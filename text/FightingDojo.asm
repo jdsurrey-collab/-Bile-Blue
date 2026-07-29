@@ -1,49 +1,49 @@
 _FightingDojoKarateMasterText::
-	text "Grunt!"
+	text "Hnf."
 
 	para "I am the KARATE"
-	line "MASTER! I am the"
-	cont "LEADER here!"
+	line "MASTER. I lead"
+	cont "this house of pain."
 
 	para "You wish to"
 	line "challenge us?"
-	cont "Expect no mercy!"
+	cont "Expect no mercy."
 
-	para "Fwaaa!"
+	para "Hah!"
 	done
 
 _FightingDojoKarateMasterDefeatedText::
 	text "Hwa!"
-	line "Arrgh! Beaten!"
+	line "Arrgh! Defeated!"
 	prompt
 
 _FightingDojoKarateMasterIWillGiveYouAPokemonText::
 	text "Indeed, I have"
-	line "lost!"
+	line "fallen."
 
-	para "But, I beseech"
-	line "you, do not take"
-	cont "our emblem as"
-	cont "your trophy!"
+	para "I beg you, do"
+	line "not claim our"
+	cont "emblem as your"
+	cont "trophy!"
 
-	para "In return, I will"
-	line "give you a prized"
-	cont "fighting #MON!"
+	para "Instead, take a"
+	line "prized fighting"
+	cont "#MON, of mine."
 
-	para "Choose whichever"
-	line "one you like!"
+	para "Choose as you"
+	line "wish."
 	done
 
 _FightingDojoKarateMasterStayAndTrainWithUsText::
-	text "Ho!"
+	text "Ho."
 
-	para "Stay and train at"
-	line "Karate with us!"
+	para "Stay, and train"
+	line "in pain with us."
 	done
 
 _FightingDojoBlackbelt1BattleText::
-	text "Hoargh! Take your"
-	line "shoes off!"
+	text "Hoargh! Shoes"
+	line "off, before me!"
 	done
 
 _FightingDojoBlackbelt1EndBattleText::
@@ -52,16 +52,16 @@ _FightingDojoBlackbelt1EndBattleText::
 	prompt
 
 _FightingDojoBlackbelt1AfterBattleText::
-	text "You wait 'til you"
-	line "see our Master!"
+	text "Wait till you"
+	line "meet our Master."
 
-	para "I'm a small fry"
-	line "compared to him!"
+	para "I'm nothing,"
+	line "next to him."
 	done
 
 _FightingDojoBlackbelt2BattleText::
 	text "I hear you're"
-	line "good! Show me!"
+	line "good. Prove it."
 	done
 
 _FightingDojoBlackbelt2EndBattleText::
@@ -70,16 +70,16 @@ _FightingDojoBlackbelt2EndBattleText::
 	prompt
 
 _FightingDojoBlackbelt2AfterBattleText::
-	text "Our Master is a"
-	line "pro fighter!"
+	text "Our Master, a"
+	line "true master."
 	done
 
 _FightingDojoBlackbelt3BattleText::
 	text "Nothing tough"
-	line "frightens me!"
+	line "unsettles me."
 
-	para "I break boulders"
-	line "for training!"
+	para "I shatter stone,"
+	line "to train."
 	done
 
 _FightingDojoBlackbelt3EndBattleText::
@@ -88,16 +88,16 @@ _FightingDojoBlackbelt3EndBattleText::
 	prompt
 
 _FightingDojoBlackbelt3AfterBattleText::
-	text "The only thing"
-	line "that frightens us"
-	cont "is psychic power!"
+	text "Only one thing"
+	line "unsettles us-"
+	cont "psychic power."
 	done
 
 _FightingDojoBlackbelt4BattleText::
 	text "Hoohah!"
 
-	para "You're trespassing"
-	line "in our FIGHTING"
+	para "You trespass in"
+	line "our FIGHTING"
 	cont "DOJO!"
 	done
 
@@ -107,9 +107,9 @@ _FightingDojoBlackbelt4EndBattleText::
 	prompt
 
 _FightingDojoBlackbelt4AfterBattleText::
-	text "The prime fighters"
-	line "across the land"
-	cont "train here."
+	text "The finest"
+	line "fighters in the"
+	cont "land train here."
 	done
 
 _FightingDojoHitmonleePokeBallText::

@@ -1,16 +1,16 @@
 _SilphCo8FSilphWorkerMSilphIsFinishedText::
 	text "I wonder if SILPH"
-	line "is finished..."
+	line "is done for, now..."
 	done
 
 _SilphCo8FSilphWorkerMThanksForSavingUsText::
-	text "Thanks for saving"
-	line "us!"
+	text "My thanks, for"
+	line "saving us all!"
 	done
 
 _SilphCo8FRocket1BattleText::
 	text "That's as far as"
-	line "you'll go!"
+	line "you shall go!"
 	done
 
 _SilphCo8FRocket1EndBattleText::
@@ -26,18 +26,18 @@ _SilphCo8FRocket1AfterBattleText::
 
 _SilphCo8FScientistBattleText::
 	text "You're causing us"
-	line "problems!"
+	line "such grief!"
 	done
 
 _SilphCo8FScientistEndBattleText::
 	text "Huh?"
-	line "I lost?"
+	line "I have lost?"
 	prompt
 
 _SilphCo8FScientistAfterBattleText::
-	text "So, what do you"
-	line "think of SILPH"
-	cont "BUILDING's maze?"
+	text "So tell me, what"
+	line "of SILPH's grim"
+	cont "maze?"
 	done
 
 _SilphCo8FRocket2BattleText::
@@ -47,10 +47,10 @@ _SilphCo8FRocket2BattleText::
 
 _SilphCo8FRocket2EndBattleText::
 	text "Whoo!"
-	line "Oh brothers!"
+	line "Oh, brothers!"
 	prompt
 
 _SilphCo8FRocket2AfterBattleText::
-	text "I'll leave you up"
-	line "to my brothers!"
+	text "I leave you to"
+	line "my brothers now!"
 	done

@@ -4,7 +4,8 @@ _RocketHideoutB1FRocket5EndBattleText::
 
 _RocketHideoutB1FRocket1BattleText::
 	text "Who are you? How"
-	line "did you get here?"
+	line "did you find this"
+	cont "grim place?"
 	done
 
 _RocketHideoutB1FRocket1EndBattleText::
@@ -13,13 +14,13 @@ _RocketHideoutB1FRocket1EndBattleText::
 	prompt
 
 _RocketHideoutB1FRocket1AfterBattleText::
-	text "Are you dissing"
+	text "Do you dare mock"
 	line "TEAM ROCKET?"
 	done
 
 _RocketHideoutB1FRocket2BattleText::
 	text "You broke into"
-	line "our operation?"
+	line "our den, child?"
 	done
 
 _RocketHideoutB1FRocket2EndBattleText::
@@ -27,9 +28,9 @@ _RocketHideoutB1FRocket2EndBattleText::
 	prompt
 
 _RocketHideoutB1FRocket2AfterBattleText::
-	text "You're not going"
-	line "to get away with"
-	cont "this, brat!"
+	text "You'll not escape"
+	line "this, little"
+	cont "wretch!"
 	done
 
 _RocketHideoutB1FRocket3BattleText::
@@ -38,37 +39,37 @@ _RocketHideoutB1FRocket3BattleText::
 
 _RocketHideoutB1FRocket3EndBattleText::
 	text "I"
-	line "can't do it!"
+	line "cannot do it!"
 	prompt
 
 _RocketHideoutB1FRocket3AfterBattleText::
 	text "SILPH SCOPE?"
-	line "I don't know"
-	cont "where it is!"
+	line "I know not where"
+	cont "it lies!"
 	done
 
 _RocketHideoutB1FRocket4BattleText::
-	text "Why did you come"
-	line "here?"
+	text "Why have you"
+	line "come here?"
 	done
 
 _RocketHideoutB1FRocket4EndBattleText::
 	text "This"
-	line "won't do!"
+	line "cannot stand!"
 	prompt
 
 _RocketHideoutB1FRocket4AfterBattleText::
-	text "OK, I'll talk!"
-	line "Take the elevator"
-	cont "to see my BOSS!"
+	text "Fine, I'll talk!"
+	line "Take the lift to"
+	cont "meet my BOSS!"
 	done
 
 _RocketHideoutB1FRocket5BattleText::
 	text "Are you lost, you"
-	line "little rat?"
+	line "wretched rat?"
 	done
 
 _RocketHideoutB1FRocket5AfterBattleText::
 	text "Uh-oh, that fight"
-	line "opened the door!"
+	line "sprung the door!"
 	done

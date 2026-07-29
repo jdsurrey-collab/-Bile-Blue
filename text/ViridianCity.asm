@@ -1,85 +1,86 @@
 _ViridianCityYoungster1Text::
 	text "Those # BALLs"
-	line "at your waist!"
-	cont "You have #MON!"
+	line "at your belt-"
+	cont "you carry #MON"
+	cont "in your pocket."
 
-	para "It's great that"
-	line "you can carry and"
-	cont "use #MON any"
-	cont "time, anywhere!"
+	para "How strange, to"
+	line "hold a soul in"
+	cont "your palm, use it"
+	cont "anywhere, anytime."
 	done
 
 _ViridianCityGambler1GymAlwaysClosedText::
-	text "This #MON GYM"
-	line "is always closed."
+	text "This GYM stands"
+	line "shuttered, always."
 
-	para "I wonder who the"
-	line "LEADER is?"
+	para "Who leads it, I"
+	line "wonder still."
 	done
 
 _ViridianCityGambler1GymLeaderReturnedText::
 	text "VIRIDIAN GYM's"
-	line "LEADER returned!"
+	line "LEADER's returned."
 	done
 
 _ViridianCityYoungster2YouWantToKnowAboutText::
-	text "You want to know"
-	line "about the 2 kinds"
-	cont "of caterpillar"
-	cont "#MON?"
+	text "Care to hear of"
+	line "the two wretched"
+	cont "crawling #MON"
+	cont "underfoot?"
 	done
 
 ViridianCityYoungster2OkThenText::
-	text "Oh, OK then!"
+	text "As you wish."
 	done
 
 ViridianCityYoungster2CaterpieAndWeedleDescriptionText::
-	text "CATERPIE has no"
-	line "poison, but"
+	text "CATERPIE carries"
+	line "no venom, but"
 	cont "WEEDLE does."
 
-	para "Watch out for its"
-	line "POISON STING!"
+	para "Mind its STING-"
+	line "it festers."
 	done
 
 _ViridianCityGirlHasntHadHisCoffeeYetText::
-	text "Oh Grandpa! Don't"
-	line "be so mean!"
-	cont "He hasn't had his"
-	cont "coffee yet."
+	text "Grandfather, hush!"
+	line "He's not had his"
+	cont "coffee. Forgive"
+	cont "him his temper."
 	done
 
 _ViridianCityGirlWhenIGoShopText::
-	text "When I go shop in"
-	line "PEWTER CITY, I"
-	cont "have to take the"
-	cont "winding trail in"
-	cont "VIRIDIAN FOREST."
+	text "To shop in"
+	line "PEWTER, I must"
+	cont "brave the winding"
+	cont "dark of VIRIDIAN"
+	cont "FOREST."
 	done
 
 _ViridianCityOldManSleepyPrivatePropertyText::
-	text "You can't go"
-	line "through here!"
+	text "You shall not"
+	line "pass this way."
 
-	para "This is private"
-	line "property!"
+	para "'Tis private"
+	line "ground. Mine alone."
 	done
 
 ViridianCityFisherYouCanHaveThisText::
-	text "Yawn!"
-	line "I must have dozed"
-	cont "off in the sun."
+	text "Yawn."
+	line "I dozed off"
+	cont "in the sun."
 
-	para "I had this dream"
-	line "about a DROWZEE"
-	cont "eating my dream."
-	cont "What's this?"
+	para "I dreamt a"
+	line "DROWZEE fed on"
+	cont "my dream itself."
+	cont "What's this now?"
 	cont "Where did this TM"
 	cont "come from?"
 
-	para "This is spooky!"
-	line "Here, you can"
-	cont "have this TM."
+	para "How unsettling."
+	line "Here, take it,"
+	cont "before it returns."
 	prompt
 
 _ViridianCityFisherReceivedTM42Text::
@@ -90,84 +91,83 @@ _ViridianCityFisherReceivedTM42Text::
 _ViridianCityFisherTM42ExplanationText::
 	text "TM42 contains"
 	line "DREAM EATER..."
-	cont "...Snore..."
+	cont "...Snore, forever?"
 	done
 
 _ViridianCityFisherTM42NoRoomText::
-	text "You have too much"
-	line "stuff already."
+	text "You carry too"
+	line "much already."
 	done
 
 _ViridianCityOldManHadMyCoffeeNowText::
-	text "Ahh, I've had my"
-	line "coffee now and I"
-	cont "feel great!"
+	text "Ah. My coffee,"
+	line "at last. I can"
+	cont "face the day now."
 
-	para "Sure you can go"
-	line "through!"
+	para "Go on, then,"
+	line "through."
 
-	para "Are you in a"
-	line "hurry?"
+	para "In such a hurry?"
+	line "To where, I wonder."
 	done
 
 _ViridianCityOldManKnowHowToCatchPokemonText::
-	text "I see you're using"
+	text "I see you carry"
 	line "a #DEX."
 
-	para "When you catch a"
-	line "#MON, #DEX"
-	cont "is automatically"
-	cont "updated."
+	para "Catch a #MON,"
+	line "and #DEX"
+	cont "records it,"
+	cont "living or not."
 
-	para "What? Don't you"
-	line "know how to catch"
-	cont "#MON?"
+	para "What? You don't"
+	line "know how to"
+	cont "catch one?"
 
-	para "I'll show you"
-	line "how to then."
+	para "Let me show you,"
+	line "then."
 	done
 
 _ViridianCityOldManTimeIsMoneyText::
-	text "Time is money..."
-	line "Go along then."
+	text "Time is all we"
+	line "spend. Go on."
 	done
 
 _ViridianCityOldManYouNeedToWeakenTheTargetText::
-	text "First, you need"
-	line "to weaken the"
-	cont "target #MON."
+	text "First, you must"
+	line "break it down-"
+	cont "the target #MON."
 	done
 
 _ViridianCitySignText::
-	text "VIRIDIAN CITY "
-	line "The Eternally"
-	cont "Green Paradise"
+	text "VIRIDIAN CITY"
+	line "A Green, Quiet"
+	cont "Kind of Grave"
 	done
 
 _ViridianCityTrainerTips1Text::
 	text "TRAINER TIPS"
 
-	para "Catch #MON"
-	line "and expand your"
-	cont "collection!"
+	para "Catch #MON,"
+	line "swell your ranks"
+	cont "of the bound."
 
-	para "The more you have,"
-	line "the easier it is"
-	cont "to fight!"
+	para "More you keep,"
+	line "easier to win-"
+	cont "such is the way."
 	done
 
 _ViridianCityTrainerTips2Text::
 	text "TRAINER TIPS"
 
-	para "The battle moves"
-	line "of #MON are"
-	cont "limited by their"
+	para "A #MON's moves"
+	line "are bound by"
 	cont "POWER POINTs, PP."
 
-	para "To replenish PP,"
-	line "rest your tired"
-	cont "#MON at a"
-	cont "#MON CENTER!"
+	para "Rest the weary"
+	line "at a #MON"
+	cont "CENTER, to mend"
+	cont "what's spent."
 	done
 
 _ViridianCityGymSignText::
@@ -177,5 +177,5 @@ _ViridianCityGymSignText::
 
 _ViridianCityGymLockedText::
 	text "The GYM's doors"
-	line "are locked..."
+	line "stay sealed shut."
 	done

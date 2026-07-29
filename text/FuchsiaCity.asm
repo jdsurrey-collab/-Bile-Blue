@@ -1,30 +1,30 @@
 _FuchsiaCityYoungster1Text::
-	text "Did you try the"
-	line "SAFARI GAME? Some"
-	cont "#MON can only"
-	cont "be caught there."
+	text "Have you tried"
+	line "the SAFARI GAME?"
+	cont "Some #MON"
+	cont "hide there alone."
 	done
 
 _FuchsiaCityGamblerText::
-	text "SAFARI ZONE has a"
-	line "zoo in front of"
-	cont "the entrance."
+	text "SAFARI ZONE keeps"
+	line "a menagerie"
+	cont "before its gate."
 
-	para "Out back is the"
-	line "SAFARI GAME for"
-	cont "catching #MON."
+	para "Beyond lies the"
+	line "SAFARI GAME, for"
+	cont "trapping #MON."
 	done
 
 _FuchsiaCityErikText::
-	text "ERIK: Where's"
-	line "SARA? I said I'd"
-	cont "meet her here."
+	text "ERIK: Where is"
+	line "SARA? I swore"
+	cont "I'd meet her here."
 	done
 
 _FuchsiaCityYoungster2Text::
-	text "That item ball in"
-	line "there is really a"
-	cont "#MON."
+	text "That item ball"
+	line "yonder is truly"
+	cont "a #MON."
 	done
 
 _FuchsiaCityPokemonText::
@@ -33,8 +33,8 @@ _FuchsiaCityPokemonText::
 
 _FuchsiaCitySignText::
 	text "FUCHSIA CITY"
-	line "Behold! It's"
-	cont "Passion Pink!"
+	line "Behold! The"
+	cont "Faded Pink"
 	done
 
 _FuchsiaCitySafariGameSignText::
@@ -57,7 +57,7 @@ _FuchsiaCityGymSignText::
 	line "#MON GYM"
 	cont "LEADER: KOGA"
 
-	para "The Poisonous"
+	para "The Plague"
 	line "Ninja Master"
 	done
 
@@ -65,21 +65,21 @@ _FuchsiaCityChanseySignText::
 	text "Name: CHANSEY"
 
 	para "Catching one is"
-	line "all up to chance."
+	line "left to fate."
 	prompt
 
 _FuchsiaCityVoltorbSignText::
 	text "Name: VOLTORB"
 
-	para "The very image of"
-	line "a # BALL."
+	para "The very image"
+	line "of a # BALL."
 	prompt
 
 _FuchsiaCityKangaskhanSignText::
 	text "Name: KANGASKHAN"
 
-	para "A maternal #MON"
-	line "that raises its"
+	para "A mournful #MON"
+	line "that shelters its"
 	cont "young in a pouch"
 	cont "on its belly."
 	prompt
@@ -87,31 +87,31 @@ _FuchsiaCityKangaskhanSignText::
 _FuchsiaCitySlowpokeSignText::
 	text "Name: SLOWPOKE"
 
-	para "Friendly and very"
-	line "slow moving."
+	para "Gentle and ever"
+	line "so slow moving."
 	prompt
 
 _FuchsiaCityLaprasSignText::
 	text "Name: LAPRAS"
 
 	para "A.K.A. the king"
-	line "of the seas."
+	line "of dark waters."
 	prompt
 
 _FuchsiaCityFossilSignOmanyteText::
 	text "Name: OMANYTE"
 
-	para "A #MON that"
-	line "was resurrected"
-	cont "from a fossil."
+	para "A #MON dragged"
+	line "back from death,"
+	cont "by fossil rite."
 	prompt
 
 _FuchsiaCityFossilSignKabutoText::
 	text "Name: KABUTO"
 
-	para "A #MON that"
-	line "was resurrected"
-	cont "from a fossil."
+	para "A #MON dragged"
+	line "back from death,"
+	cont "by fossil rite."
 	prompt
 
 _FuchsiaCityFossilSignUndeterminedText::

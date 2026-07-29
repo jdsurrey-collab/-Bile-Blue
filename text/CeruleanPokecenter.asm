@@ -1,24 +1,24 @@
 _CeruleanPokecenterSuperNerdText::
-	text "That BILL!"
+	text "That BILL."
 
-	para "I heard that"
-	line "he'll do whatever"
-	cont "it takes to get"
-	cont "rare #MON!"
+	para "I hear he'd do"
+	line "near anything to"
+	cont "own a rare #MON,"
+	cont "whatever the cost."
 	done
 
 _CeruleanPokecenterGentlemanText::
 	text "Have you heard"
-	line "about BILL?"
+	line "of BILL?"
 
-	para "Everyone calls"
-	line "him a #MANIAC!"
+	para "They call him"
+	line "a #MANIAC."
 
-	para "I think people"
-	line "are just jealous"
-	cont "of BILL, though."
+	para "Envy, if you"
+	line "ask me. Nothing"
+	cont "more."
 
-	para "Who wouldn't want"
-	line "to boast about"
-	cont "their #MON?"
+	para "Who wouldn't"
+	line "want to boast of"
+	cont "their own #MON?"
 	done

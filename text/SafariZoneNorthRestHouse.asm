@@ -1,27 +1,27 @@
 _SafariZoneNorthRestHouseScientistText::
-	text "You can keep any"
+	text "You may keep any"
 	line "item you find on"
 	cont "the ground here."
 
-	para "But, you'll run"
-	line "out of time if"
-	cont "you try for all"
-	cont "of them at once!"
+	para "But you'll run"
+	line "out of time"
+	cont "chasing them all"
+	cont "at once!"
 	done
 
 _SafariZoneNorthRestHouseSafariZoneWorkerText::
-	text "Go to the deepest"
+	text "Reach the deepest"
 	line "part of the"
-	cont "SAFARI ZONE. You"
-	cont "will win a prize!"
+	cont "SAFARI ZONE, and"
+	cont "win a prize!"
 	done
 
 _SafariZoneNorthRestHouseGentlemanText::
-	text "My EEVEE evolved"
-	line "into FLAREON!"
+	text "My EEVEE became"
+	line "FLAREON!"
 
-	para "But, a friend's"
+	para "But a friend's"
 	line "EEVEE turned into"
-	cont "a VAPOREON!"
+	cont "VAPOREON!"
 	cont "I wonder why?"
 	done

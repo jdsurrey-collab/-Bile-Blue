@@ -1,21 +1,23 @@
 _CeladonHotelGrannyText::
 	text "#MON? No, this"
-	line "is a hotel for"
-	cont "people."
+	line "inn is for weary"
+	cont "souls alone."
 
-	para "We're full up."
+	para "We're full, I'm"
+	line "afraid."
 	done
 
 _CeladonHotelBeautyText::
-	text "I'm on vacation"
+	text "I holiday here"
 	line "with my brother"
-	cont "and boy friend."
+	cont "and my beau."
 
-	para "CELADON is such a"
-	line "pretty city!"
+	para "CELADON is such"
+	line "a lovely, sad"
+	cont "city!"
 	done
 
 _CeladonHotelSuperNerdText::
-	text "Why did she bring"
-	line "her brother?"
+	text "Why bring her"
+	line "brother along?"
 	done

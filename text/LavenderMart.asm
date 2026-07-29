@@ -1,30 +1,30 @@
 _LavenderMartBaldingGuyText::
-	text "I'm searching for"
-	line "items that raise"
-	cont "the abilities of"
-	cont "#MON during a"
-	cont "single battle."
+	text "I hunt for the"
+	line "items that lend"
+	cont "#MON strength,"
+	cont "for one battle"
+	cont "only."
 
 	para "X ATTACK, X"
-	line "DEFEND, X SPEED"
-	cont "and X SPECIAL are"
-	cont "what I'm after."
+	line "DEFEND, X SPEED,"
+	cont "X SPECIAL- these"
+	cont "I seek."
 
-	para "Do you know where"
-	line "I can get them?"
+	para "Do you know"
+	line "where to find them?"
 	done
 
 _LavenderMartCooltrainerMReviveText::
-	text "You know REVIVE?"
-	line "It revives any"
-	cont "fainted #MON!"
+	text "They say REVIVE"
+	line "restores any"
+	cont "fainted #MON."
 	done
 
 _LavenderMartCooltrainerMNuggetText::
 	text "I found a NUGGET"
 	line "in the mountains."
 
-	para "I thought it was"
-	line "useless, but it"
-	cont "sold for ¥5000!"
+	para "Worthless, I"
+	line "thought- yet it"
+	cont "fetched ¥5000."
 	done

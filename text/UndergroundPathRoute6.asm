@@ -1,5 +1,5 @@
 _UndergroundPathRoute6GirlText::
-	text "People often lose"
-	line "things in that"
-	cont "UNDERGROUND PATH."
+	text "People lose more"
+	line "than things, in"
+	cont "that dark path."
 	done

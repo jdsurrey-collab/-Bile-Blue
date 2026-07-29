@@ -4,14 +4,14 @@ _SilphCo5FRockerEndBattleText::
 	prompt
 
 _SilphCo5FRockerAfterBattleText::
-	text "You're only on 5F."
-	line "It's a long way"
+	text "Only 5F, still."
+	line "A long way yet"
 	cont "to my BOSS!"
 	done
 
 _SilphCo5FRocket2BattleText::
 	text "Show TEAM ROCKET"
-	line "a little respect!"
+	line "some respect!"
 	done
 
 _SilphCo5FRocket2EndBattleText::
@@ -20,29 +20,30 @@ _SilphCo5FRocket2EndBattleText::
 	prompt
 
 _SilphCo5FRocket2AfterBattleText::
-	text "Which reminds me."
+	text "Which reminds me,"
+	line "a grim fact."
 
-	para "KOFFING evolves"
-	line "into WEEZING!"
+	para "KOFFING becomes"
+	line "WEEZING!"
 	done
 
 _SilphCo5FPokemonReport1Text::
 	text "It's a #MON"
 	line "REPORT!"
 
-	para "#MON LAB"
-	line "created PORYGON,"
-	cont "the first virtual"
-	cont "reality #MON."
+	para "#MON LAB made"
+	line "PORYGON, first"
+	cont "virtual, hollow"
+	cont "#MON."
 	done
 
 _SilphCo5FPokemonReport2Text::
 	text "It's a #MON"
 	line "REPORT!"
 
-	para "Over 160 #MON"
-	line "techniques have"
-	cont "been confirmed."
+	para "Past 160 #MON"
+	line "techniques stand"
+	cont "confirmed."
 	done
 
 _SilphCo5FPokemonReport3Text::

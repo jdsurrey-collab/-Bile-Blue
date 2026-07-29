@@ -1,67 +1,69 @@
 _SaffronCityRocket1Text::
-	text "What do you want?"
-	line "Get lost!"
+	text "What do you"
+	line "want? Be gone!"
 	done
 
 _SaffronCityRocket2Text::
-	text "BOSS said he'll"
-	line "take this town!"
+	text "The BOSS swore"
+	line "he'd claim this"
+	cont "town!"
 	done
 
 _SaffronCityRocket3Text::
-	text "Get out of the"
-	line "way!"
+	text "Out of my path!"
 	done
 
 _SaffronCityRocket4Text::
 	text "SAFFRON belongs"
-	line "to TEAM ROCKET!"
+	line "to TEAM ROCKET"
+	cont "now!"
 	done
 
 _SaffronCityRocket5Text::
-	text "Being evil makes"
+	text "Wickedness makes"
 	line "me feel so alive!"
 	done
 
 _SaffronCityRocket6Text::
-	text "Ow! Watch where"
-	line "you're walking!"
+	text "Ow! Mind where"
+	line "you tread!"
 	done
 
 _SaffronCityRocket7Text::
-	text "With SILPH under"
-	line "control, we can"
-	cont "exploit #MON"
-	cont "around the world!"
+	text "With SILPH ours,"
+	line "we may plunder"
+	cont "#MON across"
+	cont "the whole world!"
 	done
 
 _SaffronCityScientistText::
-	text "You beat TEAM"
-	line "ROCKET all alone?"
-	cont "That's amazing!"
+	text "You felled TEAM"
+	line "ROCKET, all"
+	cont "alone? Astounding!"
 	done
 
 _SaffronCitySilphWorkerMText::
-	text "Yeah! TEAM ROCKET"
-	line "is gone!"
-	cont "It's safe to go"
-	cont "out again!"
+	text "At last! TEAM"
+	line "ROCKET has fled!"
+	cont "It's safe to walk"
+	cont "these streets"
+	cont "again!"
 	done
 
 _SaffronCitySilphWorkerFText::
-	text "People should be"
-	line "flocking back to"
-	cont "SAFFRON now."
+	text "Folk ought to"
+	line "return to"
+	cont "SAFFRON, now."
 	done
 
 _SaffronCityGentlemanText::
 	text "I flew here on my"
-	line "PIDGEOT when I"
-	cont "read about SILPH."
+	line "PIDGEOT, having"
+	cont "read of SILPH."
 
-	para "It's already over?"
-	line "I missed the"
-	cont "media action."
+	para "Already over?"
+	line "I missed all the"
+	cont "commotion."
 	done
 
 _SaffronCityPidgeotText::
@@ -69,30 +71,30 @@ _SaffronCityPidgeotText::
 	text_end
 
 _SaffronCityRockerText::
-	text "I saw ROCKET"
-	line "BOSS escaping"
-	cont "SILPH's building."
+	text "I saw the ROCKET"
+	line "BOSS fleeing"
+	cont "SILPH's tower."
 	done
 
 _SaffronCityRocket8Text::
-	text "I'm a security"
+	text "I stand as a"
 	line "guard."
 
-	para "Suspicious kids I"
-	line "don't allow in!"
+	para "Suspicious sorts"
+	line "I turn away!"
 	done
 
 _SaffronCityRocket9Text::
 	text "..."
 	line "Snore..."
 
-	para "Hah! He's taking"
-	line "a snooze!"
+	para "Ha! He's dozing"
+	line "at his post!"
 	done
 
 _SaffronCitySignText::
 	text "SAFFRON CITY"
-	line "Shining, Golden"
+	line "Gilded, Hollow"
 	cont "Land of Commerce"
 	done
 
@@ -105,20 +107,21 @@ _SaffronCityGymSignText::
 	line "#MON GYM"
 	cont "LEADER: SABRINA"
 
-	para "The Master of"
-	line "Psychic #MON!"
+	para "The Mistress of"
+	line "Broken Minds!"
 	done
 
 _SaffronCityTrainerTips1Text::
 	text "TRAINER TIPS"
 
-	para "FULL HEAL cures"
-	line "all ailments like"
-	cont "sleep and burns."
+	para "FULL HEAL mends"
+	line "every ailment,"
+	cont "sleep and burns"
+	cont "alike."
 
 	para "It costs a bit"
-	line "more, but it's"
-	cont "more convenient."
+	line "more, but eases"
+	cont "the burden."
 	done
 
 _SaffronCityTrainerTips2Text::
@@ -128,8 +131,8 @@ _SaffronCityTrainerTips2Text::
 	line "offers improved"
 	cont "capture rates."
 
-	para "Try it on those"
-	line "hard-to-catch"
+	para "Try it upon those"
+	line "hard-won"
 	cont "#MON."
 	done
 
@@ -144,9 +147,9 @@ _SaffronCityMrPsychicsHouseSignText::
 	done
 
 _SaffronCitySilphCoLatestProductSignText::
-	text "SILPH's latest"
-	line "product!"
+	text "SILPH's newest"
+	line "creation!"
 
-	para "Release to be"
-	line "determined..."
+	para "Its release, yet"
+	line "undetermined..."
 	done

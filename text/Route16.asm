@@ -4,23 +4,23 @@ _Route16Biker1BattleText::
 
 _Route16Biker1EndBattleText::
 	text "Don't you"
-	line "dare laugh!"
+	line "dare mock me!"
 	prompt
 
 _Route16Biker1AfterBattleText::
-	text "We like just"
-	line "hanging here,"
-	cont "what's it to you?"
+	text "We just linger"
+	line "here, what's it"
+	cont "to you, wretch?"
 	done
 
 _Route16Biker2BattleText::
-	text "Nice BIKE!"
-	line "Hand it over!"
+	text "Fine BIKE! Hand"
+	line "it to me now!"
 	done
 
 _Route16Biker2EndBattleText::
-	text "Knock"
-	line "out!"
+	text "Knocked"
+	line "out cold!"
 	prompt
 
 _Route16Biker2AfterBattleText::
@@ -29,23 +29,23 @@ _Route16Biker2AfterBattleText::
 	done
 
 _Route16Biker3BattleText::
-	text "Come out and play,"
+	text "Come play, my"
 	line "little mouse!"
 	done
 
 _Route16Biker3EndBattleText::
 	text "You"
-	line "little rat!"
+	line "wretched rat!"
 	prompt
 
 _Route16Biker3AfterBattleText::
-	text "I hate losing!"
-	line "Get away from me!"
+	text "I loathe losing!"
+	line "Get from my sight!"
 	done
 
 _Route16biker4BattleText::
 	text "Hey, you just"
-	line "bumped me!"
+	line "struck me!"
 	done
 
 _Route16Biker4EndBattleText::
@@ -53,63 +53,64 @@ _Route16Biker4EndBattleText::
 	prompt
 
 _Route16Biker4AfterBattleText::
-	text "You can also get"
-	line "to FUCHSIA from"
-	cont "VERMILION using a"
+	text "You may also reach"
+	line "FUCHSIA from"
+	cont "VERMILION by the"
 	cont "coastal road."
 	done
 
 _Route16Biker5BattleText::
 	text "I'm feeling"
-	line "hungry and mean!"
+	line "hungry and cruel!"
 	done
 
 _Route16Biker5EndBattleText::
-	text "Bad,"
-	line "bad, bad!"
+	text "Foul,"
+	line "foul, foul!"
 	prompt
 
 _Route16Biker5AfterBattleText::
 	text "I like my #MON"
-	line "ferocious! They"
-	cont "tear up enemies!"
+	line "vicious! They"
+	cont "rend their foes!"
 	done
 
 _Route16Biker6BattleText::
-	text "Sure, I'll go!"
+	text "Fine, I'll go!"
 	done
 
 _Route16Biker6EndBattleText::
-	text "Don't make"
-	line "me mad!"
+	text "Don't"
+	line "provoke me!"
 	prompt
 
 _Route16Biker6AfterBattleText::
-	text "I like harassing"
-	line "people with my"
-	cont "vicious #MON!"
+	text "I love tormenting"
+	line "folk with my"
+	cont "savage #MON!"
 	done
 
 _Route16Text7::
-	text "A sleeping #MON"
-	line "blocks the way!"
+	text "A slumbering"
+	line "#MON bars the"
+	cont "way!"
 	done
 
 _Route16SnorlaxWokeUpText::
-	text "SNORLAX woke up!"
+	text "SNORLAX awoke!"
 
-	para "It attacked in a"
-	line "grumpy rage!"
+	para "It struck out in"
+	line "a bitter rage!"
 	done
 
 _Route16SnorlaxReturnedToMountainsText::
-	text "With a big yawn,"
-	line "SNORLAX returned"
+	text "With a weary yawn,"
+	line "SNORLAX withdrew"
 	cont "to the mountains!"
 	done
 
 _Route16CyclingRoadSignText::
-	text "Enjoy the slope!"
+	text "Mind the slope!"
 	line "CYCLING ROAD"
 	done
 

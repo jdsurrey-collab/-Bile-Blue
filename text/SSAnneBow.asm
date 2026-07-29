@@ -1,26 +1,26 @@
 _SSAnneBowSuperNerdText::
-	text "The party's over."
-	line "The ship will be"
-	cont "departing soon."
+	text "The party's"
+	line "ended. We sail"
+	cont "again, soon."
 	done
 
 _SSAnneBowSailor1Text::
-	text "Scrubbing decks"
-	line "is hard work!"
+	text "Scrubbing decks-"
+	line "grim, endless work."
 	done
 
 _SSAnneBowCooltrainerMText::
 	text "Urf. I feel ill."
 
-	para "I stepped out to"
-	line "get some air."
+	para "I stepped out"
+	line "for air."
 	done
 
 _SSAnneBowSailor2BattleText::
-	text "Hey matey!"
+	text "Hey, matey."
 
-	para "Let's do a little"
-	line "jig!"
+	para "Care for a"
+	line "little jig?"
 	done
 
 _SSAnneBowSailor2EndBattleText::
@@ -29,14 +29,15 @@ _SSAnneBowSailor2EndBattleText::
 	prompt
 
 _SSAnneBowSailor2AfterBattleText::
-	text "How many kinds of"
-	line "#MON do you"
-	cont "think there are?"
+	text "How many kinds"
+	line "of #MON, do"
+	cont "you suppose there"
+	cont "are?"
 	done
 
 _SSAnneBowSailor3BattleText::
-	text "Ahoy there!"
-	line "Are you seasick?"
+	text "Ahoy. Are you"
+	line "seasick, too?"
 	done
 
 _SSAnneBowSailor3EndBattleText::
@@ -45,8 +46,8 @@ _SSAnneBowSailor3EndBattleText::
 	prompt
 
 _SSAnneBowSailor3AfterBattleText::
-	text "My Pa said there"
-	line "are 100 kinds of"
-	cont "#MON. I think"
-	cont "there are more."
+	text "My father said"
+	line "100 kinds of"
+	cont "#MON exist."
+	cont "More, I'd wager."
 	done

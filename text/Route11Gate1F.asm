@@ -1,14 +1,14 @@
 _Route11Gate1FGuardText::
-	text "When you catch"
-	line "lots of #MON,"
-	cont "isn't it hard to"
-	cont "think up names?"
+	text "Catch enough"
+	line "#MON, and"
+	cont "naming grows"
+	cont "wearisome, no?"
 
-	para "In LAVENDER TOWN,"
-	line "there's a man who"
-	cont "rates #MON"
+	para "In LAVENDER"
+	line "TOWN, a man"
+	cont "judges #MON"
 	cont "nicknames."
 
-	para "He'll help you"
-	line "rename them too!"
+	para "He'll rename"
+	line "them, too."
 	done

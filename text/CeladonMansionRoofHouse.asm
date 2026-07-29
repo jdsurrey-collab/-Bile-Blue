@@ -1,10 +1,10 @@
 _CeladonMansionRoofHouseHikerText::
-	text "I know everything"
-	line "about the world"
-	cont "of #MON in"
+	text "I know all there"
+	line "is of the world"
+	cont "of #MON within"
 	cont "your GAME BOY!"
 
-	para "Get together with"
-	line "your friends and"
-	cont "trade #MON!"
+	para "Gather your kin"
+	line "and trade your"
+	cont "#MON away!"
 	done

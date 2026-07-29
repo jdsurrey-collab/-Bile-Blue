@@ -1,18 +1,18 @@
 _Route10SuperNerd1BattleText::
-	text "Wow, are you a"
-	line "#MANIAC too?"
-	cont "Want to see my"
+	text "A #MANIAC too,"
+	line "are you? Care"
+	cont "to see my grim"
 	cont "collection?"
 	done
 
 _Route10SuperNerd1EndBattleText::
-	text "Humph."
-	line "I'm not angry!"
+	text "Humph. I'm not"
+	line "angry!"
 	prompt
 
 _Route10SuperNerd1AfterBattleText::
-	text "I have more rare"
-	line "#MON at home!"
+	text "I keep rarer"
+	line "#MON at home."
 	done
 
 _Route10Hiker1BattleText::
@@ -33,70 +33,72 @@ _Route10Hiker1AfterBattleText::
 	done
 
 _Route10SuperNerd2BattleText::
-	text "Hi kid, want to"
-	line "see my #MON?"
+	text "Care to see"
+	line "my #MON, child?"
 	done
 
 _Route10SuperNerd2EndBattleText::
-	text "Oh no!"
-	line "My #MON!"
+	text "Oh no."
+	line "My #MON..."
 	prompt
 
 _Route10SuperNerd2AfterBattleText::
-	text "I don't like you"
-	line "for beating me!"
+	text "I don't care for"
+	line "you, beating me."
 	done
 
 _Route10CooltrainerF1BattleText::
-	text "I've been to a"
-	line "#MON GYM a few"
-	cont "times. But, I"
-	cont "lost each time."
+	text "I've visited GYMs"
+	line "more than once."
+	cont "Lost, every"
+	cont "single time."
 	done
 
 _Route10CooltrainerF1EndBattleText::
-	text "Ohh!"
-	line "Blew it again!"
+	text "Ohh."
+	line "Failed again!"
 	prompt
 
 _Route10CooltrainerF1AfterBattleText::
-	text "I noticed some"
+	text "I've seen some"
 	line "#MANIACs"
-	cont "prowling around."
+	cont "lurking about."
 	done
 
 _Route10Hiker2BattleText::
-	text "Ah! This mountain"
-	line "air is delicious!"
+	text "Ah, this thin"
+	line "mountain air!"
 	done
 
 _Route10Hiker2EndBattleText::
 	text "That"
-	line "cleared my head!"
+	line "cleared my head,"
+	cont "some."
 	prompt
 
 _Route10Hiker2AfterBattleText::
-	text "I feel bloated on"
-	line "mountain air!"
+	text "I feel heavy"
+	line "on this air."
 	done
 
 _Route10CooltrainerF2BattleText::
-	text "I'm feeling a bit"
-	line "faint from this"
-	cont "tough hike."
+	text "I feel faint"
+	line "from this cruel"
+	cont "climb."
 	done
 
 _Route10CooltrainerF2EndBattleText::
 	text "I'm"
-	line "not up to it!"
+	line "not up to this!"
 	prompt
 
 _Route10CooltrainerF2AfterBattleText::
 	text "The #MON here"
-	line "are so chunky!"
-	cont "There should be a"
-	cont "pink one with a"
-	cont "floral pattern!"
+	line "are so stout."
+	cont "Somewhere, they"
+	cont "say, a pink one"
+	cont "blooms like a"
+	cont "flower."
 	done
 
 _Route10RockTunnelSignText::

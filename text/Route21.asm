@@ -1,7 +1,7 @@
 _Route21Fisher1BattleText::
-	text "You want to know"
-	line "if the fish are"
-	cont "biting?"
+	text "You wish to know"
+	line "if the fish still"
+	cont "bite, out here?"
 	done
 
 _Route21Fisher1EndBattleText::
@@ -10,12 +10,13 @@ _Route21Fisher1EndBattleText::
 
 _Route21Fisher1AfterBattleText::
 	text "I can't catch"
-	line "anything good!"
+	line "anything worth"
+	cont "the trouble!"
 	done
 
 _Route21Fisher2BattleText::
-	text "I got a big haul!"
-	line "Wanna go for it?"
+	text "I've a fine haul!"
+	line "Care to try me?"
 	done
 
 _Route21Fisher2EndBattleText::
@@ -24,13 +25,13 @@ _Route21Fisher2EndBattleText::
 	prompt
 
 _Route21Fisher2AfterBattleText::
-	text "I seem to only"
-	line "catch MAGIKARP!"
+	text "I only ever catch"
+	line "MAGIKARP, alas!"
 	done
 
 _Route21Swimmer1BattleText::
 	text "The sea cleanses"
-	line "my body and soul!"
+	line "body and soul!"
 	done
 
 _Route21Swimmer1EndBattleText::
@@ -38,13 +39,13 @@ _Route21Swimmer1EndBattleText::
 	prompt
 
 _Route21Swimmer1AfterBattleText::
-	text "I like the"
+	text "I favor the"
 	line "mountains too!"
 	done
 
 _Route21Swimmer2BattleText::
 	text "What's wrong with"
-	line "me swimming?"
+	line "my swimming here?"
 	done
 
 _Route21Swimmer2EndBattleText::
@@ -54,8 +55,8 @@ _Route21Swimmer2EndBattleText::
 
 _Route21Swimmer2AfterBattleText::
 	text "I look like what?"
-	line "A studded inner"
-	cont "tube? Get lost!"
+	line "A bloated inner"
+	cont "tube? Be gone!"
 	done
 
 _Route21Swimmer3BattleText::
@@ -70,12 +71,12 @@ _Route21Swimmer3EndBattleText::
 
 _Route21Swimmer3AfterBattleText::
 	text "Where'd you catch"
-	line "your #MON?"
+	line "your own #MON?"
 	done
 
 _Route21Swimmer4BattleText::
-	text "Right now, I'm in"
-	line "a triathlon meet!"
+	text "I'm mid-race in"
+	line "a grim triathlon!"
 	done
 
 _Route21Swimmer4EndBattleText::
@@ -84,54 +85,55 @@ _Route21Swimmer4EndBattleText::
 	prompt
 
 _Route21Swimmer4AfterBattleText::
-	text "I'm beat!"
-	line "But, I still have"
-	cont "the bike race and"
-	cont "marathon left!"
+	text "I'm spent!"
+	line "But the bike race"
+	cont "and the marathon"
+	cont "remain still!"
 	done
 
 _Route21Swimmer5BattleText::
 	text "Ahh! Feel the sun"
-	line "and the wind!"
+	line "and the cruel"
+	cont "wind!"
 	done
 
 _Route21Swimmer5EndBattleText::
 	text "Yow!"
-	line "I lost!"
+	line "I have lost!"
 	prompt
 
 _Route21Swimmer5AfterBattleText::
-	text "I'm sunburnt to a"
-	line "crisp!"
+	text "I'm burnt to a"
+	line "crisp, at last!"
 	done
 
 _Route21Fisher3BattleText::
 	text "Hey, don't scare"
-	line "away the fish!"
+	line "off the fish!"
 	done
 
 _Route21Fisher3EndBattleText::
 	text "Sorry!"
-	line "I didn't mean it!"
+	line "I meant no harm!"
 	prompt
 
 _Route21Fisher3AfterBattleText::
-	text "I was just angry"
+	text "I was only bitter"
 	line "that I couldn't"
-	cont "catch anything."
+	cont "catch a thing."
 	done
 
 _Route21Fisher4BattleText::
 	text "Keep me company"
-	line "'til I get a hit!"
+	line "'til I get a bite!"
 	done
 
 _Route21Fisher4EndBattleText::
 	text "That"
-	line "burned some time."
+	line "killed some time."
 	prompt
 
 _Route21Fisher4AfterBattleText::
-	text "Oh wait! I got a"
-	line "bite! Yeah!"
+	text "Oh wait! A bite"
+	line "at last! Yes!"
 	done

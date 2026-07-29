@@ -96,8 +96,7 @@ Init::
 	dec a
 	ld [wUpdateSpritesEnabled], a
 
-	predef PlayIntro
-
+	; skip the copyright/shooting-star/Nidorino-Gengar intro; go straight to the title screen
 	call DisableLCD
 	call ClearVram
 	call GBPalNormal

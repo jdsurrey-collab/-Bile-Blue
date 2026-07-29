@@ -1,9 +1,9 @@
 _CinnabarLabMetronomeRoomScientist1Text::
 	text "Tch-tch-tch!"
-	line "I made a cool TM!"
+	line "I made a grim TM!"
 
-	para "It can cause all"
-	line "kinds of fun!"
+	para "It may summon"
+	line "strange chaos!"
 	prompt
 
 _CinnabarLabMetronomeRoomScientist1ReceivedTM35Text::
@@ -18,10 +18,10 @@ _CinnabarLabMetronomeRoomScientist1TM35ExplanationText::
 	line "That's the sound"
 	cont "of a METRONOME!"
 
-	para "It tweaks your"
-	line "#MON's brain"
-	cont "into using moves"
-	cont "it doesn't know!"
+	para "It tricks your"
+	line "#MON's mind"
+	cont "into moves it"
+	cont "never learned!"
 	done
 
 _CinnabarLabMetronomeRoomScientist1TM35NoRoomText::
@@ -30,9 +30,9 @@ _CinnabarLabMetronomeRoomScientist1TM35NoRoomText::
 	done
 
 _CinnabarLabMetronomeRoomScientist2Text::
-	text "EEVEE can evolve"
-	line "into 1 of 3 kinds"
-	cont "of #MON."
+	text "EEVEE may become"
+	line "1 of 3 kinds of"
+	cont "#MON."
 	done
 
 _CinnabarLabMetronomeRoomPCText::
@@ -41,17 +41,17 @@ _CinnabarLabMetronomeRoomPCText::
 
 	para "..."
 
-	para "The 3 legendary"
-	line "bird #MON are"
-	cont "ARTICUNO, ZAPDOS"
+	para "The 3 fabled bird"
+	line "#MON are"
+	cont "ARTICUNO, ZAPDOS,"
 	cont "and MOLTRES."
 
 	para "Their whereabouts"
-	line "are unknown."
+	line "remain unknown."
 
-	para "We plan to explore"
-	line "the cavern close"
-	cont "to CERULEAN."
+	para "We plan to search"
+	line "the cavern near"
+	cont "CERULEAN."
 
 	para "From: #MON"
 	line "RESEARCH TEAM"

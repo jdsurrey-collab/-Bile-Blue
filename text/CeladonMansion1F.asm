@@ -4,10 +4,11 @@ _CeladonMansion1FMeowthText::
 
 _CeladonMansion1FGrannyText::
 	text "My dear #MON"
-	line "keep me company."
+	line "are all the kin"
+	cont "I have left."
 
-	para "MEOWTH even brings"
-	line "money home!"
+	para "MEOWTH even"
+	line "brings coin home!"
 	done
 
 _CeladonMansion1FClefairyText::

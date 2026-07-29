@@ -1,9 +1,10 @@
 _PokemonTower5FChanneler1Text::
-	text "Come, child! I"
-	line "sealed this space"
-	cont "with white magic!"
+	text "Come, child. I've"
+	line "warded this place"
+	cont "with white magic."
 
-	para "You can rest here!"
+	para "Rest here, safe"
+	line "a while."
 	done
 
 _PokemonTower5FChanneler2BattleText::
@@ -58,14 +59,15 @@ _PokemonTower5FChanneler5EndBattleText::
 
 _PokemonTower5FChanneler5AfterBattleText::
 	text "I fell to evil"
-	line "spirits despite"
-	cont "my training!"
+	line "spirits, despite"
+	cont "all my training."
 	done
 
 _PokemonTower5FPurifiedZoneText::
-	text "Entered purified,"
-	line "protected zone!"
+	text "Entered a warded,"
+	line "purified space."
 
 	para "<PLAYER>'s #MON"
-	line "are fully healed!"
+	line "are briefly"
+	cont "healed."
 	done

@@ -1,174 +1,178 @@
 _Route13CooltrainerM1BattleText::
-	text "My bird #MON"
-	line "want to scrap!"
+	text "My ravens hunger"
+	line "for the fight!"
 	done
 
 _Route13CooltrainerM1EndBattleText::
 	text "My"
-	line "bird combo lost?"
+	line "ravens have died?"
 	prompt
 
 _Route13CooltrainerM1AfterBattleText::
-	text "My #MON look"
-	line "happy even though"
-	cont "they lost."
+	text "My #MON smile,"
+	line "even bowed in"
+	cont "their defeat."
 	done
 
 _Route13CooltrainerF1BattleText::
-	text "I'm told I'm good"
-	line "for a kid!"
+	text "They deem me"
+	line "gifted, for a"
+	cont "child of my age."
 	done
 
 _Route13CooltrainerF1EndBattleText::
-	text "Ohh!"
-	line "I lost!"
+	text "Oh!"
+	line "I have lost!"
 	prompt
 
 _Route13CooltrainerF1AfterBattleText::
-	text "I want to become"
-	line "a good trainer."
-	cont "I'll train hard."
+	text "I mean to become"
+	line "a true trainer."
+	cont "I shall suffer"
+	cont "for that end."
 	done
 
 _Route13CooltrainerF2BattleText::
-	text "Wow! Your BADGEs"
-	line "are too cool!"
+	text "Your badges gleam"
+	line "too brightly!"
 	done
 
 _Route13CooltrainerF2EndBattleText::
 	text "Not"
-	line "enough!"
+	line "bright enough!"
 	prompt
 
 _Route13CooltrainerF2AfterBattleText::
-	text "You got those"
-	line "BADGEs from GYM"
-	cont "LEADERs. I know!"
+	text "Those badges cost"
+	line "GYM LEADERs their"
+	cont "pride. I know it."
 	done
 
 _Route13CooltrainerF3BattleText::
-	text "My cute #MON"
+	text "My gentle #MON"
 	line "wish to make your"
-	cont "acquaintance."
+	cont "grim acquaintance."
 	done
 
 _Route13CooltrainerF3EndBattleText::
-	text "Wow!"
-	line "You totally won!"
+	text "Oh!"
+	line "You've won it all!"
 	prompt
 
 _Route13CooltrainerF3AfterBattleText::
-	text "You have to make"
-	line "#MON fight to"
-	cont "toughen them up!"
+	text "One must make"
+	line "#MON suffer to"
+	cont "harden them so!"
 	done
 
 _Route13CooltrainerF4BattleText::
-	text "I found CARBOS in"
-	line "a cave once."
+	text "I found CARBOS"
+	line "in a tomb, once."
 	done
 
 _Route13CooltrainerF4EndBattleText::
 	text "Just"
-	line "messed up!"
+	line "undone!"
 	prompt
 
 _Route13CooltrainerF4AfterBattleText::
-	text "CARBOS boosted"
-	line "the SPEED of my"
-	cont "#MON."
+	text "CARBOS quickened"
+	line "the pace of my"
+	cont "poor #MON."
 	done
 
 _Route13CooltrainerM2BattleText::
-	text "The wind's blowing"
-	line "my way!"
+	text "The wind favors"
+	line "me this hour!"
 	done
 
 _Route13CooltrainerM2EndBattleText::
 	text "The"
-	line "wind turned!"
+	line "wind has turned!"
 	prompt
 
 _Route13CooltrainerM2AfterBattleText::
-	text "I'm beat. I guess"
-	line "I'll FLY home."
+	text "I am spent. I'll"
+	line "wing my way home."
 	done
 
 _Route13Beauty1BattleText::
-	text "Sure, I'll play"
-	line "with you!"
+	text "Very well, I"
+	line "shall indulge you."
 	done
 
 _Route13Beauty1EndBattleText::
 	text "Oh!"
-	line "You little brute!"
+	line "You savage thing!"
 	prompt
 
 _Route13Beauty1AfterBattleText::
-	text "I wonder which is"
-	line "stronger, male or"
-	cont "female #MON?"
+	text "I wonder which"
+	line "suffers more, the"
+	cont "male or female?"
 	done
 
 _Route13Beauty2BattleText::
-	text "Do you want to"
-	line "#MON with me?"
+	text "Will you #MON"
+	line "with a lonely"
+	cont "soul like me?"
 	done
 
 _Route13Beauty2EndBattleText::
 	text "It's over"
-	line "already?"
+	line "already, then?"
 	prompt
 
 _Route13Beauty2AfterBattleText::
-	text "I don't know"
-	line "anything about"
-	cont "#MON. I just"
-	cont "like cool ones!"
+	text "I know nothing"
+	line "of #MON. I"
+	cont "just crave beauty,"
+	cont "however cold."
 	done
 
 _Route13BikerBattleText::
 	text "What're you"
-	line "lookin' at?"
+	line "gawking at?"
 	done
 
 _Route13BikerEndBattleText::
-	text "Dang!"
-	line "Stripped gears!"
+	text "Damn!"
+	line "Stripped my gears!"
 	prompt
 
 _Route13BikerAfterBattleText::
-	text "Get lost!"
+	text "Get out of my"
+	line "sight!"
 	done
 
 _Route13CooltrainerM3BattleText::
-	text "I always go with"
-	line "bird #MON!"
+	text "I favor carrion"
+	line "birds always!"
 	done
 
 _Route13CooltrainerM3EndBattleText::
 	text "Out"
-	line "of power!"
+	line "of breath!"
 	prompt
 
 _Route13CooltrainerM3AfterBattleText::
-	text "I wish I could"
-	line "fly like PIDGEY"
-	cont "and PIDGEOTTO..."
+	text "I wish I could fly"
+	line "as PIDGEY and"
+	cont "PIDGEOTTO do..."
 	done
 
 _Route13TrainerTips1Text::
 	text "TRAINER TIPS"
 
-	para "Look to the left"
-	line "of that post!"
+	para "Look left of"
+	line "that grim post!"
 	done
 
 _Route13TrainerTips2Text::
 	text "TRAINER TIPS"
 
-	para "Use SELECT to"
-	line "switch items in"
+	para "Press SELECT to"
+	line "shift items in"
 	cont "the ITEM window!"
 	done
 

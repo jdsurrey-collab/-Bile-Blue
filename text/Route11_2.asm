@@ -1,26 +1,26 @@
 _Route11SuperNerd2EndBattleText::
-	text "Whoa!"
-	line "You spark plug!"
+	text "Whoa! Quite the"
+	line "spark, you are!"
 	prompt
 
 _Route11SuperNerd2AfterBattleText::
-	text "Well, better get"
-	line "back to work."
+	text "Best get back"
+	line "to work, then."
 	done
 
 _Route11Youngster4BattleText::
-	text "My #MON should"
-	line "be ready by now!"
+	text "My #MON ought"
+	line "be ready now!"
 	done
 
 _Route11Youngster4EndBattleText::
-	text "Too"
-	line "much, too young!"
+	text "Too much,"
+	line "too young!"
 	prompt
 
 _Route11Youngster4AfterBattleText::
-	text "I better go find"
-	line "stronger ones!"
+	text "I'll go find"
+	line "stronger #MON!"
 	done
 
 _Route11DiglettsCaveSignText::

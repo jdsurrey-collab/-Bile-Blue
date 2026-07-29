@@ -1,6 +1,6 @@
 _PokemonMansion3FSuperNerdBattleText::
-	text "This place is"
-	line "like, huge!"
+	text "This ruin is"
+	line "simply vast!"
 	done
 
 _PokemonMansion3FSuperNerdEndBattleText::
@@ -8,13 +8,14 @@ _PokemonMansion3FSuperNerdEndBattleText::
 	prompt
 
 _PokemonMansion3FSuperNerdAfterBattleText::
-	text "I wonder where"
-	line "my partner went."
+	text "I wonder where my"
+	line "companion went."
 	done
 
 _PokemonMansion3FScientistBattleText::
 	text "My mentor once"
-	line "lived here."
+	line "dwelt in this"
+	cont "very ruin."
 	done
 
 _PokemonMansion3FScientistEndBattleText::
@@ -24,7 +25,7 @@ _PokemonMansion3FScientistEndBattleText::
 
 _PokemonMansion3FScientistAfterBattleText::
 	text "So, you're stuck?"
-	line "Try jumping off"
+	line "Try leaping down"
 	cont "over there!"
 	done
 
@@ -33,5 +34,6 @@ _PokemonMansion3FDiaryText::
 	line "MEW gave birth."
 
 	para "We named the"
-	line "newborn MEWTWO."
+	line "newborn, cursed"
+	cont "child, MEWTWO."
 	done

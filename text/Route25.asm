@@ -1,58 +1,58 @@
 _Route25Youngster1BattleText::
-	text "Local trainers"
-	line "come here to"
-	cont "practice!"
+	text "Trainers come"
+	line "here to hone"
+	cont "themselves."
 	done
 
 _Route25Youngster1EndBattleText::
 	text "You're"
-	line "decent."
+	line "capable."
 	prompt
 
 _Route25Youngster1AfterBattleText::
-	text "All #MON have"
-	line "weaknesses. It's"
-	cont "best to raise"
-	cont "different kinds."
+	text "Every #MON has"
+	line "a weakness. Raise"
+	cont "many kinds, and"
+	cont "hedge against it."
 	done
 
 _Route25Youngster2BattleText::
-	text "Dad took me to a"
-	line "great party on"
-	cont "S.S.ANNE at"
+	text "Father took me"
+	line "to a party on"
+	cont "the S.S.ANNE, in"
 	cont "VERMILION CITY!"
 	done
 
 _Route25Youngster2EndBattleText::
 	text "I'm"
-	line "not mad!"
+	line "not cross!"
 	prompt
 
 _Route25Youngster2AfterBattleText::
-	text "On S.S.ANNE, I"
-	line "saw trainers from"
-	cont "around the world."
+	text "Aboard, I saw"
+	line "trainers from"
+	cont "every corner."
 	done
 
 _Route25CooltrainerMBattleText::
-	text "I'm a cool guy."
-	line "I've got a girl"
-	cont "friend!"
+	text "I'm quite the"
+	line "catch. I've a"
+	cont "sweetheart, too!"
 	done
 
 _Route25CooltrainerMEndBattleText::
 	text "Aww,"
-	line "darn..."
+	line "blast..."
 	prompt
 
 _Route25CooltrainerMAfterBattleText::
-	text "Oh well. My girl"
-	line "will cheer me up."
+	text "No matter. She'll"
+	line "console me."
 	done
 
 _Route25CooltrainerF1BattleText::
-	text "Hi! My boy"
-	line "friend is cool!"
+	text "Hello. My"
+	line "sweetheart's grand!"
 	done
 
 _Route25CooltrainerF1EndBattleText::
@@ -61,13 +61,13 @@ _Route25CooltrainerF1EndBattleText::
 	prompt
 
 _Route25CooltrainerF1AfterBattleText::
-	text "I wish my guy was"
-	line "as good as you!"
+	text "I wish my dear"
+	line "fought as well."
 	done
 
 _Route25Youngster3BattleText::
-	text "I knew I had to"
-	line "fight you!"
+	text "I knew we'd"
+	line "have to fight!"
 	done
 
 _Route25Youngster3EndBattleText::
@@ -76,33 +76,33 @@ _Route25Youngster3EndBattleText::
 	prompt
 
 _Route25Youngster3AfterBattleText::
-	text "If your #MON"
-	line "gets confused or"
-	cont "falls asleep,"
-	cont "switch it!"
+	text "Should your #MON"
+	line "grow confused, or"
+	cont "fall asleep,"
+	cont "withdraw it."
 	done
 
 _Route25CooltrainerF2BattleText::
-	text "My friend has a"
-	line "cute #MON."
-	cont "I'm so jealous!"
+	text "My friend keeps"
+	line "a fine #MON."
+	cont "I envy her."
 	done
 
 _Route25CooltrainerF2EndBattleText::
-	text "I'm"
-	line "not so jealous!"
+	text "Less"
+	line "envious now."
 	prompt
 
 _Route25CooltrainerF2AfterBattleText::
-	text "You came from MT."
-	line "MOON? May I have"
+	text "From MT.MOON?"
+	line "Might you spare"
 	cont "a CLEFAIRY?"
 	done
 
 _Route25Hiker1BattleText::
-	text "I just got down"
-	line "from MT.MOON,"
-	cont "but I'm ready!"
+	text "Just down from"
+	line "MT.MOON, but"
+	cont "I'm ready still!"
 	done
 
 _Route25Hiker1EndBattleText::
@@ -111,13 +111,13 @@ _Route25Hiker1EndBattleText::
 	prompt
 
 _Route25Hiker1AfterBattleText::
-	text "Drat!"
-	line "A ZUBAT bit me"
-	cont "back in there."
+	text "Drat. A ZUBAT"
+	line "bled me, back"
+	cont "in that dark."
 	done
 
 _Route25Hiker2BattleText::
-	text "I'm off to see a"
+	text "Off to see a"
 	line "#MON collector"
 	cont "at the cape!"
 	done
@@ -128,15 +128,15 @@ _Route25Hiker2EndBattleText::
 	prompt
 
 _Route25Hiker2AfterBattleText::
-	text "The collector has"
-	line "many rare kinds"
-	cont "of #MON."
+	text "The collector"
+	line "keeps many rare"
+	cont "#MON, caged."
 	done
 
 _Route25Hiker3BattleText::
-	text "You're going to"
-	line "see BILL? First,"
-	cont "let's fight!"
+	text "Off to see BILL?"
+	line "First, you'll"
+	cont "fight me."
 	done
 
 _Route25Hiker3EndBattleText::
@@ -145,12 +145,12 @@ _Route25Hiker3EndBattleText::
 	prompt
 
 _Route25Hiker3AfterBattleText::
-	text "The trail below"
-	line "is a shortcut to"
+	text "That trail below"
+	line "cuts quick to"
 	cont "CERULEAN CITY."
 	done
 
 _Route25BillSignText::
 	text "SEA COTTAGE"
-	line "BILL lives here!"
+	line "BILL dwells here."
 	done

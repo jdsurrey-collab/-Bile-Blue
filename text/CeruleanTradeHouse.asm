@@ -1,9 +1,9 @@
 _CeruleanTradeHouseGrannyText::
-	text "My husband likes"
-	line "trading #MON."
+	text "My husband's fond"
+	line "of trading #MON."
 
-	para "If you are a"
-	line "collector, would"
-	cont "you please trade"
-	cont "with him?"
+	para "If you collect"
+	line "them too, would"
+	cont "you trade with"
+	cont "an old man?"
 	done

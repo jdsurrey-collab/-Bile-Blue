@@ -1,20 +1,20 @@
 _Route12SuperRodHouseFishingGuruDoYouLikeToFishText::
 	text "I'm the FISHING"
-	line "GURU's brother!"
+	line "GURU's brother."
 
-	para "I simply Looove"
-	line "fishing!"
+	para "I love it, too,"
+	line "more than most."
 
-	para "Do you like to"
-	line "fish?"
+	para "Do you care for"
+	line "it, as well?"
 	done
 
 _Route12SuperRodHouseFishingGuruReceivedSuperRodText::
-	text "Grand! I like"
-	line "your style!"
+	text "Splendid. I like"
+	line "your spirit!"
 
-	para "Take this and"
-	line "fish, young one!"
+	para "Take this, and"
+	line "fish, child."
 
 	para "<PLAYER> received"
 	line "a @"
@@ -25,38 +25,38 @@ _Route12SuperRodHouseFishingGuruReceivedSuperRodText::
 _Route12SuperRodHouseFishingGuruFishingWayOfLifeText::
 	text_start
 
-	para "Fishing is a way"
-	line "of life!"
+	para "Fishing is a"
+	line "way of grief,"
+	cont "and patience."
 
-	para "From the seas to"
-	line "rivers, go out"
-	cont "and land the big"
-	cont "one!"
+	para "From sea to"
+	line "river, go and"
+	cont "land the great"
+	cont "one."
 	done
 
 _Route12SuperRodHouseFishingGuruThatsDisappointingText::
-	text "Oh... That's so"
-	line "disappointing..."
+	text "Oh... How"
+	line "disheartening..."
 	done
 
 _Route12SuperRodHouseFishingGuruTryFishingText::
-	text "Hello there,"
-	line "<PLAYER>!"
+	text "Ah, <PLAYER>."
 
-	para "Use the SUPER ROD"
-	line "in any water!"
-	cont "You can catch"
-	cont "different kinds"
-	cont "of #MON."
+	para "The SUPER ROD"
+	line "works in any"
+	cont "water. It will"
+	cont "land rarer"
+	cont "#MON."
 
-	para "Try fishing"
-	line "wherever you can!"
+	para "Fish wherever"
+	line "you dare."
 	done
 
 _Route12SuperRodHouseFishingGuruNoRoomText::
-	text "Oh no!"
+	text "Oh no."
 
-	para "I had a gift for"
-	line "you, but you have"
-	cont "no room for it!"
+	para "My gift, wasted-"
+	line "you've no room"
+	cont "for it."
 	done

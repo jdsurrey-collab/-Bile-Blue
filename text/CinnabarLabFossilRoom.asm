@@ -5,7 +5,8 @@ _CinnabarLabFossilRoomScientist1Text::
 	line "doctor!"
 
 	para "I study here rare"
-	line "#MON fossils!"
+	line "#MON fossils,"
+	cont "dead so long!"
 
 	para "You! Have you a"
 	line "fossil for me?"
@@ -27,7 +28,7 @@ _CinnabarLabFossilRoomScientist1FossilIsBackToLifeText::
 	text "Where were you?"
 
 	para "Your fossil is"
-	line "back to life!"
+	line "living again!"
 
 	para "It was @"
 	text_ram wStringBuffer
@@ -45,13 +46,13 @@ _CinnabarLabFossilRoomScientist1SeesFossilText::
 	line "@"
 	text_ram wStringBuffer
 	text ", a"
-	cont "#MON that is"
-	cont "already extinct!"
+	cont "#MON long dead"
+	cont "and forgotten!"
 
 	para "My Resurrection"
 	line "Machine will make"
 	cont "that #MON live"
-	cont "again!"
+	cont "once more!"
 	done
 
 _CinnabarLabFossilRoomScientist1TakesFossilText::

@@ -1,25 +1,25 @@
 _CeladonMart5FGentlemanText::
-	text "#MON ability"
-	line "enhancers can be"
-	cont "bought only here."
+	text "#MON vigor"
+	line "elixirs are sold"
+	cont "only here."
 
-	para "Use CALCIUM to"
-	line "increase SPECIAL"
-	cont "abilities."
+	para "CALCIUM to"
+	line "quicken SPECIAL"
+	cont "powers."
 
-	para "Use CARBOS to"
-	line "increase SPEED."
+	para "CARBOS to"
+	line "quicken SPEED."
 	done
 
 _CeladonMart5FSailorText::
-	text "I'm here for"
-	line "#MON ability"
-	cont "enhancers."
+	text "I've come for"
+	line "#MON vigor"
+	cont "elixirs."
 
-	para "PROTEIN increases"
-	line "ATTACK power."
+	para "PROTEIN swells"
+	line "ATTACK's might."
 
-	para "IRON increases"
+	para "IRON hardens"
 	line "DEFENSE!"
 	done
 

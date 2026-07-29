@@ -1,7 +1,7 @@
 _PokemonMansion1FScientistBattleText::
-	text "Who are you? There"
-	line "shouldn't be"
-	cont "anyone here."
+	text "Who are you? None"
+	line "ought to dwell"
+	cont "in these ashes."
 	done
 
 _PokemonMansion1FScientistEndBattleText::
@@ -9,13 +9,13 @@ _PokemonMansion1FScientistEndBattleText::
 	prompt
 
 _PokemonMansion1FScientistAfterBattleText::
-	text "A key? I don't"
-	line "know what you're"
-	cont "talking about."
+	text "A key? I know"
+	line "not what you"
+	cont "speak of."
 	done
 
 _PokemonMansion1FSwitchText::
-	text "A secret switch!"
+	text "A hidden switch!"
 
 	para "Press it?"
 	done

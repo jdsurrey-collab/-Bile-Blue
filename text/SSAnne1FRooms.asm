@@ -4,41 +4,41 @@ _SSAnne1FRoomsWigglytuffText::
 	text_end
 
 _SSAnne1FRoomsGentleman1BattleText::
-	text "I travel alone"
-	line "on my journeys!"
+	text "I travel quite"
+	line "alone, always."
 
-	para "My #MON are my"
-	line "only friends!"
+	para "My #MON, my"
+	line "only company."
 	done
 
 _SSAnne1FRoomsGentleman1EndBattleText::
 	text "My, my"
-	line "friends..."
+	line "companions..."
 	prompt
 
 _SSAnne1FRoomsGentleman1AfterBattleText::
-	text "You should be"
-	line "nice to friends!"
+	text "Be kind to your"
+	line "companions."
 	done
 
 _SSAnne1FRoomsGentleman2BattleText::
-	text "You pup! How dare"
-	line "you barge in!"
+	text "You pup. How"
+	line "dare you intrude!"
 	done
 
 _SSAnne1FRoomsGentleman2EndBattleText::
 	text "Humph!"
-	line "You rude child!"
+	line "Insolent child!"
 	prompt
 
 _SSAnne1FRoomsGentleman2AfterBattleText::
-	text "I wish to be left"
-	line "alone! Get out!"
+	text "I wish to be"
+	line "left alone. Go."
 	done
 
 _SSAnne1FRoomsYoungsterBattleText::
-	text "I love #MON!"
-	line "Do you?"
+	text "I love #MON."
+	line "And you?"
 	done
 
 _SSAnne1FRoomsYoungsterEndBattleText::
@@ -47,59 +47,59 @@ _SSAnne1FRoomsYoungsterEndBattleText::
 	prompt
 
 _SSAnne1FRoomsYoungsterAfterBattleText::
-	text "Let me be your"
-	line "friend, OK?"
+	text "Be my friend,"
+	line "won't you?"
 
-	para "Then we can trade"
-	line "#MON!"
+	para "Then we might"
+	line "trade #MON."
 	done
 
 _SSAnne1FRoomsCooltrainerFBattleText::
-	text "I collected these"
-	line "#MON from all"
-	cont "around the world!"
+	text "I gathered these"
+	line "#MON from"
+	cont "the whole world!"
 	done
 
 _SSAnne1FRoomsCooltrainerFEndBattleText::
-	text "Oh no!"
-	line "I went around the"
-	cont "world for these!"
+	text "Oh no! I circled"
+	line "the world for"
+	cont "these #MON!"
 	prompt
 
 _SSAnne1FRoomsCooltrainerFAfterBattleText::
 	text "You hurt my poor"
 	line "worldly #MON!"
 
-	para "I demand that you"
-	line "heal them at a"
+	para "See them healed"
+	line "at once, at a"
 	cont "#MON CENTER!"
 	done
 
 _SSAnne1FRoomsGirl1Text::
-	text "Waiter, I would"
-	line "like a cherry pie"
-	cont "please!"
+	text "Waiter, I should"
+	line "like a cherry"
+	cont "pie, if you please."
 	done
 
 _SSAnne1FRoomsMiddleAgedManText::
-	text "A cruise is so"
-	line "elegant yet cozy!"
+	text "A cruise, so"
+	line "elegant, so brief."
 	done
 
 _SSAnne1FRoomsLittleGirlText::
-	text "I always travel"
-	line "with WIGGLYTUFF!"
+	text "I never travel"
+	line "without WIGGLYTUFF!"
 	done
 
 _SSAnne1FRoomsGirl2Text::
-	text "We are cruising"
-	line "around the world."
+	text "We circle the"
+	line "world, aimlessly."
 	done
 
 _SSAnne1FRoomsGentleman3Text::
-	text "Ssh! I'm a GLOBAL"
-	line "POLICE agent!"
+	text "Ssh. I serve the"
+	line "GLOBAL POLICE."
 
-	para "I'm on the trail"
-	line "of TEAM ROCKET!"
+	para "I hunt TEAM"
+	line "ROCKET, quietly."
 	done

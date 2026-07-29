@@ -1,58 +1,58 @@
 _SilphCo6FSilphWorkerM1TookOverTheBuildingText::
 	text "The ROCKETs came"
-	line "and took over the"
-	cont "building!"
+	line "and seized this"
+	cont "whole building!"
 	done
 
 _SilphCo6FSilphWorkerM1BackToWorkText::
-	text "Well, better get"
-	line "back to work!"
+	text "Well, back to"
+	line "grim labor, then!"
 	done
 
 _SilphCo6FSilphWorkerMHelpMePleaseText::
 	text "Oh dear, oh dear."
-	line "Help me please!"
+	line "Help me, I beg!"
 	done
 
 _SilphCo6FSilphWorkerMWeGotEngagedText::
-	text "We got engaged!"
+	text "We are betrothed!"
 	line "Heheh!"
 	done
 
 _SilphCo6FSilphWorkerF1SuchACowardText::
-	text "Look at him! He's"
-	line "such a coward!"
+	text "Look at him! Such"
+	line "a coward, truly!"
 	done
 
 _SilphCo6FSilphWorkerF1HaveToMarryHimText::
-	text "I feel so sorry"
-	line "for him, I have"
-	cont "to marry him!"
+	text "I pity him so, I"
+	line "suppose I must"
+	cont "wed him!"
 	done
 
 _SilphCo6FSilphWorkerF2TeamRocketConquerWorldText::
-	text "TEAM ROCKET is"
-	line "trying to conquer"
-	cont "the world with"
+	text "TEAM ROCKET means"
+	line "to conquer the"
+	cont "world, through"
 	cont "#MON!"
 	done
 
 _SilphCo6FSilphWorkerF2TeamRocketRanText::
-	text "TEAM ROCKET ran"
-	line "because of you!"
+	text "TEAM ROCKET fled,"
+	line "all thanks to you!"
 	done
 
 _SilphCo6FSilphWorkerM3TargetedSilphText::
 	text "They must have"
-	line "targeted SILPH"
-	cont "for our #MON"
-	cont "products."
+	line "marked SILPH for"
+	cont "our #MON"
+	cont "creations."
 	done
 
 _SilphCo6FSilphWorkerM3WorkForSilphText::
-	text "Come work for"
-	line "SILPH when you"
-	cont "get older!"
+	text "Come serve SILPH"
+	line "when you are"
+	cont "grown, someday!"
 	done
 
 _SilphCo6FRocket1BattleText::
@@ -67,17 +67,17 @@ _SilphCo6FRocket1EndBattleText::
 
 _SilphCo6FRocket1AfterBattleText::
 	text "No matter!"
-	line "My brothers will"
-	cont "avenge me!"
+	line "My brothers shall"
+	cont "avenge my fall!"
 	done
 
 _SilphCo6FScientistBattleText::
 	text "That rotten"
 	line "PRESIDENT!"
 
-	para "He shouldn't have"
-	line "sent me to the"
-	cont "TIKSI BRANCH!"
+	para "He should not have"
+	line "banished me to"
+	cont "the TIKSI BRANCH!"
 	done
 
 _SilphCo6FScientistEndBattleText::
@@ -86,7 +86,7 @@ _SilphCo6FScientistEndBattleText::
 
 _SilphCo6FScientistAfterBattleText::
 	text "TIKSI BRANCH?"
-	line "It's in Russian"
+	line "A frozen, Russian"
 	cont "no man's land!"
 	done
 
@@ -103,5 +103,5 @@ _SilphCo6FRocket2EndBattleText::
 _SilphCo6FRocket2AfterBattleText::
 	text "If you stand for"
 	line "justice, you"
-	cont "betray evil!"
+	cont "betray true evil!"
 	done

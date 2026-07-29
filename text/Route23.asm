@@ -1,24 +1,24 @@
 _Route23YouDontHaveTheBadgeYetText::
-	text "You can pass here"
-	line "only if you have"
-	cont "the @"
+	text "None may pass"
+	line "here, save those"
+	cont "who bear the @"
 	text_ram wNameBuffer
 	text "!"
 
-	para "You don't have the"
+	para "You lack the"
 	line "@"
 	text_ram wNameBuffer
-	text " yet!"
+	text " still!"
 
-	para "You have to have"
-	line "it to get to"
+	para "You must have it"
+	line "to reach the"
 	cont "#MON LEAGUE!@"
 	text_end
 
 _Route23OhThatIsTheBadgeText::
-	text "You can pass here"
-	line "only if you have"
-	cont "the @"
+	text "None may pass"
+	line "here, save those"
+	cont "who bear the @"
 	text_ram wNameBuffer
 	text "!"
 
@@ -31,8 +31,8 @@ _Route23OhThatIsTheBadgeText::
 _Route23GoRightAheadText::
 	text_start
 
-	para "OK then! Please,"
-	line "go right ahead!"
+	para "Very well, then!"
+	line "Go right ahead!"
 	done
 
 _Route23VictoryRoadGateSignText::

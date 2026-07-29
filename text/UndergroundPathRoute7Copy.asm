@@ -1,35 +1,35 @@
 _UndergroundPathRoute7CopyUnusedGirlText::
-	text "I want to shop at"
-	line "the dept. store"
-	cont "in CELADON but..."
+	text "I'd shop at the"
+	line "CELADON store,"
+	cont "but..."
 
-	para "There are so many"
-	line "rough looking"
-	cont "people there."
+	para "So many grim"
+	line "faces linger"
+	cont "there."
 	done
 
 _UndergroundPathRoute7CopyUnusedTeamRocketHadAHideoutText::
-	text "TEAM ROCKET had a"
-	line "secret hideout in"
+	text "TEAM ROCKET kept"
+	line "a hidden lair in"
 	cont "CELADON CITY?"
 	done
 
 _UndergroundPathRoute7CopyUnusedMiddleAgedManText::
-	text "You're here to"
-	line "shop in CELADON?"
+	text "Shopping in"
+	line "CELADON?"
 
-	para "Just step outside"
-	line "and head west!"
+	para "Step out, then"
+	line "head west."
 	done
 
 _UndergroundPathRoute7CopyUnusedGoesUnderSaffronText::
-	text "The UNDERGROUND"
-	line "PATH goes beneath"
-	cont "SAFFRON and leads"
-	cont "to LAVENDER."
+	text "This PATH runs"
+	line "beneath SAFFRON,"
+	cont "onward to"
+	cont "LAVENDER."
 
-	para "If you're heading"
-	line "to CERULEAN, go"
-	cont "to the building"
-	cont "across the road."
+	para "For CERULEAN,"
+	line "cross to the"
+	cont "building across"
+	cont "the road."
 	done

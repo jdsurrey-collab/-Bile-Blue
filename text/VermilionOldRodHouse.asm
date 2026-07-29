@@ -1,20 +1,20 @@
 _VermilionOldRodHouseFishingGuruDoYouLikeToFishText::
-	text "I'm the FISHING"
-	line "GURU!"
+	text "I am the FISHING"
+	line "GURU."
 
-	para "I simply Looove"
-	line "fishing!"
+	para "I love it more"
+	line "than most things."
 
-	para "Do you like to"
-	line "fish?"
+	para "Do you care for"
+	line "it, too?"
 	done
 
 _VermilionOldRodHouseFishingGuruTakeThisText::
-	text "Grand! I like"
-	line "your style!"
+	text "Splendid. I like"
+	line "your spirit!"
 
-	para "Take this and"
-	line "fish, young one!"
+	para "Take this, and"
+	line "fish, child."
 
 	para "<PLAYER> received"
 	line "an @"
@@ -25,31 +25,32 @@ _VermilionOldRodHouseFishingGuruTakeThisText::
 _VermilionOldRodHouseFishingGuruFishingIsAWayOfLifeText::
 	text_start
 
-	para "Fishing is a way"
-	line "of life!"
+	para "Fishing is a"
+	line "way of grief,"
+	cont "and patience."
 
-	para "From the seas to"
-	line "rivers, go out"
-	cont "and land the big"
-	cont "one, young one!"
+	para "From sea to"
+	line "river, go and"
+	cont "land the great"
+	cont "one, child."
 	done
 
 _VermilionOldRodHouseFishingGuruThatsSoDisappointingText::
-	text "Oh... That's so"
-	line "disappointing..."
+	text "Oh... How"
+	line "disheartening..."
 	done
 
 _VermilionOldRodHouseFishingGuruHowAreTheFishBitingText::
-	text "Hello there,"
-	line "<PLAYER>!"
+	text "Ah, <PLAYER>."
+	line "Well met."
 
-	para "How are the fish"
-	line "biting?"
+	para "How do the fish"
+	line "bite, these days?"
 	done
 
 _VermilionOldRodHouseFishingGuruNoRoomText::
 	text "Oh no!"
 
-	para "You have no room"
-	line "for my gift!"
+	para "No room for my"
+	line "gift, it seems."
 	done

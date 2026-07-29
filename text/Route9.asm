@@ -1,7 +1,7 @@
 _Route9CooltrainerF1BattleText::
-	text "You have #MON"
-	line "with you!"
-	cont "You're mine!"
+	text "You carry #MON!"
+	line "Then you're"
+	cont "mine to take."
 	done
 
 _Route9CooltrainerF1EndBattleText::
@@ -10,82 +10,82 @@ _Route9CooltrainerF1EndBattleText::
 	prompt
 
 _Route9CooltrainerF1AfterBattleText::
-	text "You need light to"
-	line "get through that"
-	cont "dark tunnel ahead."
+	text "You'll need light"
+	line "for the dark"
+	cont "tunnel ahead."
 	done
 
 _Route9CooltrainerM1BattleText::
-	text "Who's that walking"
-	line "with those good"
-	cont "looking #MON?"
+	text "Who walks with"
+	line "such fine looking"
+	cont "#MON?"
 	done
 
 _Route9CooltrainerM1EndBattleText::
 	text "Out"
-	line "like a light!"
+	line "like a candle!"
 	prompt
 
 _Route9CooltrainerM1AfterBattleText::
-	text "Keep walking!"
+	text "Keep walking."
 	done
 
 _Route9CooltrainerM2BattleText::
-	text "I'm taking ROCK"
-	line "TUNNEL to go to"
-	cont "LAVENDER..."
+	text "I'll brave ROCK"
+	line "TUNNEL, bound"
+	cont "for LAVENDER..."
 	done
 
 _Route9CooltrainerM2EndBattleText::
-	text "Can't"
+	text "I don't"
 	line "measure up!"
 	prompt
 
 _Route9CooltrainerM2AfterBattleText::
-	text "Are you off to"
-	line "ROCK TUNNEL too?"
+	text "Bound for ROCK"
+	line "TUNNEL, also?"
 	done
 
 _Route9CooltrainerF2BattleText::
 	text "Don't you dare"
-	line "condescend me!"
+	line "pity me!"
 	done
 
 _Route9CooltrainerF2EndBattleText::
 	text "No!"
-	line "You're too much!"
+	line "Too much!"
 	prompt
 
 _Route9CooltrainerF2AfterBattleText::
-	text "You're obviously"
-	line "talented! Good"
-	cont "luck to you!"
+	text "You've a real"
+	line "gift. Good luck"
+	cont "to you, truly."
 	done
 
 _Route9Hiker1BattleText::
-	text "Bwahaha!"
-	line "Great! I was"
-	cont "bored, eh!"
+	text "Hah! Good. I was"
+	line "dying of boredom,"
+	cont "eh!"
 	done
 
 _Route9Hiker1EndBattleText::
-	text "Keep it"
-	line "coming, eh!"
+	text "Keep it coming,"
+	line "eh!"
 
-	para "Oh wait. I'm out"
-	line "of #MON!"
+	para "Oh. I'm out of"
+	line "#MON, eh."
 	prompt
 
 _Route9Hiker1AfterBattleText::
-	text "You sure had guts"
-	line "standing up to me"
-	cont "there, eh?"
+	text "You'd some nerve"
+	line "standing up to"
+	cont "me, eh?"
 	done
 
 _Route9Hiker2BattleText::
-	text "Hahaha!"
-	line "Aren't you a"
-	cont "little toughie!"
+	text "Hah! Aren't you"
+	line "a tough little"
+	cont "thing!"
 	done
 
 _Route9Hiker2EndBattleText::
@@ -94,49 +94,49 @@ _Route9Hiker2EndBattleText::
 	prompt
 
 _Route9Hiker2AfterBattleText::
-	text "Hahaha! Kids"
-	line "should be tough!"
+	text "Hah! Children"
+	line "ought to be tough!"
 	done
 
 _Route9Youngster1BattleText::
-	text "I got up early"
-	line "every day to"
-	cont "raise my #MON"
-	cont "from cocoons!"
+	text "I woke at dawn,"
+	line "daily, to raise"
+	cont "my #MON from"
+	cont "their cocoons!"
 	done
 
 _Route9Youngster1EndBattleText::
 	text "WHAT?"
 
-	para "What a total"
-	line "waste of time!"
+	para "What a waste of"
+	line "my time, that was!"
 	prompt
 
 _Route9Youngster1AfterBattleText::
-	text "I have to collect"
-	line "more than bugs to"
-	cont "get stronger..."
+	text "I need more than"
+	line "bugs, to grow"
+	cont "any stronger..."
 	done
 
 _Route9Hiker3BattleText::
-	text "Hahahaha!"
-	line "Come on, dude!"
+	text "Hah! Come now,"
+	line "friend!"
 	done
 
 _Route9Hiker3EndBattleText::
-	text "Hahahaha!"
-	line "You beat me fair!"
+	text "Hah! You beat"
+	line "me, fair and true!"
 	prompt
 
 _Route9Hiker3AfterBattleText::
-	text "Hahahaha!"
-	line "Us hearty guys"
-	cont "always laugh!"
+	text "Hah! We hearty"
+	line "sorts, we laugh"
+	cont "through anything!"
 	done
 
 _Route9Youngster2BattleText::
-	text "Go, my super bug"
-	line "#MON!"
+	text "Go, my prized"
+	line "bug #MON!"
 	done
 
 _Route9Youngster2EndBattleText::
@@ -145,9 +145,9 @@ _Route9Youngster2EndBattleText::
 	prompt
 
 _Route9Youngster2AfterBattleText::
-	text "If you don't like"
-	line "bug #MON, you"
-	cont "bug me!"
+	text "Scorn bug #MON,"
+	line "and you'll answer"
+	cont "to me."
 	done
 
 _Route9SignText::

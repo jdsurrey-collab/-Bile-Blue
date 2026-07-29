@@ -1,19 +1,19 @@
 _PewterSpeechHouseGamblerText::
-	text "#MON learn new"
-	line "techniques as"
-	cont "they grow!"
+	text "#MON learn"
+	line "new tricks as"
+	cont "they age."
 
-	para "But, some moves"
-	line "must be taught by"
-	cont "the trainer!"
+	para "But some moves"
+	line "must be forced"
+	cont "upon them."
 	done
 
 _PewterSpeechHouseYoungsterText::
-	text "#MON become"
-	line "easier to catch"
-	cont "when they are"
-	cont "hurt or asleep!"
+	text "#MON are easier"
+	line "to trap when"
+	cont "hurt, or lost in"
+	cont "sleep."
 
-	para "But, it's not a"
-	line "sure thing!"
+	para "Even then, luck"
+	line "may fail you."
 	done

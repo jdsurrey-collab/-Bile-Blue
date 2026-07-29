@@ -1,15 +1,15 @@
 _Route18Gate2FLeftBinocularsText::
-	text "Looked into the"
-	line "binoculars."
+	text "Peered through"
+	line "the binoculars."
 
-	para "PALLET TOWN is in"
-	line "the west!"
+	para "PALLET TOWN lies"
+	line "to the west!"
 	done
 
 _Route18Gate2FRightBinocularsText::
-	text "Looked into the"
-	line "binoculars."
+	text "Peered through"
+	line "the binoculars."
 
-	para "There are people"
-	line "swimming!"
+	para "Some souls swim"
+	line "in the waters!"
 	done

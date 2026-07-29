@@ -1,55 +1,55 @@
 _MtMoon1FHikerBattleText::
-	text "WHOA! You shocked"
-	line "me! Oh, you're"
-	cont "just a kid!"
+	text "You startled me!"
+	line "Oh. Just a"
+	cont "child, is all."
 	done
 
 _MtMoon1FHikerEndBattleText::
-	text "Wow!"
-	line "Shocked again!"
+	text "Shocked."
+	line "Again."
 	prompt
 
 _MtMoon1FHikerAfterBattleText::
-	text "Kids like you"
-	line "shouldn't be"
-	cont "here!"
+	text "Children like"
+	line "you shouldn't be"
+	cont "in this dark."
 	done
 
 _MtMoon1FYoungster1BattleText::
-	text "Did you come to"
-	line "explore too?"
+	text "Came to explore,"
+	line "too?"
 	done
 
 _MtMoon1FYoungster1EndBattleText::
-	text "Losing"
-	line "stinks!"
+	text "Losing,"
+	line "always bitter."
 	prompt
 
 _MtMoon1FYoungster1AfterBattleText::
-	text "I came down here"
-	line "to show off to"
-	cont "girls."
+	text "I came to seem"
+	line "brave, for the"
+	cont "girls. Foolish."
 	done
 
 _MtMoon1FCooltrainerF1BattleText::
-	text "Wow! It's way"
-	line "bigger in here"
-	cont "than I thought!"
+	text "It's far vaster"
+	line "in here than I"
+	cont "ever imagined."
 	done
 
 _MtMoon1FCooltrainerF1EndBattleText::
-	text "Oh!"
-	line "I lost it!"
+	text "I've"
+	line "lost it."
 	prompt
 
 _MtMoon1FCooltrainerF1AfterBattleText::
-	text "How do you get"
-	line "out of here?"
+	text "How does one"
+	line "leave this place?"
 	done
 
 _MtMoon1FSuperNerdBattleText::
-	text "What! Don't sneak"
-	line "up on me!"
+	text "Don't creep up"
+	line "on me!"
 	done
 
 _MtMoon1FSuperNerdEndBattleText::
@@ -58,47 +58,47 @@ _MtMoon1FSuperNerdEndBattleText::
 	prompt
 
 _MtMoon1FSuperNerdAfterBattleText::
-	text "I have to find"
+	text "I must find"
 	line "stronger #MON."
 	done
 
 _MtMoon1FCooltrainerF2BattleText::
-	text "What? I'm waiting"
-	line "for my friends to"
-	cont "find me here."
+	text "I wait here for"
+	line "friends who may"
+	cont "never come."
 	done
 
 _MtMoon1FCooltrainerF2EndBattleText::
-	text "I lost?"
+	text "I've lost?"
 	prompt
 
 _MtMoon1FCooltrainerF2AfterBattleText::
-	text "I heard there are"
-	line "some very rare"
-	cont "fossils here."
+	text "They say rare"
+	line "bones lie buried"
+	cont "somewhere here."
 	done
 
 _MtMoon1FYoungster2BattleText::
-	text "Suspicious men"
-	line "are in the cave."
-	cont "What about you?"
+	text "Grim men lurk"
+	line "in this cave."
+	cont "And you?"
 	done
 
 _MtMoon1FYoungster2EndBattleText::
-	text "You"
-	line "got me!"
+	text "You've"
+	line "got me."
 	prompt
 
 _MtMoon1FYoungster2AfterBattleText::
-	text "I saw them! I'm"
-	line "sure they're from"
-	cont "TEAM ROCKET!"
+	text "I saw them. TEAM"
+	line "ROCKET, surely."
+	cont "I'm certain of it."
 	done
 
 _MtMoon1FYoungster3BattleText::
-	text "Go through this"
-	line "cave to get to"
-	cont "CERULEAN CITY!"
+	text "This cave leads"
+	line "on, to CERULEAN"
+	cont "CITY, eventually."
 	done
 
 _MtMoon1FYoungster3EndBattleText::
@@ -107,13 +107,13 @@ _MtMoon1FYoungster3EndBattleText::
 	prompt
 
 _MtMoon1FYoungster3AfterBattleText::
-	text "ZUBAT is tough!"
-	line "But, it can be"
-	cont "useful if you"
-	cont "catch one."
+	text "ZUBAT's a pest,"
+	line "but useful, if"
+	cont "you can stomach"
+	cont "catching one."
 	done
 
 _MtMoon1FBewareZubatSign::
-	text "Beware! ZUBAT is"
-	line "a blood sucker!"
+	text "Beware! ZUBAT"
+	line "drinks your blood."
 	done

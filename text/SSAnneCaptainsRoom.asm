@@ -1,34 +1,35 @@
 _SSAnneCaptainsRoomRubCaptainsBackText::
 	text "CAPTAIN: Ooargh..."
-	line "I feel hideous..."
-	cont "Urrp! Seasick..."
+	line "I feel wretched..."
+	cont "Urrp! So ill..."
 
 	para "<PLAYER> rubbed"
 	line "the CAPTAIN's"
-	cont "back!"
+	cont "back."
 
 	para "Rub-rub..."
 	line "Rub-rub...@"
 	text_end
 
 _SSAnneCaptainsRoomCaptainIFeelMuchBetterText::
-	text "CAPTAIN: Whew!"
-	line "Thank you! I"
-	cont "feel much better!"
+	text "CAPTAIN: Whew."
+	line "My thanks. I"
+	cont "feel restored."
 
-	para "You want to see"
-	line "my CUT technique?"
+	para "Care to see my"
+	line "CUT technique?"
 
-	para "I could show you"
-	line "if I wasn't ill..."
+	para "I'd show you,"
+	line "if not for this"
+	cont "illness..."
 
-	para "I know! You can"
-	line "have this!"
+	para "Here, then. Take"
+	line "this instead."
 
 	para "Teach it to your"
-	line "#MON and you"
-	cont "can see it CUT"
-	cont "any time!"
+	line "#MON, and CUT"
+	cont "whenever you"
+	cont "please."
 	prompt
 
 _SSAnneCaptainsRoomCaptainReceivedHM01Text::
@@ -41,24 +42,24 @@ _SSAnneCaptainsRoomCaptainReceivedHM01Text::
 _SSAnneCaptainsRoomCaptainNotSickAnymoreText::
 	text "CAPTAIN: Whew!"
 
-	para "Now that I'm not"
-	line "sick any more, I"
-	cont "guess it's time."
+	para "Now that I'm"
+	line "well, I suppose"
+	cont "it's time."
 	done
 
 _SSAnneCaptainsRoomCaptainHM01NoRoomText::
-	text "Oh no! You have"
-	line "no room for this!"
+	text "Oh no. No room"
+	line "left for this!"
 	done
 
 _SSAnneCaptainsRoomTrashText::
-	text "Yuck! Shouldn't"
-	line "have looked!"
+	text "Yuck. I shouldn't"
+	line "have looked."
 	done
 
 _SSAnneCaptainsRoomSeasickBookText::
 	text "How to Conquer"
 	line "Seasickness..."
-	cont "The CAPTAIN's"
-	cont "reading this!"
+	cont "The CAPTAIN reads"
+	cont "this, endlessly."
 	done

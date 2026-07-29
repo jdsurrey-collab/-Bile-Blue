@@ -5,9 +5,9 @@ _SafariZoneEastRestHouseSignText::
 _SafariZoneEastTrainerTipsText::
 	text "TRAINER TIPS"
 
-	para "The remaining time"
-	line "declines only"
-	cont "while you walk!"
+	para "Your time bleeds"
+	line "away only while"
+	cont "you're walking!"
 	done
 
 _SafariZoneEastSignText::

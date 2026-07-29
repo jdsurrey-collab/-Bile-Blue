@@ -5,19 +5,20 @@ _SafariZoneGateSafariZoneWorker1Text::
 
 _SafariZoneGateSafariZoneWorker1WouldYouLikeToJoinText::
 	text "For just ¥500,"
-	line "you can catch all"
-	cont "the #MON you"
-	cont "want in the park!"
+	line "you may hunt any"
+	cont "#MON you"
+	cont "please, in the"
+	cont "park!"
 
-	para "Would you like to"
-	line "join the hunt?@"
+	para "Will you join"
+	line "the hunt?@"
 	text_end
 
 _SafariZoneGateSafariZoneWorker1ThatllBe500PleaseText::
-	text "That'll be ¥500"
-	line "please!"
+	text "That'll be ¥500,"
+	line "if you please!"
 
-	para "We only use a"
+	para "We use only a"
 	line "special # BALL"
 	cont "here."
 
@@ -28,64 +29,64 @@ _SafariZoneGateSafariZoneWorker1ThatllBe500PleaseText::
 _SafariZoneGateSafariZoneWorker1CallYouOnThePAText::
 	text_start
 
-	para "We'll call you on"
-	line "the PA when you"
-	cont "run out of time"
-	cont "or SAFARI BALLs!"
+	para "We'll call for"
+	line "you on the PA"
+	cont "when your time"
+	cont "or BALLs run dry!"
 	done
 
 _SafariZoneGateSafariZoneWorker1PleaseComeAgainText::
-	text "OK! Please come"
-	line "again!"
+	text "Very well. Do"
+	line "hunt again!"
 	done
 
 _SafariZoneGateSafariZoneWorker1NotEnoughMoneyText::
-	text "Oops! Not enough"
-	line "money!"
+	text "Oh dear, not"
+	line "enough money!"
 	done
 
 _SafariZoneGateSafariZoneWorker1LeavingEarlyText::
-	text "Leaving early?@"
+	text "Leaving so soon?@"
 	text_end
 
 _SafariZoneGateSafariZoneWorker1ReturnSafariBallsText::
-	text "Please return any"
-	line "SAFARI BALLs you"
-	cont "have left."
+	text "Do return any"
+	line "SAFARI BALLs"
+	cont "you've left."
 	done
 
 _SafariZoneGateSafariZoneWorker1GoodLuckText::
-	text "Good Luck!"
+	text "Good hunting!"
 	done
 
 _SafariZoneGateSafariZoneWorker1GoodHaulComeAgainText::
-	text "Did you get a"
+	text "Did you take a"
 	line "good haul?"
-	cont "Come again!"
+	cont "Do come again!"
 	done
 
 _SafariZoneGateSafariZoneWorker2FirstTimeHereText::
-	text "Hi! Is it your"
-	line "first time here?"
+	text "Ho! Is this your"
+	line "first hunt here?"
 	done
 
 _SafariZoneGateSafariZoneWorker2SafariZoneExplanationText::
-	text "SAFARI ZONE has 4"
-	line "zones in it."
+	text "SAFARI ZONE holds"
+	line "4 grim grounds."
 
-	para "Each zone has"
-	line "different kinds"
-	cont "of #MON. Use"
+	para "Each ground"
+	line "harbors its own"
+	cont "#MON. Use"
 	cont "SAFARI BALLs to"
-	cont "catch them!"
+	cont "trap them!"
 
-	para "When you run out"
-	line "of time or SAFARI"
-	cont "BALLs, it's game"
+	para "When your time or"
+	line "BALLs run dry,"
+	cont "the hunt is"
 	cont "over for you!"
 
 	para "Before you go,"
-	line "open an unused"
+	line "clear an unused"
 	cont "#MON BOX so"
 	cont "there's room for"
 	cont "new #MON!"

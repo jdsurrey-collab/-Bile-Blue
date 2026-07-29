@@ -1,5 +1,5 @@
 _DaycareGentlemanAllRightThenText::
-	text "All right then,"
+	text "Very well then,"
 	line "@"
 	text_end
 
@@ -8,27 +8,27 @@ _DaycareGentlemanComeAgainText::
 	done
 
 _DaycareGentlemanNoRoomForMonText::
-	text "You have no room"
+	text "You've no room"
 	line "for this #MON!"
 	done
 
 _DaycareGentlemanOnlyHaveOneMonText::
-	text "You only have one"
+	text "You have but one"
 	line "#MON with you."
 	done
 
 _DaycareGentlemanCantAcceptMonWithHMText::
-	text "I can't accept a"
+	text "I cannot accept a"
 	line "#MON that"
 	cont "knows an HM move."
 	done
 
 _DaycareGentlemanHeresYourMonText::
-	text "Thank you! Here's"
-	line "your #MON!"
+	text "My thanks! Here"
+	line "is your #MON!"
 	prompt
 
 _DaycareGentlemanNotEnoughMoneyText::
-	text "Hey, you don't"
-	line "have enough ¥!"
+	text "Ah, you lack"
+	line "enough coin!"
 	done

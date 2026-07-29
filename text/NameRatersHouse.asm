@@ -1,59 +1,59 @@
 _NameRatersHouseNameRaterWantMeToRateText::
-	text "Hello, hello!"
-	line "I am the official"
-	cont "NAME RATER!"
+	text "Good day, good"
+	line "day! I am the"
+	cont "true NAME RATER!"
 
-	para "Want me to rate"
-	line "the nicknames of"
+	para "Shall I judge the"
+	line "nicknames of"
 	cont "your #MON?"
 	done
 
 _NameRatersHouseNameRaterWhichPokemonText::
 	text "Which #MON"
-	line "should I look at?"
+	line "shall I judge?"
 	prompt
 
 _NameRatersHouseNameRaterGiveItANiceNameText::
 	text_ram wNameBuffer
 	text ", is it?"
-	line "That is a decent"
-	cont "nickname!"
+	line "That is a fair"
+	cont "nickname enough!"
 
-	para "But, would you"
-	line "like me to give"
-	cont "it a nicer name?"
+	para "But would you"
+	line "have me grant"
+	cont "it a finer name?"
 
-	para "How about it?"
+	para "Well, then?"
 	done
 
 _NameRatersHouseNameRaterWhatShouldWeNameItText::
-	text "Fine! What should"
-	line "we name it?"
+	text "So be it! What"
+	line "shall we call it?"
 	prompt
 
 _NameRatersHouseNameRaterPokemonHasBeenRenamedText::
-	text "OK! This #MON"
+	text "Done! This #MON"
 	line "has been renamed"
 	cont "@"
 	text_ram wBuffer
 	text "!"
 
-	para "That's a better"
-	line "name than before!"
+	para "Finer, by far,"
+	line "than before!"
 	done
 
 _NameRatersHouseNameRaterComeAnyTimeYouLikeText::
-	text "Fine! Come any"
-	line "time you like!"
+	text "Very well! Come"
+	line "again, any hour!"
 	done
 
 _NameRatersHouseNameRaterATrulyImpeccableNameText::
 	text_ram wNameBuffer
 	text ", is it?"
 	line "That is a truly"
-	cont "impeccable name!"
+	cont "flawless name!"
 
-	para "Take good care of"
+	para "Guard it well,"
 	line "@"
 	text_ram wNameBuffer
 	text "!"

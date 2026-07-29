@@ -21,105 +21,105 @@ _MtMoonB2FYouHaveNoRoomText::
 	text_end
 
 _MtMoonB2FSuperNerdTheyreBothMineText::
-	text "Hey, stop!"
+	text "Halt!"
 
-	para "I found these"
-	line "fossils! They're"
-	cont "both mine!"
+	para "These bones are"
+	line "mine. Both of"
+	cont "them. I found them."
 	done
 
 _MtMoonB2FSuperNerdOkIllShareText::
-	text "OK!"
-	line "I'll share!"
+	text "Fine! We'll"
+	line "share!"
 	prompt
 
 _MtMoonB2fSuperNerdEachTakeOneText::
-	text "We'll each take"
-	line "one!"
-	cont "No being greedy!"
+	text "One each, then."
+	line "No greed between"
+	cont "us, agreed?"
 	done
 
 _MtMoonB2FSuperNerdTheresAPokemonLabText::
-	text "Far away, on"
+	text "Far off, on"
 	line "CINNABAR ISLAND,"
-	cont "there's a #MON"
-	cont "LAB."
+	cont "there stands a"
+	cont "#MON LAB."
 
-	para "They do research"
-	line "on regenerating"
-	cont "fossils."
+	para "They raise the"
+	line "dead there-"
+	cont "fossils reborn."
 	done
 
 _MtMoonB2FSuperNerdThenThisIsMineText::
-	text "All right. Then"
-	line "this is mine!@"
+	text "Very well. This"
+	line "one is mine!@"
 	text_end
 
 _MtMoonB2FRocket1BattleText::
 	text "TEAM ROCKET will"
-	line "find the fossils,"
-	cont "revive and sell"
-	cont "them for cash!"
+	line "claim these bones,"
+	cont "wake the dead,"
+	cont "and sell them."
 	done
 
 _MtMoonB2FRocket1EndBattleText::
-	text "Urgh!"
-	line "Now I'm mad!"
+	text "Urgh! Now I'm"
+	line "furious!"
 	prompt
 
 _MtMoonB2FRocket1AfterBattleText::
-	text "You made me mad!"
-	line "TEAM ROCKET will"
-	cont "blacklist you!"
+	text "You've angered"
+	line "me. ROCKET marks"
+	cont "you now."
 	done
 
 _MtMoonB2FRocket2BattleText::
 	text "We, TEAM ROCKET,"
-	line "are #MON"
-	cont "gangsters!"
+	line "prey on #MON"
+	cont "and men alike."
 	done
 
 _MtMoonB2FRocket2EndBattleText::
-	text "I blew"
-	line "it!"
+	text "I've"
+	line "failed."
 	prompt
 
 _MtMoonB2FRocket2AfterBattleText::
-	text "Darn it all! My"
-	line "associates won't"
-	cont "stand for this!"
+	text "Curse you! My"
+	line "brothers won't"
+	cont "let this stand."
 	done
 
 _MtMoonB2FRocket3BattleText::
-	text "We're pulling a"
-	line "big job here!"
-	cont "Get lost, kid!"
+	text "We work grim"
+	line "business here."
+	cont "Get lost, child."
 	done
 
 _MtMoonB2FRocket3EndBattleText::
-	text "So, you"
-	line "are good."
+	text "So. You're"
+	line "capable."
 	prompt
 
 _MtMoonB2FRocket3AfterBattleText::
-	text "If you find a"
-	line "fossil, give it"
-	cont "to me and scram!"
+	text "Find a fossil?"
+	line "Hand it over,"
+	cont "and vanish."
 	done
 
 _MtMoonB2FRocket4BattleText::
-	text "Little kids"
-	line "should leave"
-	cont "grown-ups alone!"
+	text "Children ought"
+	line "to leave grim"
+	cont "affairs alone!"
 	done
 
 _MtMoonB2FRocket4EndBattleText::
-	text "I'm"
-	line "steamed!"
+	text "I"
+	line "seethe."
 	prompt
 
 _MtMoonB2FRocket4AfterBattleText::
-	text "#MON lived"
-	line "here long before"
-	cont "people came."
+	text "#MON dwelt here"
+	line "long before we"
+	cont "ever came, or died."
 	done

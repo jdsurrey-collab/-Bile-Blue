@@ -1,19 +1,19 @@
 _ViridianForestNorthGateSuperNerdText::
-	text "Many #MON live"
-	line "only in forests "
-	cont "and caves."
+	text "Many #MON"
+	line "dwell only in"
+	cont "forests, caves."
 
-	para "You need to look"
-	line "everywhere to get"
-	cont "different kinds!"
+	para "Search every"
+	line "shadow, if you"
+	cont "want them all."
 	done
 
 _ViridianForestNorthGateGrampsText::
-	text "Have you noticed"
-	line "the bushes on the"
-	cont "roadside?"
+	text "Have you seen"
+	line "the bushes lining"
+	cont "the road?"
 
-	para "They can be cut"
-	line "down by a special"
-	cont "#MON move."
+	para "A certain move"
+	line "can cut them"
+	cont "to nothing."
 	done

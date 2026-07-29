@@ -1,21 +1,22 @@
 _CinnabarPokecenterCooltrainerFText::
-	text "You can cancel"
+	text "You may halt"
 	line "evolution."
 
-	para "When a #MON is"
-	line "evolving, you can"
-	cont "stop it and leave"
-	cont "it the way it is."
+	para "When a #MON"
+	line "transforms, you"
+	cont "may stop it, and"
+	cont "leave it as it"
+	cont "was."
 	done
 
 _CinnabarPokecenterGentlemanText::
-	text "Do you have any"
-	line "friends?"
+	text "Have you any"
+	line "friends left?"
 
-	para "#MON you get"
-	line "in trades grow"
+	para "#MON gained by"
+	line "trade grow so"
 	cont "very quickly."
 
-	para "I think it's"
-	line "worth a try!"
+	para "Worth the trying,"
+	line "I should think!"
 	done

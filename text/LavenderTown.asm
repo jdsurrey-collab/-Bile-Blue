@@ -1,53 +1,54 @@
 _LavenderTownLittleGirlDoYouBelieveInGhostsText::
-	text "Do you believe in"
-	line "GHOSTs?"
+	text "Do you believe"
+	line "in GHOSTs?"
 	done
 
 _LavenderTownLittleGirlSoThereAreBelieversText::
-	text "Really? So there"
+	text "Truly? So there"
 	line "are believers..."
 	done
 
 _LavenderTownLittleGirlHaHaGuessNotText::
-	text "Hahaha, I guess"
+	text "Hah. I suppose"
 	line "not."
 
-	para "That white hand"
-	line "on your shoulder,"
-	cont "it's not real."
+	para "That cold white"
+	line "hand on your"
+	cont "shoulder isn't"
+	cont "real."
 	done
 
 _LavenderTownCooltrainerMText::
-	text "This town is known"
-	line "as the grave site"
-	cont "of #MON."
+	text "This town is"
+	line "known as the"
+	cont "grave of #MON."
 
-	para "Memorial services"
-	line "are held in"
-	cont "#MON TOWER."
+	para "We hold our"
+	line "mourning rites"
+	cont "in #MON TOWER."
 	done
 
 _LavenderTownSuperNerdText::
-	text "GHOSTs appeared"
-	line "in #MON TOWER."
+	text "GHOSTs walk in"
+	line "#MON TOWER."
 
-	para "I think they're"
-	line "the spirits of"
-	cont "#MON that the"
-	cont "ROCKETs killed."
+	para "Spirits, I think,"
+	line "of #MON the"
+	cont "ROCKETs murdered."
+	cont "So many."
 	done
 
 _LavenderTownSignText::
 	text "LAVENDER TOWN"
-	line "The Noble Purple"
-	cont "Town"
+	line "Where the Grieving"
+	cont "Gather"
 	done
 
 _LavenderTownSilphScopeSignText::
 	text "New SILPH SCOPE!"
 
-	para "Make the Invisible"
-	line "Plain to See!"
+	para "See What Should"
+	line "Stay Hidden."
 
 	para "SILPH CO."
 	done

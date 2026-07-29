@@ -1,40 +1,40 @@
 _Route11Gate2FOaksAideItemfinderDescriptionText::
-	text "There are items on"
-	line "the ground that"
-	cont "can't be seen."
+	text "Some things lie"
+	line "hidden on the"
+	cont "ground, unseen."
 
-	para "ITEMFINDER will"
-	line "detect an item"
-	cont "close to you."
+	para "ITEMFINDER"
+	line "senses them"
+	cont "nearby."
 
-	para "It can't pinpoint"
-	line "it, so you have"
-	cont "to look yourself!"
+	para "It won't say"
+	line "where, though."
+	cont "You must search."
 	done
 
 _Route11Gate2FLeftBinocularsSnorlaxText::
-	text "Looked into the"
-	line "binoculars."
+	text "Looked through"
+	line "the binoculars."
 
-	para "A big #MON is"
-	line "asleep on a road!"
+	para "A vast #MON"
+	line "sleeps on the road."
 	done
 
 _Route11Gate2FLeftBinocularsNoSnorlaxText::
-	text "Looked into the"
-	line "binoculars."
+	text "Looked through"
+	line "the binoculars."
 
-	para "It's a beautiful"
-	line "view!"
+	para "A beautiful,"
+	line "empty view."
 	done
 
 _Route11Gate2FRightBinocularsText::
-	text "Looked into the"
-	line "binoculars."
+	text "Looked through"
+	line "the binoculars."
 
-	para "The only way to"
-	line "get from CERULEAN"
-	cont "CITY to LAVENDER"
-	cont "is by way of the"
-	cont "ROCK TUNNEL."
+	para "The only road"
+	line "from CERULEAN to"
+	cont "LAVENDER runs"
+	cont "through ROCK"
+	cont "TUNNEL's dark."
 	done

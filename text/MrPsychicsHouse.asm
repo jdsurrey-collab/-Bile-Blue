@@ -1,8 +1,8 @@
 _MrPsychicsHouseMrPsychicYouWantedThisText::
-	text "...Wait! Don't"
-	line "say a word!"
+	text "...Wait! Speak"
+	line "not a word!"
 
-	para "You wanted this!"
+	para "You desired this!"
 	prompt
 
 _MrPsychicsHouseMrPsychicReceivedTM29Text::
@@ -15,12 +15,12 @@ _MrPsychicsHouseMrPsychicReceivedTM29Text::
 _MrPsychicsHouseMrPsychicTM29ExplanationText::
 	text "TM29 is PSYCHIC!"
 
-	para "It can lower the"
-	line "target's SPECIAL"
-	cont "abilities."
+	para "It may weaken"
+	line "the foe's own"
+	cont "SPECIAL powers."
 	done
 
 _MrPsychicsHouseMrPsychicTM29NoRoomText::
-	text "Where do you plan"
-	line "to put this?"
+	text "Where do you mean"
+	line "to place this?"
 	done

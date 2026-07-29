@@ -1,14 +1,14 @@
 _Route24CooltrainerM1YouBeatOurContestText::
-	text "Congratulations!"
-	line "You beat our 5"
-	cont "contest trainers!@"
+	text "Well fought."
+	line "You've bested"
+	cont "all 5 of us.@"
 	text_end
 
 _Route24CooltrainerM1YouJustEarnedAPrizeText::
 	text_start
 
-	para "You just earned a"
-	line "fabulous prize!"
+	para "You've earned"
+	line "a grim prize."
 	prompt
 
 _Route24CooltrainerM1ReceivedNuggetText::
@@ -19,49 +19,48 @@ _Route24CooltrainerM1ReceivedNuggetText::
 	text_end
 
 _Route24CooltrainerM1NoRoomText::
-	text "You don't have"
-	line "any room!"
+	text "No room left."
 	done
 
 _Route24CooltrainerM1JoinTeamRocketText::
-	text "By the way, would"
-	line "you like to join"
-	cont "TEAM ROCKET?"
+	text "Tell me, would"
+	line "you join TEAM"
+	cont "ROCKET?"
 
-	para "We're a group"
-	line "dedicated to evil"
-	cont "using #MON!"
+	para "We're devoted"
+	line "to #MON, and"
+	cont "to evil."
 
-	para "Want to join?"
+	para "Will you join?"
 
-	para "Are you sure?"
+	para "Are you certain?"
 
-	para "Come on, join us!"
+	para "Come, join us."
 
-	para "I'm telling you"
-	line "to join!"
+	para "I am telling"
+	line "you to join."
 
-	para "OK, you need"
-	line "convincing!"
+	para "You'll need"
+	line "convincing, then."
 
-	para "I'll make you an"
-	line "offer you can't"
-	cont "refuse!"
+	para "I'll make an"
+	line "offer you cannot"
+	cont "refuse."
 	done
 
 _Route24CooltrainerM1DefeatedText::
-	text "Arrgh!"
-	line "You are good!"
+	text "Arrgh. You're"
+	line "quite good!"
 	prompt
 
 _Route24CooltrainerM1YouCouldBecomeATopLeaderText::
-	text "With your ability,"
-	line "you could become"
-	cont "a top leader in"
+	text "With gifts like"
+	line "yours, you'd"
+	cont "rise high in"
 	cont "TEAM ROCKET!"
 	done
 
 _Route24CooltrainerM2BattleText::
-	text "I saw your feat"
-	line "from the grass!"
+	text "I saw you, from"
+	line "the grass!"
 	done

@@ -1,53 +1,53 @@
 _RockTunnelB1FCooltrainerF1BattleText::
-	text "Hikers leave twigs"
-	line "as trail markers."
+	text "Hikers leave"
+	line "twigs as markers."
 	done
 
 _RockTunnelB1FCooltrainerF1EndBattleText::
-	text "Ohhh!"
-	line "I did my best!"
+	text "Ohhh! I gave"
+	line "my all!"
 	prompt
 
 _RockTunnelB1FCooltrainerF1AfterBattleText::
-	text "I want to go "
+	text "I want to go"
 	line "home!"
 	done
 
 _RockTunnelB1FHiker1BattleText::
-	text "Hahaha! Can you"
-	line "beat my power?"
+	text "Hah! Can you"
+	line "best my power?"
 	done
 
 _RockTunnelB1FHiker1EndBattleText::
 	text "Oops!"
-	line "Out-muscled!"
+	line "Outmuscled!"
 	prompt
 
 _RockTunnelB1FHiker1AfterBattleText::
-	text "I go for power"
-	line "because I hate"
-	cont "thinking!"
+	text "I favor power-"
+	line "thinking is such"
+	cont "a chore!"
 	done
 
 _RockTunnelB1FSuperNerd1BattleText::
-	text "You have a"
-	line "#DEX?"
-	cont "I want one too!"
+	text "You've a #DEX?"
+	line "I want one,"
+	cont "desperately!"
 	done
 
 _RockTunnelB1FSuperNerd1EndBattleText::
-	text "Shoot!"
-	line "I'm so jealous!"
+	text "Blast. I envy"
+	line "you so!"
 	prompt
 
 _RockTunnelB1FSuperNerd1AfterBattleText::
-	text "When you finish"
-	line "your #DEX, can"
+	text "When your #DEX"
+	line "is complete, may"
 	cont "I have it?"
 	done
 
 _RockTunnelB1FSuperNerd2BattleText::
-	text "Do you know about"
+	text "Do you know of"
 	line "costume players?"
 	done
 
@@ -58,48 +58,48 @@ _RockTunnelB1FSuperNerd2EndBattleText::
 
 _RockTunnelB1FSuperNerd2AfterBattleText::
 	text "Costume players"
-	line "dress up as"
-	cont "#MON for fun."
+	line "dress as #MON,"
+	cont "for a little joy."
 	done
 
 _RockTunnelB1FHiker2BattleText::
-	text "My #MON"
-	line "techniques will"
-	cont "leave you crying!"
+	text "My #MON's"
+	line "technique will"
+	cont "leave you in tears!"
 	done
 
 _RockTunnelB1FHiker2EndBattleText::
-	text "I give!"
-	line "You're a better"
+	text "I yield! You're"
+	line "the finer"
 	cont "technician!"
 	prompt
 
 _RockTunnelB1FHiker2AfterBattleText::
-	text "In mountains,"
-	line "you'll often find"
-	cont "rock-type #MON."
+	text "In mountains"
+	line "such as these,"
+	cont "rock #MON dwell."
 	done
 
 _RockTunnelB1FCooltrainerF2BattleText::
-	text "I don't often"
-	line "come here, but I"
-	cont "will fight you."
+	text "I seldom come"
+	line "here, but I'll"
+	cont "fight you still."
 	done
 
 _RockTunnelB1FCooltrainerF2EndBattleText::
 	text "Oh!"
-	line "I lost!"
+	line "I've lost!"
 	prompt
 
 _RockTunnelB1FCooltrainerF2AfterBattleText::
-	text "I like tiny"
-	line "#MON, big ones"
-	cont "are too scary!"
+	text "I favor small"
+	line "#MON. The large"
+	cont "ones terrify me."
 	done
 
 _RockTunnelB1FHiker3BattleText::
-	text "Hit me with your"
-	line "best shot!"
+	text "Strike me with"
+	line "your best shot!"
 	done
 
 _RockTunnelB1FHiker3EndBattleText::

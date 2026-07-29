@@ -1,51 +1,53 @@
 _Route19CooltrainerM1BattleText::
-	text "Have to warm up"
-	line "before my swim!"
+	text "I must brace"
+	line "myself before"
+	cont "the swim!"
 	done
 
 _Route19CooltrainerM1EndBattleText::
-	text "All"
-	line "warmed up!"
+	text "Fully"
+	line "braced now!"
 	prompt
 
 _Route19CooltrainerM1AfterBattleText::
-	text "Thanks, kid! I'm"
-	line "ready for a swim!"
+	text "My thanks! I'm"
+	line "ready for the"
+	cont "black water!"
 	done
 
 _Route19CooltrainerM2BattleText::
-	text "Wait! You'll have"
-	line "a heart attack!"
+	text "Wait! Your heart"
+	line "may give out!"
 	done
 
 _Route19CooltrainerM2EndBattleText::
 	text "Ooh!"
-	line "That's chilly!"
+	line "So bitter cold!"
 	prompt
 
 _Route19CooltrainerM2AfterBattleText::
-	text "Watch out for"
-	line "TENTACOOL!"
+	text "Beware the"
+	line "TENTACOOL below!"
 	done
 
 _Route19Swimmer1BattleText::
-	text "I love swimming!"
-	line "What about you?"
+	text "I love the deep!"
+	line "And you?"
 	done
 
 _Route19Swimmer1EndBattleText::
 	text "Belly"
-	line "flop!"
+	line "flop, drowned!"
 	prompt
 
 _Route19Swimmer1AfterBattleText::
-	text "I can beat #MON"
-	line "at swimming!"
+	text "I can outswim"
+	line "any #MON!"
 	done
 
 _Route19Swimmer2BattleText::
-	text "What's beyond the"
-	line "horizon?"
+	text "What lies beyond"
+	line "the horizon?"
 	done
 
 _Route19Swimmer2EndBattleText::
@@ -53,14 +55,14 @@ _Route19Swimmer2EndBattleText::
 	prompt
 
 _Route19Swimmer2AfterBattleText::
-	text "I see a couple of"
-	line "islands!"
+	text "I glimpse a few"
+	line "grey islands!"
 	done
 
 _Route19Swimmer3BattleText::
-	text "I tried diving"
-	line "for #MON, but"
-	cont "it was a no go!"
+	text "I dove for"
+	line "#MON, but"
+	cont "found nothing."
 	done
 
 _Route19Swimmer3EndBattleText::
@@ -68,44 +70,44 @@ _Route19Swimmer3EndBattleText::
 	prompt
 
 _Route19Swimmer3AfterBattleText::
-	text "You have to fish"
-	line "for sea #MON!"
+	text "You must fish for"
+	line "sea #MON!"
 	done
 
 _Route19Swimmer4BattleText::
-	text "I look at the"
+	text "I stare at the"
 	line "sea to forget!"
 	done
 
 _Route19Swimmer4EndBattleText::
 	text "Ooh!"
-	line "Traumatic!"
+	line "So traumatic!"
 	prompt
 
 _Route19Swimmer4AfterBattleText::
-	text "I'm looking at the"
-	line "sea to forget!"
+	text "I'm still staring,"
+	line "trying to forget."
 	done
 
 _Route19Swimmer5BattleText::
-	text "Oh, I just love"
-	line "your ride! Can I"
-	cont "have it if I win?"
+	text "Oh, I do covet"
+	line "your steed! May"
+	cont "I claim it, won?"
 	done
 
 _Route19Swimmer5EndBattleText::
 	text "Oh!"
-	line "I lost!"
+	line "I have lost!"
 	prompt
 
 _Route19Swimmer5AfterBattleText::
 	text "It's still a long"
-	line "way to go to"
+	line "way yet, to"
 	cont "SEAFOAM ISLANDS."
 	done
 
 _Route19Swimmer6BattleText::
-	text "Swimming's great!"
+	text "Swimming's grand!"
 	line "Sunburns aren't!"
 	done
 
@@ -114,40 +116,40 @@ _Route19Swimmer6EndBattleText::
 	prompt
 
 _Route19Swimmer6AfterBattleText::
-	text "My boy friend"
-	line "wanted to swim to"
+	text "My beau longed"
+	line "to swim out to"
 	cont "SEAFOAM ISLANDS."
 	done
 
 _Route19Swimmer7BattleText::
-	text "These waters are"
+	text "These waters run"
 	line "treacherous!"
 	done
 
 _Route19Swimmer7EndBattleText::
 	text "Ooh!"
-	line "Dangerous!"
+	line "So dangerous!"
 	prompt
 
 _Route19Swimmer7AfterBattleText::
-	text "I got a cramp!"
-	line "Glub, glub..."
+	text "A cramp seized"
+	line "me! Glub, glub..."
 	done
 
 _Route19Swimmer8BattleText::
-	text "I swam here, but"
-	line "I'm tired."
+	text "I swam so far,"
+	line "but I am spent."
 	done
 
 _Route19Swimmer8EndBattleText::
 	text "I'm"
-	line "exhausted..."
+	line "utterly spent..."
 	prompt
 
 _Route19Swimmer8AfterBattleText::
-	text "LAPRAS is so big,"
+	text "LAPRAS is so vast,"
 	line "it must keep you"
-	cont "dry on water."
+	cont "dry above water."
 	done
 
 _Route19SignText::

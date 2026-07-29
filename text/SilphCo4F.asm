@@ -5,13 +5,13 @@ _SilphCo4FSilphWorkerMImHidingText::
 
 _SilphCo4FSilphWorkerMTeamRocketIsGoneText::
 	text "Huh? TEAM ROCKET"
-	line "is gone?"
+	line "has truly gone?"
 	done
 
 _SilphCo4FRocket1BattleText::
-	text "TEAM ROCKET has"
-	line "taken command of"
-	cont "SILPH CO.!"
+	text "TEAM ROCKET holds"
+	line "command of SILPH"
+	cont "CO. now!"
 	done
 
 _SilphCo4FRocket1EndBattleText::
@@ -20,8 +20,9 @@ _SilphCo4FRocket1EndBattleText::
 
 _SilphCo4FRocket1AfterBattleText::
 	text "Fwahahaha!"
-	line "My BOSS has been"
-	cont "after this place!"
+	line "My BOSS has long"
+	cont "coveted this"
+	cont "place!"
 	done
 
 _SilphCo4FScientistBattleText::
@@ -31,13 +32,13 @@ _SilphCo4FScientistBattleText::
 
 _SilphCo4FScientistEndBattleText::
 	text "Darn!"
-	line "You weak #MON!"
+	line "Such weak #MON!"
 	prompt
 
 _SilphCo4FScientistAfterBattleText::
-	text "The doors are"
-	line "electronically"
-	cont "locked! A CARD"
+	text "The doors lie"
+	line "locked, by wire"
+	cont "and coil! A CARD"
 	cont "KEY opens them!"
 	done
 
@@ -51,6 +52,6 @@ _SilphCo4FRocket2EndBattleText::
 	prompt
 
 _SilphCo4FRocket2AfterBattleText::
-	text "I better tell the"
-	line "BOSS on 11F!"
+	text "I'd best warn the"
+	line "BOSS, on 11F!"
 	done

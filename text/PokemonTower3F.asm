@@ -9,9 +9,9 @@ _PokemonTower3FChanneler1EndBattleText::
 	prompt
 
 _PokemonTower3FChanneler1AfterBattleText::
-	text "The GHOSTs can be"
-	line "identified by the"
-	cont "SILPH SCOPE."
+	text "The GHOSTs show"
+	line "themselves, to"
+	cont "the SILPH SCOPE."
 	done
 
 _PokemonTower3FChanneler2BattleText::
@@ -35,8 +35,8 @@ _PokemonTower3FChanneler3BattleText::
 	done
 
 _PokemonTower3FChanneler3EndBattleText::
-	text "Whew!"
-	line "The spirit left!"
+	text "Whew. The spirit"
+	line "has fled."
 	prompt
 
 _PokemonTower3FChanneler3AfterBattleText::

@@ -31,14 +31,14 @@ _WardensHouseWardenTeethPoppedInHisTeethText::
 	prompt
 
 _WardensHouseWardenThanksText::
-	text "WARDEN: Thanks,"
-	line "kid! No one could"
-	cont "understand a word"
-	cont "that I said."
+	text "WARDEN: My thanks,"
+	line "child! No soul"
+	cont "could understand"
+	cont "a word I said."
 
-	para "I couldn't work"
+	para "I couldn't labor"
 	line "that way."
-	cont "Let me give you"
+	cont "Let me offer you"
 	cont "something for"
 	cont "your trouble."
 	prompt
@@ -55,11 +55,11 @@ _WardensHouseWardenHM04ExplanationText::
 	line "teaches STRENGTH!"
 
 	para "It lets #MON"
-	line "move boulders"
+	line "shift boulders"
 	cont "when you're out-"
 	cont "side of battle."
 
-	para "Oh yes, did you"
+	para "Oh, and did you"
 	line "find SECRET HOUSE"
 	cont "in SAFARI ZONE?"
 
@@ -82,5 +82,5 @@ _WardensHouseDisplayPhotosAndFossilsText::
 
 _WardensHouseDisplayMerchandiseText::
 	text "Old #MON"
-	line "merchandise."
+	line "relics."
 	done

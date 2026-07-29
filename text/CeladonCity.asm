@@ -1,42 +1,45 @@
 _CeladonCityLittleGirlText::
-	text "I got my KOFFING"
-	line "in CINNABAR!"
+	text "My KOFFING was"
+	line "bred in ashes,"
+	cont "in CINNABAR!"
 
-	para "It's nice, but it"
-	line "breathes poison"
-	cont "when it's angry!"
+	para "Sweet, yet it"
+	line "exhales poison"
+	cont "when it is riled!"
 	done
 
 _CeladonCityGramps1Text::
 	text "Heheh! This GYM"
-	line "is great! It's"
-	cont "full of women!"
+	line "is rife with"
+	cont "handsome women!"
 	done
 
 _CeladonCityGirlText::
 	text "The GAME CORNER"
-	line "is bad for our"
-	cont "city's image!"
+	line "shames our fine"
+	cont "city's good name!"
 	done
 
 _CeladonCityGramps2Text::
-	text "Moan! I blew it"
-	line "all at the slots!"
+	text "Damn! I squandered"
+	line "it all at the"
+	cont "cursed slots!"
 
-	para "I knew I should"
-	line "have cashed in my"
-	cont "coins for prizes!"
+	para "I should have"
+	line "traded my coins"
+	cont "for prizes instead!"
 	done
 
 _CeladonCityGramps3Text::
-	text "Hello, there!"
+	text "Good day to you."
 
-	para "I've seen you,"
-	line "but I never had a"
-	cont "chance to talk!"
+	para "I have watched"
+	line "you pass by, yet"
+	cont "never had the"
+	cont "chance to speak."
 
-	para "Here's a gift for"
-	line "dropping by!"
+	para "Here is a token"
+	line "for your visit!"
 	prompt
 
 _CeladonCityGramps3ReceivedTM41Text::
@@ -47,11 +50,11 @@ _CeladonCityGramps3ReceivedTM41Text::
 	text_end
 
 _CeladonCityGramps3TM41ExplanationText::
-	text "TM41 teaches"
-	line "SOFTBOILED!"
+	text "TM41 holds the"
+	line "art SOFTBOILED!"
 
 	para "Only one #MON"
-	line "can use it!"
+	line "may wield it!"
 
 	para "That #MON is"
 	line "CHANSEY!"
@@ -59,16 +62,18 @@ _CeladonCityGramps3TM41ExplanationText::
 
 _CeladonCityGramps3TM41NoRoomText::
 	text "Oh, your pack is"
-	line "full of items!"
+	line "burdened full!"
 	done
 
 _CeladonCityFisherText::
-	text "This is my trusted"
-	line "pal, POLIWRATH!"
+	text "This is my loyal"
+	line "companion,"
+	cont "POLIWRATH!"
 
-	para "It evolved from"
-	line "POLIWHIRL when I"
-	cont "used WATER STONE!"
+	para "It rose from"
+	line "POLIWHIRL, by"
+	cont "WATER STONE's"
+	cont "grim rite!"
 	done
 
 _CeladonCityPoliwrathText::
@@ -78,34 +83,35 @@ _CeladonCityPoliwrathText::
 
 _CeladonCityRocket1Text::
 	text "What are you"
-	line "staring at?"
+	line "gawking at?"
 	done
 
 _CeladonCityRocket2Text::
-	text "Keep out of TEAM"
-	line "ROCKET's way!"
+	text "Keep clear of"
+	line "TEAM ROCKET's"
+	cont "affairs!"
 	done
 
 _CeladonCityTrainerTips1Text::
 	text "TRAINER TIPS"
 
-	para "X ACCURACY boosts"
-	line "the accuracy of"
-	cont "techniques!"
+	para "X ACCURACY sharp-"
+	line "ens the aim of"
+	cont "your techniques!"
 
-	para "DIRE HIT jacks up"
-	line "the likelihood of"
-	cont "critical hits!"
+	para "DIRE HIT raises"
+	line "the odds of a"
+	cont "deadly strike!"
 
-	para "Get your items at"
-	line "CELADON DEPT."
+	para "Find such wares"
+	line "at CELADON DEPT."
 	cont "STORE!"
 	done
 
 _CeladonCitySignText::
 	text "CELADON CITY"
 	line "The City of"
-	cont "Rainbow Dreams"
+	cont "Wilting Dreams"
 	done
 
 _CeladonCityGymSignText::
@@ -113,7 +119,7 @@ _CeladonCityGymSignText::
 	line "#MON GYM"
 	cont "LEADER: ERIKA"
 
-	para "The Nature Loving"
+	para "The Withering"
 	line "Princess!"
 	done
 
@@ -122,33 +128,33 @@ _CeladonCityMansionSignText::
 	done
 
 _CeladonCityDeptStoreSignText::
-	text "Find what you"
-	line "need at CELADON"
-	cont "DEPT. STORE!"
+	text "Find your needs"
+	line "at CELADON DEPT."
+	cont "STORE!"
 	done
 
 _CeladonCityTrainerTips2Text::
 	text "TRAINER TIPS"
 
 	para "GUARD SPEC."
-	line "protects #MON"
-	cont "against SPECIAL"
-	cont "attacks such as"
-	cont "fire and water!"
+	line "shields #MON"
+	cont "from SPECIAL"
+	cont "assaults, such as"
+	cont "flame and flood!"
 
-	para "Get your items at"
-	line "CELADON DEPT."
+	para "Find such wares"
+	line "at CELADON DEPT."
 	cont "STORE!"
 	done
 
 _CeladonCityPrizeExchangeSignText::
-	text "Coins exchanged"
-	line "for prizes!"
+	text "Coins traded"
+	line "for prizes,"
 	cont "PRIZE EXCHANGE"
 	done
 
 _CeladonCityGameCornerSignText::
 	text "ROCKET GAME CORNER"
-	line "The playground"
-	cont "for grown-ups!"
+	line "A playground"
+	cont "for the ruined!"
 	done

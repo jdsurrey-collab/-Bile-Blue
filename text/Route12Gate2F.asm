@@ -1,11 +1,11 @@
 _Route12Gate2FBrunetteGirlYouCanHaveThisText::
 	text "My #MON's"
-	line "ashes are stored"
+	line "ashes rest now"
 	cont "in #MON TOWER."
 
-	para "You can have this"
-	line "TM. I don't need"
-	cont "it any more..."
+	para "Take this TM."
+	line "I've no more use"
+	cont "for it."
 	prompt
 
 _Route12Gate2FBrunetteGirlReceivedTM39Text::
@@ -29,15 +29,17 @@ _Route12Gate2FBrunetteGirlTM39NoRoomText::
 	done
 
 _Route12Gate2FLeftBinocularsText::
-	text "Looked into the"
-	line "binoculars."
+	text "Looked through"
+	line "the binoculars."
 
-	para "A man fishing!"
+	para "A lone man,"
+	line "fishing."
 	done
 
 _Route12Gate2FRightBinocularsText::
-	text "Looked into the"
-	line "binoculars."
+	text "Looked through"
+	line "the binoculars."
 
-	para "It's #MON TOWER!"
+	para "#MON TOWER,"
+	line "in the distance."
 	done

@@ -1,10 +1,11 @@
 _CinnabarLabFishingGuruText::
 	text "We study #MON"
-	line "extensively here."
+	line "deep in this ash-"
+	cont "scarred place."
 
-	para "People often bring"
+	para "Folk often bring"
 	line "us rare #MON"
-	cont "for examination."
+	cont "for our study."
 	done
 
 _CinnabarLabPhotoText::

@@ -3,23 +3,23 @@ _PewterNidoranHouseNidoranText::
 	text_end
 
 _PewterNidoranHouseLittleBoyText::
-	text "NIDORAN sit!"
+	text "NIDORAN, still!"
 	done
 
 _PewterNidoranHouseMiddleAgedManText::
-	text "Our #MON's an"
-	line "outsider, so it's"
-	cont "hard to handle."
+	text "Our #MON came"
+	line "from elsewhere,"
+	cont "and won't obey."
 
-	para "An outsider is a"
-	line "#MON that you"
-	cont "get in a trade."
+	para "A traded #MON,"
+	line "you understand-"
+	cont "not truly ours."
 
-	para "It grows fast, but"
-	line "it may ignore an"
-	cont "unskilled trainer"
-	cont "in battle!"
+	para "It grows quick,"
+	line "but scorns a"
+	cont "trainer without"
+	cont "the right BADGEs."
 
 	para "If only we had"
-	line "some BADGEs..."
+	line "earned some..."
 	done

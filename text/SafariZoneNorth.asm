@@ -6,7 +6,7 @@ _SafariZoneNorthTrainerTips1Text::
 	text "TRAINER TIPS"
 
 	para "The SECRET HOUSE"
-	line "is still ahead!"
+	line "still lies ahead!"
 	done
 
 _SafariZoneNorthSignText::
@@ -20,7 +20,7 @@ _SafariZoneNorthTrainerTips2Text::
 	line "tall grass!"
 
 	para "Zigzag through"
-	line "grassy areas to"
+	line "grassy ground to"
 	cont "flush them out."
 	done
 

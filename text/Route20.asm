@@ -1,5 +1,5 @@
 _Route20Swimmer1BattleText::
-	text "The water is"
+	text "The water runs"
 	line "shallow here."
 	done
 
@@ -13,8 +13,8 @@ _Route20Swimmer1AfterBattleText::
 	done
 
 _Route20Swimmer2BattleText::
-	text "SEAFOAM is a"
-	line "quiet getaway!"
+	text "SEAFOAM is such"
+	line "a quiet grave!"
 	done
 
 _Route20Swimmer2EndBattleText::
@@ -22,14 +22,14 @@ _Route20Swimmer2EndBattleText::
 	prompt
 
 _Route20Swimmer2AfterBattleText::
-	text "There's a huge"
-	line "cavern underneath"
+	text "A vast cavern"
+	line "lies beneath"
 	cont "this island."
 	done
 
 _Route20Swimmer3BattleText::
 	text "I love floating"
-	line "with the fishes!"
+	line "with the drowned!"
 	done
 
 _Route20Swimmer3EndBattleText::
@@ -37,13 +37,13 @@ _Route20Swimmer3EndBattleText::
 	prompt
 
 _Route20Swimmer3AfterBattleText::
-	text "Want to float"
-	line "with me?"
+	text "Care to float"
+	line "with me, forever?"
 	done
 
 _Route20Swimmer4BattleText::
-	text "Are you on"
-	line "vacation too?"
+	text "Are you also"
+	line "fleeing something?"
 	done
 
 _Route20Swimmer4EndBattleText::
@@ -52,12 +52,12 @@ _Route20Swimmer4EndBattleText::
 	prompt
 
 _Route20Swimmer4AfterBattleText::
-	text "SEAFOAM used to"
-	line "be one island!"
+	text "SEAFOAM was once"
+	line "a single island!"
 	done
 
 _Route20Swimmer5BattleText::
-	text "Check out my buff"
+	text "Behold my grim"
 	line "physique!"
 	done
 
@@ -66,15 +66,15 @@ _Route20Swimmer5EndBattleText::
 	prompt
 
 _Route20Swimmer5AfterBattleText::
-	text "I should've been"
-	line "buffing up my"
+	text "I should've"
+	line "hardened my"
 	cont "#MON, not me!"
 	done
 
 _Route20Swimmer6BattleText::
-	text "Why are you"
-	line "riding a #MON?"
-	cont "Can't you swim?"
+	text "Why do you ride"
+	line "a #MON? Can't"
+	cont "you swim at all?"
 	done
 
 _Route20Swimmer6EndBattleText::
@@ -84,12 +84,12 @@ _Route20Swimmer6EndBattleText::
 
 _Route20Swimmer6AfterBattleText::
 	text "Riding a #MON"
-	line "sure looks fun!"
+	line "does look grand!"
 	done
 
 _Route20CooltrainerMBattleText::
-	text "I rode my bird"
-	line "#MON here!"
+	text "I rode my carrion"
+	line "bird out here!"
 	done
 
 _Route20CooltrainerMEndBattleText::
@@ -99,12 +99,12 @@ _Route20CooltrainerMEndBattleText::
 
 _Route20CooltrainerMAfterBattleText::
 	text "My birds can't"
-	line "FLY me back!"
+	line "carry me back!"
 	done
 
 _Route20Swimmer7BattleText::
-	text "My boy friend gave"
-	line "me big pearls!"
+	text "My beau gifted me"
+	line "these grim pearls!"
 	done
 
 _Route20Swimmer7EndBattleText::
@@ -114,8 +114,8 @@ _Route20Swimmer7EndBattleText::
 
 _Route20Swimmer7AfterBattleText::
 	text "Will my pearls"
-	line "grow bigger"
-	cont "inside CLOYSTER?"
+	line "swell bigger"
+	cont "within CLOYSTER?"
 	done
 
 _Route20Swimmer8BattleText::
@@ -125,19 +125,19 @@ _Route20Swimmer8BattleText::
 
 _Route20Swimmer8EndBattleText::
 	text "I'm"
-	line "so disappointed!"
+	line "so disheartened!"
 	prompt
 
 _Route20Swimmer8AfterBattleText::
 	text "#MON have"
-	line "taken over an"
-	cont "abandoned mansion"
-	cont "on CINNABAR!"
+	line "claimed a ruined"
+	cont "mansion, aban-"
+	cont "doned on CINNABAR!"
 	done
 
 _Route20Swimmer9BattleText::
-	text "CINNABAR, in the"
-	line "west, has a LAB"
+	text "CINNABAR, to the"
+	line "west, holds a LAB"
 	cont "for #MON."
 	done
 
@@ -146,8 +146,8 @@ _Route20Swimmer9EndBattleText::
 	prompt
 
 _Route20Swimmer9AfterBattleText::
-	text "CINNABAR is a "
-	line "volcanic island!"
+	text "CINNABAR is an"
+	line "ashen, dead isle!"
 	done
 
 _Route20SeafoamIslandsSignText::

@@ -1,26 +1,26 @@
 _CinnabarIslandDoorIsLockedText::
-	text "The door is"
-	line "locked..."
+	text "The door lies"
+	line "sealed..."
 	done
 
 _CinnabarIslandGirlText::
 	text "CINNABAR GYM's"
-	line "BLAINE is an odd"
-	cont "man who has lived"
-	cont "here for decades."
+	line "BLAINE is a"
+	cont "strange man, worn"
+	cont "by decades of ash."
 	done
 
 _CinnabarIslandGamblerText::
-	text "Scientists conduct"
-	line "experiments in"
-	cont "the burned out"
+	text "Scientists still"
+	line "toil within that"
+	cont "charred, ruined"
 	cont "building."
 	done
 
 _CinnabarIslandSignText::
 	text "CINNABAR ISLAND"
-	line "The Fiery Town of"
-	cont "Burning Desire"
+	line "The Ashen Town of"
+	cont "Dying Embers"
 	done
 
 _CinnabarIslandPokemonLabSignText::
@@ -32,6 +32,6 @@ _CinnabarIslandGymSignText::
 	line "#MON GYM"
 	cont "LEADER: BLAINE"
 
-	para "The Hot-Headed"
+	para "The Ashen"
 	line "Quiz Master!"
 	done

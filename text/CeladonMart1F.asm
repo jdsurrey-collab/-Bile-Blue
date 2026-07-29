@@ -1,11 +1,11 @@
 _CeladonMart1FReceptionistText::
-	text "Hello! Welcome to"
+	text "Welcome to"
 	line "CELADON DEPT."
-	cont "STORE."
+	cont "STORE, weary soul."
 
-	para "The board on the"
-	line "right describes"
-	cont "the store layout."
+	para "The board at"
+	line "right shows our"
+	cont "grim floor plan."
 	done
 
 _CeladonMart1FDirectorySignText::

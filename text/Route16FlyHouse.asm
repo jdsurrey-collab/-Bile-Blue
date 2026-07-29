@@ -1,11 +1,11 @@
 _Route16FlyHouseBrunetteGirlText::
-	text "Oh, you found my"
-	line "secret retreat!"
+	text "Oh, you've found"
+	line "my secret refuge!"
 
-	para "Please don't tell"
-	line "anyone I'm here."
-	cont "I'll make it up"
-	cont "to you with this!"
+	para "Do not betray my"
+	line "hiding place. I'll"
+	cont "make it worth"
+	cont "your silence!"
 	prompt
 
 _Route16FlyHouseBrunetteGirlReceivedHM02Text::
@@ -14,17 +14,18 @@ _Route16FlyHouseBrunetteGirlReceivedHM02Text::
 	text_end
 
 _Route16FlyHouseBrunetteGirlHM02ExplanationText::
-	text "HM02 is FLY."
-	line "It will take you"
-	cont "back to any town."
+	text "HM02 holds FLY."
+	line "It bears you back"
+	cont "to any town."
 
-	para "Put it to good"
-	line "use!"
+	para "Use it well, and"
+	line "do not squander"
+	cont "it."
 	done
 
 _Route16FlyHouseBrunetteGirlHM02NoRoomText::
-	text "You don't have any"
-	line "room for this."
+	text "You've no room"
+	line "left for this."
 	done
 
 _Route16FlyHouseFearowText::

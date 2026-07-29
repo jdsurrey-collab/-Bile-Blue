@@ -1,7 +1,7 @@
 _Route15CooltrainerF1BattleText::
-	text "Let me try out the"
-	line "#MON I just"
-	cont "got in a trade!"
+	text "Let me try the"
+	line "#MON I claimed"
+	cont "in a cold trade!"
 	done
 
 _Route15CooltrainerF1EndBattleText::
@@ -10,118 +10,117 @@ _Route15CooltrainerF1EndBattleText::
 	prompt
 
 _Route15CooltrainerF1AfterBattleText::
-	text "You can't change"
-	line "the nickname of"
-	cont "any #MON you"
-	cont "get in a trade."
+	text "You cannot rename"
+	line "any #MON you"
+	cont "gain by trade."
 
-	para "Only the Original"
-	line "Trainer can."
+	para "Only its first"
+	line "master may."
 	done
 
 _Route15CooltrainerF2BattleText::
-	text "You look gentle,"
+	text "You seem gentle,"
 	line "so I think I can"
-	cont "beat you!"
+	cont "best you!"
 	done
 
 _Route15CooltrainerF2EndBattleText::
 	text "No,"
-	line "wrong!"
+	line "I was wrong!"
 	prompt
 
 _Route15CooltrainerF2AfterBattleText::
-	text "I'm afraid of"
-	line "BIKERs, they look"
-	cont "so ugly and mean!"
+	text "I dread BIKERs,"
+	line "they look so"
+	cont "cruel and foul!"
 	done
 
 _Route15CooltrainerM1BattleText::
-	text "When I whistle, I"
-	line "can summon bird"
-	cont "#MON!"
+	text "When I whistle,"
+	line "dark birds heed"
+	cont "my call!"
 	done
 
 _Route15CooltrainerM1EndBattleText::
 	text "Ow!"
-	line "That's tragic!"
+	line "How tragic!"
 	prompt
 
 _Route15CooltrainerM1AfterBattleText::
-	text "Maybe I'm not cut"
-	line "out for battles."
+	text "Perhaps I was not"
+	line "made for battle."
 	done
 
 _Route15CooltrainerM2BattleText::
-	text "Hmm? My birds are"
-	line "shivering! You're"
-	cont "good, aren't you?"
+	text "Hmm? My birds do"
+	line "tremble! You must"
+	cont "be quite skilled."
 	done
 
 _Route15CooltrainerM2EndBattleText::
 	text "Just"
-	line "as I thought!"
+	line "as I feared!"
 	prompt
 
 _Route15CooltrainerM2AfterBattleText::
 	text "Did you know moves"
 	line "like EARTHQUAKE"
-	cont "don't have any"
-	cont "effect on birds?"
+	cont "have no power"
+	cont "over birds?"
 	done
 
 _Route15Beauty1BattleText::
-	text "Oh, you're a"
-	line "little cutie!"
+	text "Oh, aren't you"
+	line "a wretched dear!"
 	done
 
 _Route15Beauty1EndBattleText::
 	text "You looked"
-	line "so cute too!"
+	line "so sweet, too!"
 	prompt
 
 _Route15Beauty1AfterBattleText::
 	text "I forgive you!"
-	line "I can take it!"
+	line "I can bear worse!"
 	done
 
 _Route15Beauty2BattleText::
-	text "I raise #MON"
-	line "because I live"
+	text "I keep #MON,"
+	line "for I dwell so"
 	cont "alone!"
 	done
 
 _Route15Beauty2EndBattleText::
-	text "I didn't"
-	line "ask for this!"
+	text "I never"
+	line "asked for this!"
 	prompt
 
 _Route15Beauty2AfterBattleText::
-	text "I just like going"
-	line "home to be with"
-	cont "my #MON!"
+	text "I just love"
+	line "returning home to"
+	cont "my quiet #MON!"
 	done
 
 _Route15Biker1BattleText::
 	text "Hey kid! C'mon!"
-	line "I just got these!"
+	line "These are freshly"
+	cont "stolen!"
 	done
 
 _Route15Biker1EndBattleText::
 	text "Why"
-	line "not?"
+	line "not, damn it?"
 	prompt
 
 _Route15Biker1AfterBattleText::
-	text "You only live"
-	line "once, so I live"
-	cont "as an outlaw!"
+	text "You live once, so"
+	line "I live an outlaw!"
 	cont "TEAM ROCKET RULES!"
 	done
 
 _Route15Biker2BattleText::
-	text "Fork over all your"
-	line "cash when you"
+	text "Hand over all your"
+	line "coin when you"
 	cont "lose to me, kid!"
 	done
 
@@ -131,13 +130,14 @@ _Route15Biker2EndBattleText::
 	prompt
 
 _Route15Biker2AfterBattleText::
-	text "I was just joking"
-	line "about the money!"
+	text "I was only jesting"
+	line "about the coin!"
 	done
 
 _Route15CooltrainerF3BattleText::
-	text "What's cool?"
-	line "Trading #MON!"
+	text "What's grim and"
+	line "grand? Trading"
+	cont "#MON!"
 	done
 
 _Route15CooltrainerF3EndBattleText::
@@ -147,22 +147,23 @@ _Route15CooltrainerF3EndBattleText::
 
 _Route15CooltrainerF3AfterBattleText::
 	text "I trade #MON"
-	line "with my friends!"
+	line "with my few kin!"
 	done
 
 _Route15CooltrainerF4BattleText::
-	text "Want to play with"
-	line "my #MON?"
+	text "Care to test your"
+	line "luck with my"
+	cont "#MON?"
 	done
 
 _Route15CooltrainerF4EndBattleText::
 	text "I was"
-	line "too impatient!"
+	line "too hasty!"
 	prompt
 
 _Route15CooltrainerF4AfterBattleText::
-	text "I'll go train with"
-	line "weaker people.@"
+	text "I'll seek out"
+	line "weaker souls.@"
 	text_end
 
 _Route15SignText::

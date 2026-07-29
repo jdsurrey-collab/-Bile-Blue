@@ -1,10 +1,11 @@
 _CeladonMart3FClerkTM18PreReceiveText::
-	text "Oh, hi! I finally"
-	line "finished #MON!"
+	text "Oh, hi! I've"
+	line "finally finished"
+	cont "#MON!"
 
 	para "Not done yet?"
-	line "This might be"
-	cont "useful!"
+	line "This may serve"
+	cont "you well!"
 	prompt
 
 _CeladonMart3FClerkReceivedTM18Text::
@@ -15,78 +16,79 @@ _CeladonMart3FClerkReceivedTM18Text::
 	text_end
 
 _CeladonMart3FClerkTM18ExplanationText::
-	text "TM18 is COUNTER!"
-	line "Not like the one"
-	cont "I'm leaning on,"
-	cont "mind you!"
+	text "TM18 holds"
+	line "COUNTER! Not the"
+	cont "one I'm leaning"
+	cont "on, mind you!"
 	done
 
 _CeladonMart3FClerkTM18NoRoomText::
-	text "Your pack is full"
-	line "of items!"
+	text "Your pack is"
+	line "burdened full!"
 	done
 
 _CeladonMart3FGameBoyKid1Text::
 	text "Captured #MON"
-	line "are registered"
-	cont "with an ID No."
-	cont "and OT, the name"
-	cont "of the Original"
-	cont "Trainer that"
-	cont "caught it!"
+	line "bear an ID mark"
+	cont "and OT, name of"
+	cont "the first soul"
+	cont "who claimed"
+	cont "them!"
 	done
 
 _CeladonMart3FGameBoyKid2Text::
-	text "All right!"
+	text "At last!"
 
-	para "My buddy's going"
-	line "to trade me his"
-	cont "KANGASKHAN for my"
-	cont "GRAVELER!"
+	para "My comrade will"
+	line "trade his"
+	cont "KANGASKHAN for"
+	cont "my GRAVELER!"
 	done
 
 _CeladonMart3FGameBoyKid3Text::
-	text "Come on GRAVELER!"
+	text "Come, GRAVELER!"
 
-	para "I love GRAVELER!"
-	line "I collect them!"
+	para "I do so love"
+	line "GRAVELER! I"
+	cont "keep them all!"
 
-	para "Huh?"
+	para "What's this?"
 
-	para "GRAVELER turned"
-	line "into a different"
-	cont "#MON!"
+	para "GRAVELER has"
+	line "become some"
+	cont "other #MON!"
 	done
 
 _CeladonMart3FLittleBoyText::
-	text "You can identify"
-	line "#MON you got"
-	cont "in trades by"
-	cont "their ID Numbers!"
+	text "You may know"
+	line "traded #MON"
+	cont "by their solemn"
+	cont "ID numbers!"
 	done
 
 _CeladonMart3FSNESText::
-	text "It's an SNES!"
+	text "A strange engine!"
 	done
 
 _CeladonMart3FRPGText::
-	text "An RPG! There's"
-	line "no time for that!"
+	text "A saga! No time"
+	line "for such things!"
 	done
 
 _CeladonMart3FSportsGameText::
-	text "A sports game!"
-	line "Dad'll like that!"
+	text "A sporting game!"
+	line "Father will love"
+	cont "it!"
 	done
 
 _CeladonMart3FPuzzleGameText::
 	text "A puzzle game!"
-	line "Looks addictive!"
+	line "How it beguiles!"
 	done
 
 _CeladonMart3FFightingGameText::
 	text "A fighting game!"
-	line "Looks tough!"
+	line "Looks brutal!"
 	done
 
 _CeladonMart3FCurrentFloorSignText::

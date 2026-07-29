@@ -1,15 +1,15 @@
 _ViridianNicknameHouseBaldingGuyText::
-	text "Coming up with"
-	line "nicknames is fun,"
-	cont "but hard."
+	text "Naming the living"
+	line "is sweet. Naming"
+	cont "the dead, harder."
 
-	para "Simple names are"
-	line "the easiest to"
-	cont "remember."
+	para "Simple names"
+	line "are easiest to"
+	cont "carve on stone."
 	done
 
 _ViridianNicknameHouseLittleGirlText::
-	text "My Daddy loves"
+	text "My father loved"
 	line "#MON too."
 	done
 

@@ -1,16 +1,16 @@
 _ViridianPokecenterGentlemanText::
-	text "You can use that"
+	text "You may use that"
 	line "PC in the corner."
 
-	para "The receptionist"
-	line "told me. So kind!"
+	para "The nurse told me,"
+	line "still kind, somehow"
 	done
 
 _ViridianPokecenterCooltrainerMText::
-	text "There's a #MON"
-	line "CENTER in every"
+	text "A #MON CENTER"
+	line "waits in every"
 	cont "town ahead."
 
-	para "They don't charge"
-	line "any money either!"
+	para "Mercy, at least,"
+	line "costs nothing."
 	done

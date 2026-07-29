@@ -1,22 +1,22 @@
 _Route17Biker1BattleText::
-	text "There's no money"
-	line "in fighting kids!"
+	text "No coin comes from"
+	line "beating children!"
 	done
 
 _Route17Biker1EndBattleText::
 	text "Burned"
-	line "out!"
+	line "clean out!"
 	prompt
 
 _Route17Biker1AfterBattleText::
-	text "Good stuff is"
-	line "lying around on"
+	text "Fine plunder lies"
+	line "scattered along"
 	cont "CYCLING ROAD!"
 	done
 
 _Route17Biker2BattleText::
 	text "What do you want,"
-	line "kiddo?"
+	line "little one?"
 	done
 
 _Route17Biker2EndBattleText::
@@ -24,14 +24,14 @@ _Route17Biker2EndBattleText::
 	prompt
 
 _Route17Biker2AfterBattleText::
-	text "I could belly-"
-	line "bump you outta"
-	cont "here!"
+	text "I could've knocked"
+	line "you clean off"
+	cont "this road!"
 	done
 
 _Route17Biker3BattleText::
-	text "You heading to"
-	line "FUCHSIA?"
+	text "Bound for"
+	line "FUCHSIA, are you?"
 	done
 
 _Route17Biker3EndBattleText::
@@ -40,13 +40,14 @@ _Route17Biker3EndBattleText::
 	prompt
 
 _Route17Biker3AfterBattleText::
-	text "I love racing"
+	text "I love the race"
 	line "downhill!"
 	done
 
 _Route17Biker4BattleText::
-	text "We're BIKERs!"
-	line "Highway stars!"
+	text "We are BIKERs!"
+	line "Stars of the"
+	cont "highway of ruin!"
 	done
 
 _Route17Biker4EndBattleText::
@@ -54,59 +55,60 @@ _Route17Biker4EndBattleText::
 	prompt
 
 _Route17Biker4AfterBattleText::
-	text "Are you looking"
-	line "for adventure?"
+	text "Do you seek out"
+	line "misadventure?"
 	done
 
 _Route17Biker5BattleText::
 	text "Let VOLTORB"
-	line "electrify you!"
+	line "shock you numb!"
 	done
 
 _Route17Biker5EndBattleText::
 	text "Grounded"
-	line "out!"
+	line "out cold!"
 	prompt
 
 _Route17Biker5AfterBattleText::
-	text "I got my VOLTORB"
-	line "at the abandoned"
-	cont "POWER PLANT."
+	text "I found my"
+	line "VOLTORB in the"
+	cont "ruined POWER"
+	cont "PLANT."
 	done
 
 _Route17Biker6BattleText::
 	text "My #MON won't"
-	line "evolve! Why?"
+	line "evolve! Why not?"
 	done
 
 _Route17Biker6EndBattleText::
 	text "Why,"
-	line "you!"
+	line "you wretch!"
 	prompt
 
 _Route17Biker6AfterBattleText::
-	text "Maybe some #MON"
-	line "need element"
-	cont "STONEs to evolve."
+	text "Perhaps some"
+	line "#MON need a"
+	cont "STONE to change."
 	done
 
 _Route17Biker7BattleText::
-	text "I need a little"
-	line "exercise!"
+	text "I could use some"
+	line "grim exercise!"
 	done
 
 _Route17Biker7EndBattleText::
 	text "Whew!"
-	line "Good workout!"
+	line "Fine, dark work!"
 	prompt
 
 _Route17Biker7AfterBattleText::
-	text "I'm sure I lost"
-	line "weight there!"
+	text "I'm sure I've"
+	line "shed weight there!"
 	done
 
 _Route17Biker8BattleText::
-	text "Be a rebel!"
+	text "Be a rebel, then!"
 	done
 
 _Route17Biker8EndBattleText::
@@ -114,13 +116,14 @@ _Route17Biker8EndBattleText::
 	prompt
 
 _Route17Biker8AfterBattleText::
-	text "Be ready to fight"
-	line "for your beliefs!"
+	text "Stand ready to"
+	line "fight for what"
+	cont "you believe!"
 	done
 
 _Route17Biker9BattleText::
-	text "Nice BIKE!"
-	line "How's it handle?"
+	text "Fine BIKE! How"
+	line "does it handle?"
 	done
 
 _Route17Biker9EndBattleText::
@@ -128,51 +131,50 @@ _Route17Biker9EndBattleText::
 	prompt
 
 _Route17Biker9AfterBattleText::
-	text "The slope makes"
+	text "This slope makes"
 	line "it hard to steer!"
 	done
 
 _Route17Biker10BattleText::
-	text "Get lost kid!"
-	line "I'm bushed!"
+	text "Away, child!"
+	line "I am spent!"
 	done
 
 _Route17Biker10EndBattleText::
 	text "Are you"
-	line "satisfied?"
+	line "satisfied now?"
 	prompt
 
 _Route17Biker10AfterBattleText::
-	text "I need to catch"
-	line "a few Zs!"
+	text "I must catch a"
+	line "few dark hours!"
 	done
 
 _Route17NoticeSign1Text::
 	text "It's a notice!"
 
-	para "Watch out for"
-	line "discarded items!"
+	para "Beware discarded"
+	line "belongings!"
 	done
 
 _Route17TrainerTips1Text::
 	text "TRAINER TIPS"
 
-	para "All #MON are"
-	line "unique."
+	para "Every #MON is"
+	line "singular."
 
-	para "Even #MON of"
-	line "the same type and"
-	cont "level grow at"
-	cont "different rates."
+	para "Even kin of same"
+	line "type and level"
+	cont "grow at their own"
+	cont "grim pace."
 	done
 
 _Route17TrainerTips2Text::
 	text "TRAINER TIPS"
 
-	para "Press the A or B"
-	line "Button to stay in"
-	cont "place while on a"
-	cont "slope."
+	para "Hold A or B to"
+	line "stand fast upon"
+	cont "a slope."
 	done
 
 _Route17SignText::
@@ -184,12 +186,13 @@ _Route17SignText::
 _Route17NoticeSign2Text::
 	text "It's a notice!"
 
-	para "Don't throw the"
-	line "game, throw #"
+	para "Don't waste your"
+	line "chance, throw #"
 	cont "BALLs instead!"
 	done
 
 _Route17CyclingRoadEndsSignText::
 	text "CYCLING ROAD"
-	line "Slope ends here!"
+	line "The slope ends"
+	cont "here."
 	done

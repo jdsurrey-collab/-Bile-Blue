@@ -1,56 +1,56 @@
 _BillsHouseBillImNotAPokemonText::
-	text "Hiya! I'm a"
-	line "#MON..."
-	cont "...No I'm not!"
+	text "I am a #MON..."
+	line "...No."
+	cont "That isn't true."
 
-	para "Call me BILL!"
-	line "I'm a true blue"
-	cont "#MANIAC! Hey!"
-	cont "What's with that"
-	cont "skeptical look?"
+	para "I'm BILL. A"
+	line "true #MANIAC,"
+	cont "for what that's"
+	cont "worth. Why the"
+	cont "look of pity?"
 
-	para "I'm not joshing"
-	line "you, I screwed up"
-	cont "an experiment and"
-	cont "got combined with"
-	cont "a #MON!"
+	para "This is no jest."
+	line "An experiment"
+	cont "gone wrong, and"
+	cont "now I'm fused"
+	cont "with a #MON."
 
-	para "So, how about it?"
-	line "Help me out here!"
+	para "Would you help"
+	line "a wretch like me?"
 	done
 
 _BillsHouseBillUseSeparationSystemText::
-	text "When I'm in the"
-	line "TELEPORTER, go to"
-	cont "my PC and run the"
+	text "While I'm in the"
+	line "TELEPORTER, use"
+	cont "my PC. Run the"
 	cont "Cell Separation"
-	cont "System!"
+	cont "System. Hurry."
 	done
 
 _BillsHouseBillNoYouGottaHelpText::
-	text "No!? Come on, you"
-	line "gotta help a guy"
-	cont "in deep trouble!"
+	text "No? Please. I'm"
+	line "in a wretched"
+	cont "state here."
 
-	para "What do you say,"
-	line "chief? Please?"
-	cont "OK? All right!"
+	para "I beg you."
+	line "Please?"
+	cont "Anything?"
 	prompt
 
 _BillsHouseBillThankYouText::
-	text "BILL: Yeehah!"
-	line "Thanks, bud! I"
-	cont "owe you one!"
+	text "BILL: At last."
+	line "My thanks. I'm"
+	cont "in your debt."
 
-	para "So, did you come"
-	line "to see my #MON"
-	cont "collection?"
-	cont "You didn't?"
-	cont "That's a bummer."
+	para "Did you come to"
+	line "see my #MON,"
+	cont "then? No?"
+	cont "How disappointing."
 
-	para "I've got to thank"
-	line "you... Oh here,"
-	cont "maybe this'll do."
+	para "I must repay"
+	line "you, somehow."
+	cont "Here. Perhaps"
+	cont "this will do."
 	prompt
 
 _SSTicketReceivedText::
@@ -61,28 +61,28 @@ _SSTicketReceivedText::
 	text_end
 
 _SSTicketNoRoomText::
-	text "You've got too"
-	line "much stuff, bud!"
+	text "You carry too"
+	line "much, friend!"
 	done
 
 _BillsHouseBillWhyDontYouGoInsteadOfMeText::
-	text "That cruise ship,"
-	line "S.S.ANNE, is in"
-	cont "VERMILION CITY."
-	cont "Its passengers"
-	cont "are all trainers!"
+	text "That ship,"
+	line "S.S.ANNE, waits"
+	cont "in VERMILION"
+	cont "CITY, full of"
+	cont "trainers."
 
-	para "They invited me"
-	line "to their party,"
-	cont "but I can't stand"
-	cont "fancy do's. Why"
-	cont "don't you go"
-	cont "instead of me?"
+	para "They asked me"
+	line "to their party."
+	cont "I can't abide"
+	cont "such gatherings."
+	cont "Go in my place,"
+	cont "won't you?"
 	done
 
 _BillsHouseBillCheckOutMyRarePokemonText::
-	text "BILL: Look, bud,"
-	line "just check out"
-	cont "some of my rare"
-	cont "#MON on my PC!"
+	text "BILL: Go on,"
+	line "then. See my"
+	cont "rare #MON,"
+	cont "on the PC."
 	done

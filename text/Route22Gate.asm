@@ -1,18 +1,19 @@
 _Route22GateGuardNoBoulderbadgeText::
-	text "Only truly skilled"
-	line "trainers are"
-	cont "allowed through."
+	text "Only the truly"
+	line "hardened may"
+	cont "pass through here."
 
-	para "You don't have the"
-	line "BOULDERBADGE yet!@"
+	para "You lack the"
+	line "BOULDERBADGE,"
+	cont "still!@"
 	text_end
 
 _Route22GateGuardICantLetYouPassText::
 	text_start
 
-	para "The rules are"
-	line "rules. I can't"
-	cont "let you pass."
+	para "Rules are rules."
+	line "I cannot let"
+	cont "you pass, child."
 	done
 
 _Route22GateGuardGoRightAheadText::

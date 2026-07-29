@@ -1,11 +1,11 @@
 _SafariZoneEastRestHouseScientistText::
 	text "How many did you"
-	line "catch? I'm bushed"
-	cont "from the work!"
+	line "trap? I'm worn"
+	cont "from the hunt!"
 	done
 
 _SafariZoneEastRestHouseRockerText::
-	text "I caught a"
+	text "I trapped a"
 	line "CHANSEY!"
 
 	para "That makes this"
@@ -13,6 +13,7 @@ _SafariZoneEastRestHouseRockerText::
 	done
 
 _SafariZoneEastRestHouseSilphWorkerMText::
-	text "Whew! I'm tired"
-	line "from all the fun!"
+	text "Whew! I'm spent"
+	line "from all this"
+	cont "grim sport!"
 	done

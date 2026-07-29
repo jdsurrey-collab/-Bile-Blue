@@ -889,8 +889,8 @@ _UseNextMonText::
 	done
 
 _Rival1WinText::
-	text "<RIVAL>: Yeah! Am"
-	line "I great or what?"
+	text "<RIVAL>: As I"
+	line "expected. Pathetic."
 	prompt
 
 _PlayerBlackedOutText2::
@@ -1694,62 +1694,64 @@ _LinkCanceledText::
 	done
 
 _OakSpeechText1::
-	text "Hello there!"
-	line "Welcome to the"
-	cont "world of #MON!"
+	text "...Hello, child."
+	line "Welcome to a"
+	cont "world of grief."
 
-	para "My name is OAK!"
-	line "People call me"
-	cont "the #MON PROF!"
+	para "I am OAK. They"
+	line "call me the"
+	cont "#MON PROF."
 	prompt
 
 _OakSpeechText2A::
 	text "This world is"
-	line "inhabited by"
+	line "haunted by"
 	cont "creatures called"
-	cont "#MON!@"
+	cont "#MON.@"
 	text_end
 
 _OakSpeechText2B::
 	text_start
 
-	para "For some people,"
-	line "#MON are"
-	cont "pets. Others use"
-	cont "them for fights."
+	para "For some, #MON"
+	line "are companions."
+	cont "For most, they"
+	cont "are weapons."
 
-	para "Myself..."
+	para "For me..."
 
-	para "I study #MON"
-	line "as a profession."
+	para "I study #MON,"
+	line "and what we do"
+	cont "to them."
 	prompt
 
 _IntroducePlayerText::
-	text "First, what is"
-	line "your name?"
+	text "Tell me, child,"
+	line "what is your name?"
 	prompt
 
 _IntroduceRivalText::
-	text "This is my grand-"
-	line "son. He's been"
-	cont "your rival since"
-	cont "you were a baby."
+	text "This is my"
+	line "grandson. He has"
+	cont "resented you"
+	cont "since the cradle."
 
-	para "...Erm, what is"
-	line "his name again?"
+	para "...His name,"
+	line "again? Remind me."
 	prompt
 
 _OakSpeechText3::
-	text "<PLAYER>!"
+	text "<PLAYER>."
 
-	para "Your very own"
-	line "#MON legend is"
-	cont "about to unfold!"
+	para "Your own #MON"
+	line "story begins"
+	cont "now. Whether it"
+	cont "ends well..."
 
-	para "A world of dreams"
-	line "and adventures"
-	cont "with #MON"
-	cont "awaits! Let's go!"
+	para "...is entirely"
+	line "up to you."
+	cont "Go, then."
+	cont "The world waits."
 	done
 
 _DoYouWantToNicknameText::
@@ -1761,14 +1763,14 @@ _DoYouWantToNicknameText::
 	done
 
 _YourNameIsText::
-	text "Right! So your"
-	line "name is <PLAYER>!"
+	text "So be it. Your"
+	line "name is <PLAYER>."
 	prompt
 
 _HisNameIsText::
-	text "That's right! I"
-	line "remember now! His"
-	cont "name is <RIVAL>!"
+	text "Yes. It comes"
+	line "back to me. His"
+	cont "name is <RIVAL>."
 	prompt
 
 _WillBeTradedText::

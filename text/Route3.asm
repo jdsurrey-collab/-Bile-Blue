@@ -1,101 +1,102 @@
 _Route3Text1::
-	text "Whew... I better"
-	line "take a rest..."
+	text "Whew... I must"
+	line "rest a moment..."
 	cont "Groan..."
 
 	para "That tunnel from"
-	line "CERULEAN takes a"
-	cont "lot out of you!"
+	line "CERULEAN drains"
+	cont "the life from you."
 	done
 
 _Route3Youngster1BattleText::
-	text "Hey! I met you in"
-	line "VIRIDIAN FOREST!"
+	text "I know you-"
+	line "from VIRIDIAN"
+	cont "FOREST!"
 	done
 
 _Route3Youngster1EndBattleText::
 	text "You"
-	line "beat me again!"
+	line "best me again."
 	prompt
 
 _Route3Youngster1AfterBattleText::
-	text "There are other"
-	line "kinds of #MON"
-	cont "than those found"
-	cont "in the forest!"
+	text "There are #MON"
+	line "beyond the"
+	cont "forest's dark,"
+	cont "believe me."
 	done
 
 _Route3Youngster2BattleText::
-	text "Hi! I like shorts!"
-	line "They're comfy and"
-	cont "easy to wear!"
+	text "I favor shorts."
+	line "Comfortable, for"
+	cont "a life like mine."
 	done
 
 _Route3Youngster2EndBattleText::
 	text "I don't"
-	line "believe it!"
+	line "believe it."
 	prompt
 
 _Route3Youngster2AfterBattleText::
-	text "Are you storing"
-	line "your #MON on"
-	cont "PC? Each BOX can"
-	cont "hold 20 #MON!"
+	text "Do you store"
+	line "your #MON by"
+	cont "PC? Each BOX"
+	cont "holds 20 souls."
 	done
 
 _Route3CooltrainerF1BattleText::
-	text "You looked at me,"
-	line "didn't you?"
+	text "You looked at"
+	line "me, didn't you?"
 	done
 
 _Route3CooltrainerF1EndBattleText::
 	text "You're"
-	line "mean!"
+	line "cruel."
 	prompt
 
 _Route3CooltrainerF1AfterBattleText::
-	text "Quit staring if"
-	line "you don't want to"
-	cont "fight!"
+	text "Don't stare, if"
+	line "you'd rather not"
+	cont "fight me."
 	done
 
 _Route3Youngster3BattleText::
-	text "Are you a trainer?"
-	line "Let's fight!"
+	text "A trainer? Then"
+	line "let's fight."
 	done
 
 _Route3Youngster3EndBattleText::
-	text "If I"
-	line "had new #MON I"
+	text "Had I"
+	line "fresher #MON I"
 	cont "would've won!"
 	prompt
 
 _Route3Youngster3AfterBattleText::
-	text "If a #MON BOX"
-	line "on the PC gets"
-	cont "full, just switch"
-	cont "to another BOX!"
+	text "Should a BOX"
+	line "fill with #MON,"
+	cont "just move to"
+	cont "another, empty."
 	done
 
 _Route3CooltrainerF2BattleText::
 	text "That look you"
-	line "gave me, it's so"
-	cont "intriguing!"
+	line "gave me... how"
+	cont "intriguing."
 	done
 
 _Route3CooltrainerF2EndBattleText::
-	text "Be nice!"
+	text "Be gentle!"
 	prompt
 
 _Route3CooltrainerF2AfterBattleText::
-	text "Avoid fights by"
-	line "not letting"
-	cont "people see you!"
+	text "Avoid a fight-"
+	line "stay unseen, if"
+	cont "you're able."
 	done
 
 _Route3Youngster4BattleText::
-	text "Hey! You're not"
-	line "wearing shorts!"
+	text "You wear no"
+	line "shorts!"
 	done
 
 _Route3Youngster4EndBattleText::
@@ -104,25 +105,25 @@ _Route3Youngster4EndBattleText::
 	prompt
 
 _Route3Youngster4AfterBattleText::
-	text "I always wear"
-	line "shorts, even in"
-	cont "winter!"
+	text "I wear shorts"
+	line "always, even in"
+	cont "the dead of winter."
 	done
 
 _Route3Youngster5BattleText::
-	text "You can fight my"
-	line "new #MON!"
+	text "Face my new"
+	line "#MON!"
 	done
 
 _Route3Youngster5EndBattleText::
 	text "Done"
-	line "like dinner!"
+	line "for, it seems."
 	prompt
 
 _Route3Youngster5AfterBattleText::
-	text "Trained #MON"
-	line "are stronger than"
-	cont "the wild ones!"
+	text "A trained #MON"
+	line "outmatches the"
+	cont "wild every time."
 	done
 
 _Route3CooltrainerF3BattleText::
@@ -131,12 +132,12 @@ _Route3CooltrainerF3BattleText::
 	done
 
 _Route3CooltrainerF3EndBattleText::
-	text "That's it?"
+	text "Is that all?"
 	prompt
 
 _Route3CooltrainerF3AfterBattleText::
-	text "ROUTE 4 is at the"
-	line "foot of MT.MOON."
+	text "ROUTE 4 lies at"
+	line "MT.MOON's foot."
 	done
 
 _Route3SignText::

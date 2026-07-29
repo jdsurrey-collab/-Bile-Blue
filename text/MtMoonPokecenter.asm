@@ -1,46 +1,46 @@
 _MtMoonPokecenterYoungsterText::
-	text "I've 6 # BALLs"
-	line "set in my belt."
+	text "I keep six #"
+	line "BALLs at my belt."
 
-	para "At most, you can"
-	line "carry 6 #MON."
+	para "Six #MON is"
+	line "all one may bear."
 	done
 
 _MtMoonPokecenterGentlemanText::
 	text "TEAM ROCKET"
-	line "attacks CERULEAN"
-	cont "citizens..."
+	line "preys on CERULEAN"
+	cont "folk, again..."
 
-	para "TEAM ROCKET is"
-	line "always in the"
-	cont "news!"
+	para "Always in the"
+	line "news, that lot."
+	cont "Never any good."
 	done
 
 _MtMoonPokecenterMagikarpSalesmanIGotADealText::
-	text "MAN: Hello, there!"
-	line "Have I got a deal"
-	cont "just for you!"
+	text "MAN: Ah, friend!"
+	line "Have I a deal"
+	cont "for you, indeed."
 
-	para "I'll let you have"
-	line "a swell MAGIKARP"
-	cont "for just ¥500!"
-	cont "What do you say?"
+	para "A fine MAGIKARP,"
+	line "yours for just"
+	cont "¥500! What do"
+	cont "you say?"
 	done
 
 _MtMoonPokecenterMagikarpSalesmanNoText::
-	text "No? I'm only"
-	line "doing this as a"
-	cont "favor to you!"
+	text "No? A pity. I"
+	line "offer this out"
+	cont "of kindness alone."
 	done
 
 _MtMoonPokecenterMagikarpSalesmanNoMoneyText::
-	text "You'll need more"
-	line "money than that!"
+	text "You'll need"
+	line "more than that!"
 	done
 
 _MtMoonPokecenterMagikarpSalesmanNoRefundsText::
-	text "MAN: Well, I don't"
-	line "give refunds!"
+	text "MAN: I give no"
+	line "refunds. None."
 	done
 
 _MtMoonPokecenterClipboardText::

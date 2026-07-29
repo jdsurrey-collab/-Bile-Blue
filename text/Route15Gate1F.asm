@@ -1,7 +1,7 @@
 _Route15Gate1FGuardText::
-	text "Are you working"
-	line "on a #DEX?"
+	text "Do you keep the"
+	line "grim #DEX?"
 
 	para "PROF.OAK's AIDE"
-	line "came by here."
+	line "passed this way."
 	done

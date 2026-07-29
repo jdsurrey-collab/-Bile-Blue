@@ -1,17 +1,17 @@
 _CeladonMartRoofLittleGirlGiveHerWhichDrinkText::
-	text "Give her which"
+	text "Offer her which"
 	line "drink?"
 	done
 
 _CeladonMartRoofLittleGirlYayFreshWaterText::
-	text "Yay!"
+	text "Oh!"
 
 	para "FRESH WATER!"
 
-	para "Thank you!"
+	para "My thanks, truly."
 
-	para "You can have this"
-	line "from me!@"
+	para "Take this, in"
+	line "kind return!@"
 	text_end
 
 _CeladonMartRoofLittleGirlReceivedTM13Text::
@@ -26,22 +26,22 @@ _CeladonMartRoofLittleGirlTM13ExplanationText::
 
 	para "@"
 	text_ram wStringBuffer
-	text " contains"
+	text " holds"
 	line "ICE BEAM!"
 
-	para "It can freeze the"
-	line "target sometimes!@"
+	para "It may freeze"
+	line "the foe, at times!@"
 	text_end
 
 _CeladonMartRoofLittleGirlYaySodaPopText::
-	text "Yay!"
+	text "Oh!"
 
 	para "SODA POP!"
 
-	para "Thank you!"
+	para "My thanks, truly."
 
-	para "You can have this"
-	line "from me!@"
+	para "Take this, in"
+	line "kind return!@"
 	text_end
 
 _CeladonMartRoofLittleGirlReceivedTM48Text::
@@ -56,22 +56,22 @@ _CeladonMartRoofLittleGirlTM48ExplanationText::
 
 	para "@"
 	text_ram wStringBuffer
-	text " contains"
+	text " holds"
 	line "ROCK SLIDE!"
 
-	para "It can spook the"
-	line "target sometimes!@"
+	para "It may unnerve"
+	line "the foe, at times!@"
 	text_end
 
 _CeladonMartRoofLittleGirlYayLemonadeText::
-	text "Yay!"
+	text "Oh!"
 
 	para "LEMONADE!"
 
-	para "Thank you!"
+	para "My thanks, truly."
 
-	para "You can have this"
-	line "from me!@"
+	para "Take this, in"
+	line "kind return!@"
 	text_end
 
 _CeladonMartRoofLittleGirlReceivedTM49Text::
@@ -82,43 +82,47 @@ _CeladonMartRoofLittleGirlReceivedTM49Text::
 _CeladonMartRoofLittleGirlTM49ExplanationText::
 	text_start
 
-	para "TM49 contains"
+	para "TM49 holds"
 	line "TRI ATTACK!@"
 	text_end
 
 _CeladonMartRoofLittleGirlNoRoomText::
-	text "You don't have"
-	line "space for this!@"
+	text "You've no room"
+	line "left for this!@"
 	text_end
 
 _CeladonMartRoofLittleGirlImNotThirstyText::
-	text "No thank you!"
-	line "I'm not thirsty"
-	cont "after all!@"
+	text "No, thank you."
+	line "I'm no longer"
+	cont "thirsty, after"
+	cont "all!@"
 	text_end
 
 _CeladonMartRoofSuperNerdText::
 	text "My sister is a"
-	line "trainer, believe"
-	cont "it or not."
+	line "trainer, if you"
+	cont "believe it."
 
-	para "But, she's so"
-	line "immature, she"
-	cont "drives me nuts!"
+	para "Yet she's so"
+	line "childish, she"
+	cont "vexes me so!"
 	done
 
 _CeladonMartRoofLittleGirlImThirstyText::
-	text "I'm thirsty!"
-	line "I want something"
-	cont "to drink!"
+	text "I am thirsty!"
+	line "I long for"
+	cont "something to"
+	cont "drink!"
 	done
 
 _CeladonMartRoofLittleGirlGiveHerADrinkText::
-	text "I'm thirsty!"
-	line "I want something"
-	cont "to drink!"
+	text "I am thirsty!"
+	line "I long for"
+	cont "something to"
+	cont "drink!"
 
-	para "Give her a drink?"
+	para "Offer her a"
+	line "drink?"
 	done
 
 _CeladonMartRoofCurrentFloorSignText::
@@ -127,24 +131,25 @@ _CeladonMartRoofCurrentFloorSignText::
 	done
 
 _VendingMachineText1::
-	text "A vending machine!"
-	line "Here's the menu!"
+	text "A vending"
+	line "machine! Behold"
+	cont "its offerings!"
 	prompt
 
 _VendingMachineText4::
-	text "Oops, not enough"
-	line "money!"
+	text "Alas, not enough"
+	line "coin!"
 	done
 
 _VendingMachineText5::
 	text_ram wStringBuffer
 	text_start
-	line "popped out!"
+	line "fell out below!"
 	done
 
 _VendingMachineText6::
 	text "There's no more"
-	line "room for stuff!"
+	line "room for it!"
 	done
 
 _VendingMachineText7::

@@ -1,23 +1,23 @@
 _VermilionMartCooltrainerMText::
-	text "There are evil"
-	line "people who will"
-	cont "use #MON for"
-	cont "criminal acts."
+	text "Some souls will"
+	line "twist #MON to"
+	cont "cruel, criminal"
+	cont "ends."
 
 	para "TEAM ROCKET"
 	line "traffics in rare"
 	cont "#MON."
 
-	para "They also abandon"
-	line "#MON that they"
-	cont "consider not to"
-	cont "be popular or"
-	cont "useful."
+	para "They discard the"
+	line "ones they deem"
+	cont "worthless, or"
+	cont "unlovely, or"
+	cont "slow."
 	done
 
 _VermilionMartCooltrainerFText::
-	text "I think #MON"
-	line "can be good or"
-	cont "evil. It depends"
-	cont "on the trainer."
+	text "A #MON is good"
+	line "or evil as its"
+	cont "trainer makes"
+	cont "it so."
 	done

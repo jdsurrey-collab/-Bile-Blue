@@ -1,21 +1,22 @@
 _CeladonMart2FMiddleAgedManText::
-	text "SUPER REPEL keeps"
-	line "weak #MON at"
-	cont "bay..."
+	text "SUPER REPEL wards"
+	line "off frail #MON"
+	cont "for a while..."
 
-	para "Hmm, it's a more"
-	line "powerful REPEL!"
+	para "A stronger ward"
+	line "than REPEL, in"
+	cont "truth!"
 	done
 
 _CeladonMart2FGirlText::
-	text "For long outings,"
-	line "you should buy"
-	cont "REVIVE."
+	text "For long, grim"
+	line "journeys, keep a"
+	cont "REVIVE close."
 	done
 
 _CeladonMart2FCurrentFloorSignText::
-	text "Top Grade Items"
-	line "for Trainers!"
+	text "Fine Wares for"
+	line "Weary Trainers!"
 
 	para "2F: TRAINER'S"
 	line "    MARKET"

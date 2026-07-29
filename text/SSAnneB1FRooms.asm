@@ -4,40 +4,40 @@ _SSAnneB1FRoomsMachokeText::
 	text_end
 
 _SSAnneB1FRoomsSailor1BattleText::
-	text "You know what they"
-	line "say about sailors"
-	cont "and fighting!"
+	text "You know what"
+	line "they say of"
+	cont "sailors, and blood."
 	done
 
 _SSAnneB1FRoomsSailor1EndBattleText::
-	text "Right!"
-	line "Good fight, mate!"
+	text "Right! Good"
+	line "fight, mate!"
 	prompt
 
 _SSAnneB1FRoomsSailor1AfterBattleText::
-	text "Haha! Want to be"
-	line "a sailor, mate?"
+	text "Care to be a"
+	line "sailor, mate?"
 	done
 
 _SSAnneB1FRoomsSailor2BattleText::
-	text "My sailor's pride"
-	line "is at stake!"
+	text "My sailor's"
+	line "pride's at stake!"
 	done
 
 _SSAnneB1FRoomsSailor2EndBattleText::
-	text "Your"
-	line "spirit sank me!"
+	text "Your spirit has"
+	line "sunk me!"
 	prompt
 
 _SSAnneB1FRoomsSailor2AfterBattleText::
 	text "Did you see the"
-	line "FISHING GURU in"
+	line "FISHING GURU, in"
 	cont "VERMILION CITY?"
 	done
 
 _SSAnneB1FRoomsSailor3BattleText::
-	text "Us sailors have"
-	line "#MON too!"
+	text "We sailors"
+	line "keep #MON too!"
 	done
 
 _SSAnneB1FRoomsSailor3EndBattleText::
@@ -46,14 +46,14 @@ _SSAnneB1FRoomsSailor3EndBattleText::
 	prompt
 
 _SSAnneB1FRoomsSailor3AfterBattleText::
-	text "We caught all our"
-	line "#MON while"
-	cont "out at sea!"
+	text "We caught all"
+	line "our #MON out"
+	cont "at sea, ourselves."
 	done
 
 _SSAnneB1FRoomsSailor4BattleText::
-	text "I like feisty"
-	line "kids like you!@"
+	text "I favor feisty"
+	line "children like you!@"
 	text_end
 
 _SSAnneB1FRoomsSailor4EndBattleText::
@@ -62,53 +62,53 @@ _SSAnneB1FRoomsSailor4EndBattleText::
 	prompt
 
 _SSAnneB1FRoomsSailor4AfterBattleText::
-	text "Sea #MON live"
-	line "in deep water."
-	cont "You'll need a ROD!"
+	text "Sea #MON dwell"
+	line "in the deep."
+	cont "You'll need a ROD."
 	done
 
 _SSAnneB1FRoomsSailor5BattleText::
-	text "Matey, you're"
-	line "walking the plank"
-	cont "if you lose!"
+	text "Matey, walk the"
+	line "plank, should"
+	cont "you lose!"
 	done
 
 _SSAnneB1FRoomsSailor5EndBattleText::
-	text "Argh!"
-	line "Beaten by a kid!"
+	text "Argh! Beaten by"
+	line "a child!"
 	prompt
 
 _SSAnneB1FRoomsSailor5AfterBattleText::
-	text "Jellyfish some-"
-	line "times drift into"
-	cont "the ship."
+	text "Jellyfish drift"
+	line "in sometimes,"
+	cont "unnoticed."
 	done
 
 _SSAnneB1FRoomsFisherBattleText::
-	text "Hello stranger!"
-	line "Stop and chat!"
+	text "Hello, stranger."
+	line "Stay a while."
 
 	para "All my #MON"
-	line "are from the sea!"
+	line "hail from the sea."
 	done
 
 _SSAnneB1FRoomsFisherEndBattleText::
-	text "Darn!"
-	line "I let that one"
-	cont "get away!"
+	text "Darn! That one"
+	line "slipped away,"
+	cont "too!"
 	prompt
 
 _SSAnneB1FRoomsFisherAfterBattleText::
-	text "I was going to"
-	line "make you my"
-	cont "assistant too!"
+	text "I'd have made you"
+	line "my assistant,"
+	cont "besides."
 	done
 
 _SSAnneB1FRoomsSuperNerdText::
-	text "My buddy, MACHOKE,"
-	line "is super strong!"
+	text "My MACHOKE, so"
+	line "very strong."
 
-	para "He has enough"
-	line "STRENGTH to move"
-	cont "big rocks!"
+	para "Strong enough to"
+	line "move boulders,"
+	cont "with ease."
 	done

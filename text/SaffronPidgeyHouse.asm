@@ -1,9 +1,10 @@
 _SaffronPidgeyHouseBrunetteGirlText::
-	text "Thank you for"
-	line "writing. I hope"
-	cont "to see you soon!"
+	text "My thanks for"
+	line "writing. I do"
+	cont "hope to see you"
+	cont "soon!"
 
-	para "Hey! Don't look"
+	para "Hey! Don't peer"
 	line "at my letter!"
 	done
 
@@ -13,7 +14,7 @@ _SaffronPidgeyHousePidgeyText::
 
 _SaffronPidgeyHouseYoungsterText::
 	text "The COPYCAT is"
-	line "cute! I'm getting"
+	line "dear! I'll get"
 	cont "her a # DOLL!"
 	done
 
@@ -21,7 +22,7 @@ _SaffronPidgeyHousePaperText::
 	text "I was given a PP"
 	line "UP as a gift."
 
-	para "It's used for"
-	line "increasing the PP"
-	cont "of techniques!"
+	para "It swells the PP"
+	line "of your"
+	cont "techniques!"
 	done

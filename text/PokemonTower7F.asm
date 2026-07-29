@@ -1,32 +1,33 @@
 _PokemonTower7FMrFujiRescueText::
-	text "MR.FUJI: Heh? You"
-	line "came to save me?"
+	text "MR.FUJI: Oh? You"
+	line "came to save an"
+	cont "old man?"
 
-	para "Thank you. But, I"
-	line "came here of my"
-	cont "own free will."
+	para "My thanks. But I"
+	line "came here by my"
+	cont "own will."
 
 	para "I came to calm"
 	line "the soul of"
 	cont "CUBONE's mother."
 
-	para "I think MAROWAK's"
-	line "spirit has gone"
-	cont "to the afterlife."
+	para "MAROWAK's spirit,"
+	line "I believe, has"
+	cont "gone to rest."
 
-	para "I must thank you"
-	line "for your kind"
-	cont "concern!"
+	para "Your kindness"
+	line "means much to"
+	cont "me, truly."
 
-	para "Follow me to my"
-	line "home, #MON"
-	cont "HOUSE at the foot"
-	cont "of this tower."
+	para "Come to my home,"
+	line "the #MON"
+	cont "HOUSE, at this"
+	cont "tower's foot."
 	done
 
 _PokemonTower7FRocket1BattleText::
-	text "What do you want?"
-	line "Why are you here?"
+	text "What do you"
+	line "want? Why here?"
 	done
 
 _PokemonTower7FRocket1EndBattleText::
@@ -34,18 +35,18 @@ _PokemonTower7FRocket1EndBattleText::
 	prompt
 
 _PokemonTower7FRocket1AfterBattleText::
-	text "I'm not going to"
-	line "forget this!"
+	text "I won't forget"
+	line "this!"
 	done
 
 _PokemonTower7FRocket2BattleText::
-	text "This old guy came"
-	line "and complained"
-	cont "about us harming"
-	cont "useless #MON!"
+	text "That old fool"
+	line "came, whining"
+	cont "about our use of"
+	cont "worthless #MON!"
 
-	para "We're talking it"
-	line "over as adults!"
+	para "We're settling"
+	line "this, as adults!"
 	done
 
 _PokemonTower7FRocket2EndBattleText::
@@ -54,25 +55,25 @@ _PokemonTower7FRocket2EndBattleText::
 	prompt
 
 _PokemonTower7FRocket2AfterBattleText::
-	text "#MON are only"
-	line "good for making"
-	cont "money!"
+	text "#MON exist to"
+	line "make us money."
+	cont "Nothing more."
 
-	para "Stay out of our"
-	line "business!"
+	para "Stay out of"
+	line "our affairs!"
 	done
 
 _PokemonTower7FRocket3BattleText::
-	text "You're not saving"
-	line "anyone, kid!"
+	text "You save no one,"
+	line "child!"
 	done
 
 _PokemonTower7FRocket3EndBattleText::
-	text "Don't"
-	line "fight us ROCKETs!"
+	text "Don't fight"
+	line "TEAM ROCKET!"
 	prompt
 
 _PokemonTower7FRocket3AfterBattleText::
-	text "You're not getting"
+	text "You won't get"
 	line "away with this!"
 	done

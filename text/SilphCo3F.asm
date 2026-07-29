@@ -1,17 +1,17 @@
 _SilphCo3FSilphWorkerMWhatShouldIDoText::
-	text "I work for SILPH."
-	line "What should I do?"
+	text "I serve SILPH."
+	line "What shall I do?"
 	done
 
 _SilphCo3FSilphWorkerMYouSavedUsText::
 	text "<PLAYER>! You and"
-	line "your #MON"
-	cont "saved us!"
+	line "your #MON have"
+	cont "delivered us!"
 	done
 
 _SilphCo3FRocketBattleText::
-	text "Quit messing with"
-	line "us, kid!"
+	text "Quit meddling"
+	line "with us, child!"
 	done
 
 _SilphCo3FRocketEndBattleText::
@@ -20,27 +20,27 @@ _SilphCo3FRocketEndBattleText::
 	prompt
 
 _SilphCo3FRocketAfterBattleText::
-	text "A hint? You can"
+	text "A hint? You may"
 	line "open doors with a"
 	cont "CARD KEY!"
 	done
 
 _SilphCo3FScientistBattleText::
-	text "I support TEAM"
+	text "I favor TEAM"
 	line "ROCKET more than"
-	cont "I support SILPH!"
+	cont "I favor SILPH!"
 	done
 
 _SilphCo3FScientistEndBattleText::
 	text "You"
-	line "really got me!"
+	line "truly bested me!"
 	prompt
 
 _SilphCo3FScientistAfterBattleText::
 	text "Humph..."
 
-	para "TEAM ROCKET said"
-	line "that if I helped"
+	para "TEAM ROCKET swore"
+	line "that if I served"
 	cont "them, they'd let"
 	cont "me study #MON!"
 	done

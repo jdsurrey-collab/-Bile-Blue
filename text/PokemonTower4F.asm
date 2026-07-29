@@ -23,9 +23,9 @@ _PokemonTower4FChanneler2EndBattleText::
 	prompt
 
 _PokemonTower4FChanneler2AfterBattleText::
-	text "We can't crack"
-	line "the identity of"
-	cont "the GHOSTs."
+	text "We cannot learn"
+	line "the GHOSTs' true"
+	cont "names."
 	done
 
 _PokemonTower4FChanneler3BattleText::

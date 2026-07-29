@@ -5,7 +5,7 @@ _SafariZoneCenterRestHouseSignText::
 _SafariZoneCenterTrainerTipsSignText::
 	text "TRAINER TIPS"
 
-	para "Press the START"
-	line "Button to check"
-	cont "remaining time!"
+	para "Press START to"
+	line "see how much"
+	cont "time remains!"
 	done

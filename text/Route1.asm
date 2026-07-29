@@ -1,15 +1,15 @@
 _Route1Youngster1MartSampleText::
-	text "Hi! I work at a"
+	text "I clerk at the"
 	line "#MON MART."
 
-	para "It's a convenient"
-	line "shop, so please"
-	cont "visit us in"
-	cont "VIRIDIAN CITY."
+	para "A convenient"
+	line "shop, if you"
+	cont "can call it that,"
+	cont "in VIRIDIAN CITY."
 
-	para "I know, I'll give"
-	line "you a sample!"
-	cont "Here you go!"
+	para "Go on, then-"
+	line "take a sample."
+	cont "It won't save you."
 	prompt
 
 _Route1Youngster1GotPotionText::
@@ -20,27 +20,27 @@ _Route1Youngster1GotPotionText::
 	text_end
 
 _Route1Youngster1AlsoGotPokeballsText::
-	text "We also carry"
-	line "# BALLs for"
-	cont "catching #MON!"
+	text "We also stock #"
+	line "BALLs, for those"
+	cont "who still hunt."
 	done
 
 _Route1Youngster1NoRoomText::
-	text "You have too much"
-	line "stuff with you!"
+	text "You're already"
+	line "burdened enough."
 	done
 
 _Route1Youngster2Text::
 	text "See those ledges"
 	line "along the road?"
 
-	para "It's a bit scary,"
-	line "but you can jump"
-	cont "from them."
+	para "Leap if you dare-"
+	line "the fall won't"
+	cont "kill you. Probably."
 
-	para "You can get back"
-	line "to PALLET TOWN"
-	cont "quicker that way."
+	para "Quicker back to"
+	line "PALLET TOWN,"
+	cont "that way."
 	done
 
 _Route1SignText::

@@ -1,23 +1,23 @@
 _VictoryRoad1FCooltrainerFBattleText::
 	text "I wonder if you"
-	line "are good enough"
-	cont "for me!"
+	line "are worthy of"
+	cont "me!"
 	done
 
 _VictoryRoad1FCooltrainerFEndBattleText::
 	text "I"
-	line "lost out!"
+	line "have lost out!"
 	prompt
 
 _VictoryRoad1FCooltrainerFAfterBattleText::
-	text "I never wanted to"
-	line "lose to anybody!"
+	text "I never meant to"
+	line "lose to any soul!"
 	done
 
 _VictoryRoad1FCooltrainerMBattleText::
-	text "I can see you're"
-	line "good! Let me see"
-	cont "exactly how good!"
+	text "I see you have"
+	line "some skill! Let"
+	cont "me judge it well!"
 	done
 
 _VictoryRoad1FCooltrainerMEndBattleText::
@@ -26,6 +26,6 @@ _VictoryRoad1FCooltrainerMEndBattleText::
 	prompt
 
 _VictoryRoad1FCooltrainerMAfterBattleText::
-	text "I concede, you're"
-	line "better than me!"
+	text "I yield, you are"
+	line "far better still!"
 	done

@@ -3,24 +3,25 @@ _FuchsiaMeetingRoomSafariZoneWorker1::
 	line "WARDEN SLOWPOKE."
 
 	para "He and SLOWPOKE"
-	line "both look vacant!"
+	line "both look so"
+	cont "vacant!"
 	done
 
 _FuchsiaMeetingRoomSafariZoneWorker2::
-	text "SLOWPOKE is very"
-	line "knowledgeable"
-	cont "about #MON!"
+	text "SLOWPOKE knows"
+	line "a great deal of"
+	cont "#MON lore!"
 
-	para "He even has some"
+	para "He even holds"
 	line "fossils of rare,"
 	cont "extinct #MON!"
 	done
 
 _FuchsiaMeetingRoomSafariZoneWorker3::
-	text "SLOWPOKE came in,"
-	line "but I couldn't"
+	text "SLOWPOKE came by,"
+	line "but I could not"
 	cont "understand him."
 
-	para "I think he's got"
-	line "a speech problem!"
+	para "I think his"
+	line "tongue is cursed!"
 	done
