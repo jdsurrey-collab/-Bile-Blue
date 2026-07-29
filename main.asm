@@ -212,6 +212,14 @@ INCLUDE "engine/movie/intro.asm"
 INCLUDE "engine/movie/trade2.asm"
 
 
+; own floating section (no explicit bank) so this ~3KB addition can be
+; bin-packed into whatever bank has room, rather than risking an overflow
+; in one of the hand-packed pinned banks (see CLAUDE.md)
+SECTION "Gothic Intro", ROMX
+
+INCLUDE "engine/movie/gothic_intro.asm"
+
+
 SECTION "Pokédex Rating", ROMX
 
 INCLUDE "engine/events/pokedex_rating.asm"

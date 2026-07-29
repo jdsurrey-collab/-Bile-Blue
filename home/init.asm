@@ -96,13 +96,16 @@ Init::
 	dec a
 	ld [wUpdateSpritesEnabled], a
 
-	; skip the copyright/shooting-star/Nidorino-Gengar intro; go straight to the title screen
+	; skip the copyright/shooting-star/Nidorino-Gengar intro; play the
+	; gothic castle/"PURPLE" stamp scene instead, then go to the title screen
 	call DisableLCD
 	call ClearVram
 	call GBPalNormal
 	call ClearSprites
 	ld a, LCDC_DEFAULT
 	ldh [rLCDC], a
+
+	farcall PlayGothicIntro
 
 	jp PrepareTitleScreen
 

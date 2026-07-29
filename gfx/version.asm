@@ -1,8 +1,8 @@
+; own section: this graphic grew from the original 10-tile budget (Red/Blue)
+; to 11 tiles for "Purple Version", which no longer fits alongside
+; "Tilesets 2" in the tightly-packed bank this used to share.
+SECTION "Title Screen Version Text", ROMX
+
 Version_GFX:
-IF DEF(_RED)
-	INCBIN "gfx/title/red_version.1bpp" ; 10 tiles
-ENDC
-IF DEF(_BLUE)
-	INCBIN "gfx/title/blue_version.1bpp" ; 8 tiles
-ENDC
+	INCBIN "gfx/title/purple_version.1bpp" ; 11 tiles
 Version_GFXEnd:
