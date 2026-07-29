@@ -1,64 +1,65 @@
 _ViridianGymGiovanniPreBattleText::
-	text "Fwahahaha! This is"
-	line "my hideout!"
+	text "So. This is"
+	line "where you find"
+	cont "me."
 
-	para "I planned to"
-	line "resurrect TEAM"
-	cont "ROCKET here!"
+	para "I meant to"
+	line "raise TEAM ROCKET"
+	cont "from these ashes."
 
-	para "But, you have"
-	line "caught me again!"
-	cont "So be it! This"
-	cont "time, I'm not"
-	cont "holding back!"
+	para "You've hounded"
+	line "me twice now."
+	cont "No more mercy,"
+	cont "this time."
 
-	para "Once more, you"
-	line "shall face"
-	cont "GIOVANNI, the"
-	cont "greatest trainer!"
+	para "Face GIOVANNI"
+	line "once more. The"
+	cont "last true master"
+	cont "you shall ever"
+	cont "meet."
 	done
 
 _ViridianGymGiovanniReceivedEarthBadgeText::
-	text "Ha!"
-	line "That was a truly"
-	cont "intense fight!"
-	cont "You have won!"
-	cont "As proof, here is"
-	cont "the EARTHBADGE!@"
+	text "Ha."
+	line "A fight worth"
+	cont "having, at last."
+	cont "You've won."
+	cont "Take this proof,"
+	cont "the EARTHBADGE.@"
 	text_end
 
 _ViridianGymGiovanniPostBattleAdviceText::
 	text "Having lost, I"
 	line "cannot face my"
-	cont "underlings!"
-	cont "TEAM ROCKET is"
-	cont "finished forever!"
+	cont "men again."
+	cont "TEAM ROCKET dies"
+	cont "here, with me."
 
-	para "I will dedicate my"
-	line "life to the study"
-	cont "of #MON!"
+	para "I'll spend what's"
+	line "left of my life"
+	cont "studying #MON,"
 
-	para "Let us meet again"
-	line "some day!"
-	cont "Farewell!@"
+	para "in penance."
+	line "We may yet meet"
+	cont "again. Farewell.@"
 	text_end
 
 _ViridianGymGiovanniEarthBadgeInfoText::
 	text "The EARTHBADGE"
-	line "makes #MON of"
-	cont "any level obey!"
+	line "binds #MON of"
+	cont "any level to you."
 
-	para "It is evidence of"
-	line "your mastery as a"
-	cont "#MON trainer!"
+	para "It is proof of"
+	line "your mastery,"
+	cont "such as it is."
 
-	para "With it, you can"
+	para "With it, you may"
 	line "enter the #MON"
-	cont "LEAGUE!"
+	cont "LEAGUE."
 
-	para "It is my gift for"
-	line "your #MON"
-	cont "LEAGUE challenge!"
+	para "A parting gift,"
+	line "for what it's"
+	cont "worth, from me."
 	done
 
 _ViridianGymGiovanniReceivedTM27Text::

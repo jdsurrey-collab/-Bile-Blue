@@ -319,8 +319,15 @@ PrintStatusCondition::
 	or b ; is the pokemon's HP zero?
 	pop de
 	jr nz, PrintStatusConditionNotFainted
-; if the pokemon's HP is 0, print "FNT"
+; if the pokemon's HP is 0, print "FNT" (or "RIP" in hardcore mode if permanently dead)
+	ld a, [de]
+	bit DEAD_BIT, a
+	jr nz, .dead
 	ld_hli_a_string "FNT"
+	and a
+	ret
+.dead
+	ld_hli_a_string "RIP"
 	and a
 	ret
 

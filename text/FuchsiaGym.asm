@@ -1,26 +1,28 @@
 _FuchsiaGymKogaBeforeBattleText::
-	text "KOGA: Fwahahaha!"
+	text "KOGA: Heh heh."
 
-	para "A mere child like"
-	line "you dares to"
-	cont "challenge me?"
+	para "A mere child"
+	line "dares challenge"
+	cont "me?"
 
-	para "Very well, I"
-	line "shall show you"
-	cont "true terror as a"
-	cont "ninja master!"
+	para "Very well. I"
+	line "shall teach you"
+	cont "the plague-arts"
+	cont "of the ninja."
 
-	para "You shall feel"
-	line "the despair of"
-	cont "poison and sleep"
-	cont "techniques!"
+	para "You'll learn"
+	line "what despair"
+	cont "tastes like, as"
+	cont "poison fills"
+	cont "your veins."
 	done
 
 _FuchsiaGymKogaReceivedSoulBadgeText::
-	text "Humph!"
-	line "You have proven"
-	cont "your worth!"
+	text "Hmph."
+	line "You've proven"
+	cont "your worth, then."
 
-	para "Here! Take the"
-	line "SOULBADGE!"
+	para "Take the"
+	line "SOULBADGE, and"
+	cont "my respect."
 	prompt

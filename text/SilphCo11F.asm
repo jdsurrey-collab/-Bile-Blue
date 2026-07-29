@@ -1,22 +1,22 @@
 _SilphCo11FSilphPresidentText::
-	text "PRESIDENT: Thank"
-	line "you for saving"
-	cont "SILPH!"
+	text "PRESIDENT: My"
+	line "thanks. You've"
+	cont "saved us all."
 
-	para "I will never"
-	line "forget you saved"
-	cont "us in our moment"
-	cont "of peril!"
+	para "I shan't forget"
+	line "this moment of"
+	cont "terror, nor your"
+	cont "part in ending it."
 
-	para "I have to thank"
-	line "you in some way!"
+	para "I must repay"
+	line "you, somehow."
 
-	para "Because I am rich,"
-	line "I can give you"
-	cont "anything!"
+	para "My wealth is"
+	line "considerable."
+	cont "Name your price."
 
-	para "Here, maybe this"
-	line "will do!"
+	para "Here. Perhaps"
+	line "this will suffice."
 	prompt
 
 _SilphCo11FSilphPresidentReceivedMasterBallText::
@@ -27,21 +27,20 @@ _SilphCo11FSilphPresidentReceivedMasterBallText::
 	text_end
 
 _SilphCo11FSilphPresidentMasterBallDescriptionText::
-	text "PRESIDENT: You"
-	line "can't buy that"
-	cont "anywhere!"
+	text "PRESIDENT: No"
+	line "coin could buy"
+	cont "that, anywhere."
 
-	para "It's our secret"
+	para "It is our secret"
 	line "prototype MASTER"
-	cont "BALL!"
+	cont "BALL."
 
-	para "It will catch any"
-	line "#MON without"
-	cont "fail!"
+	para "It shall not fail"
+	line "you. Not once."
 
-	para "You should be"
-	line "quiet about using"
-	cont "it, though."
+	para "Speak of it to"
+	line "no one, mind."
+	cont "Not a soul."
 	done
 
 _SilphCo11FSilphPresidentNoRoomText::
@@ -59,42 +58,48 @@ _SilphCo11FBeautyText::
 	done
 
 _SilphCo11FGiovanniText::
-	text "Ah <PLAYER>!"
-	line "So we meet again!"
+	text "Ah, <PLAYER>."
+	line "We meet again."
 
 	para "The PRESIDENT and"
-	line "I are discussing"
-	cont "a vital business"
-	cont "proposition."
+	line "I discuss a"
+	cont "matter of some"
+	cont "delicacy."
 
-	para "Keep your nose"
-	line "out of grown-up"
-	cont "matters..."
+	para "Mind your place,"
+	line "child. This does"
+	cont "not concern you."
 
-	para "Or, experience a"
-	line "world of pain!"
+	para "Or learn what"
+	line "true suffering is."
 	done
 
 _SilphCo10FGiovanniILostAgainText::
-	text "Arrgh!!"
-	line "I lost again!?"
+	text "...Impossible."
+	line "Beaten. Again."
 	prompt
 
 _SilphCo11FGiovanniYouRuinedOurPlansText::
-	text "Blast it all!"
-	line "You ruined our"
-	cont "plans for SILPH!"
+	text "...Very well."
+	line "You've undone"
+	cont "our work here."
 
-	para "But, TEAM ROCKET"
-	line "will never fall!"
+	para "But TEAM ROCKET"
+	line "does not fall so"
+	cont "easily as that."
 
-	para "<PLAYER>! Never"
-	line "forget that all"
-	cont "#MON exist"
-	cont "for TEAM ROCKET!"
+	para "Remember this,"
+	line "<PLAYER>: every"
+	cont "#MON in this"
+	cont "world belongs"
+	cont "to us."
 
-	para "I must go, but I"
-	line "shall return!"
+	para "I take my leave"
+	line "of you now."
+
+	para "We shall meet"
+	line "again, I promise"
+	cont "you that."
 	done
 
 _SilphCo11FRocket1BattleText::

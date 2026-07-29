@@ -1,25 +1,25 @@
 _IndigoPlateauLobbyGymGuideText::
-	text "Yo! Champ in"
-	line "making!"
+	text "So. A challenger"
+	line "at last."
 
-	para "At #MON LEAGUE,"
-	line "you have to face"
-	cont "the ELITE FOUR in"
-	cont "succession."
+	para "In this LEAGUE,"
+	line "you face the"
+	cont "ELITE FOUR, one"
+	cont "after another."
 
-	para "If you lose, you"
-	line "have to start all"
-	cont "over again! This"
-	cont "is it! Go for it!"
+	para "Falter once, and"
+	line "you begin again,"
+	cont "from nothing."
+	cont "This is your hour."
 	done
 
 _IndigoPlateauLobbyCooltrainerFText::
-	text "From here on, you"
+	text "From here, you"
 	line "face the ELITE"
-	cont "FOUR one by one!"
+	cont "FOUR, one by one."
 
-	para "If you win, a"
-	line "door opens to the"
-	cont "next trainer!"
-	cont "Good luck!"
+	para "Win, and a door"
+	line "opens to the"
+	cont "next. Lose, and"
+	cont "it ends here."
 	done

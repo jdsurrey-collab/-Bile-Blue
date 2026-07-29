@@ -1,44 +1,45 @@
 _AgathaBeforeBattleText::
-	text "I am AGATHA of"
-	line "the ELITE FOUR!"
+	text "I am AGATHA,"
+	line "eldest of the"
+	cont "ELITE FOUR."
 
-	para "OAK's taken a lot"
-	line "of interest in"
-	cont "you, child!"
+	para "OAK speaks of"
+	line "you often now."
+	cont "Too often, child."
 
-	para "That old duff was"
-	line "once tough and"
-	cont "handsome! That"
-	cont "was decades ago!"
+	para "That withered fool"
+	line "was fierce once."
+	cont "Long buried, that"
+	cont "young man."
 
-	para "Now he just wants"
-	line "to fiddle with"
-	cont "his #DEX! He's"
-	cont "wrong! #MON"
-	cont "are for fighting!"
+	para "Now he plays with"
+	line "his little book"
+	cont "and calls it"
+	cont "wisdom. #MON"
+	cont "are made for war."
 
-	para "<PLAYER>! I'll show"
-	line "you how a real"
-	cont "trainer fights!"
+	para "<PLAYER>. Let a"
+	line "ghost teach you"
+	cont "what death is."
 	done
 
 _AgathaEndBattleText::
-	text "Oh ho!"
-	line "You're something"
-	cont "special, child!"
+	text "Oh ho."
+	line "How delightful,"
+	cont "child!"
 	prompt
 
 _AgathaAfterBattleText::
-	text "You win! I see"
-	line "what the old duff"
-	cont "sees in you now!"
+	text "You win. I see"
+	line "what that fool"
+	cont "sees in you now."
 
-	para "I have nothing"
-	line "else to say! Run"
-	cont "along now, child!"
+	para "I've nothing more"
+	line "to say. Run along,"
+	cont "little ghost."
 	done
 
 _AgathasRoomAgathaDontRunAwayText::
-	text "Someone's voice:"
-	line "Don't run away!"
+	text "A dead voice:"
+	line "Don't run away."
 	done

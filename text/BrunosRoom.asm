@@ -1,37 +1,38 @@
 _BrunoBeforeBattleText::
-	text "I am BRUNO of"
-	line "the ELITE FOUR!"
+	text "I am BRUNO,"
+	line "the ELITE FOUR's"
+	cont "iron fist."
 
-	para "Through rigorous"
-	line "training, people"
-	cont "and #MON can"
-	cont "become stronger!"
+	para "Through suffering"
+	line "alone do man"
+	cont "and #MON grow"
+	cont "worth anything."
 
-	para "I've weight"
-	line "trained with"
-	cont "my #MON!"
+	para "I have broken"
+	line "my body training"
+	cont "with my #MON."
 
-	para "<PLAYER>!"
+	para "<PLAYER>."
 
-	para "We will grind you"
-	line "down with our"
-	cont "superior power!"
+	para "We shall grind"
+	line "you to nothing"
+	cont "with our strength."
 
-	para "Hoo hah!"
+	para "Hah."
 	done
 
 _BrunoEndBattleText::
-	text "Why?"
-	line "How could I lose?"
+	text "Why..."
+	line "How could this be?"
 	prompt
 
 _BrunoAfterBattleText::
-	text "My job is done!"
-	line "Go face your next"
-	cont "challenge!"
+	text "My purpose here"
+	line "is spent. Go face"
+	cont "what comes next."
 	done
 
 _BrunosRoomBrunoDontRunAwayText::
-	text "Someone's voice:"
-	line "Don't run away!"
+	text "A voice, hard as"
+	line "stone: Don't flee."
 	done

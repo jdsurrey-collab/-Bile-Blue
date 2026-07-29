@@ -1,39 +1,40 @@
 _PalletTownOakHeyWaitDontGoOutText::
-	text "OAK: Hey! Wait!"
-	line "Don't go out!@"
+	text "OAK: Stop! Don't-"
+	line "-don't go out!@"
 	text_end
 
 _PalletTownOakItsUnsafeText::
-	text "OAK: It's unsafe!"
-	line "Wild #MON live"
-	cont "in tall grass!"
+	text "OAK: 'Tis not safe."
+	line "Wretched things"
+	cont "wait to kill you."
 
-	para "You need your own"
-	line "#MON for your"
-	cont "protection."
-	cont "I know!"
+	para "You need a #MON"
+	line "just to survive"
+	cont "out there."
+	cont "Heaven help us."
 
-	para "Here, come with"
-	line "me!"
+	para "Come, child."
+	line "There's no time."
 	done
 
 _PalletTownGirlText::
-	text "I'm raising"
-	line "#MON too!"
+	text "I keep #MON so"
+	line "I'm not alone"
 
-	para "When they get"
-	line "strong, they can"
-	cont "protect me!"
+	para "when mourning"
+	line "comes calling."
+	cont "Everyone leaves"
+	cont "in the end."
 	done
 
 _PalletTownFisherText::
-	text "Technology is"
-	line "incredible!"
+	text "The PC's a crypt,"
+	line "in its own way."
 
-	para "You can now store"
-	line "and recall items"
-	cont "and #MON as"
-	cont "data via PC!"
+	para "Box after box of"
+	line "#MON that never"
+	cont "came home"
+	cont "again."
 	done
 
 _PalletTownOaksLabSignText::
@@ -43,8 +44,8 @@ _PalletTownOaksLabSignText::
 
 _PalletTownSignText::
 	text "PALLET TOWN"
-	line "Shades of your"
-	cont "journey await!"
+	line "Ashes to ashes,"
+	cont "as they say."
 	done
 
 _PalletTownPlayersHouseSignText::

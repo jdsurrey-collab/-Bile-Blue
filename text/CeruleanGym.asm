@@ -1,20 +1,20 @@
 _CeruleanGymMistyPreBattleText::
-	text "Hi, you're a new"
-	line "face!"
+	text "A new face,"
+	line "come to drown."
 
-	para "Trainers who want"
-	line "to turn pro have"
-	cont "to have a policy"
-	cont "about #MON!"
+	para "Any trainer"
+	line "worth her salt"
+	cont "has a creed about"
+	cont "#MON."
 
-	para "What is your"
-	line "approach when you"
-	cont "catch #MON?"
+	para "What's yours,"
+	line "I wonder, when"
+	cont "you catch them?"
 
-	para "My policy is an"
-	line "all-out offensive"
-	cont "with water-type"
-	cont "#MON!"
+	para "Mine is simple:"
+	line "give no quarter."
+	cont "Let the water"
+	cont "take you under."
 	done
 
 _CeruleanGymMistyTM11ExplanationText::
@@ -27,22 +27,24 @@ _CeruleanGymMistyTM11ExplanationText::
 
 _CeruleanGymMistyCascadeBadgeInfoText::
 	text "The CASCADEBADGE"
-	line "makes all #MON"
-	cont "up to L30 obey!"
+	line "bends #MON up"
+	cont "to L30 to heel."
 
-	para "That includes"
-	line "even outsiders!"
+	para "Even the ones"
+	line "not your own."
 
-	para "There's more, you"
-	line "can now use CUT"
-	cont "any time!"
+	para "You may also"
+	line "wield CUT freely"
+	cont "now."
 
-	para "You can CUT down"
-	line "small bushes to"
-	cont "open new paths!"
+	para "Cut through the"
+	line "brush. Open what"
+	cont "was closed."
 
-	para "You can also have"
-	line "my favorite TM!"
+	para "And take my"
+	line "favorite TM,"
+
+	para "besides."
 	done
 
 _CeruleanGymMistyReceivedTM11Text::
@@ -56,14 +58,15 @@ _CeruleanGymMistyTM11NoRoomText::
 	done
 
 _CeruleanGymMistyReceivedCascadeBadgeText::
-	text "Wow!"
-	line "You're too much!"
+	text "...Fine."
+	line "You've bested me."
 
-	para "All right!"
+	para "So be it."
 
-	para "You can have the"
-	line "CASCADEBADGE to"
-	cont "show you beat me!@"
+	para "Take the"
+	line "CASCADEBADGE,"
+	cont "proof that you"
+	cont "drowned me too.@"
 	text_end
 
 _CeruleanGymBattleText1::

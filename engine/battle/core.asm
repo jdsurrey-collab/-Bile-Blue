@@ -1019,6 +1019,7 @@ RemoveFaintedPlayerMon:
 	ld hl, wEnemyBideAccumulatedDamage
 	ld [hli], a
 	ld [hl], a
+	ld a, 1 << DEAD_BIT ; hardcore mode: permanently mark this mon as dead
 	ld [wBattleMonStatus], a
 	call ReadPlayerMonCurHPAndStatus
 	hlcoord 9, 7

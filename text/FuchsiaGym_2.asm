@@ -1,27 +1,28 @@
 _FuchsiaGymKogaPostBattleAdviceText::
-	text "When afflicted by"
-	line "TOXIC, #MON"
-	cont "suffer more and"
-	cont "more as battle"
-	cont "progresses!"
+	text "TOXIC does not"
+	line "kill quickly."
+	cont "It lingers, and"
+	cont "worsens, breath"
+	cont "by breath."
 
-	para "It will surely"
-	line "terrorize foes!"
+	para "A slow death"
+	line "terrifies more"
+	cont "than a swift one."
 	done
 
 _FuchsiaGymKogaSoulBadgeInfoText::
-	text "Now that you have"
-	line "the SOULBADGE,"
-	cont "the DEFENSE of"
-	cont "your #MON"
-	cont "increases!"
+	text "With the"
+	line "SOULBADGE now"
+	cont "yours, your"
+	cont "#MON's DEFENSE"
+	cont "grows."
 
-	para "It also lets you"
-	line "SURF outside of"
-	cont "battle!"
+	para "It lets you"
+	line "SURF beyond"
+	cont "battle, too."
 
-	para "Ah! Take this"
-	line "too!"
+	para "Take this"
+	line "as well."
 	done
 
 _FuchsiaGymKogaReceivedTM06Text::

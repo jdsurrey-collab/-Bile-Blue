@@ -1,26 +1,26 @@
 _VermilionGymLTSurgePostBattleAdviceText::
-	text "A little word of"
-	line "advice, kid!"
+	text "A word of advice,"
+	line "before you go."
 
-	para "Electricity is"
-	line "sure powerful!"
+	para "Lightning is"
+	line "fearsome power."
 
-	para "But, it's useless"
-	line "against ground-"
-	cont "type #MON!"
+	para "But it dies"
+	line "screaming against"
+	cont "ground-type #MON."
 	done
 
 _VermilionGymLTSurgeThunderBadgeInfoText::
 	text "The THUNDERBADGE"
-	line "cranks up your"
-	cont "#MON's SPEED!"
+	line "quickens your"
+	cont "#MON's blood."
 
-	para "It also lets your"
-	line "#MON FLY any"
-	cont "time, kid!"
+	para "It lets them"
+	line "FLY, whenever"
+	cont "the need arises."
 
-	para "You're special,"
-	line "kid! Take this!"
+	para "You've earned"
+	line "this. Take it."
 	done
 
 _VermilionGymLTSurgeReceivedTM24Text::
@@ -46,13 +46,13 @@ _VermilionGymLTSurgeTM24NoRoomText::
 	done
 
 _VermilionGymLTSurgeReceivedThunderBadgeText::
-	text "Whoa!"
+	text "...Well."
 
 	para "You're the real"
-	line "deal, kid!"
+	line "thing, aren't you."
 
-	para "Fine then, take"
-	line "the THUNDERBADGE!"
+	para "Take the"
+	line "THUNDERBADGE, then."
 	prompt
 
 _VermilionGymGentlemanBattleText::

@@ -9,55 +9,55 @@ _SSAnne2FWaiterText::
 	done
 
 _SSAnne2FRivalText::
-	text "<RIVAL>: Bonjour!"
-	line "<PLAYER>!"
+	text "<RIVAL>: Ah."
+	line "<PLAYER>."
 
-	para "Imagine seeing"
-	line "you here!"
+	para "What a dismal"
+	line "surprise."
 
-	para "<PLAYER>, were you"
-	line "really invited?"
+	para "Tell me you were"
+	line "truly invited."
 
-	para "So how's your"
-	line "#DEX coming?"
+	para "How goes your"
+	line "#DEX, I wonder?"
 
-	para "I already caught"
-	line "40 kinds, pal!"
+	para "I've forty kinds"
+	line "already claimed."
 
-	para "Different kinds"
-	line "are everywhere!"
+	para "They're everywhere,"
+	line "if you'd only look."
 
-	para "Crawl around in"
-	line "grassy areas!"
+	para "Crawl through the"
+	line "grass. It suits you"
 	done
 
 _SSAnne2FRivalDefeatedText::
-	text "Humph!"
+	text "Humph."
 
-	para "At least you're"
-	line "raising your"
-	cont "#MON!"
+	para "At least you"
+	line "tend your #MON"
+	cont "well enough."
 	prompt
 
 _SSAnne2FRivalVictoryText::
-	text "<PLAYER>! What are"
-	line "you, seasick?"
+	text "<PLAYER>. Are you"
+	line "ill, or merely"
 
-	para "You should shape"
-	line "up, pal!"
+	para "weak? Do shape"
+	line "up."
 	prompt
 
 _SSAnne2FRivalCutMasterText::
-	text "<RIVAL>: I heard"
-	line "there was a CUT"
-	cont "master on board."
+	text "<RIVAL>: I'm told"
+	line "a CUT master"
+	cont "sails with us."
 
-	para "But, he was just a"
-	line "seasick, old man!"
+	para "Just a wretched,"
+	line "seasick old fool."
 
-	para "But, CUT itself is"
-	line "really useful!"
+	para "Still, CUT itself"
+	line "has its uses."
 
-	para "You should go see"
-	line "him! Smell ya!"
+	para "Go see him,"
+	line "then. Farewell."
 	done

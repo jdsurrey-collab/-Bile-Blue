@@ -1,42 +1,43 @@
 _LoreleisRoomLoreleiBeforeBattleText::
-	text "Welcome to"
-	line "#MON LEAGUE!"
+	text "So, you've come"
+	line "to challenge us."
 
-	para "I am LORELEI of"
-	line "the ELITE FOUR!"
+	para "I am LORELEI,"
+	line "coldest of the"
+	cont "ELITE FOUR."
 
-	para "No one can best"
-	line "me when it comes"
-	cont "to icy #MON!"
+	para "None best me"
+	line "where ice and"
+	cont "death entwine."
 
-	para "Freezing moves"
-	line "are powerful!"
+	para "Frost does not"
+	line "forgive, child."
 
 	para "Your #MON will"
-	line "be at my mercy"
-	cont "when they are"
-	cont "frozen solid!"
+	line "learn to freeze"
+	cont "slowly, from"
+	cont "within."
 
-	para "Hahaha!"
+	para "Hah."
 	line "Are you ready?"
 	done
 
 _LoreleisRoomLoreleiEndBattleText::
 	text "How"
-	line "dare you!"
+	line "dare you..."
 	prompt
 
 _LoreleisRoomLoreleiAfterBattleText::
-	text "You're better"
-	line "than I thought!"
-	cont "Go on ahead!"
+	text "You're stronger"
+	line "than I judged."
+	cont "Go on, then."
 
-	para "You only got a"
-	line "taste of #MON"
-	cont "LEAGUE power!"
+	para "You've tasted"
+	line "but a sliver of"
+	cont "the LEAGUE's might."
 	done
 
 _LoreleisRoomLoreleiDontRunAwayText::
-	text "Someone's voice:"
-	line "Don't run away!"
+	text "A voice, cold as"
+	line "ice: Do not flee."
 	done

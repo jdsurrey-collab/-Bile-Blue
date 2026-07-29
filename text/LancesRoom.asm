@@ -1,64 +1,67 @@
 _LancesRoomLanceBeforeBattleText::
-	text "Ah! I heard about"
-	line "you <PLAYER>!"
+	text "Ah. I've heard"
+	line "much of you,"
 
-	para "I lead the ELITE"
-	line "FOUR! You can"
-	cont "call me LANCE the"
-	cont "dragon trainer!"
+	para "<PLAYER>. I lead"
+	line "the ELITE FOUR."
+	cont "LANCE. Master of"
+	cont "dragons."
 
-	para "You know that"
-	line "dragons are"
-	cont "mythical #MON!"
+	para "Dragons, child,"
+	line "are myth made"
+	cont "flesh."
 
-	para "They're hard to"
-	line "catch and raise,"
-	cont "but their powers"
-	cont "are superior!"
+	para "Cruel to raise,"
+	line "crueler to face,"
+	cont "their strength"
+	cont "unmatched."
 
-	para "They're virtually"
-	line "indestructible!"
+	para "Near as death"
+	line "itself,"
 
-	para "Well, are you"
-	line "ready to lose?"
+	para "indestructible."
 
-	para "Your LEAGUE"
-	line "challenge ends"
-	cont "with me, <PLAYER>!"
+	para "Are you prepared"
+	line "to lose, then?"
+
+	para "Your journey ends"
+	line "here, with me,"
+	cont "<PLAYER>."
 	done
 
 _LancesRoomLanceEndBattleText::
-	text "That's it!"
+	text "So. It's over."
 
-	para "I hate to admit"
-	line "it, but you are a"
-	cont "#MON master!"
+	para "I loathe to admit"
+	line "it, but you are"
+	cont "a #MON master."
 	prompt
 
 _LancesRoomLanceAfterBattleText::
-	text "I still can't"
+	text "I still cannot"
 	line "believe my"
-	cont "dragons lost to"
-	cont "you, <PLAYER>!"
+	cont "dragons fell to"
+	cont "you, <PLAYER>."
 
-	para "You are now the"
+	para "You would be"
 	line "#MON LEAGUE"
-	cont "champion!"
+	cont "champion now."
 
-	para "...Or, you would"
-	line "have been, but"
-	cont "you have one more"
-	cont "challenge ahead."
+	para "But one trial"
+	line "yet remains for"
+	cont "you, one final"
+	cont "grief to bear."
 
-	para "You have to face"
-	line "another trainer!"
-	cont "His name is..."
+	para "Another trainer"
+	line "stands between"
+	cont "you and glory."
 
-	para "<RIVAL>!"
-	line "He beat the ELITE"
-	cont "FOUR before you!"
+	para "<RIVAL>."
+	line "He conquered the"
+	cont "ELITE FOUR before"
+	cont "you ever came."
 
-	para "He is the real"
+	para "He is the true"
 	line "#MON LEAGUE"
-	cont "champion!@"
+	cont "champion, not I.@"
 	text_end

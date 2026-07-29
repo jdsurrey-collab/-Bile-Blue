@@ -1,101 +1,101 @@
 _Route22RivalBeforeBattleText1::
-	text "<RIVAL>: Hey!"
+	text "<RIVAL>: Ha!"
 	line "<PLAYER>!"
 
-	para "You're going to"
+	para "Bound for the"
 	line "#MON LEAGUE?"
 
-	para "Forget it! You"
-	line "probably don't"
-	cont "have any BADGEs!"
+	para "Don't trouble"
+	line "yourself. You've"
+	cont "not a single BADGE."
 
-	para "The guard won't"
-	line "let you through!"
+	para "The guard shall"
+	line "turn you back!"
 
-	para "By the way, did"
-	line "your #MON"
-	cont "get any stronger?"
+	para "Tell me, though-"
+	line "has your #MON"
+	cont "grown any stronger?"
 	done
 
 _Route22RivalAfterBattleText1::
-	text "I heard #MON"
-	line "LEAGUE has many"
-	cont "tough trainers!"
+	text "They say the"
+	line "#MON LEAGUE"
+	cont "breaks the weak."
 
-	para "I have to figure"
-	line "out how to get"
-	cont "past them!"
+	para "I must learn how"
+	line "to slip past"
+	cont "them unscathed."
 
-	para "You should quit"
-	line "dawdling and get"
-	cont "a move on!"
+	para "You'd best stop"
+	line "dawdling and"
+	cont "make haste."
 	done
 
 _Route22Rival1DefeatedText::
-	text "Awww!"
-	line "You just lucked"
-	cont "out!"
+	text "Tch."
+	line "Sheer luck,"
+	cont "nothing more!"
 	prompt
 
 _Route22Rival1VictoryText::
 	text "<RIVAL>: What?"
-	line "Why do I have 2"
+	line "Why do I keep 2"
 	cont "#MON?"
 
-	para "You should catch"
-	cont "some more too!"
+	para "You'd do well to"
+	cont "catch more too."
 	prompt
 
 _Route22RivalBeforeBattleText2::
 	text "<RIVAL>: What?"
-	line "<PLAYER>! What a"
-	cont "surprise to see"
-	cont "you here!"
+	line "<PLAYER>! What an"
+	cont "unwelcome"
+	cont "surprise."
 
-	para "So you're going to"
-	line "#MON LEAGUE?"
+	para "Bound for the"
+	line "#MON LEAGUE"
 
-	para "You collected all"
-	line "the BADGEs too?"
-	cont "That's cool!"
+	para "as well? All"
+	line "eight BADGEs?"
+	cont "How tiresome."
 
-	para "Then I'll whip you"
-	line "<PLAYER> as a"
-	cont "warm up for"
-	cont "#MON LEAGUE!"
+	para "Then let me use"
+	line "you, <PLAYER>, as"
+	cont "a warm-up for"
+	cont "the LEAGUE."
 
-	para "Come on!"
+	para "Come, then."
 	done
 
 _Route22RivalAfterBattleText2::
-	text "That loosened me"
-	line "up! I'm ready for"
-	cont "#MON LEAGUE!"
+	text "That eased my"
+	line "nerves. I'm ready"
+	cont "for the LEAGUE."
 
-	para "<PLAYER>, you need"
-	line "more practice!"
+	para "<PLAYER>, you want"
+	line "far more practice."
 
-	para "But hey, you know"
-	line "that! I'm out of"
-	cont "here. Smell ya!"
+	para "But you know"
+	line "that already."
+	cont "I'm gone. Farewell."
 	done
 
 _Route22Rival2DefeatedText::
 	text "What!?"
 
-	para "I was just"
-	line "careless!"
+	para "A mere lapse,"
+	line "nothing more!"
 	prompt
 
 _Route22Rival2VictoryText::
-	text "<RIVAL>: Hahaha!"
-	line "<PLAYER>! That's"
-	cont "your best? You're"
-	cont "nowhere near as"
-	cont "good as me, pal!"
+	text "<RIVAL>: Hah!"
+	line "<PLAYER>. Is that"
+	cont "truly your best?"
+	cont "You'll never"
+	cont "equal me."
 
-	para "Go train some"
-	line "more! You loser!"
+	para "Go train more,"
+	line "you pitiful thing."
 	prompt
 
 _Route22PokemonLeagueSignText::

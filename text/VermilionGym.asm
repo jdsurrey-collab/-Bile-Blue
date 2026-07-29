@@ -1,21 +1,21 @@
 _VermilionGymLTSurgePreBattleText::
-	text "Hey, kid! What do"
+	text "Boy. What do"
 	line "you think you're"
 	cont "doing here?"
 
-	para "You won't live"
-	line "long in combat!"
-	cont "That's for sure!"
+	para "You'll not survive"
+	line "long in real"
+	cont "combat. Mark me."
 
-	para "I tell you kid,"
-	line "electric #MON"
-	cont "saved me during"
-	cont "the war!"
+	para "Electric #MON"
+	line "carried me through"
+	cont "the war, when"
+	cont "so many didn't."
 
-	para "They zapped my"
-	line "enemies into"
-	cont "paralysis!"
+	para "I watched men"
+	line "seize and fall,"
+	cont "paralyzed to death."
 
-	para "The same as I'll"
-	line "do to you!"
+	para "That is what"
+	line "I'll do to you."
 	done

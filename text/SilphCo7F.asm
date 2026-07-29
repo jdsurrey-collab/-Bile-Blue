@@ -146,64 +146,64 @@ _SilphCo7FRocket3AfterBattleText::
 
 _SilphCo7FRivalText::
 	text "<RIVAL>: What"
-	line "kept you <PLAYER>?"
+	line "kept you, <PLAYER>?"
 	done
 
 _SilphCo7FRivalWaitedHereText::
-	text "<RIVAL>: Hahaha!"
-	line "I thought you'd"
-	cont "turn up if I"
-	cont "waited here!"
+	text "<RIVAL>: Heh."
+	line "I knew you'd"
+	cont "crawl in here"
+	cont "eventually."
 
-	para "I guess TEAM"
-	line "ROCKET slowed you"
-	cont "down! Not that I"
-	cont "care!"
+	para "TEAM ROCKET"
+	line "slowed you, no"
+	cont "doubt. Not that"
+	cont "I care."
 
 	para "I saw you in"
-	line "SAFFRON, so I"
-	cont "decided to see if"
-	cont "you got better!"
+	line "SAFFRON and"
+	cont "wondered if you'd"
+	cont "improved at all."
 	done
 
 _SilphCo7FRivalDefeatedText::
-	text "Oh ho!"
-	line "So, you are ready"
-	cont "for BOSS ROCKET!"
+	text "Oh ho."
+	line "Ready for the"
+	cont "BOSS, are you?"
 	prompt
 
 _SilphCo7FRivalVictoryText::
-	text "<RIVAL>: How can"
-	line "I put this?"
+	text "<RIVAL>: How to"
+	line "put this kindly?"
 
-	para "You're not good"
-	line "enough to play"
-	cont "with us big boys!"
+	para "You're simply not"
+	line "fit for men's"
+	cont "work."
 	prompt
 
 _SilphCo7FRivalGoodLuckToYouText::
-	text "Well, <PLAYER>!"
+	text "Well, <PLAYER>."
 
-	para "I'm moving on up"
-	line "and ahead!"
+	para "I climb higher"
+	line "still."
 
-	para "By checking my"
-	line "#DEX, I'm"
-	cont "starting to see"
-	cont "what's strong and"
-	cont "how they evolve!"
+	para "My #DEX shows"
+	line "me plainly what"
+	cont "is strong, and"
+	cont "what merely"
+	cont "survives."
 
-	para "I'm going to the"
-	line "#MON LEAGUE"
-	cont "to boot out the"
-	cont "ELITE FOUR!"
+	para "I mean to storm"
+	line "the #MON LEAGUE"
+	cont "and cast down"
+	cont "the ELITE FOUR."
 
-	para "I'll become the"
-	line "world's most"
-	cont "powerful trainer!"
+	para "I shall become"
+	line "the strongest"
+	cont "there ever was."
 
-	para "<PLAYER>, well"
-	line "good luck to you!"
-	cont "Don't sweat it!"
-	cont "Smell ya!"
+	para "<PLAYER>. Good"
+	line "luck to you."
+	cont "You'll want it."
+	cont "Farewell."
 	done

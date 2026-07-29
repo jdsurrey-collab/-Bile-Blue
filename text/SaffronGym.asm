@@ -1,58 +1,61 @@
 _SaffronGymSabrinaText::
-	text "I had a vision of"
-	line "your arrival!"
+	text "I foresaw your"
+	line "arrival. Every"
+	cont "detail."
 
-	para "I have had psychic"
-	line "powers since I"
-	cont "was a child."
+	para "I've heard others'"
+	line "thoughts since"
+	cont "childhood. It"
+	cont "never stops."
 
-	para "I first learned"
-	line "to bend spoons"
-	cont "with my mind."
+	para "Never quiet."
+	line "Not for a moment."
 
-	para "I dislike fight-"
-	line "ing, but if you"
-	cont "wish, I will show"
-	cont "you my powers!"
+	para "I take no joy"
+	line "in battle. But"
+	cont "if you insist"
+	cont "I'll show you"
+	cont "true madness."
 	done
 
 _SaffronGymSabrinaReceivedMarshBadgeText::
 	text "I'm"
-	line "shocked!"
-	cont "But, a loss is a"
-	cont "loss."
+	line "unsettled."
+	cont "But a loss is"
+	cont "a loss."
 
-	para "I admit I didn't"
-	line "work hard enough"
-	cont "to win!"
+	para "I admit I did"
+	line "not want this"
+	cont "enough."
 
-	para "You earned the"
+	para "Take the"
 	line "MARSHBADGE!@"
 	text_end
 
 _SaffronGymSabrinaPostBattleAdviceText::
-	text "Everyone has"
-	line "psychic power!"
-	cont "People just don't"
-	cont "realize it!"
+	text "Everyone hears"
+	line "the voices"
+	cont "within. Most"
+	cont "refuse to listen."
 	done
 
 _SaffronGymSabrinaMarshBadgeInfoText::
 	text "The MARSHBADGE"
-	line "makes #MON up"
-	cont "to L70 obey you!"
+	line "binds #MON up"
+	cont "to L70 to your"
+	cont "will."
 
-	para "Stronger #MON"
-	line "will become wild,"
-	cont "ignoring your"
-	cont "orders in battle!"
+	para "Stronger minds"
+	line "than that will"
+	cont "break free, and"
+	cont "turn on you."
 
-	para "Just don't raise"
-	line "your #MON too"
-	cont "much!"
+	para "Do not raise"
+	line "them past your"
+	cont "own strength."
 
-	para "Wait, please take"
-	line "this TM with you!"
+	para "Take this,"
+	line "before you go."
 	done
 
 _SaffronGymSabrinaReceivedTM46Text::

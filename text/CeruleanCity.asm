@@ -1,61 +1,61 @@
 _CeruleanCityRivalPreBattleText::
-	text "<RIVAL>: Yo!"
-	line "<PLAYER>!"
+	text "<RIVAL>: Well."
+	line "<PLAYER>."
 
-	para "You're still"
-	line "struggling along"
-	cont "back here?"
+	para "Still floundering"
+	line "back here, I see?"
 
-	para "I'm doing great!"
-	line "I caught a bunch"
+	para "I fare wonderfully."
+	line "I've caught a host"
 	cont "of strong and"
-	cont "smart #MON!"
+	cont "clever #MON."
 
-	para "Here, let me see"
-	line "what you caught,"
-	cont "<PLAYER>!"
+	para "Come, let me see"
+	line "your poor attempt,"
+	cont "<PLAYER>."
 	done
 
 _CeruleanCityRivalDefeatedText::
-	text "Hey!"
-	line "Take it easy!"
-	cont "You won already!"
+	text "Hey! Enough!"
+	line "You've bested me,"
+	cont "then. So be it."
 	prompt
 
 _CeruleanCityRivalVictoryText::
-	text "Heh!"
-	line "You're no match"
-	cont "for my genius!"
+	text "Heh."
+	line "You were never"
+	cont "truly my equal."
 	prompt
 
 _CeruleanCityRivalIWentToBillsText::
-	text "<RIVAL>: Hey,"
-	line "guess what?"
+	text "<RIVAL>: Oh,"
+	line "did you hear?"
 
-	para "I went to BILL's"
-	line "and got him to"
-	cont "show me his rare"
-	cont "#MON!"
+	para "I called upon"
+	line "BILL, and he"
+	cont "showed me his"
+	cont "rarest #MON."
 
-	para "That added a lot"
-	line "of pages to my"
-	cont "#DEX!"
+	para "It filled my"
+	line "#DEX with pages"
+	cont "you'll never see."
 
-	para "After all, BILL's"
-	line "world famous as a"
-	cont "#MANIAC!"
+	para "BILL is renowned,"
+	line "after all, as a"
+	cont "#MANIAC of some"
+	cont "note."
 
-	para "He invented the"
-	line "#MON Storage"
-	cont "System on PC!"
+	para "'Twas he who"
+	line "devised the PC"
+	cont "storage system."
 
-	para "Since you're using"
-	line "his system, go"
-	cont "thank him!"
+	para "Since you make"
+	line "use of it, you"
+	cont "might thank him."
 
-	para "Well, I better"
-	line "get rolling!"
-	cont "Smell ya later!"
+	para "Well, I'm off."
+	line "Don't follow."
+	cont "We'll meet again."
 	done
 
 _CeruleanCityRocketText::

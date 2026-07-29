@@ -13,6 +13,9 @@ HealParty:
 
 	ld hl, MON_STATUS - MON_HP
 	add hl, de
+	ld a, [hl]
+	bit DEAD_BIT, a
+	jr nz, .skipHealMon ; hardcore mode: a dead mon stays fainted, no status/HP reset
 	xor a
 	ld [hl], a
 
@@ -68,6 +71,7 @@ HealParty:
 	ld a, [hl]
 	ld [de], a
 
+.skipHealMon
 	pop de
 	pop hl
 

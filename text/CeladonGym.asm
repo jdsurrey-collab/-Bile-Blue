@@ -1,64 +1,65 @@
 _CeladonGymErikaPreBattleText::
-	text "Hello. Lovely"
-	line "weather isn't it?"
-	cont "It's so pleasant."
+	text "Hello. Such"
+	line "lovely weather,"
+	cont "isn't it? So"
+	cont "still. So quiet."
 
-	para "...Oh dear..."
-	line "I must have dozed"
-	cont "off. Welcome."
+	para "...Forgive me."
+	line "I was dreaming"
+	cont "of funerals."
 
-	para "My name is ERIKA."
-	line "I am the LEADER"
-	cont "of CELADON GYM."
+	para "I am ERIKA,"
+	line "LEADER of this"
+	cont "garden, and GYM."
 
-	para "I teach the art of"
-	line "flower arranging."
-	cont "My #MON are of"
-	cont "the grass-type."
+	para "I arrange flowers"
+	line "for the dead."
+	cont "My #MON share"
+	cont "that quiet rot."
 
-	para "Oh, I'm sorry, I"
-	line "had no idea that"
-	cont "you wished to"
-	cont "challenge me."
+	para "You wish to"
+	line "challenge me?"
 
-	para "Very well, but I"
-	line "shall not lose."
+	para "How lovely."
+	line "I shan't lose."
 	done
 
 _CeladonGymErikaReceivedRainbowBadgeText::
-	text "Oh!"
-	line "I concede defeat."
+	text "Oh."
+	line "I concede, then."
 
-	para "You are remarkably"
-	line "strong."
+	para "You are terribly"
+	line "strong, aren't you."
 
-	para "I must confer you"
-	line "the RAINBOWBADGE."
+	para "Here. The"
+	line "RAINBOWBADGE, and"
+	cont "my condolences."
 	prompt
 
 _CeladonGymErikaPostBattleAdviceText::
-	text "You are cataloging"
-	line "#MON? I must"
-	cont "say I'm impressed."
+	text "Cataloguing"
+	line "#MON? How"
+	cont "quaint. I'm"
+	cont "impressed, truly."
 
-	para "I would never"
-	line "collect #MON"
-	cont "if they were"
-	cont "unattractive."
+	para "I'd never keep"
+	line "one that wasn't"
+	cont "beautiful."
+	cont "Even in death."
 	done
 
 _CeladonGymRainbowBadgeInfoText::
 	text "The RAINBOWBADGE"
-	line "will make #MON"
-	cont "up to L50 obey."
+	line "compels #MON"
+	cont "up to L50 to obey."
 
-	para "It also allows"
-	line "#MON to use"
-	cont "STRENGTH in and"
-	cont "out of battle."
+	para "It also grants"
+	line "STRENGTH, in"
+	cont "battle and out"
+	cont "of it."
 
-	para "Please also take"
-	line "this with you."
+	para "Take this too,"
+	line "won't you."
 	done
 
 _CeladonGymReceivedTM21Text::

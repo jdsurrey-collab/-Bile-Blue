@@ -912,6 +912,13 @@ ItemUseMedicine:
 	predef DoubleOrHalveSelectedStats
 	jp .doneHealing
 .healHP
+	push hl
+	ld bc, MON_STATUS
+	add hl, bc
+	ld a, [hl]
+	pop hl
+	bit DEAD_BIT, a
+	jp nz, .healingItemNoEffect ; hardcore mode: a dead mon can't be revived
 	inc hl ; hl = address of current HP
 	ld a, [hli]
 	ld b, a

@@ -66,6 +66,9 @@ DEF SLP_MASK EQU %111 ; 0-7 turns
 	const FRZ ; 5
 	const PAR ; 6
 
+; hardcore mode: permadeath flag, stored in the unused high bit of MON_STATUS
+DEF DEAD_BIT EQU 7
+
 DEF MAX_STAT_VALUE EQU 999
 
 ; trainer dvs

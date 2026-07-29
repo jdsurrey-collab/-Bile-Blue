@@ -1,20 +1,20 @@
 _PewterGymBrockPostBattleAdviceText::
-	text "There are all"
-	line "kinds of trainers"
-	cont "in the world!"
+	text "Many trainers"
+	line "walk this earth,"
+	cont "of every sort."
 
-	para "You appear to be"
-	line "very gifted as a"
-	cont "#MON trainer!"
+	para "You, I think,"
+	line "have some real"
+	cont "gift for it."
 
-	para "Go to the GYM in"
-	line "CERULEAN and test"
-	cont "your abilities!"
+	para "Go to CERULEAN'S"
+	line "GYM. Test what"
+	cont "you're truly worth."
 	done
 
 _PewterGymBrockWaitTakeThisText::
-	text "Wait! Take this"
-	line "with you!"
+	text "Wait."
+	line "You'll need this."
 	done
 
 _PewterGymReceivedTM34Text::
@@ -52,12 +52,12 @@ _PewterGymTM34NoRoomText::
 	done
 
 _PewterGymBrockReceivedBoulderBadgeText::
-	text "I took"
-	line "you for granted."
+	text "I misjudged"
+	line "you, it seems."
 
-	para "As proof of your"
-	line "victory, here's"
-	cont "the BOULDERBADGE!"
+	para "Take this proof"
+	line "of your victory,"
+	cont "the BOULDERBADGE."
 
 	para "<PLAYER> received"
 	line "the BOULDERBADGE!@"
@@ -66,17 +66,17 @@ _PewterGymBrockReceivedBoulderBadgeText::
 _PewterGymBrockBoulderBadgeInfoText::
 	text_start
 
-	para "That's an official"
+	para "An official"
 	line "#MON LEAGUE"
-	cont "BADGE!"
+	cont "BADGE, now yours."
 
 	para "Its bearer's"
-	line "#MON become"
-	cont "more powerful!"
+	line "#MON grow"
+	cont "stronger for it."
 
-	para "The technique"
-	line "FLASH can now be"
-	cont "used any time!"
+	para "FLASH may now"
+	line "pierce the dark,"
+	cont "whenever needed."
 	prompt
 
 _PewterGymCooltrainerMBattleText::

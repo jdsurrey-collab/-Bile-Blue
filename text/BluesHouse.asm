@@ -1,14 +1,14 @@
 _BluesHouseDaisyRivalAtLabText::
-	text "Hi <PLAYER>!"
-	line "<RIVAL> is out at"
-	cont "Grandpa's lab."
+	text "Oh, <PLAYER>."
+	line "<RIVAL>'s gone to"
+	cont "Grandfather's lab."
 	done
 
 _BluesHouseDaisyOfferMapText::
-	text "Grandpa asked you"
-	line "to run an errand?"
-	cont "Here, this will"
-	cont "help you!"
+	text "Grandfather sends"
+	line "you on an errand?"
+	cont "Take this, then-"
+	cont "it may help."
 	prompt
 
 _GotMapText::
@@ -19,24 +19,24 @@ _GotMapText::
 	text_end
 
 _BluesHouseDaisyBagFullText::
-	text "You have too much"
-	line "stuff with you."
+	text "You carry too much"
+	line "already, I think."
 	done
 
 _BluesHouseDaisyUseMapText::
-	text "Use the TOWN MAP"
-	line "to find out where"
-	cont "you are."
+	text "The TOWN MAP shows"
+	line "where you have"
+	cont "wandered to."
 	done
 
 _BluesHouseDaisyWalkingText::
 	text "#MON are living"
-	line "things! If they"
-	cont "get tired, give"
-	cont "them a rest!"
+	line "things, not tools."
+	cont "Let them rest,"
+	cont "or lose them."
 	done
 
 _BluesHouseTownMapText::
-	text "It's a big map!"
-	line "This is useful!"
+	text "A fine map. It"
+	line "may save your life."
 	done

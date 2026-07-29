@@ -1,29 +1,29 @@
 _RocketHideoutB4FGiovanniImpressedYouGotHereText::
-	text "So! I must say, I"
-	line "am impressed you"
-	cont "got here!"
+	text "So. I confess,"
+	line "I'm impressed you"
+	cont "came this far."
 	done
 
 _RocketHideoutB4FGiovanniWhatCannotBeText::
-	text "WHAT!"
-	line "This cannot be!"
+	text "...No."
+	line "This cannot be."
 	prompt
 
 _RocketHideoutB4FGiovanniHopeWeMeetAgainText::
-	text "I see that you"
-	line "raise #MON"
-	cont "with utmost care."
+	text "I see you raise"
+	line "your #MON"
+	cont "with care."
 
 	para "A child like you"
-	line "would never"
-	cont "understand what I"
-	cont "hope to achieve."
+	line "could never"
+	cont "grasp what I"
+	cont "mean to build."
 
-	para "I shall step"
-	line "aside this time!"
+	para "I withdraw,"
+	line "for now."
 
-	para "I hope we meet"
-	line "again..."
+	para "We shall meet"
+	line "again."
 	done
 
 _RocketHideoutB4FRocket1BattleText::

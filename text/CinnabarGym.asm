@@ -1,45 +1,49 @@
 _CinnabarGymBlainePreBattleText::
 	text "Hah!"
 
-	para "I am BLAINE! I"
-	line "am the LEADER of"
-	cont "CINNABAR GYM!"
+	para "I am BLAINE,"
+	line "LEADER of these"
+	cont "burnt-out ruins."
 
-	para "My fiery #MON"
-	line "will incinerate"
-	cont "all challengers!"
+	para "My #MON turn"
+	line "flesh to ash."
+	cont "So it has always"
 
-	para "Hah! You better"
-	line "have BURN HEAL!"
+	para "been."
+	line "Bring your BURN"
+	cont "HEALs. You'll"
+	cont "need them."
 	done
 
 _CinnabarGymBlaineReceivedVolcanoBadgeText::
-	text "I have"
-	line "burnt out!"
+	text "I've"
+	line "burned to nothing."
 
-	para "You have earned"
-	line "the VOLCANOBADGE!@"
+	para "Take the"
+	line "VOLCANOBADGE,"
+	cont "what's left of it.@"
 	text_end
 
 _CinnabarGymBlainePostBattleAdviceText::
-	text "FIRE BLAST is the"
-	line "ultimate fire"
-	cont "technique!"
+	text "FIRE BLAST is"
+	line "the final word"
+	cont "in ruin."
 
-	para "Don't waste it on"
-	line "water #MON!"
+	para "Don't waste it"
+	line "on water #MON."
 	done
 
 _CinnabarGymBlaineVolcanoBadgeInfoText::
-	text "Hah!"
+	text "Hah."
 
 	para "The VOLCANOBADGE"
-	line "heightens the"
-	cont "SPECIAL abilities"
-	cont "of your #MON!"
+	line "sharpens the"
+	cont "SPECIAL fire in"
+	cont "your #MON."
 
-	para "Here, you can"
-	line "have this too!"
+	para "Take this,"
+	line "too, from the"
+	cont "ashes."
 	done
 
 _CinnabarGymBlaineReceivedTM38Text::

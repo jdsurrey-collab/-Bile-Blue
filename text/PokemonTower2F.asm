@@ -1,49 +1,49 @@
 _PokemonTower2FRivalWhatBringsYouHereText::
-	text "<RIVAL>: Hey,"
-	line "<PLAYER>! What"
-	cont "brings you here?"
-	cont "Your #MON"
-	cont "don't look dead!"
+	text "<RIVAL>: So,"
+	line "<PLAYER>. What"
+	cont "brings you to"
+	cont "this graveyard?"
+	cont "Come to mourn?"
 
-	para "I can at least"
-	line "make them faint!"
-	cont "Let's go, pal!"
+	para "I could arrange"
+	line "a burial or two."
+	cont "Shall we, then?"
 	done
 
 _PokemonTower2FRivalDefeatedText::
-	text "What?"
-	line "You stinker!"
+	text "What? You"
+	line "wretch!"
 
-	para "I took it easy on"
-	line "you too!"
+	para "And I showed"
+	line "you mercy!"
 	prompt
 
 _PokemonTower2FRivalVictoryText::
-	text "<RIVAL>: Well,"
-	line "look at all your"
-	cont "wimpy #MON!"
+	text "<RIVAL>: Look at"
+	line "your pitiful"
+	cont "#MON."
 
-	para "Toughen them up a"
-	line "bit more!"
+	para "Harden them, or"
+	line "bury them."
 	prompt
 
 _PokemonTower2FRivalHowsYourDexText::
-	text "How's your #DEX"
-	line "coming, pal?"
-	cont "I just caught a"
-	cont "CUBONE!"
+	text "How fares your"
+	line "#DEX? I've just"
+	cont "snared an orphan"
+	cont "CUBONE."
 
-	para "I can't find the"
-	line "grown-up MAROWAK"
-	cont "yet!"
+	para "Its mother, I'd"
+	line "wager, wears that"
+	cont "skull it grieves."
 
-	para "I doubt there are"
-	line "any left! Well, I"
-	cont "better get going!"
-	cont "I've got a lot to"
-	cont "accomplish, pal!"
+	para "None left grown,"
+	line "I'd guess. Well, I"
+	cont "must be going."
+	cont "Much yet to"
+	cont "accomplish."
 
-	para "Smell ya later!"
+	para "We'll meet again."
 	done
 
 _PokemonTower2FChannelerText::
