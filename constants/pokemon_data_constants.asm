@@ -55,6 +55,15 @@ DEF MON_SPD        rw
 DEF MON_SPC        rw
 DEF PARTYMON_STRUCT_LENGTH EQU _RS ; $2c
 
+; Pokémon Purple: hidden per-mon power tier (Pokémon Purple feature).
+; Stored in the otherwise-vestigial MON_CATCH_RATE byte (copied in when a mon
+; is created but never read again afterward -- the real catch-odds math uses
+; a separate battle-only copy, wMonHCatchRate/wEnemyMonActualCatchRate).
+DEF MON_TIER  EQU MON_CATCH_RATE
+DEF MIN_TIER  EQU 1
+DEF BASE_TIER EQU 5 ; neutral, no stat modifier
+DEF MAX_TIER  EQU 10
+
 DEF PARTY_LENGTH EQU 6
 
 DEF MONS_PER_BOX EQU 20

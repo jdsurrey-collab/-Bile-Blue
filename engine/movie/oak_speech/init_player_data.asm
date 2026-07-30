@@ -21,6 +21,11 @@ InitPlayerData2:
 	ld hl, wNumBoxItems
 	call InitializeEmptyList
 
+; Pokémon Purple: no more free starting stones -- the player wakes up with
+; whichever one stone the cultist dream sequence granted them
+; (engine/movie/cultist_dream.asm, runs from scripts/RedsHouse2F.asm before
+; the player ever moves).
+
 DEF START_MONEY EQU $3000
 	ld hl, wPlayerMoney + 1
 	ld a, HIGH(START_MONEY)

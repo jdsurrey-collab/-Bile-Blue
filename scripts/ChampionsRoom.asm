@@ -68,19 +68,25 @@ ChampionsRoomRivalReadyToBattleScript:
 	ld a, OPP_RIVAL3
 	ld [wCurOpponent], a
 
-	; select which team to use during the encounter
+	; Pokémon Purple: select which team to use during the encounter --
+	; Rival3Data, trainer numbers 1-4
 	ld a, [wRivalStarter]
-	cp STARTER2
-	jr nz, .NotStarter2
-	ld a, $1
-	jr .saveTrainerId
-.NotStarter2
-	cp STARTER3
-	jr nz, .NotStarter3
+	cp JOLTEON
+	jr nz, .NotJolteon
 	ld a, $2
 	jr .saveTrainerId
-.NotStarter3
+.NotJolteon
+	cp FLAREON
+	jr nz, .NotFlareon
 	ld a, $3
+	jr .saveTrainerId
+.NotFlareon
+	cp VAPOREON
+	jr nz, .Eevee
+	ld a, $4
+	jr .saveTrainerId
+.Eevee
+	ld a, $1
 .saveTrainerId
 	ld [wTrainerNo], a
 

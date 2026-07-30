@@ -70,6 +70,8 @@ StatusScreen:
 	ld a, [wLoadedMonBoxLevel]
 	ld [wLoadedMonLevel], a
 	ld [wCurEnemyLevel], a
+	ld a, [wLoadedMonCatchRate] ; Pokémon Purple: tier, for CalcStats below
+	ldh [hStatCalcTier], a
 	ld hl, wLoadedMonHPExp - 1
 	ld de, wLoadedMonStats
 	ld b, $1
@@ -99,6 +101,10 @@ StatusScreen:
 	ld hl, vChars2 tile $72
 	lb bc, BANK(PTile), 1
 	call CopyVideoDataDouble ; bold P (for PP)
+	ld de, TierNumerals
+	ld hl, vChars2 tile TIER_NUMERAL_BASE_TILE
+	lb bc, BANK(TierNumerals), MAX_TIER
+	call CopyVideoDataDouble ; Pokémon Purple: tier badge glyphs
 	ldh a, [hTileAnimations]
 	push af
 	xor a
@@ -136,6 +142,11 @@ StatusScreen:
 	call PlaceString ; "STATUS/"
 	hlcoord 14, 2
 	call PrintLevel
+	hlcoord 17, 2
+	ld a, [wLoadedMonCatchRate] ; Pokémon Purple: tier badge, 1-10 -> 0-9
+	dec a
+	add TIER_NUMERAL_BASE_TILE
+	ld [hl], a
 	ld a, [wMonHIndex]
 	ld [wPokedexNum], a
 	ld [wCurSpecies], a
@@ -234,6 +245,10 @@ DrawLineBox:
 	ret
 
 PTile: INCBIN "gfx/font/P.1bpp"
+
+; Pokémon Purple: tier badge glyphs (tier 1-10), one 8x8 tile each
+DEF TIER_NUMERAL_BASE_TILE EQU $60
+TierNumerals: INCBIN "gfx/status/tier_numerals.1bpp"
 
 PrintStatsBox:
 	ld a, d

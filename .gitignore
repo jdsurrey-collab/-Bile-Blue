@@ -33,3 +33,6 @@
 
 # versioned recompiled ROM builds
 /Roms/
+
+# reference-only clone of pret/pokegold (not part of this project's build)
+/pokegold-reference/

@@ -220,6 +220,20 @@ SECTION "Gothic Intro", ROMX
 INCLUDE "engine/movie/gothic_intro.asm"
 
 
+; own floating section (no explicit bank), same reasoning as "Gothic Intro"
+; above -- called via homecall from home/move_mon.asm's CalcStat
+SECTION "Tier Modifier", ROMX
+
+INCLUDE "engine/pokemon/tier_modifier.asm"
+
+
+; own floating section (no explicit bank), same reasoning as "Gothic Intro"
+; above -- called via farcall from scripts/RedsHouse2F.asm
+SECTION "Cultist Dream", ROMX
+
+INCLUDE "engine/movie/cultist_dream.asm"
+
+
 SECTION "Pokédex Rating", ROMX
 
 INCLUDE "engine/events/pokedex_rating.asm"

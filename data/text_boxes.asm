@@ -32,6 +32,10 @@ TextBoxTextAndCoordTable:
 	text_box_text SAFARI_BATTLE_MENU_TEMPLATE,        0, 12, 19, 17, SafariZoneBattleMenuText, 2, 14
 	text_box_text SWITCH_STATS_CANCEL_MENU_TEMPLATE, 11, 11, 19, 17, SwitchStatsCancelText,   13, 12
 	text_box_text BUY_SELL_QUIT_MENU_TEMPLATE,        0,  0, 10,  6, BuySellQuitText,          2,  1
+	; Pokémon Purple: cultist dream sequence (engine/movie/cultist_dream.asm)
+	text_box_text CULTIST_Q1_MENU_TEMPLATE,           0,  0, 10,  6, CultistQ1Text,            2,  1
+	text_box_text CULTIST_Q2_MENU_TEMPLATE,           0,  0, 10,  6, CultistQ2Text,            2,  1
+	text_box_text CULTIST_Q3_MENU_TEMPLATE,           0,  0, 10,  6, CultistQ3Text,            2,  1
 	text_box_text MONEY_BOX_TEMPLATE,                11,  0, 19,  2, MoneyText,               13,  0
 	text_box_text JP_AH_MENU_TEMPLATE,                7,  6, 11, 10, JapaneseAhText,           8,  8
 	text_box_text JP_POKEDEX_MENU_TEMPLATE,          11,  8, 19, 17, JapanesePokedexMenu,     12, 10
@@ -42,6 +46,24 @@ BuySellQuitText:
 	next "QUIT@"
 
 	db "@" ; unused
+
+; Pokémon Purple: cultist dream sequence answer menus (index 0/1/2 always
+; maps to Fire/Water/Thunder respectively, regardless of wording -- see
+; engine/movie/cultist_dream.asm)
+CultistQ1Text:
+	db   "RAGE"
+	next "CALM"
+	next "FURY@"
+
+CultistQ2Text:
+	db   "EMBER"
+	next "TIDE"
+	next "SPARK@"
+
+CultistQ3Text:
+	db   "FLAME"
+	next "DEEP"
+	next "STORM@"
 
 UseTossText:
 	db   "USE"

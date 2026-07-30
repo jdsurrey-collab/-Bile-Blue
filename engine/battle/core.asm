@@ -4293,6 +4293,8 @@ GetEnemyMonStat:
 	pop bc
 	ld b, $0
 	ld hl, wLoadedMonSpeedExp - $b ; this base address makes CalcStat look in [wLoadedMonSpeedExp] for DVs
+	ld a, [wEnemyMonCatchRate] ; Pokémon Purple: tier, for CalcStat below
+	ldh [hStatCalcTier], a
 	call CalcStat
 	pop de
 	ret
@@ -6022,6 +6024,36 @@ LoadEnemyMonData:
 	ld a, [wCurEnemyLevel]
 	ld [de], a
 	inc de
+; Pokémon Purple: decide this enemy mon's tier. Wild mons already had theirs
+; rolled at encounter time (RollWildTier, engine/battle/wild_encounters.asm)
+; and it's sitting in wEnemyMonCatchRate; trainer mons get theirs decided
+; here every time they're loaded -- gym leaders get a boosted tier, everyone
+; else (rivals, Elite Four, regular trainers) stays neutral.
+	ld a, [wIsInBattle]
+	cp $2 ; trainer battle?
+	jr nz, .tierAlreadySet
+	ld a, [wCurOpponent]
+	sub OPP_ID_OFFSET
+	cp GIOVANNI
+	jr z, .gymLeaderTier
+	cp BROCK
+	jr c, .normalTrainerTier
+	cp SABRINA + 1
+	jr nc, .normalTrainerTier
+.gymLeaderTier
+	call BattleRandom
+	and %11
+	cp 3
+	jr z, .gymLeaderTier ; reroll on 3 for a uniform pick among 6/7/8
+	add 6
+	jr .gotTrainerTier
+.normalTrainerTier
+	ld a, BASE_TIER
+.gotTrainerTier
+	ld [wEnemyMonCatchRate], a
+.tierAlreadySet
+	ld a, [wEnemyMonCatchRate]
+	ldh [hStatCalcTier], a
 	ld b, $0
 	ld hl, wEnemyMonHP
 	push hl

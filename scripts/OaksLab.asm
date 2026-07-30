@@ -192,19 +192,15 @@ OaksLabPlayerForcedToWalkBackScript:
 	ret
 
 OaksLabChoseStarterScript:
-	ld a, [wPlayerStarter]
-	cp STARTER1
-	jr z, .Charmander
-	cp STARTER2
-	jr z, .Squirtle
-	jr .Bulbasaur
-.Charmander
+; Pokémon Purple: there's only one Pokémon on the table now, so the rival
+; always walks the same path to claim his own (formerly the "Charmander"
+; slot's animation, an arbitrary pick -- this no longer says anything about
+; species).
 	ld de, .MiddleBallMovement1
 	ld a, [wYCoord]
 	cp 4 ; is the player standing below the table?
 	jr z, .moveBlue
 	ld de, .MiddleBallMovement2
-	jr .moveBlue
 
 .MiddleBallMovement1
 	db NPC_MOVEMENT_DOWN
@@ -219,64 +215,6 @@ OaksLabChoseStarterScript:
 	db NPC_MOVEMENT_DOWN
 	db NPC_MOVEMENT_RIGHT
 	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db -1 ; end
-
-.Squirtle
-	ld de, .RightBallMovement1
-	ld a, [wYCoord]
-	cp 4 ; is the player standing below the table?
-	jr z, .moveBlue
-	ld de, .RightBallMovement2
-	jr .moveBlue
-
-.RightBallMovement1
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_UP
-	db -1 ; end
-
-.RightBallMovement2
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db -1 ; end
-
-.Bulbasaur
-	ld de, .LeftBallMovement1
-	ld a, [wXCoord]
-	cp 9 ; is the player standing to the right of the table?
-	jr nz, .moveBlue
-	push hl
-	ld a, OAKSLAB_RIVAL
-	ldh [hSpriteIndex], a
-	ld a, SPRITESTATEDATA1_YPIXELS
-	ldh [hSpriteDataOffset], a
-	call GetPointerWithinSpriteStateData1
-	push hl
-	ld [hl], $4c ; SPRITESTATEDATA1_YPIXELS
-	inc hl
-	inc hl
-	ld [hl], $0 ; SPRITESTATEDATA1_XPIXELS
-	pop hl
-	inc h
-	ld [hl], 8 ; SPRITESTATEDATA2_MAPY
-	inc hl
-	ld [hl], 9 ; SPRITESTATEDATA2_MAPX
-	ld de, .LeftBallMovement2 ; the rival is not currently onscreen, so account for that
-	pop hl
-	jr .moveBlue
-
-.LeftBallMovement1
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_RIGHT
-.LeftBallMovement2
 	db NPC_MOVEMENT_RIGHT
 	db -1 ; end
 
@@ -319,11 +257,22 @@ OaksLabRivalChoosesStarterScript:
 	ld [wToggleableObjectIndex], a
 	predef HideObject
 	call Delay3
-	ld a, [wRivalStarterTemp]
-	ld [wRivalStarter], a
+; Pokémon Purple: the rival always receives Eevee, same as the player
+	ld a, EEVEE
 	ld [wCurPartySpecies], a
 	ld [wNamedObjectIndex], a
 	call GetMonName
+; Separately, roll which Eevee-line species he'll have by his later battles
+; (Rival2Data/Rival3Data onward) -- not narrated here, since he hasn't
+; evolved it on the spot; see data/trainers/parties.asm.
+	call Random
+	and %11 ; 0-3, uniform (4 is a power of 2, no reroll needed)
+	ld hl, RivalStarterOptions
+	ld c, a
+	ld b, 0
+	add hl, bc
+	ld a, [hl]
+	ld [wRivalStarter], a
 	ld a, OAKSLAB_RIVAL
 	ldh [hSpriteIndex], a
 	ld a, SPRITE_FACING_UP
@@ -339,6 +288,13 @@ OaksLabRivalChoosesStarterScript:
 	ld a, SCRIPT_OAKSLAB_RIVAL_CHALLENGES_PLAYER
 	ld [wOaksLabCurScript], a
 	ret
+
+; Pokémon Purple: which species the rival's starter will have evolved into
+; by his 2nd wave of battles onward (data/trainers/parties.asm's Rival2Data/
+; Rival3Data) -- randomized once per save, independent of anything the
+; player does.
+RivalStarterOptions:
+	db EEVEE, JOLTEON, FLAREON, VAPOREON
 
 OaksLabRivalChallengesPlayerScript:
 	ld a, [wYCoord]
@@ -384,19 +340,7 @@ OaksLabRivalStartBattleScript:
 	; define which team rival uses, and fight it
 	ld a, OPP_RIVAL1
 	ld [wCurOpponent], a
-	ld a, [wRivalStarter]
-	cp STARTER2
-	jr nz, .not_squirtle
-	ld a, $1
-	jr .done
-.not_squirtle
-	cp STARTER3
-	jr nz, .not_bulbasaur
-	ld a, $2
-	jr .done
-.not_bulbasaur
-	ld a, $3
-.done
+	ld a, 1 ; Pokémon Purple: only one Rival1Data line now (always Eevee)
 	ld [wTrainerNo], a
 	ld a, OAKSLAB_RIVAL
 	ld [wSpriteIndex], a
@@ -795,32 +739,29 @@ OaksLabRivalText:
 	text_end
 
 OaksLabCharmanderPokeBallText:
+; Pokémon Purple: every ball on the table holds the same Eevee now, so all
+; 3 of these just differ in which position they occupy (still needed so the
+; right ball-sprite hides once taken; see OaksLabRivalChoosesStarterScript).
 	text_asm
-	ld a, STARTER2
-	ld [wRivalStarterTemp], a
 	ld a, OAKSLAB_SQUIRTLE_POKE_BALL
 	ld [wRivalStarterBallSpriteIndex], a
-	ld a, STARTER1
+	ld a, EEVEE
 	ld b, OAKSLAB_CHARMANDER_POKE_BALL
 	jr OaksLabSelectedPokeBallScript
 
 OaksLabSquirtlePokeBallText:
 	text_asm
-	ld a, STARTER3
-	ld [wRivalStarterTemp], a
 	ld a, OAKSLAB_BULBASAUR_POKE_BALL
 	ld [wRivalStarterBallSpriteIndex], a
-	ld a, STARTER2
+	ld a, EEVEE
 	ld b, OAKSLAB_SQUIRTLE_POKE_BALL
 	jr OaksLabSelectedPokeBallScript
 
 OaksLabBulbasaurPokeBallText:
 	text_asm
-	ld a, STARTER1
-	ld [wRivalStarterTemp], a
 	ld a, OAKSLAB_CHARMANDER_POKE_BALL
 	ld [wRivalStarterBallSpriteIndex], a
-	ld a, STARTER3
+	ld a, EEVEE
 	ld b, OAKSLAB_BULBASAUR_POKE_BALL
 
 OaksLabSelectedPokeBallScript:
@@ -861,32 +802,14 @@ OaksLabShowPokeBallPokemonScript:
 	call ReloadMapData
 	ld c, 10
 	call DelayFrames
-	ld a, [wSpriteIndex]
-	cp OAKSLAB_CHARMANDER_POKE_BALL
-	jr z, OaksLabYouWantCharmanderText
-	cp OAKSLAB_SQUIRTLE_POKE_BALL
-	jr z, OaksLabYouWantSquirtleText
-	jr OaksLabYouWantBulbasaurText
+; Pokémon Purple: same Eevee regardless of which ball was picked
+	jr OaksLabYouWantEeveeText
 
-OaksLabYouWantCharmanderText:
+OaksLabYouWantEeveeText:
 	ld hl, .Text
 	jr OaksLabMonChoiceMenu
 .Text:
-	text_far _OaksLabYouWantCharmanderText
-	text_end
-
-OaksLabYouWantSquirtleText:
-	ld hl, .Text
-	jr OaksLabMonChoiceMenu
-.Text:
-	text_far _OaksLabYouWantSquirtleText
-	text_end
-
-OaksLabYouWantBulbasaurText:
-	ld hl, .Text
-	jr OaksLabMonChoiceMenu
-.Text:
-	text_far _OaksLabYouWantBulbasaurText
+	text_far _OaksLabYouWantEeveeText
 	text_end
 
 OaksLabMonChoiceMenu:

@@ -1328,6 +1328,13 @@ ItemUseMedicine:
 	call PrintText
 	jp GBPalWhiteOut
 .recalculateStats
+; Pokémon Purple: read this mon's tier before CalcStats runs below
+	push hl
+	ld bc, MON_TIER
+	add hl, bc
+	ld a, [hl]
+	ldh [hStatCalcTier], a
+	pop hl
 	ld bc, MON_STATS
 	add hl, bc
 	ld d, h

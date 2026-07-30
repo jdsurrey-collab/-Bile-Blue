@@ -142,20 +142,8 @@ CeruleanCityRivalBattleScript:
 	ld a, OPP_RIVAL1
 	ld [wCurOpponent], a
 
-	; select which team to use during the encounter
-	ld a, [wRivalStarter]
-	cp STARTER2
-	jr nz, .NotSquirtle
-	ld a, $7
-	jr .done
-.NotSquirtle
-	cp STARTER3
-	jr nz, .Charmander
-	ld a, $8
-	jr .done
-.Charmander
-	ld a, $9
-.done
+	; Pokémon Purple: only one Rival1Data line per encounter now (always Eevee)
+	ld a, 3
 	ld [wTrainerNo], a
 
 	xor a

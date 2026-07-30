@@ -1,4 +1,21 @@
 _AddPartyMon::
+; Pokémon Purple: decide this mon's hidden power tier up front, so both the
+; stat calculations below and the struct write further down use the same
+; value without recomputing it. Trainer mons (ENEMY_PARTY_DATA) get a
+; placeholder here -- their actual battle tier is decided independently by
+; LoadEnemyMonData (engine/battle/core.asm), which also handles gym leaders.
+	ld a, [wMonDataLocation]
+	and $f
+	ld a, BASE_TIER
+	jr nz, .gotTier
+	ld a, [wIsInBattle]
+	and a ; is this a wild mon caught in battle?
+	ld a, BASE_TIER
+	jr z, .gotTier ; gift mon added directly to the party: neutral tier
+	ld a, [wEnemyMonCatchRate] ; wild catch: tier already rolled for this encounter
+.gotTier
+	ldh [hStatCalcTier], a
+
 ; Adds a new mon to the player's or enemy's party.
 ; [wMonDataLocation] is used in an unusual way in this function.
 ; If the lower nybble is 0, the mon is added to the player's party, else the enemy's.
@@ -168,7 +185,8 @@ _AddPartyMon::
 	ld a, [hli]       ; type 2
 	ld [de], a
 	inc de
-	ld a, [hli]       ; catch rate (held item in gen 2)
+	inc hl            ; skip catch rate (held item in gen 2); Pokémon Purple uses this byte for tier
+	ldh a, [hStatCalcTier]
 	ld [de], a
 	ld hl, wMonHMoves
 	ld a, [hli]
@@ -487,6 +505,13 @@ _MoveMon::
 .copyNick
 	ld bc, NAME_LENGTH
 	call CopyData
+	pop hl
+; Pokémon Purple: read this mon's tier before CalcStats runs below
+	push hl
+	ld bc, MON_TIER
+	add hl, bc
+	ld a, [hl]
+	ldh [hStatCalcTier], a
 	pop hl
 	ld a, [wMoveMonType]
 	cp PARTY_TO_BOX

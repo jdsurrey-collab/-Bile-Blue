@@ -673,7 +673,6 @@ wHoFTeamIndex2:: db
 wHoFTeamNo:: db
 
 NEXTU
-wRivalStarterTemp:: db
 wRivalStarterBallSpriteIndex:: db
 
 NEXTU
@@ -2246,6 +2245,11 @@ ENDR
 wBoxMonNicksEnd::
 
 wBoxDataEnd::
+
+; Pokémon Purple: scratch counters for the cultist dream sequence
+; (engine/movie/cultist_dream.asm) -- fire/water/thunder vote tally,
+; only ever used once per save, right at the very start of the game.
+wCultistVotes:: ds 3
 
 
 SECTION "Stack", WRAM0

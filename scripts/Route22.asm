@@ -134,17 +134,11 @@ Route22Rival1StartBattleScript:
 	call SaveEndBattleTextPointers
 	ld a, OPP_RIVAL1
 	ld [wCurOpponent], a
-	ld hl, .StarterTable
-	call Route22GetRivalTrainerNoByStarterScript
+	ld a, 2 ; Pokémon Purple: only one Rival1Data line per encounter now (always Eevee)
+	ld [wTrainerNo], a
 	ld a, SCRIPT_ROUTE22_RIVAL1_AFTER_BATTLE
 	ld [wRoute22CurScript], a
 	ret
-
-.StarterTable:
-; starter the rival picked, rival trainer number
-	db STARTER2, 4
-	db STARTER3, 5
-	db STARTER1, 6
 
 Route22Rival1AfterBattleScript:
 	ld a, [wIsInBattle]
@@ -297,9 +291,12 @@ Route22Rival2StartBattleScript:
 	ret
 
 .StarterTable:
-	db STARTER2, 10
-	db STARTER3, 11
-	db STARTER1, 12
+; Pokémon Purple: Rival2Data's 4th (and last) encounter group -- trainer
+; numbers 13-16, see data/trainers/parties.asm
+	db EEVEE, 13
+	db JOLTEON, 14
+	db FLAREON, 15
+	db VAPOREON, 16
 
 Route22Rival2AfterBattleScript:
 	ld a, [wIsInBattle]

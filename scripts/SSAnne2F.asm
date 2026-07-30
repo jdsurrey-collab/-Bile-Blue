@@ -100,19 +100,25 @@ SSAnne2FRivalStartBattleScript:
 	ld a, OPP_RIVAL2
 	ld [wCurOpponent], a
 
-	; select which team to use during the encounter
+	; Pokémon Purple: select which team to use during the encounter --
+	; Rival2Data's 1st encounter group, trainer numbers 1-4
 	ld a, [wRivalStarter]
-	cp STARTER2
-	jr nz, .NotSquirtle
-	ld a, $1
-	jr .done
-.NotSquirtle
-	cp STARTER3
-	jr nz, .Charmander
+	cp JOLTEON
+	jr nz, .NotJolteon
 	ld a, $2
 	jr .done
-.Charmander
+.NotJolteon
+	cp FLAREON
+	jr nz, .NotFlareon
 	ld a, $3
+	jr .done
+.NotFlareon
+	cp VAPOREON
+	jr nz, .Eevee
+	ld a, $4
+	jr .done
+.Eevee
+	ld a, $1
 .done
 	ld [wTrainerNo], a
 

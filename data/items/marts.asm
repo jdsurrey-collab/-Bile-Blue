@@ -26,7 +26,11 @@ CeladonMart2FClerk2Text::
 	script_mart TM_DOUBLE_TEAM, TM_REFLECT, TM_RAZOR_WIND, TM_HORN_DRILL, TM_EGG_BOMB, TM_MEGA_PUNCH, TM_MEGA_KICK, TM_TAKE_DOWN, TM_SUBMISSION
 
 CeladonMart4FClerkText::
-	script_mart POKE_DOLL, FIRE_STONE, THUNDER_STONE, WATER_STONE, LEAF_STONE
+; Pokémon Purple: Fire/Thunder/Water Stone removed -- the cultist dream
+; sequence (engine/movie/cultist_dream.asm) is meant to be the player's one
+; permanent choice of Eevee evolution for the save, not something you can
+; just buy your way around once you reach Celadon.
+	script_mart POKE_DOLL, LEAF_STONE
 
 CeladonMart5FClerk1Text::
 	script_mart X_ACCURACY, GUARD_SPEC, DIRE_HIT, X_ATTACK, X_DEFEND, X_SPEED, X_SPECIAL

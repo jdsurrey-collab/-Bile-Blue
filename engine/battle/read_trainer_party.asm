@@ -53,7 +53,7 @@ ReadTrainer:
 .LoopTrainerData
 	ld a, [hli]
 	and a ; have we reached the end of the trainer data?
-	jr z, .FinishUp
+	jp z, .FinishUp ; Pokémon Purple: jr no longer reaches, .ChampionRival grew
 	ld [wCurPartySpecies], a
 	ld a, ENEMY_PARTY_DATA
 	ld [wMonDataLocation], a
@@ -129,19 +129,41 @@ ReadTrainer:
 	ld a, SKY_ATTACK
 	ld [wEnemyMon1Moves + 2], a
 
-; starter
+; starter (Pokémon Purple: Eevee-line, randomized once per save)
 	ld a, [wRivalStarter]
-	cp STARTER3
-	ld b, MEGA_DRAIN
+	cp JOLTEON
+	ld b, THUNDER
 	jr z, .GiveStarterMove
-	cp STARTER1
+	cp FLAREON
 	ld b, FIRE_BLAST
 	jr z, .GiveStarterMove
-	ld b, BLIZZARD ; must be squirtle
+	cp VAPOREON
+	ld b, BLIZZARD
+	jr z, .GiveStarterMove
+	ld b, DOUBLE_EDGE ; must still be plain Eevee
 .GiveStarterMove
 	ld a, b
 	ld [wEnemyMon6Moves + 2], a
 .FinishUp
+; Pokémon Purple: Gary's very first battle (Oak's Lab, both trainers at
+; level 5 with a tiny HP pool) -- Eevee's innate Sand Attack repeatedly
+; tanking the player's accuracy in a fight that small reads as unfair for
+; a tutorial-tier battle, so strip it from his moveset here specifically.
+; Not the player's own Eevee, and not Gary's later battles (not even his
+; other Rival1Data encounters on Route 22 / Cerulean City).
+	ld a, [wCurOpponent]
+	sub OPP_ID_OFFSET
+	cp RIVAL1
+	jr nz, .notGarysFirstBattle
+	ld a, [wTrainerNo]
+	cp 1
+	jr nz, .notGarysFirstBattle
+	ld a, [wEnemyMon1Moves + 1]
+	cp SAND_ATTACK
+	jr nz, .notGarysFirstBattle
+	xor a ; NO_MOVE
+	ld [wEnemyMon1Moves + 1], a
+.notGarysFirstBattle
 ; clear wAmountMoneyWon addresses
 	xor a
 	ld de, wAmountMoneyWon

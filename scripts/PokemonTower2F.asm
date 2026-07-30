@@ -151,19 +151,25 @@ PokemonTower2FRivalText:
 	ld a, OPP_RIVAL2
 	ld [wCurOpponent], a
 
-	; select which team to use during the encounter
+	; Pokémon Purple: select which team to use during the encounter --
+	; Rival2Data's 2nd encounter group, trainer numbers 5-8
 	ld a, [wRivalStarter]
-	cp STARTER2
-	jr nz, .NotSquirtle
-	ld a, $4
-	jr .done
-.NotSquirtle
-	cp STARTER3
-	jr nz, .Charmander
-	ld a, $5
-	jr .done
-.Charmander
+	cp JOLTEON
+	jr nz, .NotJolteon
 	ld a, $6
+	jr .done
+.NotJolteon
+	cp FLAREON
+	jr nz, .NotFlareon
+	ld a, $7
+	jr .done
+.NotFlareon
+	cp VAPOREON
+	jr nz, .Eevee
+	ld a, $8
+	jr .done
+.Eevee
+	ld a, $5
 .done
 	ld [wTrainerNo], a
 

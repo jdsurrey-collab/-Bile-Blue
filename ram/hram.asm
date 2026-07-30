@@ -397,6 +397,17 @@ hJoyInput:: db
 
 hDisableJoypadPolling:: db
 
-	ds 5
+; Pokémon Purple: tier (1-10, see MON_TIER) of the mon CalcStat/CalcStats is
+; currently computing stats for. Each caller sets this immediately before
+; calling, since CalcStat's hl argument doesn't always point at a struct with
+; a MON_TIER byte at a predictable offset (see home/move_mon.asm CalcStat).
+hStatCalcTier:: db
+
+; Pokémon Purple: input/output for ApplyTierModifier (engine/pokemon/tier_modifier.asm),
+; called via homecall -- which clobbers a as part of the bank-switch dance --
+; so the value has to round-trip through HRAM instead of a register.
+hStatCalcBase:: db
+
+	ds 3
 
 ENDSECTION

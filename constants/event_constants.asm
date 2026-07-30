@@ -772,6 +772,9 @@ DEF INDIGO_PLATEAU_EVENTS_END EQU const_value - 1
 	const_skip 8
 	const EVENT_BEAT_ARTICUNO
 
+; Pokémon Purple
+	const EVENT_HAD_CULTIST_DREAM
+
 ; End of events
 	const_next $A00
 DEF NUM_EVENTS EQU const_value

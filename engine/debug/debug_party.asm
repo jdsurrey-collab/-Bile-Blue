@@ -113,14 +113,13 @@ IF DEF(_DEBUG)
 	call DebugSetPokedexEntries
 	SetEvent EVENT_GOT_POKEDEX
 
-	; Rival chose Squirtle,
-	; Player chose Charmander.
+	; Pokémon Purple: both start with Eevee
 	ld hl, wRivalStarter
 	ASSERT wRivalStarter + 2 == wPlayerStarter
-	ld a, STARTER2
+	ld a, EEVEE
 	ld [hli], a
 	inc hl
-	ld a, STARTER1
+	ld a, EEVEE
 	ld [hl], a
 
 	ret

@@ -10,6 +10,15 @@ RedsHouse2F_ScriptPointers:
 	dw_const RedsHouse2FNoopScript,    SCRIPT_REDSHOUSE2F_NOOP
 
 RedsHouse2FDefaultScript:
+; Pokémon Purple: before the player ever takes a real step, they dream of
+; the cultist who decides their Eevee's fate. wRedsHouse2FCurScript resets
+; every time this map is re-entered, so this needs a real persistent event
+; flag rather than relying on the script-state flip below to keep it from
+; replaying on later visits.
+	CheckEvent EVENT_HAD_CULTIST_DREAM
+	jr nz, .alreadyDreamed
+	farcall PlayCultistDream
+.alreadyDreamed
 	xor a
 	ldh [hJoyHeld], a
 	ld a, PLAYER_DIR_UP

@@ -1,8 +1,10 @@
 Music_TrainerBattle_Ch1::
-	tempo 112
+; Pokémon Purple: already tense/chromatic like Music_WildBattle -- no bright
+; major mode to convert, just heavier production. See CLAUDE.md.
+	tempo 124
 	volume 7, 7
-	duty_cycle 3
-	vibrato 6, 3, 4
+	duty_cycle 1
+	vibrato 9, 4, 3
 	toggle_perfect_pitch
 	note_type 12, 11, 2
 	rest 8
@@ -648,8 +650,8 @@ Music_TrainerBattle_Ch1::
 	sound_loop 0, .mainloop
 
 Music_TrainerBattle_Ch2::
-	duty_cycle 3
-	vibrato 10, 2, 5
+	duty_cycle 2
+	vibrato 12, 3, 4
 	note_type 12, 12, 2
 	octave 4
 	note A_, 1

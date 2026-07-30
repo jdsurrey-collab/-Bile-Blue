@@ -9,10 +9,10 @@ ENDC
 	ds $100
 
 IF DEF(_RED)
-	RGB 30,29,29 ; PAL_SGB1
-	RGB 25,22,25
-	RGB 25,17,21
-	RGB 24,14,12
+	RGB 31,31,31 ; PAL_SGB1 -- Pokémon Purple: flattened to white (was the pink/salmon diagonal stripe pattern)
+	RGB 31,31,31
+	RGB 31,31,31
+	RGB 31,31,31
 ENDC
 IF DEF(_BLUE)
 	RGB 0,0,0 ; PAL_SGB1 (the first color is not defined, but if used, turns up as 30,29,29... o_O)

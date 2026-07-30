@@ -171,6 +171,8 @@ Evolution_PartyMonLoop: ; loop over party mons
 	ld [wMonHIndex], a
 	pop af
 	ld [wPokedexNum], a
+	ld a, [wLoadedMonCatchRate] ; Pokémon Purple: tier, for CalcStats below
+	ldh [hStatCalcTier], a
 	ld hl, wLoadedMonHPExp - 1
 	ld de, wLoadedMonStats
 	ld b, $1

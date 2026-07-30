@@ -6,17 +6,17 @@ _OaksLabRivalGrampsIsntAroundText::
 
 _OaksLabRivalGoAheadAndChooseText::
 	text "<RIVAL>: I shan't"
-	line "stoop to greed"
-	cont "like you do."
+	line "begrudge you the"
+	cont "creature, cousin."
 
-	para "Go on, then-"
-	line "choose, <PLAYER>."
+	para "Go on, then- take"
+	line "your due, <PLAYER>."
 	done
 
 _OaksLabRivalMyPokemonLooksStrongerText::
-	text "<RIVAL>: My"
-	line "#MON looks the"
-	cont "finer stock."
+	text "<RIVAL>: Mark me-"
+	line "mine shall prove"
+	cont "the finer beast."
 	done
 
 _OaksLabThoseArePokeBallsText::
@@ -25,22 +25,10 @@ _OaksLabThoseArePokeBallsText::
 	cont "for #MON!"
 	done
 
-_OaksLabYouWantCharmanderText::
+_OaksLabYouWantEeveeText::
 	text "So, you would have"
-	line "the fire #MON,"
-	cont "CHARMANDER?"
-	done
-
-_OaksLabYouWantSquirtleText::
-	text "So, you would have"
-	line "the water #MON,"
-	cont "SQUIRTLE?"
-	done
-
-_OaksLabYouWantBulbasaurText::
-	text "So, you would have"
-	line "the plant #MON,"
-	cont "BULBASAUR?"
+	line "this final #MON,"
+	cont "EEVEE?"
 	done
 
 _OaksLabMonEnergeticText::
@@ -200,22 +188,22 @@ _OaksLabOakChooseMonText::
 
 	para "Here, <PLAYER>."
 
-	para "Three #MON"
-	line "remain to me."
+	para "One #MON"
+	line "remains to me."
 
 	para "Heh."
 
-	para "They wait within"
-	line "these # BALLs."
+	para "It waits within"
+	line "that # BALL."
 
 	para "In youth, I too"
 	line "was a serious"
 	cont "#MON trainer."
 
 	para "Now in my dotage,"
-	line "but three remain,"
-	cont "yet you may choose"
-	cont "one. Go on."
+	line "but one remains,"
+	cont "yet it is yours"
+	cont "for the taking."
 	done
 
 _OaksLabRivalWhatAboutMeText::

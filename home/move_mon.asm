@@ -62,6 +62,9 @@ CalcStat::
 	ld b, $0
 	add hl, bc
 	ld a, [hl]          ; read base value of stat
+	ldh [hStatCalcBase], a
+	homecall ApplyTierModifier ; Pokémon Purple: adjust base stat by the mon's tier (own floating bank, see engine/pokemon/tier_modifier.asm)
+	ldh a, [hStatCalcBase]
 	ld e, a
 	pop hl
 	push hl

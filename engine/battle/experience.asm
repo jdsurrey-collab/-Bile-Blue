@@ -171,6 +171,13 @@ GainExperience:
 	ld a, [hl]
 	ld [wCurSpecies], a
 	ld [wPokedexNum], a
+; Pokémon Purple: read this mon's tier before CalcStats runs below
+	push hl
+	ld bc, MON_TIER
+	add hl, bc
+	ld a, [hl]
+	ldh [hStatCalcTier], a
+	pop hl
 	call GetMonHeader
 	ld bc, (MON_MAXHP + 1) - MON_SPECIES
 	add hl, bc

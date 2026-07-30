@@ -24,9 +24,9 @@ DEF PC_ITEM_CAPACITY  EQU 50
 	const MONEY_BOX                         ; $13
 	const TWO_OPTION_MENU                   ; $14
 	const BUY_SELL_QUIT_MENU                ; $15
-	const_skip                              ; $16
-	const_skip                              ; $17
-	const_skip                              ; $18
+	const CULTIST_Q1_MENU_TEMPLATE          ; $16 Pokémon Purple
+	const CULTIST_Q2_MENU_TEMPLATE          ; $17 Pokémon Purple
+	const CULTIST_Q3_MENU_TEMPLATE          ; $18 Pokémon Purple
 	const_skip                              ; $19
 	const JP_POKEDEX_MENU_TEMPLATE          ; $1a
 	const SAFARI_BATTLE_MENU_TEMPLATE       ; $1b

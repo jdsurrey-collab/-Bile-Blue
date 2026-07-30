@@ -78,6 +78,8 @@ TryDoWildEncounter:
 	ld a, [hl]
 	ld [wCurPartySpecies], a
 	ld [wEnemyMonSpecies2], a
+	call RollWildTier ; Pokémon Purple: hidden power tier for this encounter
+	ld [wEnemyMonCatchRate], a
 	ld a, [wRepelRemainingSteps]
 	and a
 	jr z, .willEncounter
@@ -101,4 +103,22 @@ TryDoWildEncounter:
 	xor a
 	ret
 
+; Pokémon Purple: rolls a hidden power tier for a wild encounter, weighted by
+; WildTierChances (tier 1 most common, tier 10 rarest).
+; OUTPUT: a = tier (MIN_TIER-MAX_TIER)
+RollWildTier:
+	call Random
+	ld b, a
+	ld hl, WildTierChances
+.determineTier
+	ld a, [hli]
+	cp b
+	jr nc, .gotTier
+	inc hl
+	jr .determineTier
+.gotTier
+	ld a, [hl]
+	ret
+
 INCLUDE "data/wild/probabilities.asm"
+INCLUDE "data/pokemon/tier_chances.asm"

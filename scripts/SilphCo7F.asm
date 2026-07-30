@@ -186,17 +186,24 @@ SilphCo7FRivalStartBattleScript:
 	call SaveEndBattleTextPointers
 	ld a, OPP_RIVAL2
 	ld [wCurOpponent], a
+; Pokémon Purple: select which team to use during the encounter --
+; Rival2Data's 3rd encounter group, trainer numbers 9-12
 	ld a, [wRivalStarter]
-	cp STARTER2
-	jr nz, .not_starter_2
-	ld a, $7
+	cp JOLTEON
+	jr nz, .not_jolteon
+	ld a, 10
 	jr .set_trainer_no
-.not_starter_2
-	cp STARTER3
-	jr nz, .no_starter_3
-	ld a, $8
+.not_jolteon
+	cp FLAREON
+	jr nz, .not_flareon
+	ld a, 11
 	jr .set_trainer_no
-.no_starter_3
+.not_flareon
+	cp VAPOREON
+	jr nz, .eevee
+	ld a, 12
+	jr .set_trainer_no
+.eevee
 	ld a, $9
 .set_trainer_no
 	ld [wTrainerNo], a
