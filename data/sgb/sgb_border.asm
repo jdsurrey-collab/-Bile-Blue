@@ -24,10 +24,10 @@ ENDC
 	ds $18
 
 IF DEF(_RED)
-	RGB 30,29,29 ; PAL_SGB2
-	RGB 22,31,16
-	RGB 27,20,6
-	RGB 15,15,15
+	RGB 31,31,31 ; PAL_SGB2 -- Pokémon Purple: flattened to white (was the green dot pattern)
+	RGB 31,31,31
+	RGB 31,31,31
+	RGB 31,31,31
 ENDC
 IF DEF(_BLUE)
 	RGB 30,29,29 ; PAL_SGB2
@@ -39,10 +39,10 @@ ENDC
 	ds $18
 
 IF DEF(_RED)
-	RGB 30,29,29 ; PAL_SGB3
-	RGB 31,31,17
-	RGB 18,21,29
-	RGB 15,15,15
+	RGB 31,31,31 ; PAL_SGB3 -- Pokémon Purple: flattened to white (was the purple dot pattern)
+	RGB 31,31,31
+	RGB 31,31,31
+	RGB 31,31,31
 ENDC
 IF DEF(_BLUE)
 	RGB 30,29,29 ; PAL_SGB3

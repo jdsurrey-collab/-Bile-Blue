@@ -418,6 +418,9 @@ ToggleableObjectStates:
 	toggle_object_state SEAFOAMISLANDSB4F_BOULDER2, OFF
 	toggle_object_state SEAFOAMISLANDSB4F_ARTICUNO, ON
 
+	toggleable_objects_for REDS_HOUSE_2F ; Pokémon Purple
+	toggle_object_state REDSHOUSE2F_CULTIST, OFF
+
 	assert_table_length NUM_TOGGLEABLE_OBJECTS
 
 	db -1, 1, ON ; end

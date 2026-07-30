@@ -78,8 +78,11 @@ TryDoWildEncounter:
 	ld a, [hl]
 	ld [wCurPartySpecies], a
 	ld [wEnemyMonSpecies2], a
-	call RollWildTier ; Pokémon Purple: hidden power tier for this encounter
-	ld [wEnemyMonCatchRate], a
+; Pokémon Purple: hidden power tier is rolled once, later, in InitWildBattle
+; (engine/battle/core.asm) -- that's the single choke point every wild
+; battle passes through regardless of how it was triggered (grass/water,
+; fishing rod, a scripted single-mon encounter like Snorlax, etc.), whereas
+; this code here only runs for ordinary grass/water encounters.
 	ld a, [wRepelRemainingSteps]
 	and a
 	jr z, .willEncounter

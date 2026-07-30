@@ -6728,6 +6728,13 @@ InitBattleCommon:
 InitWildBattle:
 	ld a, $1
 	ld [wIsInBattle], a
+; Pokémon Purple: roll this encounter's hidden power tier here, since every
+; wild battle passes through this exact point regardless of how it was
+; triggered -- ordinary grass/water encounters, fishing rods, and scripted
+; single-mon encounters (e.g. Snorlax) all used to only cover the first
+; case, leaving the tier byte stale/zero for the others.
+	farcall RollWildTier
+	ld [wEnemyMonCatchRate], a
 	call LoadEnemyMonData
 	call DoBattleTransitionAndInitBattleVariables
 	ld a, [wCurOpponent]

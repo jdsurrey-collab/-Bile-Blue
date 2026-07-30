@@ -2250,6 +2250,10 @@ wBoxDataEnd::
 ; (engine/movie/cultist_dream.asm) -- fire/water/thunder vote tally,
 ; only ever used once per save, right at the very start of the game.
 wCultistVotes:: ds 3
+; the 3rd question's own answer, kept separately as the 1-1-1 tie-break --
+; threaded through WRAM rather than a register since each question is asked
+; via a separate DisplayTextID call from PlayCultistDream.
+wCultistLastAnswer:: ds 1
 
 
 SECTION "Stack", WRAM0
