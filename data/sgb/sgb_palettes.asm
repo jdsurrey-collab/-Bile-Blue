@@ -22,7 +22,7 @@ IF DEF(_BLUE)
 ENDC
 	RGB 31,31,31, 30,30,17, 18,18,24, 07,07,16 ; PAL_LOGO2 -- Pokémon Purple: pure white background (was 31,29,31)
 	RGB 31,29,31, 24,20,30, 11,20,30, 03,02,02 ; PAL_0F
-	RGB 31,31,31, 30,22,17, 16,14,19, 03,02,02 ; PAL_MEWMON -- Pokémon Purple: pure white background (was 31,29,31)
+	RGB 31,29,31, 30,22,17, 16,14,19, 03,02,02 ; PAL_MEWMON
 	RGB 31,29,31, 18,20,27, 11,15,23, 03,02,02 ; PAL_BLUEMON
 	RGB 31,29,31, 31,20,10, 26,10,06, 03,02,02 ; PAL_REDMON
 	RGB 31,29,31, 21,25,29, 14,19,25, 03,02,02 ; PAL_CYANMON
@@ -50,4 +50,11 @@ ENDC
 	RGB 31,29,31, 30,22,17, 11,15,23, 03,02,02 ; PAL_BADGE
 	RGB 31,29,31, 21,14,09, 18,24,22, 03,02,02 ; PAL_CAVE
 	RGB 31,29,31, 31,28,14, 24,20,10, 03,02,02 ; PAL_GAMEFREAK
+; Pokémon Purple: a dedicated copy of PAL_MEWMON with a pure white background,
+; used only by the title screen's Pokémon-cycling backdrop (PalPacket_
+; Titlescreen in data/sgb/sgb_packets.asm) -- PAL_MEWMON itself is shared
+; with the naming screen, party menu, trainer card, and generic default
+; palette, so whitening it directly (an earlier attempt) also changed all of
+; those, which wasn't the intent.
+	RGB 31,31,31, 30,22,17, 16,14,19, 03,02,02 ; PAL_TITLEMON
 	assert_table_length NUM_SGB_PALS

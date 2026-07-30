@@ -70,15 +70,35 @@ PlayCultistDream::
 	SetEvent EVENT_HAD_CULTIST_DREAM
 	ret
 
-; INPUT: a = menu template ID (CULTIST_Q1/Q2/Q3_MENU_TEMPLATE)
-; OUTPUT: a = chosen answer index -- always 0 = Fire, 1 = Water, 2 = Thunder,
-;             regardless of each question's actual wording
+; INPUT: [wTextBoxID] already set by the caller (CULTIST_Q1/Q2/Q3_MENU_
+;        TEMPLATE) -- NOT passed through `a`, see note below
+; OUTPUT: [wCultistAnswer] = chosen answer index -- always 0 = Fire,
+;         1 = Water, 2 = Thunder, regardless of each question's wording --
+;         NOT returned through `a`, see note below
 ; Called via farcall from the RedsHouse2FCultist*Question*Text text_asm
 ; blocks (scripts/RedsHouse2F.asm), themselves dispatched by DisplayTextID --
 ; NOT called directly from PlayCultistDream, since the question prompt text
 ; and this menu both need to run from within an active text-script context.
 ; No B-button cancel (only PAD_A is watched): the dream doesn't let you walk
 ; away without answering.
+;
+; farcall's Bankswitch (home/bankswitch.asm) clobbers `a` on BOTH sides of
+; the call -- it loads the destination bank into `a` right before jumping
+; in, and reloads the source bank into `a` right after the callee returns --
+; so a value handed to this function via `a` (the menu template ID) never
+; actually survived to see its first instruction, and a value returned via
+; `a` (the chosen answer) never survived the trip back to the caller either.
+; This shipped once as `ld a, CULTIST_Q1_MENU_TEMPLATE` / `farcall
+; AskCultistQuestion` and was confirmed, by hooking the ROM and reading
+; registers directly, to actually enter this function with a = the callee's
+; bank number (1) -- not 22 -- which is why DisplayTextBoxID drew a blank
+; MESSAGE_BOX instead of the intended menu (it matched wTextBoxID's stale
+; leftover value of 1 in TextBoxCoordTable instead). wTextBoxID/wCultistAnswer
+; now carry the value both ways instead, sidestepping the farcall boundary
+; entirely. (Earlier notes elsewhere in this project only flagged homecall's
+; return-side `pop af` as clobbering `a` -- plain farcall turns out to do it
+; on both the call *and* return side, which is easy to miss since Bankswitch
+; still looks "self-contained" at a glance.)
 ;
 ; Saves/restores the screen around the popup (matching YesNoChoice, the
 ; proven pattern for a menu that pops up over an already-drawn dialogue box
@@ -89,7 +109,6 @@ PlayCultistDream::
 ; erased before the next question's prompt printed elsewhere on screen.
 AskCultistQuestion::
 	call SaveScreenTilesToBuffer1
-	ld [wTextBoxID], a
 	call DisplayTextBoxID
 	ld a, PAD_A
 	ld [wMenuWatchedKeys], a
@@ -105,16 +124,17 @@ AskCultistQuestion::
 	ld [wMenuWatchMovingOutOfBounds], a
 	call HandleMenuInput
 	call PlaceUnfilledArrowMenuCursor
-	ld a, [wCurrentMenuItem]
-	push af
 	call LoadScreenTilesFromBuffer1
-	pop af
+	ld a, [wCurrentMenuItem]
+	ld [wCultistAnswer], a
 	ret
 
-; INPUT: a = answer index (0-2)
+; INPUT: [wCultistAnswer] = answer index (0-2) -- see the farcall note above
+; for why this isn't just taken as an `a` argument
 TallyCultistAnswer::
 	push hl
 	push bc
+	ld a, [wCultistAnswer]
 	ld hl, wCultistVotes
 	ld c, a
 	ld b, 0
@@ -127,7 +147,7 @@ TallyCultistAnswer::
 ; OUTPUT: a = item id of the winning stone
 ; With exactly 3 votes cast total, either one answer has a majority (2 or
 ; 3 votes -- the other two can't also reach 2), or it's a 3-way 1-1-1 split,
-; in which case wCultistLastAnswer (the 3rd question's own answer) decides.
+; in which case wCultistAnswer (the 3rd question's own answer) decides.
 DetermineCultistStone::
 	ld hl, wCultistVotes
 	ld a, [hli]
@@ -139,7 +159,7 @@ DetermineCultistStone::
 	ld a, [hl]
 	cp 2
 	jr nc, .thunder
-	ld a, [wCultistLastAnswer] ; 1-1-1 split: the final answer seals it
+	ld a, [wCultistAnswer] ; 1-1-1 split: the final answer seals it
 	jr .gotIndex
 .fire
 	xor a

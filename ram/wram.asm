@@ -2250,10 +2250,34 @@ wBoxDataEnd::
 ; (engine/movie/cultist_dream.asm) -- fire/water/thunder vote tally,
 ; only ever used once per save, right at the very start of the game.
 wCultistVotes:: ds 3
-; the 3rd question's own answer, kept separately as the 1-1-1 tie-break --
-; threaded through WRAM rather than a register since each question is asked
-; via a separate DisplayTextID call from PlayCultistDream.
-wCultistLastAnswer:: ds 1
+; Pokémon Purple: scratch accumulator for GetTypeMatchupMultiplier
+; (engine/battle/core.asm) -- purely a temporary working value during one
+; type-matchup calculation, not persistent game state, so it's fine to
+; overwrite freely and there's nothing to save/load. 2 bytes (big-endian,
+; matching Multiply/Divide's own convention) since a compounded 4x
+; weakness (400) doesn't fit in one byte.
+wAITypeMatchupAccum:: dw
+; AskCultistQuestion's chosen answer (0-2), and separately the 1-1-1
+; tie-break source (the 3rd question's own answer, read back out after it's
+; already been overwritten by nothing else in between) -- threaded through
+; WRAM rather than a register since it crosses a farcall boundary, and
+; Bankswitch (home/bankswitch.asm) clobbers `a` on both the call and return
+; side of every farcall.
+wCultistAnswer:: ds 1
+
+; Pokémon Purple: scratch working state for AIChooseBestSwitchIn
+; (engine/battle/core.asm) -- all purely temporary values used during one
+; switch-in decision, not persistent game state.
+wAISwitchInPlayerType1:: db
+wAISwitchInPlayerType2:: db
+wAISwitchInCandType1:: db
+wAISwitchInCandType2:: db
+wAISwitchInCandHP:: dw
+wAISwitchInOffensive:: dw
+wAISwitchInDefensive:: dw
+wAISwitchInBestScore:: dw
+wAISwitchInBestIndex:: db
+wAISwitchInCandIndex:: db
 
 
 SECTION "Stack", WRAM0

@@ -79,8 +79,8 @@ RedsHouse2FCultistQuestion1Text:
 	ld hl, .Text
 	call PrintText
 	ld a, CULTIST_Q1_MENU_TEMPLATE
+	ld [wTextBoxID], a
 	farcall AskCultistQuestion
-	ld [wCultistLastAnswer], a
 	farcall TallyCultistAnswer
 	jp TextScriptEnd
 .Text:
@@ -92,8 +92,8 @@ RedsHouse2FCultistQuestion2Text:
 	ld hl, .Text
 	call PrintText
 	ld a, CULTIST_Q2_MENU_TEMPLATE
+	ld [wTextBoxID], a
 	farcall AskCultistQuestion
-	ld [wCultistLastAnswer], a
 	farcall TallyCultistAnswer
 	jp TextScriptEnd
 .Text:
@@ -105,8 +105,8 @@ RedsHouse2FCultistQuestion3Text:
 	ld hl, .Text
 	call PrintText
 	ld a, CULTIST_Q3_MENU_TEMPLATE
+	ld [wTextBoxID], a
 	farcall AskCultistQuestion
-	ld [wCultistLastAnswer], a
 	farcall TallyCultistAnswer
 	jp TextScriptEnd
 .Text:

@@ -107,7 +107,8 @@ AIMoveChoiceModificationFunctionPointers:
 	dw AIMoveChoiceModification1
 	dw AIMoveChoiceModification2
 	dw AIMoveChoiceModification3
-	dw AIMoveChoiceModification4 ; unused, does nothing
+	dw AIMoveChoiceModification4 ; Pokémon Purple: was dead code, see below
+	dw AIMoveChoiceModification5 ; Pokémon Purple: new
 
 ; discourages moves that cause no damage but only a status ailment if player's mon already has one
 AIMoveChoiceModification1:
@@ -209,7 +210,7 @@ AIMoveChoiceModification3:
 	pop bc
 	pop hl
 	ld a, [wTypeEffectiveness]
-	cp $10
+	cp EFFECTIVE
 	jr z, .nextMove
 	jr c, .notEffectiveMove
 	dec [hl] ; slightly encourage this move
@@ -255,8 +256,150 @@ AIMoveChoiceModification3:
 	jr z, .nextMove
 	inc [hl] ; slightly discourage this move
 	jr .nextMove
+; Pokémon Purple: discourages re-using a stat-boosting move whose relevant
+; stat is already maxed at +6 stages -- a direct complement to Modification
+; 2 just above, which encourages stat-boosting moves unconditionally,
+; blind to whether the stat being boosted is already capped. This used to
+; be dead code (just `ret`).
 AIMoveChoiceModification4:
-	ret
+	ld hl, wBuffer - 1 ; temp move selection array (-1 byte offset)
+	ld de, wEnemyMonMoves ; enemy moves
+	ld b, NUM_MOVES + 1
+.nextMove
+	dec b
+	ret z ; processed all 4 moves
+	inc hl
+	ld a, [de]
+	and a
+	ret z ; no more moves in move set
+	inc de
+	call ReadMove
+	ld a, [wEnemyMoveEffect]
+	push hl
+	push de
+	push bc
+	ld hl, StatUpMoveEffects
+	ld de, 2
+	call IsInArray
+	jr nc, .notMaxedStatUpMove
+	inc hl ; hl -> matched entry's 2nd byte (which stat-mod field, 0-3)
+	ld a, [hl]
+	ld hl, wEnemyMonAttackMod ; wEnemyMonAttackMod/DefenseMod/SpeedMod/
+	ld c, a                   ; SpecialMod are 4 consecutive WRAM bytes
+	ld b, 0                   ; (ram/wram.asm), so field index 0-3 can just
+	add hl, bc                ; be added directly as an offset
+	ld a, [hl]
+	cp 13 ; already maxed at +6 stages?
+	jr z, .maxedStatUpMove
+.notMaxedStatUpMove
+	pop bc
+	pop de
+	pop hl
+	jr .nextMove
+.maxedStatUpMove
+	pop bc
+	pop de
+	pop hl
+	ld a, [hl]
+	add 3 ; discourage this move
+	ld [hl], a
+	jr .nextMove
+
+; effect ID, stat-mod field index (0=Attack, 1=Defense, 2=Speed, 3=Special)
+StatUpMoveEffects:
+	db ATTACK_UP1_EFFECT,  0
+	db ATTACK_UP2_EFFECT,  0
+	db DEFENSE_UP1_EFFECT, 1
+	db DEFENSE_UP2_EFFECT, 1
+	db SPEED_UP1_EFFECT,   2
+	db SPEED_UP2_EFFECT,   2
+	db SPECIAL_UP1_EFFECT, 3
+	db SPECIAL_UP2_EFFECT, 3
+	db -1 ; end
+
+; Pokémon Purple: kill-shot heuristic -- if the player's mon is critically
+; low on HP, heavily favor a strong/super-effective damaging move, on the
+; theory that a probably-lethal hit is worth taking over anything else.
+; Deliberately a cheap heuristic (HP fraction + type effectiveness) rather
+; than a real damage-formula estimate, to avoid new Z80 damage-math
+; arithmetic getting subtly wrong -- see CLAUDE.md for the design
+; rationale. Only wired to trainer classes that already get hand-written
+; item-use AI (data/trainers/move_choices.asm, data/trainers/ai_pointers.asm)
+; -- ordinary trainers don't get this.
+AIMoveChoiceModification5:
+	; is the player's mon at or below 1/4 of its max HP?
+	ld a, 4
+	ldh [hDivisor], a
+	ld hl, wBattleMonMaxHP
+	ld a, [hli]
+	ldh [hDividend], a
+	ld a, [hl]
+	ldh [hDividend + 1], a
+	ld b, 2
+	call Divide
+	ldh a, [hQuotient + 3]
+	ld c, a ; c = threshold low byte
+	ldh a, [hQuotient + 2]
+	ld b, a ; b = threshold high byte
+	ld hl, wBattleMonHP
+	ld a, [hli]
+	ld d, a ; d = current HP high byte
+	ld a, [hl]
+	ld e, a ; e = current HP low byte
+	ld a, d
+	cp b
+	jr c, .lowHP ; HP high byte < threshold high byte -- definitely low
+	ret nz ; HP high byte > threshold high byte -- definitely not low
+	ld a, e
+	cp c
+	ret nc ; HP low byte >= threshold low byte -- not low
+.lowHP
+	ld hl, wBuffer - 1 ; temp move selection array (-1 byte offset)
+	ld de, wEnemyMonMoves ; enemy moves
+	ld b, NUM_MOVES + 1
+.nextMove
+	dec b
+	ret z ; processed all 4 moves
+	inc hl
+	ld a, [de]
+	and a
+	ret z ; no more moves in move set
+	inc de
+	call ReadMove
+	ld a, [wEnemyMovePower]
+	and a
+	jr z, .nextMove ; non-damaging move, no kill-shot potential
+	push hl
+	push de
+	push bc
+	; AIGetTypeEffectiveness lives in engine/battle/core.asm, a different
+	; bank than this file, hence callfar (matching AIMoveChoiceModification3's
+	; own callfar AIGetTypeEffectiveness above) rather than a plain call --
+	; but unlike calling GetTypeMatchupMultiplier directly, this is safe to
+	; do with live register inputs, because AIGetTypeEffectiveness takes NONE:
+	; it reads wEnemyMoveType (already set by ReadMove above) and
+	; wBattleMonType1/2 straight from WRAM itself and writes its result to
+	; wTypeEffectiveness, also WRAM. That matters because farcall/callfar's
+	; own Bankswitch protocol clobbers `b` (it's loaded with the destination
+	; bank number right before the jump) and `hl` (loaded with the target
+	; address) -- so a function whose calling convention expects its inputs
+	; in registers, like GetTypeMatchupMultiplier's b/c/d, cannot be called
+	; this way; its caller's b and hl are gone before the callee's first
+	; instruction ever runs. This is the exact class of bug already caught
+	; and documented for the cultist dream sequence's farcall usage
+	; (CLAUDE.md) -- caught here the same way, by hooking the built ROM and
+	; watching execution jump somewhere nonsensical, not by a clean build.
+	callfar AIGetTypeEffectiveness
+	pop bc
+	pop de
+	pop hl
+	ld a, [wTypeEffectiveness]
+	cp SUPER_EFFECTIVE
+	jr c, .nextMove ; below super-effective, not a confident kill-shot
+	ld a, [hl]
+	sub 5 ; heavily encourage this move
+	ld [hl], a
+	jr .nextMove
 
 ReadMove:
 	push hl
@@ -342,10 +485,10 @@ CooltrainerMAI:
 	jp AIUseXAttack
 
 CooltrainerFAI:
-	; The intended 25% chance to consider switching will not apply.
-	; Uncomment the line below to fix this.
+	; Pokémon Purple: this 25% gate used to be commented out (a vanilla bug --
+	; the routine ran unconditionally instead of 25% of the time). Restored.
 	cp 25 percent + 1
-	; ret nc
+	ret nc
 	ld a, 10
 	call AICheckIfHPBelowFraction
 	jp c, AIUseHyperPotion

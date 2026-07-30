@@ -215,10 +215,23 @@ CopyScreenTileBufferToVRAM::
 ClearScreen::
 ; Clear wTileMap, then wait
 ; for the bg map to update.
+; Pokémon Purple: this used to fill with the char literal ' ', which the
+; project-wide charmap (constants/charmap.asm) resolves to tile $7F -- not
+; actually blank in gfx/font/font.png (it's the small raised "." glyph the
+; copyright string uses as a date separator), the same bug fixed for
+; ClearBothBGMaps in engine/movie/title.asm. That earlier fix didn't touch
+; the title screen's mon-cycling backdrop, because the title screen's own
+; tile placement (logo, mon-cycling area, copyright) is written into
+; wTileMap via hlcoord addressing, synced to real VRAM later -- and
+; ClearBothBGMaps only clears vBGMap0/vBGMap1 in VRAM directly, never
+; wTileMap. ClearScreen (this function) is what actually clears wTileMap,
+; so it's the one whose fill tile determines what's visible there. $40 is a
+; genuinely all-zero tile in the font sheet, used as a raw numeric tile
+; index (bypassing the charmap entirely) rather than a char literal.
 	ld bc, SCREEN_AREA
 	inc b
 	hlcoord 0, 0
-	ld a, ' '
+	ld a, $40
 .loop
 	ld [hli], a
 	dec c

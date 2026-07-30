@@ -1321,25 +1321,18 @@ EnemySendOutFirstMon:
 	ld [wWhichPokemon], a
 	jr .next3
 .next
-	ld b, $ff
-.next2
-	inc b
-	ld a, [wEnemyMonPartyPos]
-	cp b
-	jr z, .next2
-	ld hl, wEnemyMon1
+	; Pokémon Purple: this used to be a plain "first unfainted mon in party
+	; order, skipping the currently active slot" scan -- AIChooseBestSwitchIn
+	; replaces it with a type-matchup-aware pick. Reached both by a
+	; deliberate mid-battle switch (SwitchEnemyMon, engine/battle/
+	; trainer_ai.asm) and by automatic replacement of a fainted mon
+	; (ReplaceFaintedEnemyMon below), plus the very first send-out of a
+	; battle (EnemySendOutFirstMon) -- that last case always has exactly one
+	; unfainted candidate at this point, so scoring is moot there and the
+	; trainer's authored lead mon is picked unchanged either way.
+	call AIChooseBestSwitchIn
 	ld a, b
 	ld [wWhichPokemon], a
-	push bc
-	ld bc, PARTYMON_STRUCT_LENGTH
-	call AddNTimes
-	pop bc
-	inc hl
-	ld a, [hli]
-	ld c, a
-	ld a, [hl]
-	or c
-	jr z, .next2
 .next3
 	ld a, [wWhichPokemon]
 	ld hl, wEnemyMon1Level
@@ -5188,41 +5181,318 @@ AdjustDamageForMoveType:
 	ret
 
 ; function to tell how effective the type of an enemy attack is on the player's current pokemon
-; this doesn't take into account the effects that dual types can have
-; (e.g. 4x weakness / resistance, weaknesses and resistances canceling)
-; the result is stored in [wTypeEffectiveness]
-; as far is can tell, this is only used once in some AI code to help decide which move to use
+; the result is stored in [wTypeEffectiveness], in TypeEffects' own native
+; scale (EFFECTIVE(10) = neutral, SUPER_EFFECTIVE(20) = 2x, etc, see
+; constants/battle_constants.asm) -- now a thin wrapper around
+; GetTypeMatchupMultiplier, which correctly accounts for both of the
+; defender's types (see that function's own comment for the previous bug
+; this replaces, and Pokémon Purple's CLAUDE.md item 10 for the fix writeup)
 AIGetTypeEffectiveness:
 	ld a, [wEnemyMoveType]
 	ld d, a                    ; d = type of enemy move
 	ld hl, wBattleMonType
-	ld b, [hl]                 ; b = type 1 of player's pokemon
-	inc hl
-	ld c, [hl]                 ; c = type 2 of player's pokemon
-	; initialize to neutral effectiveness
-	ld a, $10 ; bug: should be EFFECTIVE (10)
+	ld a, [hli]
+	ld b, a                    ; b = type 1 of player's pokemon
+	ld a, [hl]
+	ld c, a                    ; c = type 2 of player's pokemon
+	call GetTypeMatchupMultiplier ; hl = 16-bit multiplier
+	ld a, h
+	and a
+	ld a, l
+	jr z, .fits
+	ld a, $ff ; clamp: wTypeEffectiveness is a shared 1-byte scratch value
+	          ; (aliased with several unrelated single-byte labels), and its
+	          ; one consumer (AIMoveChoiceModification3) only ever checks
+	          ; this against EFFECTIVE(10), so saturating an
+	          ; already-way-above-neutral result loses nothing meaningful
+.fits
 	ld [wTypeEffectiveness], a
+	ret
+
+; INPUT: d = attacking type, b = defender's type1, c = defender's type2
+; OUTPUT: hl = combined effectiveness multiplier (16-bit), in TypeEffects'
+;         own native scale (EFFECTIVE(10) = neutral 1x, SUPER_EFFECTIVE(20)
+;         = 2x, NOT_VERY_EFFECTIVE(5) = 0.5x, up to 400 for a 4x weakness,
+;         0 = immune via at least one matching type) -- clobbers af/hl,
+;         preserves bc/de. Read-only: never touches wDamage, wMoveMissed,
+;         or wDamageMultipliers, so it's safe to call from AI scoring code
+;         without any side effect on the real damage calc.
+;
+; Pokémon Purple: this replaces the old AIGetTypeEffectiveness, which (per
+; pret's own comment) "doesn't take into account the effects that dual
+; types can have (e.g. 4x weakness / resistance, weaknesses and resistances
+; canceling)" -- it stopped at the FIRST matching TypeEffects row instead of
+; considering both of the defender's types. This function mirrors the real
+; damage calc's own type-matchup walk just below (which IS already correct
+; -- it applies every matching row for both defender types) but accumulates
+; a multiplier instead of scaling an actual damage number. A mono-type
+; defender (type1 == type2) is handled correctly too: each TypeEffects row
+; can only match type1 OR type2 once per row (the check for c only runs if
+; the check for b already failed), so its one matching row is applied
+; exactly once, not squared -- calling a single-type lookup twice (once per
+; type) the naive way would have double-counted mono-type mons.
+;
+; Also fixes a real (if easy to miss) bug that hid behind this one: the old
+; function initialized [wTypeEffectiveness] to `$10` (hex, decimal 16) with
+; a comment flagging it should've been the named EFFECTIVE constant (10,
+; decimal) -- and AIMoveChoiceModification3's own `cp $10` check
+; (engine/battle/trainer_ai.asm) was written to match that SAME wrong value,
+; so the two bugs canceled out for the "no matching row at all" case, but
+; only by coincidence of hex/decimal notation. This function's accumulator
+; starts at the correct decimal EFFECTIVE (10) and is only ever changed by
+; an actual TypeEffects match, so Modification 3's check has been updated
+; to compare against EFFECTIVE directly instead of the old magic `$10`.
+GetTypeMatchupMultiplier::
+	push bc
+	push de
+	xor a
+	ld [wAITypeMatchupAccum], a
+	ld a, EFFECTIVE ; start neutral; only changed by an actual table match
+	ld [wAITypeMatchupAccum + 1], a
 	ld hl, TypeEffects
 .loop
-	ld a, [hli]
+	ld a, [hli] ; a = attacking type of this row, hl -> defending type byte
 	cp $ff
-	ret z
-	cp d                      ; match the type of the move
-	jr nz, .nextTypePair1
-	ld a, [hli]
-	cp b                      ; match with type 1 of pokemon
 	jr z, .done
-	cp c                      ; or match with type 2 of pokemon
-	jr z, .done
-	jr .nextTypePair2
-.nextTypePair1
-	inc hl
-.nextTypePair2
+	cp d
+	jr nz, .skipRow
+	ld a, [hli] ; a = defending type of this row, hl -> multiplier byte
+	cp b
+	jr z, .match
+	cp c
+	jr z, .match
+	inc hl ; skip multiplier byte
+	jr .loop
+.skipRow
+	inc hl ; skip defending type byte
+	inc hl ; skip multiplier byte
+	jr .loop
+.match
+	; Multiply doesn't preserve de, and Divide's byte-count parameter has to
+	; go in b (overwriting our own defending-type-1 loop state) -- save both
+	; around this whole calculation and restore before continuing the loop.
+	push bc
+	push de
+	xor a
+	ldh [hMultiplicand], a
+	ld a, [wAITypeMatchupAccum]
+	ldh [hMultiplicand + 1], a
+	ld a, [wAITypeMatchupAccum + 1]
+	ldh [hMultiplicand + 2], a
+	ld a, [hl] ; this row's raw multiplier
+	ldh [hMultiplier], a
+	call Multiply
+	ld a, 10
+	ldh [hDivisor], a
+	ld b, 4
+	call Divide
+	ldh a, [hQuotient + 2]
+	ld [wAITypeMatchupAccum], a
+	ldh a, [hQuotient + 3]
+	ld [wAITypeMatchupAccum + 1], a
+	pop de
+	pop bc
 	inc hl
 	jr .loop
 .done
+	ld a, [wAITypeMatchupAccum]
+	ld h, a
+	ld a, [wAITypeMatchupAccum + 1]
+	ld l, a
+	pop de
+	pop bc
+	ret
+
+; OUTPUT: b = chosen party index (0-based) among wEnemyMon1..6
+;
+; Pokémon Purple: replaces EnemySendOut's old "first unfainted mon in party
+; order" scan (engine/battle/core.asm, near EnemySendOutFirstMon) with a
+; real matchup-aware pick, scoring every eligible candidate (not fainted,
+; not the currently active slot) by (offensive potential against the
+; player's current mon) minus (defensive risk from the player's current
+; mon), each side computed via GetTypeMatchupMultiplier against both of the
+; other side's types where they differ from each other. Ties are broken by
+; earliest party order, since a later candidate only replaces the current
+; best on a STRICTLY higher score -- deliberately not also tie-breaking by
+; HP, to keep this first version simple to verify; see CLAUDE.md for the
+; writeup.
+;
+; Routes every intermediate value through WRAM scratch rather than juggling
+; registers across the several GetTypeMatchupMultiplier calls this needs --
+; this function only ever runs on an actual switch decision (never once per
+; frame), so the extra loads/stores cost nothing that matters, and it made
+; the logic much easier to get right and to review than deeply nested
+; push/pop bookkeeping would have.
+AIChooseBestSwitchIn:
+	ld hl, wBattleMonType
+	ld a, [hli]
+	ld [wAISwitchInPlayerType1], a
 	ld a, [hl]
-	ld [wTypeEffectiveness], a ; store damage multiplier
+	ld [wAISwitchInPlayerType2], a
+
+	xor a
+	ld [wAISwitchInBestScore], a
+	ld [wAISwitchInBestScore + 1], a
+	ld a, $ff
+	ld [wAISwitchInBestIndex], a ; $ff = no candidate scored yet
+
+	xor a
+	ld [wAISwitchInCandIndex], a
+.candidateLoop
+	ld a, [wAISwitchInCandIndex]
+	ld hl, wEnemyPartyCount
+	cp [hl]
+	jp z, .allDone
+	ld hl, wEnemyMonPartyPos
+	cp [hl]
+	jp z, .nextCandidate ; skip the currently active slot
+
+	ld hl, wEnemyMon1
+	ld bc, PARTYMON_STRUCT_LENGTH
+	call AddNTimes ; hl -> this candidate's party struct base
+	push hl
+	ld bc, MON_HP
+	add hl, bc
+	ld a, [hli]
+	ld [wAISwitchInCandHP], a
+	ld a, [hl]
+	ld [wAISwitchInCandHP + 1], a
+	pop hl
+	ld a, [wAISwitchInCandHP]
+	or a
+	jr nz, .notFainted
+	ld a, [wAISwitchInCandHP + 1]
+	or a
+	jp z, .nextCandidate ; HP == 0 -- fainted, skip
+.notFainted
+	ld bc, MON_TYPE1
+	add hl, bc
+	ld a, [hli]
+	ld [wAISwitchInCandType1], a
+	ld a, [hl]
+	ld [wAISwitchInCandType2], a
+
+	; offensive potential: candidate's type(s) attacking the player's types
+	ld a, [wAISwitchInCandType1]
+	ld d, a
+	ld a, [wAISwitchInPlayerType1]
+	ld b, a
+	ld a, [wAISwitchInPlayerType2]
+	ld c, a
+	call GetTypeMatchupMultiplier
+	ld a, h
+	ld [wAISwitchInOffensive], a
+	ld a, l
+	ld [wAISwitchInOffensive + 1], a
+
+	ld a, [wAISwitchInCandType2]
+	ld hl, wAISwitchInCandType1
+	cp [hl]
+	jr z, .skipOff2 ; mono-type candidate, don't double-count the one row
+	ld d, a
+	ld a, [wAISwitchInPlayerType1]
+	ld b, a
+	ld a, [wAISwitchInPlayerType2]
+	ld c, a
+	call GetTypeMatchupMultiplier
+	ld a, [wAISwitchInOffensive]
+	cp h
+	jr c, .off2Bigger
+	jr nz, .skipOff2
+	ld a, [wAISwitchInOffensive + 1]
+	cp l
+	jr nc, .skipOff2
+.off2Bigger
+	ld a, h
+	ld [wAISwitchInOffensive], a
+	ld a, l
+	ld [wAISwitchInOffensive + 1], a
+.skipOff2
+
+	; defensive risk: the player's type(s) attacking the candidate's types
+	ld a, [wAISwitchInPlayerType1]
+	ld d, a
+	ld a, [wAISwitchInCandType1]
+	ld b, a
+	ld a, [wAISwitchInCandType2]
+	ld c, a
+	call GetTypeMatchupMultiplier
+	ld a, h
+	ld [wAISwitchInDefensive], a
+	ld a, l
+	ld [wAISwitchInDefensive + 1], a
+
+	ld a, [wAISwitchInPlayerType2]
+	ld hl, wAISwitchInPlayerType1
+	cp [hl]
+	jr z, .skipDef2 ; player is mono-type
+	ld d, a
+	ld a, [wAISwitchInCandType1]
+	ld b, a
+	ld a, [wAISwitchInCandType2]
+	ld c, a
+	call GetTypeMatchupMultiplier
+	ld a, [wAISwitchInDefensive]
+	cp h
+	jr c, .def2Bigger
+	jr nz, .skipDef2
+	ld a, [wAISwitchInDefensive + 1]
+	cp l
+	jr nc, .skipDef2
+.def2Bigger
+	ld a, h
+	ld [wAISwitchInDefensive], a
+	ld a, l
+	ld [wAISwitchInDefensive + 1], a
+.skipDef2
+
+	; score = offensive - defensive + 400 (always non-negative: both sides
+	; of the subtraction are in range 0-400, so the true mathematical result
+	; is always within 0-800, which plain 16-bit wraparound arithmetic
+	; reproduces exactly -- no separate sign-handling needed)
+	ld a, [wAISwitchInOffensive]
+	ld h, a
+	ld a, [wAISwitchInOffensive + 1]
+	ld l, a
+	ld a, [wAISwitchInDefensive]
+	ld d, a
+	ld a, [wAISwitchInDefensive + 1]
+	ld e, a
+	ld a, l
+	sub e
+	ld l, a
+	ld a, h
+	sbc d
+	ld h, a
+	ld de, 400
+	add hl, de
+
+	; replace the best-so-far only on a strictly higher score
+	ld a, [wAISwitchInBestIndex]
+	cp $ff
+	jr z, .newBest
+	ld a, [wAISwitchInBestScore]
+	cp h
+	jr c, .newBest
+	jr nz, .notNewBest
+	ld a, [wAISwitchInBestScore + 1]
+	cp l
+	jr nc, .notNewBest
+.newBest
+	ld a, h
+	ld [wAISwitchInBestScore], a
+	ld a, l
+	ld [wAISwitchInBestScore + 1], a
+	ld a, [wAISwitchInCandIndex]
+	ld [wAISwitchInBestIndex], a
+.notNewBest
+.nextCandidate
+	ld hl, wAISwitchInCandIndex
+	inc [hl]
+	jp .candidateLoop
+.allDone
+	ld a, [wAISwitchInBestIndex]
+	ld b, a
 	ret
 
 INCLUDE "data/types/type_matchups.asm"
