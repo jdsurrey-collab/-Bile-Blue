@@ -79,7 +79,16 @@ PlayCultistDream::
 ; and this menu both need to run from within an active text-script context.
 ; No B-button cancel (only PAD_A is watched): the dream doesn't let you walk
 ; away without answering.
+;
+; Saves/restores the screen around the popup (matching YesNoChoice, the
+; proven pattern for a menu that pops up over an already-drawn dialogue box
+; mid-scene) rather than DoBuySellQuitMenu's bare draw-and-leave-it, which is
+; only ever reached via a full mart-screen redraw afterward and was never
+; actually a safe precedent for 3 popups drawn back-to-back over a single
+; unchanging room scene -- without this, each question's box tiles were never
+; erased before the next question's prompt printed elsewhere on screen.
 AskCultistQuestion::
+	call SaveScreenTilesToBuffer1
 	ld [wTextBoxID], a
 	call DisplayTextBoxID
 	ld a, PAD_A
@@ -97,6 +106,9 @@ AskCultistQuestion::
 	call HandleMenuInput
 	call PlaceUnfilledArrowMenuCursor
 	ld a, [wCurrentMenuItem]
+	push af
+	call LoadScreenTilesFromBuffer1
+	pop af
 	ret
 
 ; INPUT: a = answer index (0-2)

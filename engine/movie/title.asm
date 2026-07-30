@@ -356,9 +356,22 @@ DrawPlayerCharacter:
 	ret
 
 ClearBothBGMaps:
+; Pokémon Purple: this used to fill with the char literal ' ', which the
+; project-wide charmap (constants/charmap.asm) resolves to tile $7F -- not
+; actually blank in gfx/font/font.png (it's the small raised "." glyph the
+; copyright string itself uses as a date separator, see
+; .tileScreenCopyrightTiles below), so every part of the title screen
+; background not otherwise covered by the logo/version/character/copyright
+; art rendered as a tiled field of that dot, invisible in plain DMG grayscale
+; but glaring once SGB colorizes it with a different shade than the true
+; background (PAL_LOGO2/PAL_LOGO1/PAL_MEWMON in data/sgb/sgb_palettes.asm --
+; unmodified vanilla values, so this was a latent, ordinarily-unnoticed
+; vanilla quirk, not something introduced by this fork). $40 is a genuinely
+; all-zero tile in the font sheet -- using it directly as a raw tile index
+; (not a char literal) sidesteps the charmap entirely.
 	ld hl, vBGMap0
 	ld bc, 2 * TILEMAP_AREA
-	ld a, ' '
+	ld a, $40
 	jp FillMemory
 
 LoadTitleMonSprite:

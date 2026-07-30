@@ -8,19 +8,19 @@ _RedsHouse2FCultistIntroText::
 	line "<PLAYER>. Do not"
 	cont "open your eyes."
 
-	para "I have knelt at your"
-	line "bedside since you"
-	cont "were small, waiting"
-	cont "for this very night."
+	para "I have watched you"
+	line "since before you"
+	cont "could even walk,"
+	cont "waiting for you."
 
-	para "You feel me close?"
-	line "That is only right."
-	cont "I am closer to you"
-	cont "than your own blood."
+	para "You feel me close,"
+	line "and that is right."
+	cont "I'm nearer to you"
+	cont "closer than blood."
 
-	para "Whisper true, child,"
-	line "and I shall whisper"
-	cont "back what you are to"
+	para "Whisper true now,"
+	line "and I will whisper"
+	cont "back what you will"
 	cont "become."
 	done
 
@@ -28,36 +28,35 @@ _RedsHouse2FCultistQuestion1Text::
 	text "Tell me, softly-"
 	line "when the world has"
 	cont "wronged you, what"
-	cont "claws at your breast?"
+	cont "claws inside you?"
 	done
 
 _RedsHouse2FCultistQuestion2Text::
 	text "Nearer now. When"
-	line "every hope has died,"
-	cont "what is it that still"
-	cont "drags you onward?"
+	line "hope has left you,"
+	cont "what moves you on?"
 	done
 
 _RedsHouse2FCultistQuestion3Text::
 	text "One thing more,"
-	line "and then I leave you"
-	cont "to your dreaming."
-	cont "What shall your"
+	line "then I leave you"
+	cont "to dream. Tell me,"
+	cont "what shall your"
 	cont "familiar become,"
 	cont "in the end?"
 	done
 
 _RedsHouse2FCultistOutroText::
 	text "???: There now."
-	line "It is settled in"
-	cont "you, deep as marrow."
+	line "It is settled now,"
+	cont "deep in your soul."
 
-	para "You will not"
-	line "remember my face,"
-	cont "nor these words."
+	para "You will forget my"
+	line "face and my words."
 	cont "Only the shape of"
-	cont "what you have become."
+	cont "what you will be."
 
-	para "Sleep well, <PLAYER>."
-	line "I will be watching."
+	para "Sleep now."
+	line "I'll be watching,"
+	cont "<PLAYER>."
 	done
