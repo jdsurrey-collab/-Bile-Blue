@@ -101,10 +101,6 @@ StatusScreen:
 	ld hl, vChars2 tile $72
 	lb bc, BANK(PTile), 1
 	call CopyVideoDataDouble ; bold P (for PP)
-	ld de, TierNumerals
-	ld hl, vChars2 tile TIER_NUMERAL_BASE_TILE
-	lb bc, BANK(TierNumerals), MAX_TIER
-	call CopyVideoDataDouble ; Pokémon Purple: tier badge glyphs
 	ldh a, [hTileAnimations]
 	push af
 	xor a
@@ -140,13 +136,40 @@ StatusScreen:
 	hlcoord 9, 6
 	ld de, StatusText
 	call PlaceString ; "STATUS/"
-	hlcoord 14, 2
+; Pokémon Purple: the level is shifted two columns left of vanilla's 14 to make
+; room for the tier numeral beside it. Column 19 is the box border drawn by
+; DrawLineBox above, so 15-18 is all the width available and "VIII" needs all
+; four. PrintLevel writes ":L" plus two digits (three for level 100, which
+; overwrites the ":L"), so it occupies 12-14 here.
+	hlcoord 12, 2
 	call PrintLevel
-	hlcoord 17, 2
-	ld a, [wLoadedMonCatchRate] ; Pokémon Purple: tier badge, 1-10 -> 0-9
-	dec a
-	add TIER_NUMERAL_BASE_TILE
-	ld [hl], a
+; Tier badge (1-10) as a Roman numeral, drawn with the ORDINARY FONT rather
+; than custom tiles. The original implementation loaded a 10-tile 1bpp graphic
+; to vChars2 tile $60 -- which is exactly where LoadTextBoxTilePatterns puts
+; TextBoxGraphics ($60) and LoadHpBarAndStatusTilePatterns puts
+; HpBarAndStatusGraphics ($62). Every text box or HP-bar redraw therefore
+; overwrote the glyphs, and they rendered as garbage. There is no free
+; 10-tile run left in vChars2 on this screen, and the font already contains
+; I, V and X, so this needs no VRAM of its own and cannot be clobbered.
+	ld a, [wLoadedMonCatchRate] ; MON_TIER
+	and a
+	jr z, .noTier ; guard: tier 0 means the byte was never rolled
+	cp MAX_TIER + 1
+	jr nc, .noTier
+	dec a ; 1-10 -> 0-9
+	ld b, a
+	add a
+	add a
+	add b ; a = (tier - 1) * 5, the fixed record width below
+	ld e, a
+	ld d, 0
+	ld hl, TierNumeralText
+	add hl, de
+	ld d, h
+	ld e, l
+	hlcoord 15, 2
+	call PlaceString
+.noTier
 	ld a, [wMonHIndex]
 	ld [wPokedexNum], a
 	ld [wCurSpecies], a
@@ -246,9 +269,21 @@ DrawLineBox:
 
 PTile: INCBIN "gfx/font/P.1bpp"
 
-; Pokémon Purple: tier badge glyphs (tier 1-10), one 8x8 tile each
-DEF TIER_NUMERAL_BASE_TILE EQU $60
-TierNumerals: INCBIN "gfx/status/tier_numerals.1bpp"
+; Pokémon Purple: tier badge (1-10) as Roman numerals, rendered with the normal
+; font. Fixed 5-byte records so the index is a simple (tier - 1) * 5 -- "VIII@"
+; is the longest at exactly 5, and the trailing spaces on the shorter ones are
+; never drawn because PlaceString stops at the "@".
+TierNumeralText:
+	db "I@   "
+	db "II@  "
+	db "III@ "
+	db "IV@  "
+	db "V@   "
+	db "VI@  "
+	db "VII@ "
+	db "VIII@"
+	db "IX@  "
+	db "X@   "
 
 PrintStatsBox:
 	ld a, d

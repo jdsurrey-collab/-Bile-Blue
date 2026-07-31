@@ -21,6 +21,32 @@ Every individual Pokémon secretly carries a power **tier from 1–10** (5 = neu
   - Every other trainer/rival/Elite Four mon, and every gift Pokémon (starter, fossils, Eevee gift, Lapras, Hitmon*, Magikarp, Game Corner prizes, trades): stays neutral, tier 5.
 - **Display**: a custom 1-tile badge (`gfx/status/tier_numerals.png`) shows next to the level on the party status screen's first page.
 
+## The tier badge: Roman numerals, drawn with the font
+
+**Status:** ✅ Fixed in `Roms/v0.34`
+
+The tier shows as **I–X next to the level** on the status screen's first page, rendered with the **ordinary font** (`TierNumeralText` in `engine/pokemon/status_screen.asm` — fixed 5-byte records indexed `(tier-1)*5`).
+
+### Why not custom tiles
+
+The original implementation used a 10-tile 1bpp graphic (`gfx/status/tier_numerals.png`, now deleted) loaded to `vChars2 tile $60`. That address is **already doubly claimed** on that very screen:
+
+| Loader | Destination |
+|---|---|
+| `LoadTextBoxTilePatterns` | `vChars2 tile $60` |
+| `LoadHpBarAndStatusTilePatterns` | `vChars2 tile $62` |
+
+So every text-box or HP-bar redraw overwrote the badge glyphs — they rendered as garbage. Reported from play as *"complete mumbled trash."*
+
+The art was also wrong for the goal: it was a tally scheme (1–4 = plain vertical bars, 5 = V, 6–9 = V with bars stacked beneath, 10 = X), which is illegible stripes at 8×8 even when VRAM is intact.
+
+There is **no free 10-tile run left in `vChars2`** on this screen, and the font already contains `I`, `V` and `X` — so the font approach needs no VRAM of its own and *cannot* be clobbered.
+
+### Layout change
+`VIII` needs four columns. The level moved from vanilla's column 14 to **column 12**, freeing 15–18 (column 19 is the `DrawLineBox` border). `PrintLevel` writes `:L` plus two digits, or three digits overwriting the `:L` at level 100 — so it fits in 12–14.
+
+Verified by decoding the ROM: `I`=`$88`, `V`=`$95`, `X`=`$97`, `@`=`$50`, all ten records exactly 5 bytes.
+
 ## Bugs hit & fixes
 
 ### The wild-tier roll was in the wrong function
