@@ -111,6 +111,28 @@ When touching dialogue in `text/*.asm`, keep to this Victorian-gothic despair to
 
 When touching `data/wild/maps/*.asm`, remember there's no more `_RED`/`_BLUE` split to preserve — any new encounter added there just needs to keep the flat list at exactly `NUM_WILDMONS` (10) `db LEVEL, SPECIES` lines (`def_grass_wildmons`/`def_water_wildmons` assert this at build time).
 
+## The Godot port (active work)
+
+There is a **second, parallel project**: a 1:1 port of this game to Godot 4.4 / GDScript at `C:\Users\jdsur\Documents\pokemonpurple`. This repo is the **source of truth**; the Godot project is downstream of it.
+
+**The full plan lives in `Pokemon Vault/09 Godot Port/Port Plan.md` — read it before doing port work.** Short version:
+
+- **Governing principle: port the ENGINES, convert the DATA. Never hand-build content.** There are ~250 maps, 240 species, 170 moves and ~400 trainers. If a port task feels like data entry, stop and write an exporter instead. Adding Pallet Town cost zero new scenes; the other 249 maps should too.
+- **One scene per *system*, not per *map*.** `overworld.tscn` loads any map from JSON.
+- **Map scripts are the one legitimate hand-port** — they're assembly state machines that can't be auto-translated. `data/script_inventory.json` says exactly which maps have one (**100 of them**), so that list is bounded and known rather than discovered late.
+- **Port map scripts literally first**, preserving the ROM's state-machine indices and names (`wCurMapScript` → `cur_map_script`) so they can be diffed against the source. Refactor only after they work.
+- **Purple's changes are not optional** in the port: permadeath, hidden tiers, the gothic text, the Eevee-only starter, the cultist dream, and the smarter AI are the whole point of the fork.
+
+**Exporters** (run from this repo, write into the Godot project):
+- `tools/godot_export.py` — maps: `.blk` blocks expanded to tiles, per-cell walkability from `*_Coll`, warps/signs/NPCs, tilesets and overworld sprites recoloured to a DMG palette, plus map text
+- `tools/godot_export_data.py` — species, moves, type chart, trainers, and the map-script inventory
+
+**Two grids, never conflate** (the easiest thing to get wrong): **tiles** are 8×8 px (what's drawn), **cells** are 16×16 px (what actors move on). One map block = 4×4 tiles = 2×2 cells. The exporter resolves this and ships `walkable` already per-cell.
+
+**Verification is the same discipline as the ROM work — a clean run is not proof.** `godot --headless --import` catches parse errors and `--quit-after N` catches runtime ones, but neither proves it *renders*. Use a temporary dev screenshot node and actually look at the frame; that already caught a player-spawn bug a clean run did not.
+
+**Godot gotcha specific to this project:** it treats the Variant-inference warning as an **error**, so `var x := some_dict.get(...)` fails to parse. Always type explicitly: `var x: float = some_dict.get(...)`.
+
 ## Git remotes
 
 - `origin` → the personal fork this project pushes to (GitHub: `jdsurrey-collab/-Bile-Blue`)
