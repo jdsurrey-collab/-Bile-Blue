@@ -1,6 +1,6 @@
 # Test Suite
 
-Eight suites in `tools/tests/`. Run them all:
+Ten suites in `tools/tests/`. Run them all:
 
 ```sh
 for t in tools/tests/*.py; do echo "$t"; python "$t"; done
@@ -16,13 +16,30 @@ They need the PyBoy venv (`/root/pyboy-env/bin/python` in this WSL setup) and a 
 | `test_base_stats_alignment.py` | `BaseStats` contiguous by **dex number** (the Mew hole) | static |
 | `test_pic_banks.py` | All 239 pic banks vs. the **linker's own symbols** | static |
 | `test_dex_line_budget.py` | All 89 gothic dex entries ≤18 chars/line + full coverage | static |
+| `test_name_sprite_match.py` | **End-to-end: every species' name and sprite are the same Pokémon** | static |
 | `test_gen2_species.py` | Names + `IndexToPokedex` round-trip in the running ROM | emulated |
+| `test_getmonheader_runtime.py` | **`GetMonHeader` loads the right sprite pointer at runtime** | emulated |
 | `test_getname.py` | The `GetName` TM/HM-redirect fix, and that items/moves/trainers didn't regress | emulated |
 | `test_permadeath.py` | `DEAD_BIT` is set on faint; `HealParty` refuses to revive the dead | emulated |
 | `test_oakslab_replacement.py` | The wiped-party gate on Oak's replacement Eevee | emulated |
 
 **Static** tests read the built ROM/symbols directly — fast, no emulator.
 **Emulated** tests drive PyBoy with the direct-function-call harness ([[PyBoy Testing Techniques]]).
+
+## Why the two end-to-end tests exist
+
+Every single-axis test passed while the game still showed wrong-name/wrong-sprite pairs. The chain crosses **both** numbering systems:
+
+```
+internal index -> MonsterNames[i]    (the name shown)
+internal index -> PokedexOrder[i]    -> dex number
+dex number     -> BaseStats[dex-1]   -> sprite POINTER
+internal index -> MonPicBanks[i]     -> sprite BANK
+```
+
+A mismatch *between* the axes is invisible to any check that only walks one of them. `test_name_sprite_match.py` walks the whole chain in the ROM; `test_getmonheader_runtime.py` proves the code that walks it agrees.
+
+**Lesson: testing each link individually is not the same as testing the chain.** Three separate table tests were green while the actual name↔sprite pairing was broken.
 
 ## Two rules these suites exist to enforce
 
