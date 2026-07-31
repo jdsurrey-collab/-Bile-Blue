@@ -14,18 +14,38 @@ from pyboy import PyBoy
 import os
 ROM = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "pokered.gbc")
 
-# from pokered.sym
-GETNAME        = 0x378d   # bank 00 (home)
-WNAMELISTINDEX = 0xd0b5
-WNAMELISTTYPE  = 0xd0b6
-WPREDEFBANK    = 0xd0b7
-WNAMEBUFFER    = 0xcd6d
-HLOADEDROMBANK = 0xffb8
-TRAMPOLINE     = 0xdee2   # wCultistVotes, scratch
+# Resolve everything from pokered.sym instead of hardcoding. Addresses and banks
+# move whenever WRAM or section layout changes -- MONS_PER_BOX alone shifted the
+# scratch byte used as the trampoline here, and a stale trampoline turns every
+# call into a timeout that looks exactly like a broken function.
+import re as _re
+
+
+def _syms():
+    out = {}
+    p = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+        os.path.abspath(__file__)))), "pokered.sym")
+    for line in open(p, encoding="utf-8"):
+        m = _re.match(r"([0-9a-f]{2}):([0-9a-f]{4}) (\S+)", line.strip())
+        if m:
+            out[m.group(3)] = (int(m.group(1), 16), int(m.group(2), 16))
+    return out
+
+
+_S = _syms()
+GETNAME        = _S["GetName"][1]
+WNAMELISTINDEX = _S["wNameListIndex"][1]
+WNAMELISTTYPE  = _S["wNameListType"][1]
+WPREDEFBANK    = _S["wPredefBank"][1]
+WNAMEBUFFER    = _S["wNameBuffer"][1]
+HLOADEDROMBANK = _S["hLoadedROMBank"][1]
+TRAMPOLINE     = _S["wCultistVotes"][1]  # scratch, unused in this context
 
 MONSTER_NAME, MOVE_NAME, ITEM_NAME, TRAINER_NAME = 1, 2, 4, 7
-BANK_MONSTERNAMES, BANK_ITEMNAMES = 0x07, 0x01
-BANK_MOVENAMES, BANK_TRAINERNAMES = 0x2c, 0x0e
+BANK_MONSTERNAMES = _S["MonsterNames"][0]
+BANK_ITEMNAMES = _S["ItemNames"][0]
+BANK_MOVENAMES = _S["MoveNames"][0]
+BANK_TRAINERNAMES = _S["TrainerNames"][0]
 HM01 = 0xC4
 
 CHARMAP_BASE = {0x80: "A"}  # filled below

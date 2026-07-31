@@ -67,6 +67,31 @@ Both are **auto-generated** from `data/wild/maps/*.asm` by `tools/wild_report.py
 - `tools/wild_tables.py` — encounter tables.
 - `tools/tests/` — PyBoy regression tests.
 
+## Two bugs that shipped in v0.27 (fixed in v0.29)
+
+Both surfaced from play — "Wild MISSINGNO. appeared" and blurred sprites on the title screen.
+
+### 1. Off-by-one in every index walker
+`constants/pokemon_constants.asm` starts with a bare `const_def` then `const NO_MON ; $00` — the counter starts at **0** and `NO_MON` takes index `$00`. The tooling set its counter to `0` on `const_def` and incremented on the first `const`, making **every index +1 too high**.
+
+Because both walkers shared the bug they agreed with each other, so the constants file got the *right lines* replaced and its generated `; $XX` comments looked self-consistent. But table patching writes by **position**, so all 36 gap-filled species had their name/dex-order/cry/dex-entry/evos pointer written one slot high — leaving their real slot reading `MISSINGNO` *and* clobbering the Gen 1 species one slot up (Bayleef's name landed on Growlithe).
+
+The corrupted sprites came from the same shift hitting `PokedexOrder`: `IndexToPokedex` returned the wrong dex number → wrong `BaseStats` entry → wrong sprite pointer.
+
+**Appended species (191+) were never affected** — only gap-filled ones — which is exactly why it presented as "*some* Pokémon are wrong".
+
+Nothing caught it: the build was clean, `assert_table_length` only checks *lengths*, and the round-trip test happened to spot-check appended species plus two gap-filled ones whose neighbours were also gaps.
+
+Now guarded by `test_species_alignment.py`, which cross-checks all 243 constants against the name-table bytes in the built ROM.
+
+### 2. Sprite banks can't be derived from index ranges
+`home/pics.asm` picked a mon's pic bank from hardcoded index thresholds. That only worked because vanilla's index order and pic-bank order grew in lockstep. Imported species break it both ways — scattered indexes, and sprites in six separate floating sections.
+
+Replaced with an exact lookup table (`MonPicBanks`). Costs *fewer* Home-bank bytes than the range checks (~25 vs ~38) and can't silently desync. Verified by `test_pic_banks.py` against the **linker's own symbols**.
+
+### Lesson
+Tests now resolve symbols from `pokered.sym` and species indexes from the constants file at run time. Fixing the off-by-one shifted indexes *and* moved the WRAM trampoline byte, turning two suites red for reasons unrelated to the game — and a stale trampoline fails as a *timeout*, indistinguishable from a broken function.
+
 ## Key constraints discovered
 - **WRAM, not `GetName`, was the real ceiling.** Dex flag arrays live in the *saved* region; only 10 free bytes existed and DMG WRAM isn't bankable. Solved with `MONS_PER_BOX` 20→19 (frees 56 bytes, costs 12 storage slots). 44 bytes still free.
 - **Near vs far pointers govern what can float.** Dex prose can live in any bank (`text_far` is bank-aware), but `PokedexEntryPointers`/`EvosMovesPointerTable` use near `dw` pointers dereferenced in the current bank — their data must stay co-located.

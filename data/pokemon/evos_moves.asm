@@ -40,9 +40,9 @@ EvosMovesPointerTable:
 	dw BlastoiseEvosMoves
 	dw PinsirEvosMoves
 	dw TangelaEvosMoves
-	dw MissingNo1FEvosMoves
 	dw ChikoritaEvosMoves
 	dw BayleefEvosMoves
+	dw GrowlitheEvosMoves
 	dw OnixEvosMoves
 	dw FearowEvosMoves
 	dw PidgeyEvosMoves
@@ -59,27 +59,27 @@ EvosMovesPointerTable:
 	dw PsyduckEvosMoves
 	dw DrowzeeEvosMoves
 	dw GolemEvosMoves
-	dw MissingNo32EvosMoves
 	dw MeganiumEvosMoves
-	dw MissingNo34EvosMoves
+	dw MagmarEvosMoves
 	dw CyndaquilEvosMoves
+	dw ElectabuzzEvosMoves
 	dw MagnetonEvosMoves
 	dw KoffingEvosMoves
-	dw MissingNo38EvosMoves
 	dw QuilavaEvosMoves
+	dw MankeyEvosMoves
 	dw SeelEvosMoves
 	dw DiglettEvosMoves
 	dw TaurosEvosMoves
-	dw MissingNo3DEvosMoves
 	dw TyphlosionEvosMoves
 	dw TotodileEvosMoves
 	dw CroconawEvosMoves
+	dw FarfetchdEvosMoves
 	dw VenonatEvosMoves
 	dw DragoniteEvosMoves
-	dw MissingNo43EvosMoves
 	dw FeraligatrEvosMoves
 	dw SentretEvosMoves
 	dw FurretEvosMoves
+	dw DoduoEvosMoves
 	dw PoliwagEvosMoves
 	dw JynxEvosMoves
 	dw MoltresEvosMoves
@@ -88,24 +88,24 @@ EvosMovesPointerTable:
 	dw DittoEvosMoves
 	dw MeowthEvosMoves
 	dw KrabbyEvosMoves
-	dw MissingNo4FEvosMoves
 	dw HoothootEvosMoves
 	dw NoctowlEvosMoves
 	dw LedybaEvosMoves
+	dw VulpixEvosMoves
 	dw NinetalesEvosMoves
 	dw PikachuEvosMoves
 	dw RaichuEvosMoves
-	dw MissingNo56EvosMoves
 	dw LedianEvosMoves
 	dw SpinarakEvosMoves
+	dw DratiniEvosMoves
 	dw DragonairEvosMoves
 	dw KabutoEvosMoves
 	dw KabutopsEvosMoves
 	dw HorseaEvosMoves
 	dw SeadraEvosMoves
-	dw MissingNo5EEvosMoves
 	dw AriadosEvosMoves
 	dw CrobatEvosMoves
+	dw SandshrewEvosMoves
 	dw SandslashEvosMoves
 	dw OmanyteEvosMoves
 	dw OmastarEvosMoves
@@ -124,39 +124,39 @@ EvosMovesPointerTable:
 	dw WeedleEvosMoves
 	dw KakunaEvosMoves
 	dw BeedrillEvosMoves
-	dw MissingNo73EvosMoves
 	dw ChinchouEvosMoves
+	dw DodrioEvosMoves
 	dw PrimeapeEvosMoves
 	dw DugtrioEvosMoves
 	dw VenomothEvosMoves
 	dw DewgongEvosMoves
-	dw MissingNo79EvosMoves
 	dw LanturnEvosMoves
 	dw PichuEvosMoves
+	dw CaterpieEvosMoves
 	dw MetapodEvosMoves
 	dw ButterfreeEvosMoves
 	dw MachampEvosMoves
-	dw MissingNo7FEvosMoves
 	dw CleffaEvosMoves
+	dw GolduckEvosMoves
 	dw HypnoEvosMoves
 	dw GolbatEvosMoves
 	dw MewtwoEvosMoves
 	dw SnorlaxEvosMoves
 	dw MagikarpEvosMoves
-	dw MissingNo86EvosMoves
 	dw IgglybuffEvosMoves
 	dw TogepiEvosMoves
-	dw MissingNo8AEvosMoves
+	dw MukEvosMoves
 	dw TogeticEvosMoves
+	dw KinglerEvosMoves
 	dw CloysterEvosMoves
-	dw MissingNo8CEvosMoves
 	dw NatuEvosMoves
+	dw ElectrodeEvosMoves
 	dw ClefableEvosMoves
 	dw WeezingEvosMoves
 	dw PersianEvosMoves
 	dw MarowakEvosMoves
-	dw MissingNo92EvosMoves
 	dw XatuEvosMoves
+	dw HaunterEvosMoves
 	dw AbraEvosMoves
 	dw AlakazamEvosMoves
 	dw PidgeottoEvosMoves
@@ -165,14 +165,14 @@ EvosMovesPointerTable:
 	dw BulbasaurEvosMoves
 	dw VenusaurEvosMoves
 	dw TentacruelEvosMoves
-	dw MissingNo9CEvosMoves
 	dw MareepEvosMoves
+	dw GoldeenEvosMoves
 	dw SeakingEvosMoves
-	dw MissingNo9FEvosMoves
 	dw FlaaffyEvosMoves
 	dw AmpharosEvosMoves
 	dw BellossomEvosMoves
 	dw MarillEvosMoves
+	dw PonytaEvosMoves
 	dw RapidashEvosMoves
 	dw RattataEvosMoves
 	dw RaticateEvosMoves
@@ -181,17 +181,17 @@ EvosMovesPointerTable:
 	dw GeodudeEvosMoves
 	dw PorygonEvosMoves
 	dw AerodactylEvosMoves
-	dw MissingNoACEvosMoves
 	dw AzumarillEvosMoves
-	dw MissingNoAEEvosMoves
+	dw MagnemiteEvosMoves
 	dw SudowoodoEvosMoves
 	dw PolitoedEvosMoves
+	dw CharmanderEvosMoves
 	dw SquirtleEvosMoves
 	dw CharmeleonEvosMoves
 	dw WartortleEvosMoves
 	dw CharizardEvosMoves
-	dw MissingNoB5EvosMoves
 	dw HoppipEvosMoves
+	dw FossilKabutopsEvosMoves
 	dw FossilAerodactylEvosMoves
 	dw MonGhostEvosMoves
 	dw OddishEvosMoves

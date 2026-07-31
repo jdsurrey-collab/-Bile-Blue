@@ -374,10 +374,64 @@ OaksLabRivalEndBattleScript:
 	ldh [hSpriteFacingDirection], a
 	call SetSpriteFacingDirectionAndDelay
 	predef HealParty
+	call OaksLabGiveReplacementIfWiped
 	SetEvent EVENT_BATTLED_RIVAL_IN_OAKS_LAB
 
 	ld a, SCRIPT_OAKSLAB_RIVAL_STARTS_EXIT
 	ld [wOaksLabCurScript], a
+	ret
+
+; Pokémon Purple: permadeath and the vanilla "you cannot black out in Oak's Lab"
+; special case (HandlePlayerBlackOut's `cp OAKS_LAB / ret z`) combine into a
+; softlock. Lose this battle and the player's only Eevee is marked permanently
+; dead; HealParty above deliberately refuses to revive it, the battle does not
+; black the player out, and so the game blacks out the instant they take a step
+; -- every time, forever, with no living mon to recover with. This is the ONLY
+; battle in the game that can reach that state, precisely because it is the only
+; one you can lose without blacking out.
+;
+; Oak hands over the last ball on the table instead. The dead Eevee is
+; deliberately LEFT in the party rather than removed -- permadeath means you
+; carry your dead, and the replacement is a second mon, not a resurrection.
+OaksLabGiveReplacementIfWiped:
+	call OaksLabAnyMonAlive
+	ret nz ; something is still standing, nothing to do
+	ld a, TEXT_OAKSLAB_OAK_LAST_BALL
+	ldh [hTextID], a
+	call DisplayTextID ; NOT PrintText: this is a plain script function, so it
+	                   ; needs DisplayTextID's init/close steps (see CLAUDE.md)
+	xor a ; PLAYER_PARTY_DATA
+	ld [wMonDataLocation], a
+	ld a, 5
+	ld [wCurEnemyLevel], a
+	ld a, EEVEE
+	ld [wCurPartySpecies], a
+	ld [wPokedexNum], a
+	call AddPartyMon
+	ret
+
+; Returns nz if any party mon has HP > 0, z if every one of them is down.
+; A dead mon always has 0 HP, so checking HP alone covers both fainted and dead.
+OaksLabAnyMonAlive:
+	ld a, [wPartyCount]
+	and a
+	ret z ; empty party counts as wiped
+	ld b, a
+	ld hl, wPartyMon1HP
+	ld de, PARTYMON_STRUCT_LENGTH
+.loop
+	ld a, [hli]
+	or [hl] ; combine both HP bytes
+	jr nz, .alive
+	dec hl  ; back to the HP field before striding to the next mon
+	add hl, de
+	dec b
+	jr nz, .loop
+	xor a ; z: nothing alive
+	ret
+.alive
+	ld a, 1
+	and a ; nz
 	ret
 
 OaksLabRivalStartsExitScript:
@@ -693,6 +747,12 @@ OaksLab_TextPointers:
 	dw_const OaksLabOakGotPokedexText,            TEXT_OAKSLAB_OAK_GOT_POKEDEX
 	dw_const OaksLabOakThatWasMyDreamText,        TEXT_OAKSLAB_OAK_THAT_WAS_MY_DREAM
 	dw_const OaksLabRivalLeaveItAllToMeText,      TEXT_OAKSLAB_RIVAL_LEAVE_IT_ALL_TO_ME
+; Pokémon Purple: appended last so no existing text id shifts. Only ever looked
+; up while OaksLab_TextPointers is the active table (i.e. before
+; EVENT_PALLET_AFTER_GETTING_POKEBALLS_2), which is when the rival battle
+; happens -- OaksLab_TextPointers2 is shorter and covers only the object/NPC
+; texts, exactly like every other id past TEXT_OAKSLAB_SCIENTIST2.
+	dw_const OaksLabOakLastBallText,              TEXT_OAKSLAB_OAK_LAST_BALL
 
 OaksLab_TextPointers2:
 	dw OaksLabRivalText
@@ -1024,6 +1084,10 @@ OaksLabRivalFedUpWithWaitingText:
 
 .Text:
 	text_far _OaksLabRivalFedUpWithWaitingText
+	text_end
+
+OaksLabOakLastBallText:
+	text_far _OaksLabOakLastBallText
 	text_end
 
 OaksLabOakChooseMonText:

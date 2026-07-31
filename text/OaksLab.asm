@@ -178,6 +178,23 @@ _OaksLabRivalFedUpWithWaitingText::
 	cont "of waiting!"
 	done
 
+_OaksLabOakLastBallText::
+	text "OAK: Then it is"
+	line "dead. Truly dead."
+
+	para "No physician"
+	line "mends what I see"
+	cont "upon that floor."
+
+	para "One vessel yet"
+	line "remains upon my"
+	cont "table. Take it."
+
+	para "Grieve later,"
+	line "<PLAYER>. The road"
+	cont "does not wait."
+	done
+
 _OaksLabOakChooseMonText::
 	text "OAK: <RIVAL>?"
 	line "Let me think..."

@@ -133,13 +133,22 @@ def fold_special(sat, sdf):
 
 
 def find_gap_indices(constants_path):
-    """Reclaimable internal-index slots (vanilla MissingNo. holes)."""
+    """Reclaimable internal-index slots (vanilla MissingNo. holes).
+
+    NOTE the -1: `const_def` (no argument) starts the counter at 0 and the FIRST
+    `const` in this file is NO_MON, which legitimately occupies index $00. So the
+    counter must be one BELOW zero here, and land on 0 for NO_MON. Setting it to
+    0 makes every index come out +1 too high -- which silently shifted all 36
+    gap-filled species' names/cries/dex entries one slot up and produced
+    "Wild MISSINGNO. appeared" in play. Verified against the file's own hex
+    comments by tools/tests/test_species_alignment.py.
+    """
     gaps = []
     val = -1
     for line in open(constants_path, encoding="utf-8"):
         s = line.strip()
         if s.startswith("const_def"):
-            val = 0
+            val = -1
             continue
         if s.startswith("const_next"):
             m = re.search(r"const_next\s+\$([0-9A-Fa-f]+)", s)
