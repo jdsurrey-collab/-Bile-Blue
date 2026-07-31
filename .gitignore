@@ -37,3 +37,7 @@
 
 # reference-only clone of pret/pokegold (not part of this project's build)
 /pokegold-reference/
+
+# WordVault app-local state (analytics, per-note visit history, UI settings).
+# The vault's actual notes ARE tracked; only this machine-local churn is not.
+/Pokemon Vault/_system/

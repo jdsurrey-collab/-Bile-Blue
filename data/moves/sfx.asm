@@ -166,5 +166,10 @@ MoveSoundTable:
 	db SFX_NOT_VERY_EFFECTIVE, $01, $ff ; SLASH
 	db SFX_BATTLE_2C,          $d8, $04 ; SUBSTITUTE
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
+	db SFX_BATTLE_2F,          $20, $60 ; ZAP_CANNON
+	db SFX_BATTLE_2A,          $e8, $60 ; ICY_WIND
+	db SFX_BATTLE_2F,          $10, $80 ; SPARK
+	db SFX_BATTLE_1B,          $02, $a0 ; COTTON_SPORE
+	db SFX_BATTLE_1B,          $01, $c0 ; SWEET_SCENT
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80

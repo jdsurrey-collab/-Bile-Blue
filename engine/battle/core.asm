@@ -5026,7 +5026,15 @@ MetronomePickMove:
 	and a
 	jr z, .pickMoveLoop
 	cp STRUGGLE
-	ASSERT NUM_ATTACKS == STRUGGLE ; random numbers greater than STRUGGLE are not moves
+; Pokémon Purple: vanilla asserted NUM_ATTACKS == STRUGGLE here, because STRUGGLE
+; was the last move id and so anything above it was not a move. The back-ported
+; Gen 2 moves are appended AFTER STRUGGLE (see constants/move_constants.asm), so
+; that equality no longer holds. Metronome is deliberately left rolling only the
+; vanilla range (1..STRUGGLE-1): keeping this bound byte-for-byte as shipped means
+; Metronome can never select one of the new moves, which is preferable to widening
+; it and having Metronome pull effects it was never balanced around. Appending
+; rather than inserting also keeps every existing move id stable.
+	ASSERT NUM_ATTACKS >= STRUGGLE
 	jr nc, .pickMoveLoop
 	cp METRONOME
 	jr z, .pickMoveLoop

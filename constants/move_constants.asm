@@ -171,6 +171,16 @@
 	const SLASH        ; a3
 	const SUBSTITUTE   ; a4
 	const STRUGGLE     ; a5
+; Pokémon Purple: Gen 2 moves back-ported for the Gen 2 species import. Each one
+; deliberately reuses an EXISTING Gen 1 move effect and an existing animation, so
+; no new engine logic or animation data is needed -- only new rows in the four
+; move tables. Appended after STRUGGLE so no existing move id shifts.
+; NUM_ATTACKS stays well under HM01 ($C4), which GetName still asserts.
+	const ZAP_CANNON   ; a6
+	const ICY_WIND     ; a7
+	const SPARK        ; a8
+	const COTTON_SPORE ; a9
+	const SWEET_SCENT  ; aa
 DEF NUM_ATTACKS EQU const_value - 1
 
 DEF CANNOT_MOVE EQU $ff

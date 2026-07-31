@@ -1,15 +1,15 @@
 Route14WildMons:
 	def_grass_wildmons 15 ; encounter rate
-	db 24, ODDISH
-	db 26, PIDGEY
-	db 23, DITTO
-	db 24, VENONAT
-	db 22, BELLSPROUT
-	db 26, VENONAT
-	db 26, ODDISH
-	db 30, WEEPINBELL
-	db 28, PIDGEOTTO
-	db 30, PIDGEOTTO
+	db 25, VENOMOTH
+	db 25, WEEPINBELL
+	db 26, PIDGEOTTO
+	db 26, GLOOM
+	db 27, SKIPLOOM
+	db 27, STANTLER
+	db 28, TANGELA
+	db 28, DODRIO
+	db 29, SCYTHER
+	db 29, DRATINI
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

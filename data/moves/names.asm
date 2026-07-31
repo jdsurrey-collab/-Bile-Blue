@@ -166,4 +166,9 @@ MoveNames::
 	li "SLASH"
 	li "SUBSTITUTE"
 	li "STRUGGLE"
+	li "ZAP CANNON"
+	li "ICY WIND"
+	li "SPARK"
+	li "COTTON SPORE"
+	li "SWEET SCENT"
 	assert_list_length NUM_ATTACKS

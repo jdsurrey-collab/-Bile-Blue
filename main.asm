@@ -185,8 +185,6 @@ INCLUDE "engine/slots/game_corner_slots.asm"
 SECTION "Battle Engine 7", ROMX
 
 INCLUDE "data/moves/moves.asm"
-INCLUDE "data/pokemon/base_stats.asm"
-INCLUDE "data/pokemon/cries.asm"
 INCLUDE "engine/battle/unused_stats_functions.asm"
 INCLUDE "engine/battle/scroll_draw_trainer_pic.asm"
 INCLUDE "engine/battle/trainer_ai.asm"
@@ -376,3 +374,21 @@ INCLUDE "data/battle_anims/frame_blocks.asm"
 INCLUDE "engine/movie/evolution.asm"
 INCLUDE "engine/overworld/elevator.asm"
 INCLUDE "engine/items/tm_prices.asm"
+
+
+; Pokémon Purple: the expanded Pokédex (Gen 2 species import) grew both of these
+; tables well past the slack in "Battle Engine 7", where they used to live -- that
+; section overflowed by 0x861 bytes. Both are single contiguous tables indexed by
+; AddNTimes (BaseStats by dex number, CryData by internal index), so neither can
+; be split across sections; they have to move wholesale instead. Declared as
+; floating sections (no explicit bank) so the linker bin-packs them into whatever
+; bank has room, rather than bloating another hand-pinned section -- layout.link
+; assigns every section a fixed bank with no slack. See CLAUDE.md.
+SECTION "Base Stats", ROMX
+
+INCLUDE "data/pokemon/base_stats.asm"
+
+
+SECTION "Pokémon Cries", ROMX
+
+INCLUDE "data/pokemon/cries.asm"

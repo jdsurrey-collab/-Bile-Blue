@@ -1,15 +1,15 @@
 PokemonMansion3FWildMons:
 	def_grass_wildmons 10 ; encounter rate
-	db 31, KOFFING
-	db 33, VULPIX
-	db 35, KOFFING
-	db 32, PONYTA
-	db 34, MAGMAR
-	db 40, WEEZING
-	db 34, KOFFING
-	db 38, WEEZING
-	db 36, PONYTA
-	db 42, WEEZING
+	db 32, RATTATA
+	db 32, GRIMER
+	db 33, RATICATE
+	db 33, KOFFING
+	db 34, MUK
+	db 34, MAGCARGO
+	db 35, WEEZING
+	db 35, RAPIDASH
+	db 36, DITTO
+	db 36, MAGMAR
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

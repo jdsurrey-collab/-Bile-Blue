@@ -36,7 +36,7 @@ DisplayTitleScreen:
 	ldh [hSCY], a
 	ld a, $90
 	ldh [hWY], a
-	call ClearScreen
+	call TitleClearScreen
 	call DisableLCD
 	call LoadFontTilePatterns
 	ld hl, NintendoCopyrightLogoGraphics
@@ -246,7 +246,7 @@ ENDC
 	ldh [hWY], a
 	inc a
 	ldh [hAutoBGTransferEnabled], a
-	call ClearScreen
+	call TitleClearScreen
 	ld a, HIGH(vBGMap0)
 	call TitleScreenCopyTileMapToVRAM
 	ld a, HIGH(vBGMap1)
@@ -388,7 +388,7 @@ TitleScreenCopyTileMapToVRAM:
 LoadCopyrightAndTextBoxTiles:
 	xor a
 	ldh [hWY], a
-	call ClearScreen
+	call TitleClearScreen
 	call LoadTextBoxTilePatterns
 
 LoadCopyrightTiles:

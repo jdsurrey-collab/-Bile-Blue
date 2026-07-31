@@ -176,4 +176,14 @@ Moves:
 	move SLASH,        NO_ADDITIONAL_EFFECT,        70, NORMAL,       100, 20
 	move SUBSTITUTE,   SUBSTITUTE_EFFECT,            0, NORMAL,       100, 10
 	move STRUGGLE,     RECOIL_EFFECT,               50, NORMAL,       100, 10
+; Pokémon Purple: back-ported Gen 2 moves (see constants/move_constants.asm).
+; Effects are existing Gen 1 ones, so side-effect probabilities follow Gen 1's
+; hardcoded rates rather than Gen 2's -- ZAP_CANNON in particular paralyses at
+; PARALYZE_SIDE_EFFECT2's rate, not Gen 2's guaranteed 100%, because a 100%
+; variant would require a new effect handler in the battle engine.
+	move ZAP_CANNON,   PARALYZE_SIDE_EFFECT2,      100, ELECTRIC,      50,  5
+	move ICY_WIND,     SPEED_DOWN_SIDE_EFFECT,      55, ICE,           95, 15
+	move SPARK,        PARALYZE_SIDE_EFFECT1,       65, ELECTRIC,     100, 20
+	move COTTON_SPORE, SPEED_DOWN2_EFFECT,           0, GRASS,         85, 40
+	move SWEET_SCENT,  EVASION_DOWN1_EFFECT,         0, NORMAL,       100, 20
 	assert_table_length NUM_ATTACKS

@@ -1,15 +1,15 @@
 Route12WildMons:
 	def_grass_wildmons 15 ; encounter rate
-	db 24, ODDISH
-	db 25, PIDGEY
-	db 23, PIDGEY
 	db 24, VENONAT
-	db 22, BELLSPROUT
-	db 26, VENONAT
-	db 26, ODDISH
-	db 27, PIDGEY
-	db 28, WEEPINBELL
-	db 30, GLOOM
+	db 24, ODDISH
+	db 25, PIDGEOTTO
+	db 25, GLOOM
+	db 26, HOPPIP
+	db 26, YANMA
+	db 27, TANGELA
+	db 27, DODUO
+	db 28, SCYTHER
+	db 28, SNORLAX
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

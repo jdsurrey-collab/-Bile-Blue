@@ -1,15 +1,15 @@
 Route13WildMons:
 	def_grass_wildmons 20 ; encounter rate
-	db 24, ODDISH
-	db 25, PIDGEY
-	db 27, PIDGEY
 	db 24, VENONAT
-	db 22, BELLSPROUT
-	db 26, VENONAT
-	db 26, ODDISH
-	db 25, DITTO
-	db 28, WEEPINBELL
-	db 30, GLOOM
+	db 24, ODDISH
+	db 25, PIDGEOTTO
+	db 25, GLOOM
+	db 26, SKIPLOOM
+	db 26, YANMA
+	db 27, TANGELA
+	db 27, DODRIO
+	db 28, PINSIR
+	db 28, CHANSEY
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

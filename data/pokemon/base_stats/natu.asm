@@ -1,0 +1,20 @@
+	db DEX_NATU ; pokedex id
+
+	db  40,  50,  45,  70,  57
+	;   hp  atk  def  spd  spc
+
+	db PSYCHIC_TYPE, FLYING ; type
+	db 190 ; catch rate
+	db 73 ; base exp
+
+	INCBIN "gfx/pokemon/front/natu.pic", 0, 1 ; sprite dimensions
+	dw NatuPicFront, NatuPicBack
+
+	db PECK, LEER, NO_MOVE, NO_MOVE ; level 1 learnset
+	db GROWTH_MEDIUM_FAST ; growth rate
+
+	; tm/hm learnset
+	tmhm TOXIC, RAGE, MIMIC, DOUBLE_TEAM, REST, SUBSTITUTE
+	; end
+
+	db 0 ; padding

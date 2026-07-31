@@ -1,15 +1,15 @@
 SafariZoneNorthWildMons:
 	def_grass_wildmons 30 ; encounter rate
-	db 22, NIDORAN_M
-	db 26, RHYHORN
-	db 23, PARAS
+	db 24, TAUROS
+	db 24, RHYHORN
 	db 25, EXEGGCUTE
-	db 30, NIDORINA
-	db 27, EXEGGCUTE
-	db 30, NIDORINA
-	db 32, VENOMOTH
-	db 26, CHANSEY
-	db 28, TAUROS
+	db 25, NIDORINO
+	db 26, NIDORINA
+	db 26, DODUO
+	db 27, DODRIO
+	db 27, GLIGAR
+	db 28, KANGASKHAN
+	db 28, DRATINI
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

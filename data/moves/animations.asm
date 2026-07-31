@@ -165,6 +165,14 @@ AttackAnimationPointers:
 	dw SlashAnim
 	dw SubstituteAnim
 	dw StruggleAnim
+; Pokémon Purple: back-ported Gen 2 moves reuse existing animations rather than
+; shipping new animation data. This table is indexed by a move's animation byte,
+; which for these is the move's own id, so each still needs a row here.
+	dw ThunderBoltAnim  ; ZAP_CANNON
+	dw BubbleBeamAnim   ; ICY_WIND
+	dw ThunderShockAnim ; SPARK
+	dw StringShotAnim   ; COTTON_SPORE
+	dw SandAttackAnim   ; SWEET_SCENT
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
 	dw EnemyFlashAnim

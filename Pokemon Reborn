@@ -1,0 +1,749 @@
+Absolutely. I’d make this feel like **“Pokémon Red/Blue: Kanto Reborn”** rather than simply merging the existing encounter tables.
+
+The original games intentionally split availability between versions, and Mew wasn't normally obtainable at all. ([Bulbapedia][1]) Your version can fix that while making the **location itself matter**: forests feel biologically diverse, caves get strange, Power Plant gets dangerous, and late-game areas start producing genuinely absurd encounters.
+
+## My encounter philosophy
+
+For a hardcore version, I'd use roughly:
+
+* **40–60%** = expected/common Pokémon
+* **15–30%** = uncommon
+* **5–10%** = rare
+* **1–5%** = extremely rare
+* **0.5–1%** = "holy shit" encounters
+* **Legendary** = usually **1–5%**, but high level and difficult to catch
+* Rare evolved Pokémon should be catchable, but not necessarily common.
+* **No Pokémon should be permanently missable.**
+* Starters should appear in the wild, but very rarely.
+* Fossil Pokémon should eventually have wild locations.
+* Gift Pokémon like Lapras/Eevee/Porygon can remain gifts **and** have extremely rare wild encounters.
+* Legendary Pokémon should have **multiple possible locations**, so you aren't screwed if you accidentally KO one.
+
+---
+
+# 🌿 EARLY KANTO
+
+## Route 1
+
+| Pokémon   | Chance |
+| --------- | -----: |
+| Pidgey    |    30% |
+| Rattata   |    25% |
+| Sentret   |    15% |
+| Spearow   |    10% |
+| Hoppip    |     8% |
+| Pikachu   |     5% |
+| Oddish    |     4% |
+| **Eevee** | **3%** |
+
+Eevee this early is intentionally a very rare jackpot.
+
+---
+
+# 🌲 Route 2
+
+| Pokémon       | Chance |
+| ------------- | -----: |
+| Rattata       |    25% |
+| Pidgey        |    20% |
+| Caterpie      |    15% |
+| Weedle        |    15% |
+| Nidoran♀      |     8% |
+| Nidoran♂      |     8% |
+| Bellsprout    |     5% |
+| **Bulbasaur** | **4%** |
+
+This makes Bulbasaur available without simply handing it to the player.
+
+---
+
+# 🌳 Viridian Forest
+
+This should become one of the most interesting areas in the entire game.
+
+| Pokémon       | Chance |
+| ------------- | -----: |
+| Caterpie      |    20% |
+| Weedle        |    20% |
+| Pikachu       |    12% |
+| Metapod       |    10% |
+| Kakuna        |    10% |
+| Oddish        |     8% |
+| Bellsprout    |     7% |
+| Paras         |     5% |
+| **Bulbasaur** | **3%** |
+| **Pichu**     | **3%** |
+| **Scyther**   | **1%** |
+| **Pinsir**    | **1%** |
+
+
+---
+
+# 🪨 Route 3
+
+| Pokémon        | Chance |
+| -------------- | -----: |
+| Spearow        |    20% |
+| Nidoran♂       |    15% |
+| Nidoran♀       |    15% |
+| Jigglypuff     |    12% |
+| Mankey         |    10% |
+| Ekans          |     8% |
+| Clefairy       |     7% |
+| Vulpix         |     5% |
+| **Charmander** | **5%** |
+| Farfetch'd     |     3% |
+
+Charmander becomes a legitimate early-game hunt.
+
+---
+
+# 🪨 Mt. Moon
+
+I'd make Mt. Moon substantially more dangerous than vanilla.
+
+| Pokémon     | Chance |
+| ----------- | -----: |
+| Zubat       |    20% |
+| Geodude     |    18% |
+| Paras       |    12% |
+| Clefairy    |    10% |
+| Sandshrew   |    10% |
+| Rhyhorn     |     8% |
+| Machop      |     7% |
+| Onix        |     5% |
+| **Kabuto**  | **4%** |
+| **Omanyte** | **4%** |
+| **Dratini** | **2%** |
+
+Dratini in Mt. Moon would be an incredible early-game discovery.
+
+---
+
+# 🌊 Route 4 / Cerulean Entrance
+
+| Pokémon      | Chance |
+| ------------ | -----: |
+| Rattata      |    20% |
+| Spearow      |    15% |
+| Ekans        |    15% |
+| Sandshrew    |    12% |
+| Mankey       |    10% |
+| Meowth       |    10% |
+| Jigglypuff   |     8% |
+| Vulpix       |     5% |
+| **Squirtle** | **3%** |
+| **Ponyta**   | **2%** |
+
+---
+
+# 🌿 Route 24 / 25
+
+This becomes the first really good "rare Pokémon hunting" zone.
+
+| Pokémon        | Chance |
+| -------------- | -----: |
+| Bellsprout     |    20% |
+| Oddish         |    20% |
+| Abra           |    12% |
+| Venonat        |    10% |
+| Caterpie       |     8% |
+| Weedle         |     8% |
+| Psyduck        |     7% |
+| Slowpoke       |     5% |
+| **Squirtle**   | **4%** |
+| **Dratini**    | **3%** |
+| **Bulbasaur**  | **2%** |
+| **Charmander** | **1%** |
+
+I really like giving all three starters a tiny chance here.
+
+---
+
+# 🏙️ Route 5 / 6
+
+| Pokémon    | Chance |
+| ---------- | -----: |
+| Meowth     |    20% |
+| Pidgey     |    15% |
+| Growlithe  |    12% |
+| Vulpix     |    12% |
+| Oddish     |    10% |
+| Bellsprout |    10% |
+| Psyduck    |     8% |
+| Abra       |     5% |
+| **Cubone** | **4%** |
+| **Eevee**  | **3%** |
+| **Gastly** | **1%** |
+
+---
+
+# 🌾 Route 7 / 8
+
+Make these routes noticeably more dangerous.
+
+| Pokémon        | Chance |
+| -------------- | -----: |
+| Growlithe      |    15% |
+| Vulpix         |    15% |
+| Meowth         |    12% |
+| Pidgeotto      |    10% |
+| Kadabra        |     8% |
+| Haunter        |     8% |
+| Ponyta         |     8% |
+| Doduo          |     7% |
+| Tangela        |     5% |
+| **Kangaskhan** | **4%** |
+| **Ditto**      | **3%** |
+| **Chansey**    | **2%** |
+| **Mr. Mime**   | **2%** |
+| **Eevee**      | **1%** |
+
+This would be a fantastic hunting route.
+
+---
+
+# ⚡ Route 9 / 10
+
+| Pokémon       | Chance |
+| ------------- | -----: |
+| Voltorb       |    20% |
+| Magnemite     |    15% |
+| Fearow        |    12% |
+| Raticate      |    10% |
+| Pikachu       |    10% |
+| Golbat        |     8% |
+| Electabuzz    |     7% |
+| Ponyta        |     7% |
+| **Graveler**  | **5%** |
+| **Tauros**    | **3%** |
+| **Electrode** | **2%** |
+| **Zapdos**    | **1%** |
+
+Then Power Plant gets the **5% Zapdos** version.
+
+---
+
+# 🪨 Rock Tunnel
+
+| Pokémon        | Chance |
+| -------------- | -----: |
+| Zubat          |    18% |
+| Golbat         |    15% |
+| Geodude        |    15% |
+| Graveler       |    12% |
+| Machop         |    10% |
+| Onix           |     8% |
+| Rhyhorn        |     8% |
+| Cubone         |     5% |
+| Marowak        |     4% |
+| **Kangaskhan** | **3%** |
+| **Golem**      | **2%** |
+
+Golem being wild here is especially nasty.
+
+---
+
+# 🕯️ Pokémon Tower
+
+This should have some of the creepiest encounters.
+
+| Pokémon                                      | Chance |
+| -------------------------------------------- | -----: |
+| Gastly                                       |    25% |
+| Haunter                                      |    20% |
+| Cubone                                       |    15% |
+| Zubat                                        |    10% |
+| Golbat                                       |     8% |
+| Drowzee                                      |     7% |
+| Hypno                                        |     5% |
+| **Misdreavus**                               | **4%** |
+| **Gengar**                                   | **3%** |
+| **Gastly — rare shiny-like encounter table** | **3%** |
+
+For a pure Gen 1 project, I'd replace Misdreavus with another Gen 1 species if you're keeping the Pokédex strictly 151. That slot could instead be **Ditto** or **Jynx**.
+
+---
+
+# 🐦 Route 11 / Diglett's Cave
+
+### Route 11
+
+| Pokémon        | Chance |
+| -------------- | -----: |
+| Drowzee        |    20% |
+| Ekans          |    15% |
+| Sandshrew      |    15% |
+| Spearow        |    12% |
+| Raticate       |    10% |
+| Nidorino       |     8% |
+| Nidorina       |     8% |
+| Hypno          |     5% |
+| **Dugtrio**    | **4%** |
+| **Farfetch'd** | **3%** |
+
+### Diglett's Cave
+
+| Pokémon        | Chance |
+| -------------- | -----: |
+| Diglett        |    35% |
+| Dugtrio        |    20% |
+| Geodude        |    15% |
+| Rhyhorn        |    10% |
+| Sandslash      |     8% |
+| Marowak        |     5% |
+| **Onix**       | **4%** |
+| **Kangaskhan** | **3%** |
+
+---
+
+# 🌊 Routes 12–15
+
+These become your **wetlands / fishing / bird hunting** region.
+
+| Pokémon       | Chance |
+| ------------- | -----: |
+| Venonat       |    15% |
+| Venomoth      |    10% |
+| Pidgeotto     |    10% |
+| Fearow        |    10% |
+| Gloom         |     8% |
+| Weepinbell    |     8% |
+| Tangela       |     8% |
+| Doduo         |     7% |
+| Dodrio        |     5% |
+| Scyther       |     4% |
+| Pinsir        |     4% |
+| Chansey       |     3% |
+| **Tauros**    | **3%** |
+| **Snorlax**   | **2%** |
+| **Dratini**   | **2%** |
+| **Dragonair** | **1%** |
+
+---
+
+# 🦁 Safari Zone
+
+This should be **the ultimate hunting ground** rather than simply "go catch 20 Pokémon."
+
+### Area 1
+
+| Pokémon        | Chance |
+| -------------- | -----: |
+| Nidoran♀       |    15% |
+| Nidoran♂       |    15% |
+| Nidorina       |    10% |
+| Nidorino       |    10% |
+| Exeggcute      |    10% |
+| Parasect       |     8% |
+| Venomoth       |     7% |
+| Doduo          |     7% |
+| **Kangaskhan** | **5%** |
+| **Scyther**    | **4%** |
+| **Pinsir**     | **4%** |
+| **Chansey**    | **3%** |
+| **Tauros**     | **2%** |
+
+### Area 2
+
+| Pokémon    | Chance |
+| ---------- | -----: |
+| Rhyhorn    |    18% |
+| Nidorina   |    12% |
+| Nidorino   |    12% |
+| Exeggcute  |    10% |
+| Parasect   |    10% |
+| Doduo      |     8% |
+| Dodrio     |     8% |
+| Venomoth   |     7% |
+| Kangaskhan |     5% |
+| Scyther    |     3% |
+| Pinsir     |     3% |
+| Chansey    |     2% |
+| **Tauros** | **2%** |
+
+### Area 3
+
+| Pokémon       | Chance |
+| ------------- | -----: |
+| Tauros        |    15% |
+| Rhyhorn       |    15% |
+| Exeggcute     |    12% |
+| Nidorino      |    10% |
+| Nidorina      |    10% |
+| Doduo         |    10% |
+| Dodrio        |     8% |
+| Kangaskhan    |     5% |
+| Chansey       |     5% |
+| Scyther       |     4% |
+| Pinsir        |     3% |
+| **Dratini**   | **2%** |
+| **Dragonair** | **1%** |
+
+### Secret House / Deep Safari
+
+I'd give the deepest grass an entirely separate table:
+
+| Pokémon                                         | Chance |
+| ----------------------------------------------- | -----: |
+| Tauros                                          |    20% |
+| Kangaskhan                                      |    15% |
+| Rhyhorn                                         |    15% |
+| Chansey                                         |    10% |
+| Scyther                                         |     8% |
+| Pinsir                                          |     8% |
+| Exeggcute                                       |     8% |
+| Dratini                                         |     7% |
+| Dragonair                                       |     5% |
+| **Dragonite**                                   | **2%** |
+| **Mew**                                         | **1%** |
+| **Missingno-style ultra-rare glitch encounter** | **1%** |
+
+For a serious 151 project, I'd make that final 1% something like another extremely rare legitimate species rather than MissingNo.
+
+---
+
+# 🌊 Seafoam Islands
+
+| Pokémon      | Chance |
+| ------------ | -----: |
+| Zubat        |    15% |
+| Golbat       |    12% |
+| Seel         |    12% |
+| Dewgong      |    10% |
+| Shellder     |    10% |
+| Cloyster     |     8% |
+| Slowpoke     |     8% |
+| Slowbro      |     7% |
+| Psyduck      |     6% |
+| Horsea       |     5% |
+| Seadra       |     3% |
+| **Lapras**   | **2%** |
+| **Articuno** | **2%** |
+
+I actually really like **2% Articuno** here.
+
+It means you can randomly stumble into the legendary without it being a guaranteed static encounter.
+
+---
+
+# ⚡ POWER PLANT
+
+This is where your idea really shines.
+
+| Pokémon     | Chance |
+| ----------- | -----: |
+| Magnemite   |    18% |
+| Voltorb     |    18% |
+| Magneton    |    12% |
+| Electrode   |    10% |
+| Pikachu     |    10% |
+| Raichu      |     7% |
+| Grimer      |     7% |
+| Muk         |     5% |
+| Electabuzz  |     5% |
+| **Porygon** | **3%** |
+| **Zapdos**  | **5%** |
+
+**YES — 5% Zapdos.**
+
+But I would make Zapdos something like **Lv. 45–50** while the surrounding Pokémon are 35–45.
+
+That makes:
+
+> "HOLY SHIT ZAPDOS"
+
+followed immediately by:
+
+> "OH GOD I WAS NOT READY."
+
+That's hardcore Pokémon.
+
+---
+
+# 🔥 Pokémon Mansion
+
+| Pokémon       | Chance |
+| ------------- | -----: |
+| Rattata       |    12% |
+| Raticate      |    12% |
+| Grimer        |    15% |
+| Muk           |    12% |
+| Koffing       |    12% |
+| Weezing       |     8% |
+| Ponyta        |    10% |
+| Rapidash      |     6% |
+| Magmar        |     5% |
+| Ditto         |     4% |
+| **Growlithe** | **2%** |
+| **Vulpix**    | **2%** |
+
+I'd make the deepest basement considerably more dangerous:
+
+**Mewtwo precursor experiment encounter: 1% Mewtwo**
+
+But only **after beating the Elite Four**.
+
+---
+
+# 🌊 Routes 19–21
+
+| Pokémon     | Chance |
+| ----------- | -----: |
+| Tentacool   |    25% |
+| Tentacruel  |    15% |
+| Magikarp    |    10% |
+| Horsea      |    10% |
+| Seadra      |     8% |
+| Shellder    |     8% |
+| Cloyster    |     5% |
+| Staryu      |     5% |
+| Starmie     |     4% |
+| Krabby      |     4% |
+| Kingler     |     3% |
+| **Lapras**  | **2%** |
+| **Dratini** | **1%** |
+
+---
+
+# 🏆 Victory Road
+
+This needs to feel like the **final wildlife gauntlet**.
+
+| Pokémon        | Chance |
+| -------------- | -----: |
+| Machoke        |    15% |
+| Graveler       |    15% |
+| Golbat         |    12% |
+| Onix           |    10% |
+| Rhyhorn        |    10% |
+| Rhydon         |     7% |
+| Marowak        |     7% |
+| Arbok          |     6% |
+| Sandslash      |     5% |
+| Primeape       |     5% |
+| **Dragonair**  | **3%** |
+| **Aerodactyl** | **2%** |
+| **Moltres**    | **2%** |
+| **Articuno**   | **1%** |
+
+---
+
+# 🌌 Cerulean Cave — POSTGAME
+
+This is where I'd go completely nuts.
+
+The cave should be the only place where **multiple pseudo-legendary-tier Gen 1 Pokémon** can naturally appear.
+
+| Pokémon    | Chance |
+| ---------- | -----: |
+| Golbat     |    12% |
+| Kadabra    |    10% |
+| Magneton   |     8% |
+| Rhydon     |     8% |
+| Ditto      |     8% |
+| Chansey    |     7% |
+| Kangaskhan |     7% |
+| Tauros     |     7% |
+| Dragonair  |     6% |
+| Snorlax    |     5% |
+| Aerodactyl |     5% |
+| Dragonite  |     4% |
+| **Mewtwo** | **3%** |
+| **Mew**    | **1%** |
+
+That gives the player a reason to keep playing after the Elite Four.
+
+---
+
+# 🎣 Fishing overhaul
+
+I'd also completely redesign fishing rather than having fishing be an afterthought.
+
+### Old Rod
+
+Mostly junk fish:
+
+* Magikarp — 70%
+* Poliwag — 10%
+* Goldeen — 10%
+* Horsea — 5%
+* Krabby — 5%
+
+### Good Rod
+
+* Poliwag — 15%
+* Poliwhirl — 8%
+* Goldeen — 15%
+* Seaking — 8%
+* Horsea — 15%
+* Krabby — 12%
+* Kingler — 7%
+* Shellder — 8%
+* Staryu — 5%
+* Dratini — 5%
+* **Lapras — 2%**
+
+### Super Rod
+
+This is where things get ridiculous:
+
+* Gyarados — 15%
+* Seaking — 10%
+* Seadra — 10%
+* Kingler — 10%
+* Cloyster — 8%
+* Starmie — 8%
+* Tentacruel — 8%
+* Dragonair — 7%
+* Dratini — 7%
+* Lapras — 5%
+* **Dragonite — 4%**
+* **Articuno — 3%**
+* **Mew — 1%**
+* **Mewtwo — 1%**
+* **Zapdos — 1%**
+* **Moltres — 1%**
+
+You could make these legendary encounters require a particular **fishing location**, too.
+
+---
+
+# ⭐ One-off Pokémon
+
+I'd keep these as **special encounters**, but ALSO give them tiny wild encounter rates somewhere.
+
+| Pokémon    | Primary special location |          Wild chance |
+| ---------- | ------------------------ | -------------------: |
+| Hitmonlee  | Fighting Dojo            |      3% Victory Road |
+| Hitmonchan | Fighting Dojo            |       3% Rock Tunnel |
+| Lapras     | Silph Co.                |           2% Seafoam |
+| Eevee      | Celadon                  |      1–3% Routes 1/5 |
+| Porygon    | Game Corner              |       3% Power Plant |
+| Snorlax    | Route 12/16              |  2–5% Safari/Victory |
+| Jynx       | Cerulean trade           |           2% Seafoam |
+| Mr. Mime   | Route 2                  |        2% Routes 7/8 |
+| Farfetch'd | Route 16                 |          3% Route 11 |
+| Tauros     | Safari Zone              | 2–15% depending area |
+| Kangaskhan | Safari Zone              | 3–15% depending area |
+| Aerodactyl | Fossil                   |      2% Victory Road |
+| Omanyte    | Fossil                   |          4% Mt. Moon |
+| Kabuto     | Fossil                   |          4% Mt. Moon |
+| **Mew**    | Secret postgame area     |               **1%** |
+
+---
+
+# 🐦 Legendary system
+
+I would **not** make the legendary Pokémon one-and-done anymore.
+
+Instead, each has a "home range."
+
+### Articuno
+
+* Seafoam Islands — **2%**
+* Victory Road — **1%**
+* Super Rod — **3%**
+
+### Zapdos
+
+* Power Plant — **5%**
+* Route 10 — **1%**
+* Super Rod — **1%**
+
+### Moltres
+
+* Victory Road — **2%**
+* Pokémon Mansion — **1%**
+* Mt. Moon deepest chamber — **1%**
+
+### Mewtwo
+
+* Cerulean Cave — **3%**
+* Pokémon Mansion basement — **1%**
+
+### Mew
+
+I'd make Mew the **ultimate secret**.
+
+Don't just put Mew in grass.
+
+Have a hidden location unlock after completing some obscure endgame objective, then:
+
+**Mew — 1% encounter rate**
+
+That means a player can legitimately encounter Mew without an event or trade, while still making it one of the rarest Pokémon in the game.
+
+---
+
+# 🔥 The most important part: rarity isn't enough
+
+For your hardcore version, I would make **spawn rate and catch difficulty separate systems.**
+
+For example:
+
+### Bulbasaur
+
+**Viridian Forest**
+
+* Spawn: 3%
+* Level: 5–8
+* Catch difficulty: Normal
+
+### Scyther
+
+**Viridian Forest**
+
+* Spawn: 1%
+* Level: 8–12
+* Catch difficulty: Hard
+
+### Zapdos
+
+**Power Plant**
+
+* Spawn: **5%**
+* Level: 45–50
+* Catch difficulty: **Extremely Hard**
+
+### Mew
+
+**Secret Postgame**
+
+* Spawn: **1%**
+* Level: 70
+* Catch difficulty: **Extreme**
+
+That makes Zapdos **not necessarily rarer than Mew**, but it's still vastly more difficult to actually capture.
+
+And that's much more fun than simply making everything rare.
+
+---
+
+## 🎯 The overall philosophy I'd use
+
+I'd make the game feel like this:
+
+**Early game:**
+*"Holy crap, I found a Bulbasaur!"*
+
+**Mid game:**
+*"Wait... I can actually find a Dratini here?"*
+
+**Late game:**
+*"WHY IS THERE A DRAGONITE IN THIS GRASS?"*
+
+**Power Plant:**
+*"Zapdos. ZAPDOS. ZAPDOS. ZAPDOS."*
+
+**Victory Road:**
+*"This place is absolutely insane."*
+
+**Cerulean Cave:**
+*"Literally anything can happen."*
+
+That gives you a **true hardcore living-dex Kanto**, where every Pokémon has a logical home but you constantly have the possibility of finding something you weren't expecting.
+
+If you're actually implementing this as a ROM hack, the next thing I'd recommend is building a **complete 151-Pokémon master encounter spreadsheet** with columns for **Pokémon → location → encounter % → level range → time/condition → rarity tier → catch difficulty → one-off status**, so you can verify that **all 151 are obtainable without any trades, gifts, or impossible progression requirements.**
+
+[1]: https://bulbapedia.bulbagarden.net/wiki/Generation_One?utm_source=chatgpt.com "Generation I - Bulbapedia, the community-driven Pokémon encyclopedia"

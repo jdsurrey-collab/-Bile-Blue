@@ -310,7 +310,7 @@ PlayShootingStar:
 	ldh [rBGP], a
 	ld c, 180
 	call DelayFrames
-	call ClearScreen
+	call TitleClearScreen
 	call DisableLCD
 	xor a
 	ld [wCurOpponent], a

@@ -41,8 +41,8 @@ EvosMovesPointerTable:
 	dw PinsirEvosMoves
 	dw TangelaEvosMoves
 	dw MissingNo1FEvosMoves
-	dw MissingNo20EvosMoves
-	dw GrowlitheEvosMoves
+	dw ChikoritaEvosMoves
+	dw BayleefEvosMoves
 	dw OnixEvosMoves
 	dw FearowEvosMoves
 	dw PidgeyEvosMoves
@@ -60,26 +60,26 @@ EvosMovesPointerTable:
 	dw DrowzeeEvosMoves
 	dw GolemEvosMoves
 	dw MissingNo32EvosMoves
-	dw MagmarEvosMoves
+	dw MeganiumEvosMoves
 	dw MissingNo34EvosMoves
-	dw ElectabuzzEvosMoves
+	dw CyndaquilEvosMoves
 	dw MagnetonEvosMoves
 	dw KoffingEvosMoves
 	dw MissingNo38EvosMoves
-	dw MankeyEvosMoves
+	dw QuilavaEvosMoves
 	dw SeelEvosMoves
 	dw DiglettEvosMoves
 	dw TaurosEvosMoves
 	dw MissingNo3DEvosMoves
-	dw MissingNo3EEvosMoves
-	dw MissingNo3FEvosMoves
-	dw FarfetchdEvosMoves
+	dw TyphlosionEvosMoves
+	dw TotodileEvosMoves
+	dw CroconawEvosMoves
 	dw VenonatEvosMoves
 	dw DragoniteEvosMoves
 	dw MissingNo43EvosMoves
-	dw MissingNo44EvosMoves
-	dw MissingNo45EvosMoves
-	dw DoduoEvosMoves
+	dw FeraligatrEvosMoves
+	dw SentretEvosMoves
+	dw FurretEvosMoves
 	dw PoliwagEvosMoves
 	dw JynxEvosMoves
 	dw MoltresEvosMoves
@@ -89,23 +89,23 @@ EvosMovesPointerTable:
 	dw MeowthEvosMoves
 	dw KrabbyEvosMoves
 	dw MissingNo4FEvosMoves
-	dw MissingNo50EvosMoves
-	dw MissingNo51EvosMoves
-	dw VulpixEvosMoves
+	dw HoothootEvosMoves
+	dw NoctowlEvosMoves
+	dw LedybaEvosMoves
 	dw NinetalesEvosMoves
 	dw PikachuEvosMoves
 	dw RaichuEvosMoves
 	dw MissingNo56EvosMoves
-	dw MissingNo57EvosMoves
-	dw DratiniEvosMoves
+	dw LedianEvosMoves
+	dw SpinarakEvosMoves
 	dw DragonairEvosMoves
 	dw KabutoEvosMoves
 	dw KabutopsEvosMoves
 	dw HorseaEvosMoves
 	dw SeadraEvosMoves
 	dw MissingNo5EEvosMoves
-	dw MissingNo5FEvosMoves
-	dw SandshrewEvosMoves
+	dw AriadosEvosMoves
+	dw CrobatEvosMoves
 	dw SandslashEvosMoves
 	dw OmanyteEvosMoves
 	dw OmastarEvosMoves
@@ -125,38 +125,38 @@ EvosMovesPointerTable:
 	dw KakunaEvosMoves
 	dw BeedrillEvosMoves
 	dw MissingNo73EvosMoves
-	dw DodrioEvosMoves
+	dw ChinchouEvosMoves
 	dw PrimeapeEvosMoves
 	dw DugtrioEvosMoves
 	dw VenomothEvosMoves
 	dw DewgongEvosMoves
 	dw MissingNo79EvosMoves
-	dw MissingNo7AEvosMoves
-	dw CaterpieEvosMoves
+	dw LanturnEvosMoves
+	dw PichuEvosMoves
 	dw MetapodEvosMoves
 	dw ButterfreeEvosMoves
 	dw MachampEvosMoves
 	dw MissingNo7FEvosMoves
-	dw GolduckEvosMoves
+	dw CleffaEvosMoves
 	dw HypnoEvosMoves
 	dw GolbatEvosMoves
 	dw MewtwoEvosMoves
 	dw SnorlaxEvosMoves
 	dw MagikarpEvosMoves
 	dw MissingNo86EvosMoves
-	dw MissingNo87EvosMoves
-	dw MukEvosMoves
+	dw IgglybuffEvosMoves
+	dw TogepiEvosMoves
 	dw MissingNo8AEvosMoves
-	dw KinglerEvosMoves
+	dw TogeticEvosMoves
 	dw CloysterEvosMoves
 	dw MissingNo8CEvosMoves
-	dw ElectrodeEvosMoves
+	dw NatuEvosMoves
 	dw ClefableEvosMoves
 	dw WeezingEvosMoves
 	dw PersianEvosMoves
 	dw MarowakEvosMoves
 	dw MissingNo92EvosMoves
-	dw HaunterEvosMoves
+	dw XatuEvosMoves
 	dw AbraEvosMoves
 	dw AlakazamEvosMoves
 	dw PidgeottoEvosMoves
@@ -166,13 +166,13 @@ EvosMovesPointerTable:
 	dw VenusaurEvosMoves
 	dw TentacruelEvosMoves
 	dw MissingNo9CEvosMoves
-	dw GoldeenEvosMoves
+	dw MareepEvosMoves
 	dw SeakingEvosMoves
 	dw MissingNo9FEvosMoves
-	dw MissingNoA0EvosMoves
-	dw MissingNoA1EvosMoves
-	dw MissingNoA2EvosMoves
-	dw PonytaEvosMoves
+	dw FlaaffyEvosMoves
+	dw AmpharosEvosMoves
+	dw BellossomEvosMoves
+	dw MarillEvosMoves
 	dw RapidashEvosMoves
 	dw RattataEvosMoves
 	dw RaticateEvosMoves
@@ -182,16 +182,16 @@ EvosMovesPointerTable:
 	dw PorygonEvosMoves
 	dw AerodactylEvosMoves
 	dw MissingNoACEvosMoves
-	dw MagnemiteEvosMoves
+	dw AzumarillEvosMoves
 	dw MissingNoAEEvosMoves
-	dw MissingNoAFEvosMoves
-	dw CharmanderEvosMoves
+	dw SudowoodoEvosMoves
+	dw PolitoedEvosMoves
 	dw SquirtleEvosMoves
 	dw CharmeleonEvosMoves
 	dw WartortleEvosMoves
 	dw CharizardEvosMoves
 	dw MissingNoB5EvosMoves
-	dw FossilKabutopsEvosMoves
+	dw HoppipEvosMoves
 	dw FossilAerodactylEvosMoves
 	dw MonGhostEvosMoves
 	dw OddishEvosMoves
@@ -200,6 +200,59 @@ EvosMovesPointerTable:
 	dw BellsproutEvosMoves
 	dw WeepinbellEvosMoves
 	dw VictreebelEvosMoves
+	dw SkiploomEvosMoves
+	dw JumpluffEvosMoves
+	dw AipomEvosMoves
+	dw SunkernEvosMoves
+	dw SunfloraEvosMoves
+	dw YanmaEvosMoves
+	dw WooperEvosMoves
+	dw QuagsireEvosMoves
+	dw EspeonEvosMoves
+	dw SlowkingEvosMoves
+	dw MisdreavusEvosMoves
+	dw WobbuffetEvosMoves
+	dw GirafarigEvosMoves
+	dw PinecoEvosMoves
+	dw DunsparceEvosMoves
+	dw GligarEvosMoves
+	dw SnubbullEvosMoves
+	dw GranbullEvosMoves
+	dw QwilfishEvosMoves
+	dw ShuckleEvosMoves
+	dw HeracrossEvosMoves
+	dw TeddiursaEvosMoves
+	dw UrsaringEvosMoves
+	dw SlugmaEvosMoves
+	dw MagcargoEvosMoves
+	dw SwinubEvosMoves
+	dw PiloswineEvosMoves
+	dw CorsolaEvosMoves
+	dw RemoraidEvosMoves
+	dw OctilleryEvosMoves
+	dw DelibirdEvosMoves
+	dw MantineEvosMoves
+	dw KingdraEvosMoves
+	dw PhanpyEvosMoves
+	dw DonphanEvosMoves
+	dw Porygon2EvosMoves
+	dw StantlerEvosMoves
+	dw SmeargleEvosMoves
+	dw TyrogueEvosMoves
+	dw HitmontopEvosMoves
+	dw SmoochumEvosMoves
+	dw ElekidEvosMoves
+	dw MagbyEvosMoves
+	dw MiltankEvosMoves
+	dw BlisseyEvosMoves
+	dw RaikouEvosMoves
+	dw EnteiEvosMoves
+	dw SuicuneEvosMoves
+	dw LarvitarEvosMoves
+	dw PupitarEvosMoves
+	dw LugiaEvosMoves
+	dw HoOhEvosMoves
+	dw CelebiEvosMoves
 	assert_table_length NUM_POKEMON_INDEXES
 
 RhydonEvosMoves:
@@ -2141,3 +2194,1035 @@ VictreebelEvosMoves:
 	db 15, POISONPOWDER
 	db 18, SLEEP_POWDER
 	db 0
+
+; === BEGIN GEN2 IMPORT (generated by tools/gen2_emit.py) ===
+ChikoritaEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 16, BAYLEEF
+	db 0 ; no more evolutions
+; Learnset
+	db 8, RAZOR_LEAF
+	db 12, REFLECT
+	db 15, POISONPOWDER
+	db 29, BODY_SLAM
+	db 36, LIGHT_SCREEN
+	db 50, SOLARBEAM
+	db 0 ; no more level-up moves
+
+BayleefEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 32, MEGANIUM
+	db 0 ; no more evolutions
+; Learnset
+	db 8, RAZOR_LEAF
+	db 12, REFLECT
+	db 15, POISONPOWDER
+	db 31, BODY_SLAM
+	db 39, LIGHT_SCREEN
+	db 55, SOLARBEAM
+	db 0 ; no more level-up moves
+
+MeganiumEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 8, RAZOR_LEAF
+	db 12, REFLECT
+	db 15, POISONPOWDER
+	db 31, BODY_SLAM
+	db 41, LIGHT_SCREEN
+	db 61, SOLARBEAM
+	db 0 ; no more level-up moves
+
+CyndaquilEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 14, QUILAVA
+	db 0 ; no more evolutions
+; Learnset
+	db 6, SMOKESCREEN
+	db 12, EMBER
+	db 19, QUICK_ATTACK
+	db 36, SWIFT
+	db 46, FLAMETHROWER
+	db 0 ; no more level-up moves
+
+QuilavaEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 36, TYPHLOSION
+	db 0 ; no more evolutions
+; Learnset
+	db 6, SMOKESCREEN
+	db 12, EMBER
+	db 21, QUICK_ATTACK
+	db 42, SWIFT
+	db 54, FLAMETHROWER
+	db 0 ; no more level-up moves
+
+TyphlosionEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 6, SMOKESCREEN
+	db 12, EMBER
+	db 21, QUICK_ATTACK
+	db 45, SWIFT
+	db 60, FLAMETHROWER
+	db 0 ; no more level-up moves
+
+TotodileEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 18, CROCONAW
+	db 0 ; no more evolutions
+; Learnset
+	db 7, RAGE
+	db 13, WATER_GUN
+	db 20, BITE
+	db 35, SLASH
+	db 43, SCREECH
+	db 52, HYDRO_PUMP
+	db 0 ; no more level-up moves
+
+CroconawEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, FERALIGATR
+	db 0 ; no more evolutions
+; Learnset
+	db 7, RAGE
+	db 13, WATER_GUN
+	db 21, BITE
+	db 37, SLASH
+	db 45, SCREECH
+	db 55, HYDRO_PUMP
+	db 0 ; no more level-up moves
+
+FeraligatrEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 7, RAGE
+	db 13, WATER_GUN
+	db 21, BITE
+	db 38, SLASH
+	db 47, SCREECH
+	db 58, HYDRO_PUMP
+	db 0 ; no more level-up moves
+
+SentretEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 15, FURRET
+	db 0 ; no more evolutions
+; Learnset
+	db 5, DEFENSE_CURL
+	db 11, QUICK_ATTACK
+	db 17, FURY_SWIPES
+	db 25, SLAM
+	db 33, REST
+	db 41, AMNESIA
+	db 0 ; no more level-up moves
+
+FurretEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 5, DEFENSE_CURL
+	db 11, QUICK_ATTACK
+	db 18, FURY_SWIPES
+	db 28, SLAM
+	db 38, REST
+	db 48, AMNESIA
+	db 0 ; no more level-up moves
+
+HoothootEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 20, NOCTOWL
+	db 0 ; no more evolutions
+; Learnset
+	db 11, PECK
+	db 16, HYPNOSIS
+	db 22, REFLECT
+	db 28, TAKE_DOWN
+	db 34, CONFUSION
+	db 48, DREAM_EATER
+	db 0 ; no more level-up moves
+
+NoctowlEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 11, PECK
+	db 16, HYPNOSIS
+	db 25, REFLECT
+	db 33, TAKE_DOWN
+	db 41, CONFUSION
+	db 57, DREAM_EATER
+	db 0 ; no more level-up moves
+
+LedybaEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 18, LEDIAN
+	db 0 ; no more evolutions
+; Learnset
+	db 8, SUPERSONIC
+	db 15, COMET_PUNCH
+	db 22, LIGHT_SCREEN
+	db 22, REFLECT
+	db 36, SWIFT
+	db 43, AGILITY
+	db 50, DOUBLE_EDGE
+	db 0 ; no more level-up moves
+
+LedianEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 8, SUPERSONIC
+	db 15, COMET_PUNCH
+	db 24, LIGHT_SCREEN
+	db 24, REFLECT
+	db 42, SWIFT
+	db 51, AGILITY
+	db 60, DOUBLE_EDGE
+	db 0 ; no more level-up moves
+
+SpinarakEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 22, ARIADOS
+	db 0 ; no more evolutions
+; Learnset
+	db 11, CONSTRICT
+	db 17, NIGHT_SHADE
+	db 23, LEECH_LIFE
+	db 30, FURY_SWIPES
+	db 45, SCREECH
+	db 53, PSYCHIC_M
+	db 0 ; no more level-up moves
+
+AriadosEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 11, CONSTRICT
+	db 17, NIGHT_SHADE
+	db 25, LEECH_LIFE
+	db 34, FURY_SWIPES
+	db 53, SCREECH
+	db 63, PSYCHIC_M
+	db 0 ; no more level-up moves
+
+CrobatEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 6, SUPERSONIC
+	db 12, BITE
+	db 19, CONFUSE_RAY
+	db 30, WING_ATTACK
+	db 55, HAZE
+	db 0 ; no more level-up moves
+
+ChinchouEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 27, LANTURN
+	db 0 ; no more evolutions
+; Learnset
+	db 5, SUPERSONIC
+	db 17, WATER_GUN
+	db 25, SPARK
+	db 29, CONFUSE_RAY
+	db 37, TAKE_DOWN
+	db 41, HYDRO_PUMP
+	db 0 ; no more level-up moves
+
+LanturnEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 5, SUPERSONIC
+	db 17, WATER_GUN
+	db 25, SPARK
+	db 33, CONFUSE_RAY
+	db 45, TAKE_DOWN
+	db 53, HYDRO_PUMP
+	db 0 ; no more level-up moves
+
+PichuEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 12, PIKACHU
+	db 0 ; no more evolutions
+; Learnset
+	db 6, TAIL_WHIP
+	db 8, THUNDER_WAVE
+	db 24, THUNDERBOLT
+	db 0 ; no more level-up moves
+
+CleffaEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 12, CLEFAIRY
+	db 0 ; no more evolutions
+; Learnset
+	db 8, GROWL
+	db 8, SING
+	db 15, QUICK_ATTACK
+	db 24, BODY_SLAM
+	db 0 ; no more level-up moves
+
+IgglybuffEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 12, JIGGLYPUFF
+	db 0 ; no more evolutions
+; Learnset
+	db 4, DEFENSE_CURL
+	db 8, GROWL
+	db 9, POUND
+	db 15, QUICK_ATTACK
+	db 24, BODY_SLAM
+	db 0 ; no more level-up moves
+
+TogepiEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 20, TOGETIC
+	db 0 ; no more evolutions
+; Learnset
+	db 7, METRONOME
+	db 8, GROWL
+	db 15, QUICK_ATTACK
+	db 24, BODY_SLAM
+	db 38, DOUBLE_EDGE
+	db 0 ; no more level-up moves
+
+TogeticEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 7, METRONOME
+	db 8, GROWL
+	db 15, QUICK_ATTACK
+	db 24, BODY_SLAM
+	db 38, DOUBLE_EDGE
+	db 0 ; no more level-up moves
+
+NatuEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 25, XATU
+	db 0 ; no more evolutions
+; Learnset
+	db 10, NIGHT_SHADE
+	db 20, TELEPORT
+	db 40, CONFUSE_RAY
+	db 50, PSYCHIC_M
+	db 0 ; no more level-up moves
+
+XatuEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 10, NIGHT_SHADE
+	db 20, TELEPORT
+	db 50, CONFUSE_RAY
+	db 65, PSYCHIC_M
+	db 0 ; no more level-up moves
+
+MareepEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 15, FLAAFFY
+	db 0 ; no more evolutions
+; Learnset
+	db 9, THUNDERSHOCK
+	db 16, THUNDER_WAVE
+	db 23, COTTON_SPORE
+	db 30, LIGHT_SCREEN
+	db 37, THUNDER
+	db 0 ; no more level-up moves
+
+FlaaffyEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, AMPHAROS
+	db 0 ; no more evolutions
+; Learnset
+	db 9, THUNDERSHOCK
+	db 18, THUNDER_WAVE
+	db 27, COTTON_SPORE
+	db 36, LIGHT_SCREEN
+	db 45, THUNDER
+	db 0 ; no more level-up moves
+
+AmpharosEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 9, THUNDERSHOCK
+	db 18, THUNDER_WAVE
+	db 27, COTTON_SPORE
+	db 30, THUNDERPUNCH
+	db 42, LIGHT_SCREEN
+	db 57, THUNDER
+	db 0 ; no more level-up moves
+
+BellossomEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 10, VINE_WHIP
+	db 20, MEGA_DRAIN
+	db 32, RAZOR_LEAF
+	db 55, SOLARBEAM
+	db 0 ; no more level-up moves
+
+MarillEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 18, AZUMARILL
+	db 0 ; no more evolutions
+; Learnset
+	db 3, DEFENSE_CURL
+	db 6, TAIL_WHIP
+	db 10, WATER_GUN
+	db 21, BUBBLEBEAM
+	db 28, DOUBLE_EDGE
+	db 0 ; no more level-up moves
+
+AzumarillEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 3, DEFENSE_CURL
+	db 6, TAIL_WHIP
+	db 10, WATER_GUN
+	db 25, BUBBLEBEAM
+	db 36, DOUBLE_EDGE
+	db 0 ; no more level-up moves
+
+SudowoodoEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 19, LOW_KICK
+	db 28, ROCK_SLIDE
+	db 46, SLAM
+	db 0 ; no more level-up moves
+
+PolitoedEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 9, WATER_GUN
+	db 18, BUBBLEBEAM
+	db 30, SURF
+	db 0 ; no more level-up moves
+
+HoppipEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 18, SKIPLOOM
+	db 0 ; no more evolutions
+; Learnset
+	db 5, TAIL_WHIP
+	db 10, TACKLE
+	db 13, POISONPOWDER
+	db 15, STUN_SPORE
+	db 17, SLEEP_POWDER
+	db 20, LEECH_SEED
+	db 25, COTTON_SPORE
+	db 30, MEGA_DRAIN
+	db 0 ; no more level-up moves
+
+SkiploomEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 27, JUMPLUFF
+	db 0 ; no more evolutions
+; Learnset
+	db 5, TAIL_WHIP
+	db 10, TACKLE
+	db 13, POISONPOWDER
+	db 15, STUN_SPORE
+	db 17, SLEEP_POWDER
+	db 22, LEECH_SEED
+	db 29, COTTON_SPORE
+	db 36, MEGA_DRAIN
+	db 0 ; no more level-up moves
+
+JumpluffEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 5, TAIL_WHIP
+	db 10, TACKLE
+	db 13, POISONPOWDER
+	db 15, STUN_SPORE
+	db 17, SLEEP_POWDER
+	db 22, LEECH_SEED
+	db 33, COTTON_SPORE
+	db 44, MEGA_DRAIN
+	db 0 ; no more level-up moves
+
+AipomEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 6, SAND_ATTACK
+	db 19, FURY_SWIPES
+	db 27, SWIFT
+	db 36, SCREECH
+	db 46, AGILITY
+	db 0 ; no more level-up moves
+
+SunkernEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, SUNFLORA
+	db 0 ; no more evolutions
+; Learnset
+	db 4, GROWTH
+	db 10, MEGA_DRAIN
+	db 10, VINE_WHIP
+	db 32, RAZOR_LEAF
+	db 0 ; no more level-up moves
+
+SunfloraEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 4, GROWTH
+	db 10, RAZOR_LEAF
+	db 31, PETAL_DANCE
+	db 46, SOLARBEAM
+	db 0 ; no more level-up moves
+
+YanmaEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 7, QUICK_ATTACK
+	db 13, DOUBLE_TEAM
+	db 19, SONICBOOM
+	db 31, SUPERSONIC
+	db 37, SWIFT
+	db 43, SCREECH
+	db 0 ; no more level-up moves
+
+WooperEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 20, QUAGSIRE
+	db 0 ; no more evolutions
+; Learnset
+	db 11, SLAM
+	db 21, AMNESIA
+	db 31, EARTHQUAKE
+	db 51, HAZE
+	db 51, MIST
+	db 0 ; no more level-up moves
+
+QuagsireEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 11, SLAM
+	db 23, AMNESIA
+	db 35, EARTHQUAKE
+	db 59, HAZE
+	db 59, MIST
+	db 0 ; no more level-up moves
+
+EspeonEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 8, SAND_ATTACK
+	db 16, CONFUSION
+	db 23, QUICK_ATTACK
+	db 30, SWIFT
+	db 36, PSYBEAM
+	db 47, PSYCHIC_M
+	db 0 ; no more level-up moves
+
+SlowkingEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 6, GROWL
+	db 15, WATER_GUN
+	db 20, CONFUSION
+	db 29, DISABLE
+	db 34, HEADBUTT
+	db 48, PSYCHIC_M
+	db 0 ; no more level-up moves
+
+MisdreavusEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 12, CONFUSE_RAY
+	db 15, NIGHT_SHADE
+	db 27, PSYBEAM
+	db 0 ; no more level-up moves
+
+WobbuffetEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 15, PSYBEAM
+	db 30, PSYCHIC_M
+	db 0 ; no more level-up moves
+
+GirafarigEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 7, CONFUSION
+	db 13, STOMP
+	db 20, AGILITY
+	db 41, PSYBEAM
+	db 0 ; no more level-up moves
+
+PinecoEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 8, SELFDESTRUCT
+	db 15, TAKE_DOWN
+	db 29, BIDE
+	db 36, EXPLOSION
+	db 50, DOUBLE_EDGE
+	db 0 ; no more level-up moves
+
+DunsparceEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 5, DEFENSE_CURL
+	db 13, GLARE
+	db 30, SCREECH
+	db 38, TAKE_DOWN
+	db 0 ; no more level-up moves
+
+GligarEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 6, SAND_ATTACK
+	db 13, HARDEN
+	db 20, QUICK_ATTACK
+	db 36, SLASH
+	db 44, SCREECH
+	db 52, GUILLOTINE
+	db 0 ; no more level-up moves
+
+SnubbullEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 23, GRANBULL
+	db 0 ; no more evolutions
+; Learnset
+	db 4, TAIL_WHIP
+	db 13, BITE
+	db 19, LICK
+	db 26, ROAR
+	db 34, RAGE
+	db 43, TAKE_DOWN
+	db 0 ; no more level-up moves
+
+GranbullEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 4, TAIL_WHIP
+	db 13, BITE
+	db 19, LICK
+	db 28, ROAR
+	db 38, RAGE
+	db 51, TAKE_DOWN
+	db 0 ; no more level-up moves
+
+QwilfishEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 10, HARDEN
+	db 10, MINIMIZE
+	db 19, WATER_GUN
+	db 28, PIN_MISSILE
+	db 37, TAKE_DOWN
+	db 46, HYDRO_PUMP
+	db 0 ; no more level-up moves
+
+ShuckleEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 9, WRAP
+	db 28, BIDE
+	db 37, REST
+	db 0 ; no more level-up moves
+
+HeracrossEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 6, HORN_ATTACK
+	db 19, FURY_ATTACK
+	db 27, COUNTER
+	db 35, TAKE_DOWN
+	db 0 ; no more level-up moves
+
+TeddiursaEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, URSARING
+	db 0 ; no more evolutions
+; Learnset
+	db 8, LICK
+	db 15, FURY_SWIPES
+	db 29, REST
+	db 36, SLASH
+	db 50, THRASH
+	db 0 ; no more level-up moves
+
+UrsaringEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 8, LICK
+	db 15, FURY_SWIPES
+	db 29, REST
+	db 39, SLASH
+	db 59, THRASH
+	db 0 ; no more level-up moves
+
+SlugmaEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 38, MAGCARGO
+	db 0 ; no more evolutions
+; Learnset
+	db 8, EMBER
+	db 15, ROCK_THROW
+	db 22, HARDEN
+	db 29, AMNESIA
+	db 36, FLAMETHROWER
+	db 43, ROCK_SLIDE
+	db 50, BODY_SLAM
+	db 0 ; no more level-up moves
+
+MagcargoEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 8, EMBER
+	db 15, ROCK_THROW
+	db 22, HARDEN
+	db 29, AMNESIA
+	db 36, FLAMETHROWER
+	db 48, ROCK_SLIDE
+	db 60, BODY_SLAM
+	db 0 ; no more level-up moves
+
+SwinubEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 33, PILOSWINE
+	db 0 ; no more evolutions
+; Learnset
+	db 28, TAKE_DOWN
+	db 37, MIST
+	db 46, BLIZZARD
+	db 0 ; no more level-up moves
+
+PiloswineEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 28, TAKE_DOWN
+	db 33, FURY_ATTACK
+	db 42, MIST
+	db 56, BLIZZARD
+	db 0 ; no more level-up moves
+
+CorsolaEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 7, HARDEN
+	db 13, BUBBLE
+	db 19, RECOVER
+	db 25, BUBBLEBEAM
+	db 31, SPIKE_CANNON
+	db 0 ; no more level-up moves
+
+RemoraidEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 25, OCTILLERY
+	db 0 ; no more evolutions
+; Learnset
+	db 22, AURORA_BEAM
+	db 22, BUBBLEBEAM
+	db 22, PSYBEAM
+	db 33, FOCUS_ENERGY
+	db 44, ICE_BEAM
+	db 55, HYPER_BEAM
+	db 0 ; no more level-up moves
+
+OctilleryEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 11, CONSTRICT
+	db 22, AURORA_BEAM
+	db 22, BUBBLEBEAM
+	db 22, PSYBEAM
+	db 38, FOCUS_ENERGY
+	db 54, ICE_BEAM
+	db 70, HYPER_BEAM
+	db 0 ; no more level-up moves
+
+DelibirdEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 14, AURORA_BEAM
+	db 28, ICE_BEAM
+	db 0 ; no more level-up moves
+
+MantineEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 10, SUPERSONIC
+	db 18, BUBBLEBEAM
+	db 25, TAKE_DOWN
+	db 32, AGILITY
+	db 40, WING_ATTACK
+	db 49, CONFUSE_RAY
+	db 0 ; no more level-up moves
+
+KingdraEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 8, SMOKESCREEN
+	db 15, LEER
+	db 22, WATER_GUN
+	db 40, AGILITY
+	db 51, HYDRO_PUMP
+	db 0 ; no more level-up moves
+
+PhanpyEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 25, DONPHAN
+	db 0 ; no more evolutions
+; Learnset
+	db 9, DEFENSE_CURL
+	db 25, TAKE_DOWN
+	db 49, DOUBLE_EDGE
+	db 0 ; no more level-up moves
+
+DonphanEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 9, DEFENSE_CURL
+	db 25, FURY_ATTACK
+	db 49, EARTHQUAKE
+	db 0 ; no more level-up moves
+
+Porygon2EvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 9, AGILITY
+	db 12, PSYBEAM
+	db 20, RECOVER
+	db 24, DEFENSE_CURL
+	db 36, TRI_ATTACK
+	db 44, ZAP_CANNON
+	db 0 ; no more level-up moves
+
+StantlerEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 8, LEER
+	db 15, HYPNOSIS
+	db 23, STOMP
+	db 31, SAND_ATTACK
+	db 40, TAKE_DOWN
+	db 49, CONFUSE_RAY
+	db 0 ; no more level-up moves
+
+SmeargleEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 8, GROWL
+	db 15, QUICK_ATTACK
+	db 24, BODY_SLAM
+	db 0 ; no more level-up moves
+
+TyrogueEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 20, HITMONCHAN
+	db EVOLVE_LEVEL, 20, HITMONLEE
+	db EVOLVE_LEVEL, 20, HITMONTOP
+	db 0 ; no more evolutions
+; Learnset
+	db 13, KARATE_CHOP
+	db 26, SUBMISSION
+	db 0 ; no more level-up moves
+
+HitmontopEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 7, FOCUS_ENERGY
+	db 19, QUICK_ATTACK
+	db 31, COUNTER
+	db 37, AGILITY
+	db 0 ; no more level-up moves
+
+SmoochumEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, JYNX
+	db 0 ; no more evolutions
+; Learnset
+	db 21, CONFUSION
+	db 25, SING
+	db 37, PSYCHIC_M
+	db 49, BLIZZARD
+	db 0 ; no more level-up moves
+
+ElekidEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, ELECTABUZZ
+	db 0 ; no more evolutions
+; Learnset
+	db 9, THUNDERPUNCH
+	db 17, LIGHT_SCREEN
+	db 25, SWIFT
+	db 33, SCREECH
+	db 41, THUNDERBOLT
+	db 49, THUNDER
+	db 0 ; no more level-up moves
+
+MagbyEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, MAGMAR
+	db 0 ; no more evolutions
+; Learnset
+	db 7, LEER
+	db 13, SMOG
+	db 19, FIRE_PUNCH
+	db 25, SMOKESCREEN
+	db 37, FLAMETHROWER
+	db 43, CONFUSE_RAY
+	db 49, FIRE_BLAST
+	db 0 ; no more level-up moves
+
+MiltankEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 4, GROWL
+	db 8, DEFENSE_CURL
+	db 13, STOMP
+	db 26, BIDE
+	db 43, BODY_SLAM
+	db 0 ; no more level-up moves
+
+BlisseyEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 4, GROWL
+	db 7, TAIL_WHIP
+	db 10, SOFTBOILED
+	db 13, DOUBLESLAP
+	db 18, MINIMIZE
+	db 23, SING
+	db 28, EGG_BOMB
+	db 33, DEFENSE_CURL
+	db 40, LIGHT_SCREEN
+	db 47, DOUBLE_EDGE
+	db 0 ; no more level-up moves
+
+RaikouEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 11, THUNDERSHOCK
+	db 21, ROAR
+	db 31, QUICK_ATTACK
+	db 41, SPARK
+	db 51, REFLECT
+	db 71, THUNDER
+	db 0 ; no more level-up moves
+
+EnteiEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 11, EMBER
+	db 21, ROAR
+	db 31, FIRE_SPIN
+	db 41, STOMP
+	db 51, FLAMETHROWER
+	db 71, FIRE_BLAST
+	db 0 ; no more level-up moves
+
+SuicuneEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 11, WATER_GUN
+	db 21, ROAR
+	db 31, GUST
+	db 41, BUBBLEBEAM
+	db 51, MIST
+	db 71, HYDRO_PUMP
+	db 0 ; no more level-up moves
+
+LarvitarEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, PUPITAR
+	db 0 ; no more evolutions
+; Learnset
+	db 15, SCREECH
+	db 22, ROCK_SLIDE
+	db 29, THRASH
+	db 50, EARTHQUAKE
+	db 57, HYPER_BEAM
+	db 0 ; no more level-up moves
+
+PupitarEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 15, SCREECH
+	db 22, ROCK_SLIDE
+	db 29, THRASH
+	db 56, EARTHQUAKE
+	db 65, HYPER_BEAM
+	db 0 ; no more level-up moves
+
+LugiaEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 22, GUST
+	db 33, RECOVER
+	db 44, HYDRO_PUMP
+	db 66, SWIFT
+	db 77, WHIRLWIND
+	db 0 ; no more level-up moves
+
+HoOhEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 22, GUST
+	db 33, RECOVER
+	db 44, FIRE_BLAST
+	db 66, SWIFT
+	db 77, WHIRLWIND
+	db 0 ; no more level-up moves
+
+CelebiEvosMoves:
+; Evolutions
+	db 0 ; no more evolutions
+; Learnset
+	db 15, PSYBEAM
+	db 30, PSYCHIC_M
+	db 0 ; no more level-up moves
+
+; === END GEN2 IMPORT ===

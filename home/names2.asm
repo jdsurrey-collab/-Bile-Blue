@@ -18,16 +18,33 @@ GetName::
 	ld a, [wNameListIndex]
 	ld [wNamedObjectIndex], a
 
-	; TM names are separate from item names.
-	; BUG: This applies to all names instead of just items.
-	ASSERT NUM_POKEMON_INDEXES < HM01, \
-		"A bug in GetName will get TM/HM names for Pokémon above ${x:HM01}."
+	; TM/HM names are stored separately from item names, so an item ID at or
+	; above HM01 has to be rendered as "TM##"/"HM##" rather than looked up in
+	; a name list. Vanilla applied that redirect to EVERY name list instead of
+	; just items (pret flags this as a bug) -- which effectively capped
+	; Pokémon/move/trainer IDs at HM01 ($C4), since any ID at or above it
+	; printed a TM/HM name instead of its real one.
+	;
+	; Pokémon Purple needs species indexes above that ceiling (the Gen 2
+	; species import; see CLAUDE.md), so the redirect is now skipped for
+	; MONSTER_NAME. Deliberately scoped to skipping MONSTER_NAME rather than
+	; the arguably "more correct" restriction to ITEM_NAME only: every other
+	; list type then keeps the exact vanilla code path byte for byte, so this
+	; cannot regress item/move/trainer/OT naming anywhere -- including the
+	; item list menu (home/list_menu.asm), which relies on this redirect to
+	; show TMs/HMs in the bag. Moves and trainers still assert below, since
+	; neither has any reason to cross HM01.
 	ASSERT NUM_ATTACKS < HM01, \
 		"A bug in GetName will get TM/HM names for moves above ${x:HM01}."
 	ASSERT NUM_TRAINERS < HM01, \
 		"A bug in GetName will get TM/HM names for trainers above ${x:HM01}."
+	ld a, [wNameListType]
+	cp MONSTER_NAME
+	jr z, .notMachineName
+	ld a, [wNameListIndex]
 	cp HM01
 	jp nc, GetMachineName
+.notMachineName
 
 	ldh a, [hLoadedROMBank]
 	push af

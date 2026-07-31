@@ -66,7 +66,19 @@ DEF MAX_TIER  EQU 10
 
 DEF PARTY_LENGTH EQU 6
 
-DEF MONS_PER_BOX EQU 20
+; Pokémon Purple: reduced from vanilla's 20 to buy back WRAM for the expanded
+; Pokédex (see CLAUDE.md's Gen 2 species import). wPokedexOwned/wPokedexSeen are
+; flag_arrays sized by NUM_POKEMON and live inside the *saved* Main Data region;
+; growing the dex from 151 to ~241 species costs +24 bytes across the two, but
+; WRAM0 only had 10 free bytes ($def6-$deff) and this ROM is DMG-only, so there
+; is no bankable WRAM to escape into. Every box mon costs 56 bytes
+; (BOXMON_STRUCT_LENGTH + 2 * NAME_LENGTH + 1 species-list byte), so dropping
+; one slot per box frees 56 -- comfortably more than the 14-byte shortfall.
+; Net storage cost is 12 slots (12 boxes * 20 = 240 -> 228).
+; Every reference to this constant is symbolic (no hardcoded 20s anywhere), so
+; the box UI, deposit/withdraw bounds checks, and SRAM box sizing all follow
+; automatically -- sBox{n} is declared as `ds wBoxDataEnd - wBoxDataStart`.
+DEF MONS_PER_BOX EQU 19
 DEF NUM_BOXES    EQU 12
 
 DEF HOF_MON           EQU $10
