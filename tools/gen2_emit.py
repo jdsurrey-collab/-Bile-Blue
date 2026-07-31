@@ -55,10 +55,82 @@ def restore_pristine():
             raise SystemExit(f"missing pristine copy: {src}")
         shutil.copyfile(src, os.path.join(ROOT, f))
 
-# Near-universal Gen 1 TMs -- a conservative starting kit. Per-species TM
-# curation is deliberately deferred; an empty tmhm is legal but leaves a mon
-# unable to learn anything from TMs at all, which plays worse than a small set.
-DEFAULT_TMHM = ["TOXIC", "RAGE", "MIMIC", "DOUBLE_TEAM", "REST", "SUBSTITUTE"]
+# TM/HM learnsets, composed as UNIVERSAL + per-type + per-role.
+#
+# Gen 1 has no TM-compatibility data for species that did not exist in it, so
+# these are authored rather than ported. Kept deliberately conservative: the aim
+# is that every imported species can hold its own without any of them becoming a
+# universal HM mule or learning something absurd for its body plan.
+#
+# UNIVERSAL is the set almost every Gen 1 species learns -- utility and status
+# rather than coverage, so it grants no type advantage on its own.
+UNIVERSAL_TMHM = ["TOXIC", "RAGE", "MIMIC", "DOUBLE_TEAM", "REST", "SUBSTITUTE",
+                  "BIDE", "SWIFT"]
+
+# Coverage granted by primary/secondary type. Applied for BOTH of a species'
+# types, so a dual type gets both lists.
+TYPE_TMHM = {
+    "NORMAL":   ["BODY_SLAM", "TAKE_DOWN", "DOUBLE_EDGE", "HEADBUTT_UNUSED"],
+    "FIGHTING": ["SUBMISSION", "SEISMIC_TOSS", "COUNTER", "MEGA_PUNCH", "MEGA_KICK"],
+    "FLYING":   ["FLY", "SKY_ATTACK", "WHIRLWIND", "RAZOR_WIND"],
+    "POISON":   ["MEGA_DRAIN", "EXPLOSION", "SELFDESTRUCT"],
+    "GROUND":   ["EARTHQUAKE", "DIG", "FISSURE", "STRENGTH"],
+    "ROCK":     ["ROCK_SLIDE", "EARTHQUAKE", "DIG", "STRENGTH", "EXPLOSION"],
+    "BUG":      ["MEGA_DRAIN", "SWORDS_DANCE", "CUT"],
+    "GHOST":    ["PSYCHIC_M", "DREAM_EATER", "PSYWAVE", "EXPLOSION"],
+    "FIRE":     ["FIRE_BLAST", "BODY_SLAM", "SKULL_BASH"],
+    "WATER":    ["SURF", "WATER_GUN", "BUBBLEBEAM", "ICE_BEAM", "BLIZZARD"],
+    "GRASS":    ["SOLARBEAM", "MEGA_DRAIN", "CUT"],
+    "ELECTRIC": ["THUNDERBOLT", "THUNDER", "THUNDER_WAVE", "FLASH"],
+    "PSYCHIC_TYPE": ["PSYCHIC_M", "PSYWAVE", "REFLECT", "TELEPORT", "DREAM_EATER"],
+    "ICE":      ["ICE_BEAM", "BLIZZARD", "BODY_SLAM"],
+    "DRAGON":   ["DRAGON_RAGE", "HYPER_BEAM", "SURF", "BLIZZARD"],
+}
+
+# Hand-tuned extras where type alone reads wrong. Fully-evolved heavy hitters
+# get HYPER_BEAM; the dedicated healers get SOFTBOILED; legendaries get a little
+# more reach than their type would grant, to match their status.
+ROLE_TMHM = {
+    "MEGANIUM": ["HYPER_BEAM", "BODY_SLAM"],
+    "TYPHLOSION": ["HYPER_BEAM", "EARTHQUAKE"],
+    "FERALIGATR": ["HYPER_BEAM", "EARTHQUAKE", "STRENGTH"],
+    "AMPHAROS": ["HYPER_BEAM", "BODY_SLAM"],
+    "CROBAT": ["DOUBLE_EDGE"],
+    "BLISSEY": ["SOFTBOILED", "PSYCHIC_M", "REFLECT", "EGG_BOMB"],
+    "MILTANK": ["SOFTBOILED", "EARTHQUAKE"],
+    "URSARING": ["HYPER_BEAM", "EARTHQUAKE", "STRENGTH"],
+    "DONPHAN": ["HYPER_BEAM", "BODY_SLAM"],
+    "KINGDRA": ["HYPER_BEAM"],
+    "OCTILLERY": ["HYPER_BEAM", "PSYCHIC_M"],
+    "HITMONTOP": ["ROCK_SLIDE"],
+    "SLOWKING": ["SURF", "BLIZZARD", "SOFTBOILED"],
+    "PORYGON2": ["TRI_ATTACK", "PSYCHIC_M", "THUNDERBOLT", "ICE_BEAM", "HYPER_BEAM"],
+    "HERACROSS": ["SUBMISSION", "SEISMIC_TOSS", "STRENGTH"],
+    "SMEARGLE": ["METRONOME"],
+    "RAIKOU": ["HYPER_BEAM", "REFLECT"],
+    "ENTEI": ["HYPER_BEAM", "BODY_SLAM"],
+    "SUICUNE": ["HYPER_BEAM", "REFLECT", "SURF"],
+    "LUGIA": ["HYPER_BEAM", "SURF", "ICE_BEAM", "REFLECT"],
+    "HO_OH": ["HYPER_BEAM", "FIRE_BLAST", "REFLECT"],
+    "CELEBI": ["HYPER_BEAM", "SOLARBEAM", "REFLECT", "PSYCHIC_M"],
+    "TYROGUE": [],  # deliberately sparse: it is a baby that only knows brawling
+}
+
+
+def tmhm_for(s, valid):
+    """Compose a species' TM/HM list; `valid` filters to moves that really exist."""
+    out = list(UNIVERSAL_TMHM)
+    for t in {s["type1"], s["type2"]}:
+        out += TYPE_TMHM.get(t, [])
+    out += ROLE_TMHM.get(s["const"], [])
+    # Preserve first-seen order for a stable diff, drop dupes and anything that
+    # is not actually a TM/HM in this ROM.
+    seen, final = set(), []
+    for m in out:
+        if m in valid and m not in seen:
+            seen.add(m)
+            final.append(m)
+    return final
 
 # Level-up substitutes for evolution methods Gen 1's engine has no concept of.
 # Friendship and held-item-trade evolutions are replaced with plain level
@@ -274,8 +346,32 @@ def gen1_name(const):
     return {"HO_OH": "HO-OH", "PORYGON2": "PORYGON2"}.get(const, const)
 
 
+def gothic_dex_text(slug, label):
+    """Render the project's Victorian-gothic prose for one species.
+
+    Line lengths are enforced by tools/tests/test_dex_line_budget.py, not here:
+    an overlong line is not a build error, it silently wraps mid-word and
+    truncates, so it has to be caught by a test rather than at assembly time.
+    """
+    from gen2_dex_text import DEX
+    pages = DEX[slug]
+    out = [f"{label}::"]
+    for pi, page in enumerate(pages):
+        for li, line in enumerate(page):
+            macro = ("text" if pi == 0 else "page") if li == 0 else "next"
+            out.append(f'\t{macro} "{line}"')
+        if pi + 1 < len(pages):
+            out.append("")
+    out.append("\tdex")
+    return "\n".join(out) + "\n"
+
+
 def convert_dex_text(slug, label):
-    """Gen 2 dex prose -> Gen 1 text macros (near-identical dialects)."""
+    """Gen 2 dex prose -> Gen 1 text macros (near-identical dialects).
+
+    Superseded by gothic_dex_text(); kept only as a fallback for a species that
+    somehow has no authored prose, so the build cannot break on a missing entry.
+    """
     p = os.path.join(REF, f"data/pokemon/dex_entries/gold/{slug}.asm")
     body = []
     for line in open(p, encoding="utf-8"):
@@ -420,6 +516,13 @@ def main():
 
     # ---- 3. base_stats/<slug>.asm ----------------------------------------
     g1moves = gen1_move_set()
+    # Only moves that are actually a TM or HM in this ROM may appear in a tmhm
+    # list -- the macro FAILs the build on anything else, so filter rather than
+    # trusting the authored lists above.
+    _items = open(os.path.join(ROOT, "constants/item_constants.asm"),
+                  encoding="utf-8").read()
+    tmhm_names = set(re.findall(r"add_tm\s+([A-Z_0-9]+)", _items))
+    tmhm_names |= set(re.findall(r"add_hm\s+([A-Z_0-9]+)", _items))
     raw = parse_gen2_evos_attacks()
     # A valid evolution target is ANY species that exists in this ROM: the newly
     # imported ones plus every vanilla Gen 1 species. Restricting this to the new
@@ -441,6 +544,7 @@ def main():
         s["evos"] = convert_evolutions(s, r_evo, valid_targets, g1moves)
         s["learn"] = convert_learnset(s, r_learn, g1moves)
         s["lv1"] = level1_moves(s, r_learn, g1moves)
+        s["tmhm"] = tmhm_for(s, tmhm_names)
     for s in eligible:
         t1, t2 = s["type1"], s["type2"]
         lines = [
@@ -455,7 +559,7 @@ def main():
             f'\tdb {", ".join(s["lv1"])} ; level 1 learnset',
             f'\tdb {s["growth"]} ; growth rate', "",
             "\t; tm/hm learnset",
-            "\ttmhm " + ", ".join(DEFAULT_TMHM),
+            "\ttmhm " + ", ".join(s["tmhm"]),
             "\t; end", "",
             "\tdb 0 ; padding", "",
         ]
@@ -534,10 +638,32 @@ def main():
                 [f'\tdw {s["label"]}EvosMoves' for s in appended])
 
     # ---- 7. dex-number tables --------------------------------------------
+    # BaseStats is indexed `BaseStats + (dex - 1) * BASE_DATA_SIZE`, so it must be
+    # CONTIGUOUS by dex number. Vanilla gets away with 150 entries because Mew
+    # (dex 151) is stored separately (a famous last-minute addition) and is
+    # special-cased in GetMonHeader before the table is ever consulted -- with
+    # nothing above it, the hole at 151 was harmless.
+    #
+    # It is not harmless once dex 152+ exist: without a slot at 151 every
+    # imported species reads the NEXT species' entry, and the last one reads off
+    # the end of the table entirely. That is wrong base stats AND a wrong sprite
+    # pointer (`dw XPicFront, XPicBack` lives in this struct).
+    #
+    # Filling the hole with Mew's own data keeps the table honest. The extra 28
+    # bytes are never read for Mew itself (still special-cased), and including
+    # the data file rather than mew.asm avoids redefining the MewBaseStats label.
     patch_table("data/pokemon/base_stats.asm", r"table_width", r"assert_table_length",
                 150, {},
-                [f'INCLUDE "data/pokemon/base_stats/{s["slug"]}.asm"'
-                 for s in in_dex_order])
+                ['INCLUDE "data/pokemon/base_stats/mew.asm" ; dex 151, keeps'
+                 ' the table contiguous (see tools/gen2_emit.py)']
+                + [f'INCLUDE "data/pokemon/base_stats/{s["slug"]}.asm"'
+                   for s in in_dex_order])
+    # The table now covers dex 1..NUM_POKEMON with no hole, so the vanilla
+    # "discount Mew" assertion no longer describes it.
+    bs = read("data/pokemon/base_stats.asm").replace(
+        "\tassert_table_length NUM_POKEMON - 1 ; discount Mew",
+        "\tassert_table_length NUM_POKEMON ; contiguous by dex, Mew included")
+    write("data/pokemon/base_stats.asm", bs)
 
     patch_table("data/pokemon/palettes.asm", r"table_width", r"assert_table_length",
                 152, {},
@@ -580,8 +706,9 @@ def main():
 
     txt = strip_block(read("data/pokemon/dex_text.asm"))
     blk = [MARK,
-           "; NOTE: prose here is converted straight from the Gen 2 source and has",
-           "; NOT yet had the Victorian-gothic rewrite pass applied (see CLAUDE.md).",
+           "; Victorian-gothic dex prose, authored in tools/gen2_dex_text.py.",
+           "; Line lengths are enforced by tools/tests/test_dex_line_budget.py --",
+           "; an overlong line is NOT a build error, it wraps mid-word and truncates.",
            ";",
            "; Opening a new floating SECTION here (rather than letting this land in",
            '; the pinned "Pokédex Text" section this file is included into) because',
@@ -592,7 +719,7 @@ def main():
            'SECTION "Pokédex Text Gen2", ROMX',
            ""]
     for s in eligible:
-        blk.append(convert_dex_text(s["slug"], f'_{s["label"]}DexEntry'))
+        blk.append(gothic_dex_text(s["slug"], f'_{s["label"]}DexEntry'))
     blk.append(MARKEND)
     write("data/pokemon/dex_text.asm", txt.rstrip("\n") + "\n\n" + "\n".join(blk) + "\n")
 

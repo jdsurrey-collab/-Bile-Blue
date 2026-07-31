@@ -22,7 +22,21 @@ Confirmed across every feature this project: `-Weverything` catches assembly err
 
 **Standing rule:** treat "it built with no warnings" as necessary, never sufficient. Any change with real runtime behavior needs to be exercised, not just compiled.
 
-## 4. Move/effect ID constant comments are hex, without a `$` prefix
+## 4. Generated data can be self-consistently wrong
+Three separate species-table misalignments shipped (see [[Table Alignment - The Two Index Systems]]). The common thread: **the generator and its own output agreed with each other**, so everything looked right.
+
+The index off-by-one is the sharpest example — the same broken walker produced both the index assignment *and* the `; $XX` comments documenting it, so the constants file was internally consistent and completely wrong. `assert_table_length` passed because lengths were correct; only *contents* were shifted.
+
+**Standing rule:** never validate generated data against the generator's own model of it. Validate against something independent — the built ROM's bytes, or the linker's symbol table. Every alignment test in this project does exactly that, which is why they catch what the build cannot.
+
+## 5. Fixing an index bug invalidates every test that hardcodes one
+Correcting the off-by-one shifted 36 species' indexes *and* moved the WRAM byte being used as the PyBoy trampoline. Two green suites went red for reasons that had nothing to do with the game.
+
+Worse, a stale trampoline fails as a **timeout** — indistinguishable from a genuinely broken function, and the exact symptom that sent an earlier investigation down the wrong path entirely.
+
+**Standing rule:** tests resolve addresses from `pokered.sym` and species indexes from `constants/pokemon_constants.asm` at runtime. Hardcode nothing that the build can move.
+
+## 6. Move/effect ID constant comments are hex, without a `$` prefix
 `constants/move_constants.asm`/`constants/move_effect_constants.asm` write e.g. `const MEDITATE ; 60` meaning **hex** `$60` = decimal 96 — not decimal 60 (which is actually `PSYBEAM`). Misreading this as decimal silently builds a test (or any other code) around the wrong move entirely.
 
 **Verify by counting positional index directly, independent of the comment:**
@@ -31,12 +45,12 @@ grep -n "const [A-Z]" file.asm | awk -F: '{print NR-1, $0}'
 ```
 Or cross-check the move's actual compiled bytes in `data/moves/moves.asm` against the ROM file at the right offset. Hit while testing [[Smarter Trainer AI]]'s Modification 5.
 
-## 5. Don't trust a remembered type-chart/game-fact assumption — check `data/types/type_matchups.asm`
+## 7. Don't trust a remembered type-chart/game-fact assumption — check `data/types/type_matchups.asm`
 A test for [[Smarter Trainer AI]] asserted "Water Gun should be encouraged against a Grass-type target" — wrong: Grass resists Water in every generation, so this was never going to be super-effective. The assumption, not the code, was the bug.
 
 **Standing rule:** cross-check any specific game-mechanics fact against the actual data table before writing a test or fix around it — don't trust a remembered assumption, even a seemingly obvious one.
 
-## 6. A "second report of the same symptom" doesn't mean the first fix was incomplete — it might be a second, unrelated bug
+## 8. A "second report of the same symptom" doesn't mean the first fix was incomplete — it might be a second, unrelated bug
 Two visually similar "dotted background" reports in the same session ([[SGB Colorization Cleanup]]) had two completely unrelated root causes: a border-palette dither issue, and a title-screen charmap/tile-index mismatch. Assuming the second report meant the first fix "didn't fully work" would have wasted time re-checking already-correct code.
 
 **Standing rule:** re-derive from raw data (tile bytes, palette tables, register state) each time, rather than assuming a repeated-looking symptom shares its predecessor's root cause.

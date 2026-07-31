@@ -49,9 +49,11 @@ Each reuses an existing Gen 1 move-effect archetype — new numbers on proven lo
 | 3a | Real movesets + evolution chains | ✅ | v0.25 |
 | 3b | 5 back-ported Gen 2 moves | ✅ 7/7 verified | v0.26 |
 | 4 | Wild tables, 55 maps — **89/89 obtainable** | ✅ verified | v0.27 |
-| 3c | Victorian-gothic dex entries | ⬜ not started | |
-| 3d | Per-species TM/HM sets | ⬜ not started | |
-| — | In-game playtest (dex UI, save/load) | ⬜ not started | |
+| — | Index off-by-one + sprite bank fixes | ✅ verified | v0.29 |
+| 3c | 89 Victorian-gothic dex entries | ✅ 473 lines, all ≤18 chars | v0.30 |
+| 3d | Per-species TM/HM sets (type + role) | ✅ | v0.30 |
+| — | BaseStats dex-alignment fix (Mew hole) | ✅ verified | v0.31 |
+| — | In-game playtest (dex UI, save/load) | ⬜ **still needed** | |
 
 **Final roster: 89** (100 Gen 2 − 10 Dark/Steel − Unown). Internal indexes to 243 (ceiling 255); dex renumbered contiguously 152–240.
 
@@ -67,7 +69,17 @@ Both are **auto-generated** from `data/wild/maps/*.asm` by `tools/wild_report.py
 - `tools/wild_tables.py` — encounter tables.
 - `tools/tests/` — PyBoy regression tests.
 
-## Two bugs that shipped in v0.27 (fixed in v0.29)
+## Three alignment bugs — full writeup in [[Table Alignment - The Two Index Systems]]
+
+All three were **silent**: a misaligned species table is never a build error, because `assert_table_length` only checks lengths. Summary:
+
+1. **Index off-by-one** (v0.27 → fixed v0.29) — `const_def`/`NO_MON` made every computed index +1 too high; 36 gap-filled species had their name/dex-order/cry/dex-entry/evos pointer written one slot high. Surfaced in play as "Wild MISSINGNO. appeared".
+2. **Sprite banks from index ranges** (v0.27 → fixed v0.29) — replaced with the `MonPicBanks` lookup.
+3. **The Mew hole in BaseStats** (→ fixed v0.31) — `BaseStats` must be contiguous by dex, but vanilla omits Mew (dex 151). Harmless until dex 152+ existed; then **every imported species read the next one's stats and sprite pointer**. Found by a deliberate audit, not by any test — the existing tests all check the *internal-index* axis, and this is the *dex-number* axis.
+
+Each is now guarded by a dedicated test — see [[Test Suite]].
+
+## Two bugs that shipped in v0.27 (detail)
 
 Both surfaced from play — "Wild MISSINGNO. appeared" and blurred sprites on the title screen.
 

@@ -7,6 +7,10 @@ These are the commits that make this project "Pokémon Purple" rather than plain
 
 | Commit | Summary | Systems touched |
 |---|---|---|
+| *(pending)* | Gothic dex entries, per-species TMs, BaseStats dex-alignment fix | [[Kanto Reborn - Overview]], [[Table Alignment - The Two Index Systems]] |
+| `c33c03e9` | Fix species index off-by-one and Gen 2 sprite bank lookup | [[Table Alignment - The Two Index Systems]] |
+| `4176708e` | Auto-generated encounter reference notes | [[Encounter Map - Locations & Rates]], [[Where to Find Each Species]] |
+| `f98af300` | 89 Gen 2 species + Kanto Reborn encounter overhaul | [[Kanto Reborn - Overview]] |
 | `f537d629` | Add smarter trainer AI, title screen palette fix, and cultist dream text fixes | [[Smarter Trainer AI]], [[SGB Colorization Cleanup]] (PAL_TITLEMON), [[Cultist Dream Sequence]] |
 | `dde89c34` | Fix title screen dot texture, cultist dream text overflow, and menu popup cleanup | [[SGB Colorization Cleanup]], [[Cultist Dream Sequence]], [[Victorian-Gothic Rewrite]] (line budget) |
 | `769ed42d` | Fix wild-tier coverage gap, cultist dream freeze, and SGB border dot palettes | [[Hidden Tier System]] (`InitWildBattle` fix), [[Cultist Dream Sequence]], [[SGB Colorization Cleanup]] (border) |

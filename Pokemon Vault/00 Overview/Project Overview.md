@@ -25,7 +25,7 @@ Each of these is a full system, documented in its own note. This list mirrors th
 | 8 | Cultist dream sequence (replaces free starting stones) | ✅ Done | [[Cultist Dream Sequence]] |
 | 9 | SGB screen-colorization cleanup | 🔄 Mostly done — one latent bug class (~30 sites) still open | [[SGB Colorization Cleanup]] |
 | 10 | Smarter trainer battle AI | ✅ Done | [[Smarter Trainer AI]] |
-| 11 | Kanto Reborn — encounter overhaul + 89 Gen 2 species | 🔄 Data complete & verified; prose/TM polish open | [[Kanto Reborn - Overview]] |
+| 11 | Kanto Reborn — encounter overhaul + 89 Gen 2 species | 🔄 Feature-complete & verified; needs playtest | [[Kanto Reborn - Overview]] |
 
 ## Cross-cutting reference
 
@@ -35,6 +35,8 @@ These aren't features — they're how the project actually gets built and debugg
 - [[Where to Find Each Species]] — reverse lookup: pick a Pokémon, see everywhere it appears
 - [[Architecture Map]] — what lives in `constants/`, `home/`, `engine/`, `data/`, `scripts/`, `text/`, `ram/`, `gfx/`, `audio/`
 - [[PyBoy Testing Techniques]] — how this project actually verifies Z80 behavior with no interactive emulator available
+- [[Table Alignment - The Two Index Systems]] — the most dangerous bug class here: misaligned species tables are never build errors
+- [[Test Suite]] — the eight regression suites and what each one guards
 - [[Lessons Learned - Bug Patterns]] — recurring bug classes hit more than once (register-clobbering `farcall`s, over-generalized "fix the shared function" mistakes, hex-vs-decimal constant comments)
 - [[Build & Versioning]] — build commands, the `Roms/vX.Y` snapshot convention, why `make compare` doesn't apply here anymore
 
