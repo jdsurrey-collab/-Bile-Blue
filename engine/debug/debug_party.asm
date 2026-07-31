@@ -126,7 +126,7 @@ IF DEF(_DEBUG)
 
 DebugSetPokedexEntries:
 IF NUM_POKEMON / 8 != 0
-	ld b, NUM_POKEMON / 8 ; 151 / 8 == 18
+	ld b, NUM_POKEMON / 8 ; Pokémon Purple: 240 / 8 == 30 (was 151 / 8 == 18)
 	ld a, %11111111
 .loop
 	ld [hli], a
@@ -134,7 +134,7 @@ IF NUM_POKEMON / 8 != 0
 	jr nz, .loop
 ENDC
 IF NUM_POKEMON % 8 != 0
-	ld [hl], (1 << (NUM_POKEMON % 8)) - 1 ; (1 << 151 % 8)) - 1 == %01111111
+	ld [hl], (1 << (NUM_POKEMON % 8)) - 1 ; unreachable now: 240 % 8 == 0
 ENDC
 	ret
 

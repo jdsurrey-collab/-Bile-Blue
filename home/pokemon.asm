@@ -112,7 +112,7 @@ LoadFrontSpriteByMonIndex::
 	pop hl
 	jr z, .invalidDexNumber ; dex #0 invalid
 	cp NUM_POKEMON + 1
-	jr c, .validDexNumber   ; dex >#151 invalid
+	jr c, .validDexNumber   ; dex > NUM_POKEMON is invalid
 .invalidDexNumber
 	; This is the so-called "Rhydon trap" or "Rhydon glitch"
 	; to fail-safe invalid dex numbers

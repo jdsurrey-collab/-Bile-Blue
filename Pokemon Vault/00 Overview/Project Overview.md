@@ -27,6 +27,11 @@ Each of these is a full system, documented in its own note. This list mirrors th
 | 10 | Smarter trainer battle AI | ✅ Done | [[Smarter Trainer AI]] |
 | 11 | Kanto Reborn — encounter overhaul + 89 Gen 2 species | 🔄 Feature-complete & verified; needs playtest | [[Kanto Reborn - Overview]] |
 
+## Start here if you are picking this back up
+
+- [[Known Gaps & Open Risks]] — what is verified, what is not, and what needs a human on a real screen
+- [[Test Suite]] — eight regression suites; run them after any species-table change
+
 ## Cross-cutting reference
 
 These aren't features — they're how the project actually gets built and debugged, and are worth knowing before touching anything:
