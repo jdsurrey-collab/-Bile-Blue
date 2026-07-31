@@ -55,6 +55,12 @@ Each reuses an existing Gen 1 move-effect archetype — new numbers on proven lo
 
 **Final roster: 89** (100 Gen 2 − 10 Dark/Steel − Unown). Internal indexes to 243 (ceiling 255); dex renumbered contiguously 152–240.
 
+## Encounter reference
+- [[Encounter Map - Locations & Rates]] — every area, every species, real percentages and levels
+- [[Where to Find Each Species]] — the reverse lookup, plus which species are evolve-only
+
+Both are **auto-generated** from `data/wild/maps/*.asm` by `tools/wild_report.py`. Regenerate after any encounter change rather than editing by hand, so they can't drift from the ROM.
+
 ## Tooling (checked in)
 - `tools/gen2_import.py` — roster + index assignment. `--manifest` inspects without writing.
 - `tools/gen2_emit.py` — writes every table. Restores from `tools/gen2_pristine/` first (its edits aren't reversible in place).

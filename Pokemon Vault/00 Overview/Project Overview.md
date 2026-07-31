@@ -31,6 +31,8 @@ Each of these is a full system, documented in its own note. This list mirrors th
 
 These aren't features — they're how the project actually gets built and debugged, and are worth knowing before touching anything:
 
+- [[Encounter Map - Locations & Rates]] — every area's wild species, real percentages and levels
+- [[Where to Find Each Species]] — reverse lookup: pick a Pokémon, see everywhere it appears
 - [[Architecture Map]] — what lives in `constants/`, `home/`, `engine/`, `data/`, `scripts/`, `text/`, `ram/`, `gfx/`, `audio/`
 - [[PyBoy Testing Techniques]] — how this project actually verifies Z80 behavior with no interactive emulator available
 - [[Lessons Learned - Bug Patterns]] — recurring bug classes hit more than once (register-clobbering `farcall`s, over-generalized "fix the shared function" mistakes, hex-vs-decimal constant comments)
