@@ -41,6 +41,23 @@ Three things about it are deliberate:
 
 Verified by `tools/tests/test_oakslab_replacement.py` (5/5) and `test_permadeath.py` (4/4).
 
+### Follow-up bug: the text had no box
+
+Reported from play — Oak's line appeared as bare text on the map, with input feeling unresponsive.
+
+`OaksLab_Script` sets `BIT_NO_AUTO_TEXT_BOX` in `wAutoTextBoxDrawingControl` on **every** dispatch, and `DisplayTextIDInit` skips `TextBoxBorder` entirely when that bit is set. A plain `text_far` therefore renders with no bubble. The unresponsiveness followed from that: `DisplayTextID` still waits for A (plus a vanilla 30-frame joypad poll timer), but with no box and no prompt arrow there was nothing telling you to press it.
+
+This map has **two** working patterns, and the new text used neither:
+
+| Pattern | Used by | How the box appears |
+|---|---|---|
+| `text_asm` + `PrintText` | 18 texts | `PrintText` draws its own `MESSAGE_BOX` |
+| Script calls `EnableAutoTextBoxDrawing` first | 8 texts | Restores the auto-drawn border |
+
+Fixed by converting to `text_asm` + `PrintText` (pattern 1) — self-contained, so it doesn't depend on the script's flag state. Verified structurally: the entry now compiles to first-byte `$08` (`TX_ASM`), matching the working boxed texts.
+
+**Note this is the mirror image of the [[Cultist Dream Sequence]] rule, not a contradiction.** `PrintText` is wrong from a *plain script function* (it skips `DisplayTextID`'s init/close); it is correct *inside a `text_asm` block* that `DisplayTextID` has already dispatched into. Which one applies depends entirely on where you are in the call chain.
+
 ## Deliberately unchanged
 - **The player's own blackout/whiteout behavior is untouched.** Whiting out (all Pokémon fainted) still just returns the player to the last-visited Pokémon Center exactly like vanilla Red/Blue — there's no separate "game over" state layered on top. Permadeath is per-Pokémon, not a run-ending condition.
 

@@ -1086,7 +1086,24 @@ OaksLabRivalFedUpWithWaitingText:
 	text_far _OaksLabRivalFedUpWithWaitingText
 	text_end
 
+; Pokémon Purple: this MUST be a text_asm that calls PrintText, not a plain
+; text_far. OaksLab_Script sets BIT_NO_AUTO_TEXT_BOX in wAutoTextBoxDrawingControl
+; on every dispatch, and DisplayTextIDInit skips TextBoxBorder entirely when that
+; bit is set -- so a plain text_far renders its dialogue with NO box around it.
+; Every other boxed text in this map works the same way for the same reason
+; (see OaksLabOakChooseMonText below): PrintText draws its own MESSAGE_BOX.
+;
+; Note this is the mirror image of the cultist dream's rule (CLAUDE.md item 8),
+; not a contradiction of it: PrintText is wrong when called from a plain script
+; function, and correct here, inside a text_asm block that DisplayTextID has
+; already dispatched into.
 OaksLabOakLastBallText:
+	text_asm
+	ld hl, .Text
+	call PrintText
+	jp TextScriptEnd
+
+.Text:
 	text_far _OaksLabOakLastBallText
 	text_end
 
