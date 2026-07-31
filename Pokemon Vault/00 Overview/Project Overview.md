@@ -27,6 +27,16 @@ Each of these is a full system, documented in its own note. This list mirrors th
 | 10 | Smarter trainer battle AI | ✅ Done | [[Smarter Trainer AI]] |
 | 11 | Kanto Reborn — encounter overhaul + 89 Gen 2 species | 🔄 Feature-complete & verified; needs playtest | [[Kanto Reborn - Overview]] |
 
+## The Pokédex reference
+
+Every species, everything it uses, and where each piece lives:
+
+- **[[Pokemon Data Map]]** — the map: ~14 files, two index systems, the sprite pipeline, who generates what
+- **[[Master Index]]** — all 240 species, one row each
+- **[[Dex 001-060]]** · **[[Dex 061-120]]** · **[[Dex 121-180]]** · **[[Dex 181-240]]** — full detail per species: stats, types, moves, TMs, evolution, sprite files, palette, icon, cry, internal index, encounter locations with rates, and dex prose
+
+All auto-generated from the real data files by `tools/pokedex_report.py` — regenerate rather than hand-edit.
+
 ## Start here if you are picking this back up
 
 - [[Known Gaps & Open Risks]] — what is verified, what is not, and what needs a human on a real screen
