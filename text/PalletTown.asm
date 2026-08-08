@@ -21,7 +21,7 @@ _PalletTownGirlText::
 	text "I keep #MON so"
 	line "I'm not alone"
 
-	para "when mourning"
+	para "when morning"
 	line "comes calling."
 	cont "Everyone leaves"
 	cont "in the end."

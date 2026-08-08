@@ -27,6 +27,12 @@ Each of these is a full system, documented in its own note. This list mirrors th
 | 10 | Smarter trainer battle AI | ✅ Done | [[Smarter Trainer AI]] |
 | 11 | Kanto Reborn — encounter overhaul + 89 Gen 2 species | 🔄 Feature-complete & verified; needs playtest | [[Kanto Reborn - Overview]] |
 
+## The Godot port
+
+A second, parallel project ports this ROM hack 1:1 to Godot 4.4/GDScript, at `C:\Users\jdsur\Documents\pokemonpurple` (not a git repo — this pokered repo is the source of truth, the Godot project is downstream of it). Governing principle: port the ENGINES, convert the DATA — never hand-build content. See **[[Port Plan]]** for the full plan and **[[Godot Port - Progress]]** for what's actually landed.
+
+Status: Phases 0–4 done (data pipeline, seamless overworld/movement, party/save/menus, battle engine core). **Phase 5 ("boot → Gary fight ends") is done and verified end-to-end** — cultist dream, Pallet Town intercept, and Oak's Lab (starter choice + real rival battle + permadeath-aware post-battle heal/replacement) are all ported and confirmed with a from-cold-boot dev driver, zero shortcuts. Next up: Phase 6, Oak's Lab's post-battle content (parcel delivery, Pokédex gift, Route 22 rival rematch setup) — see [[Roadmap & Ideas]].
+
 ## The Pokédex reference
 
 Every species, everything it uses, and where each piece lives:
@@ -46,6 +52,7 @@ All auto-generated from the real data files by `tools/pokedex_report.py` — reg
 
 These aren't features — they're how the project actually gets built and debugged, and are worth knowing before touching anything:
 
+- **[[Kanto Walkthrough - Base Game Route]]** — the vanilla game's full area-by-area route, transcribed from the Prima strategy guide, with Purple's own deviations called out up front; the master reference for planning any remaining content work
 - [[Encounter Map - Locations & Rates]] — every area's wild species, real percentages and levels
 - [[Where to Find Each Species]] — reverse lookup: pick a Pokémon, see everywhere it appears
 - [[Architecture Map]] — what lives in `constants/`, `home/`, `engine/`, `data/`, `scripts/`, `text/`, `ram/`, `gfx/`, `audio/`
